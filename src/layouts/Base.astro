@@ -5,12 +5,44 @@
 	<head>
 		<meta charset='utf-8' />
 		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-        <link rel='stylesheet' href='styles/global.css' />
+        <link rel='stylesheet' href='/styles/global.css' />
 		<meta name='viewport' content='width=device-width' />
 		<meta name='generator' content={Astro.generator} />
 		<title>Visionmorph</title>
 	</head>
 	<body>
-        <slot />
+		<section>
+			<div class='container no-top-margin'>
+				<nav>
+					<a class='h2 link' href='/'>Visionmorph</a>
+					<a class='h2 link' href='/clients'>Clients</a>
+					<a class='h2 link' href='/contact'>Contact</a>
+				</nav>
+			</div>
+		</section>
+		<main>
+			<slot />
+		</main>
+		<section>
+			<div class='container no-top-margin'>
+				<footer>
+					<div class='footer__contact'>
+						<h1>Let's talk</h1>
+						<a class='h1 underscore' href='/contact'
+							>chrisdenais@gmail.com</a
+						>
+					</div>
+					<div class='footer__menu'>
+						<a class='h2 link' href='/'>LinkedIn</a>
+						<a class='h2 link' href='/clients'>Instagram</a>
+						<a class='h2 link' href='/contacts'>Dribbble</a>
+						<a class='h2 link' href='/clients'>Upwork</a>
+					</div>
+					<div class='footer__note'>
+						<p>Positively disrupting the paradigm</p>
+					</div>
+				</footer>
+			</div>
+		</section>
     </body>
 </html>

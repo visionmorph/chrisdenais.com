@@ -92,12 +92,12 @@ a {
 	line-height: 30px; /* 125% */
 }
 
-.section {
+section {
 	padding-left: 10rem;
 	padding-right: 10rem;
 	display: flex;
 	justify-content: center;
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .container {
@@ -109,6 +109,10 @@ a {
 	max-width: 100rem;
 	margin-top: 10rem;
 	gap: 2rem;
+}
+
+.container.end {
+	margin-bottom: 10rem;
 }
 
 .no-top-margin {
@@ -225,6 +229,22 @@ a {
 
 .underscore {
 	border-bottom: 4.37px solid var(--White, #fff);
+}
+
+.clients {
+	display: grid;
+	grid-column-gap: 2rem;
+	grid-row-gap: 4rem;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.clients__item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	flex: 1 0 0;
 }
 
 @media (max-width: 1600px) {
