@@ -223,7 +223,7 @@ section {
 .feature__graphic {
 	height: 1080px;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.52%, #000 93.75%),
-		url(../images/graphic.jpg), lightgray 50% / cover no-repeat;
+		url(../images/graphic.webp), lightgray 50% / cover no-repeat;
 	width: 1080px;
 }
 
