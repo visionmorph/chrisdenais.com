@@ -208,6 +208,8 @@ section {
 
 .view-project-image {
 	border: 2px solid var(--Grey-80, #343a3f);
+	max-width: 100%;
+	height: auto;
 }
 
 .feature {
