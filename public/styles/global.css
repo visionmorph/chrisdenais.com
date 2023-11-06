@@ -246,6 +246,8 @@ section {
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.52%, #000 93.75%),
 		url(../images/graphic.webp), lightgray 50% / cover no-repeat;
 	width: 1080px;
+	outline: 4px solid black;
+	outline-offset: -2px;
 }
 
 .underscore {
@@ -455,14 +457,6 @@ textarea:-webkit-autofill:focus {
 	-webkit-text-fill-color: #3ddbd9;
 }
 
-.input-div {
-	position: relative;
-	width: 100%;
-	margin-bottom: 3rem;
-	padding-top: 2rem;
-	color: hsla(253.84615384615387, 6.1%, 41.76%, 1);
-}
-
 .input-div:focus-within > input,
 .input-div:focus-within > textarea {
 	caret-color: white;
@@ -551,49 +545,201 @@ textarea:-webkit-autofill:focus {
 	opacity: 1;
 }
 
-.error .visible-text-field {
-	padding: 1rem;
-}
-
-.error .visible-text-field,
-.error .visible-textarea {
-	outline: solid 3px #fa4d56;
-	outline-offset: -3px;
-	padding-right: 4rem;
-	background-color: #1c0a0a;
-}
-
-.error .placeholder {
-	color: #750e13;
-}
-
-.error:has(.visible-textarea) label {
-	bottom: 13.75rem;
-}
-
-.error:focus-within .visible-text-field,
-.error:focus-within .visible-textarea {
-	outline: solid 3px #3ddbd9;
-	outline-offset: -3px;
-	background-color: #081a1c;
-}
-
 .form-notification.error .form-notification-message {
 	color: #fdccca;
 }
 
-.error .warning-indicator {
+.initializing {
+	background-color: #ff3a2e;
+}
+
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.form__field {
+	position: relative;
+	width: 100%;
+	margin-bottom: 3rem;
+	padding-top: 1.25rem;
+}
+
+.form__field label {
 	display: block;
+	position: absolute;
+	left: 0rem;
+	top: -0.75rem;
+	bottom: auto;
+	right: auto;
+
+	z-index: 75;
+
+	color: #a2a9b0;
+	font-size: 1rem;
+	line-height: 20px;
+
+	pointer-events: none;
+
+	transition-property: top, left, font-size;
+	transition-duration: 200ms, 200ms;
+	transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94),
+		cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.form__field:focus-within label {
+	color: #3ddbd9;
+}
+
+.form__field:not(:focus-within):has(.form__input:placeholder-shown) label {
+	top: calc(1.25rem + 1.0625rem);
+	left: 1rem;
+	font-size: 1.5rem;
+	line-height: 30px;
+	font-weight: 400;
+	color: #697077;
+}
+
+.warning-indicator {
+	max-width: 2rem;
+	position: absolute;
+	top: calc(1.25rem + 1.0625rem);
+	right: 1rem;
+	left: auto;
+	bottom: auto;
+
+	z-index: 100;
+	opacity: 0;
+	transition: opacity 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.form__input {
+	box-sizing: border-box;
+
+	display: block;
+	width: 100%;
+	max-width: 100rem;
+
+	color: white;
+
+	border: none;
+	outline: none;
+	outline-offset: -2px;
+	border-bottom: 1px solid #697077;
+	background: #121619;
+	border-radius: 0;
+	margin: 0;
+	padding: 17px 16px;
+	font-size: 1.5rem;
+	line-height: 30px;
+
+	position: relative;
+	z-index: 50;
+}
+
+.form__input:is(.textarea) {
+	min-height: 13.75rem;
+}
+
+.form__input:focus,
+.form__input:focus-visible {
+	outline: 3px solid #3ddbd9;
+	outline-offset: -2px;
+	background: #081a1c;
+}
+
+.form__error {
+	display: block;
+	margin-top: 4px;
+
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 125% */
+
+	position: absolute;
+
+	transform: translate(0, -2rem);
+	transition: transform 0.3s;
+}
+
+.form__input.error {
+	outline: 3px solid #fa4d56;
+	outline-offset: -2px;
+	background-color: #2d0709;
+	border: none;
+}
+.form__field:has(.form__input.error),
+.form__field:has(.form__input.error) label {
+	color: #fa4d56;
+}
+
+.form__field:not(:focus-within):has(.form__input:placeholder-shown):has(
+		.form__input.error
+	)
+	label {
+	color: #750e13;
+}
+
+.form__field:has(.form__input.error) .warning-indicator {
 	opacity: 100%;
 }
 
-.error .error-message {
-	transform: translate(0rem, 0rem);
-	display: block;
+.form__field:has(.form__input.error) .form__error {
+	transform: translate(0, 0);
 }
 
-.initializing {
-	background-color: #ff3a2e;
+.form__notification {
+	display: grid;
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 12px;
+	grid-auto-columns: 1fr;
+	grid-column-gap: 1rem;
+	grid-row-gap: 0px;
+	grid-template-columns: 24.5px 1fr;
+	grid-template-rows: auto;
+	border-left-style: solid;
+	border-left-width: 4px;
+	border-left-color: #44bf41;
+	background-color: rgba(68, 191, 65, 0.3);
+}
+
+.notification__emblem {
+	position: relative;
+	width: 24.5px;
+	object-fit: contain;
+
+	grid-column-start: span 1;
+	grid-column-end: span 1;
+	grid-row-start: span 1;
+	grid-row-end: span 1;
+}
+
+.notification__title {
+	margin-bottom: 0px;
+	font-weight: 600;
+
+	grid-column-start: span 1;
+	grid-column-end: span 1;
+	grid-row-start: span 1;
+	grid-row-end: span 1;
+}
+
+.notification__message {
+	color: #ccfdca;
+	margin-bottom: 0px;
+	color: #ccfdca;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
 }
 
 @-webkit-keyframes rotating
@@ -648,6 +794,58 @@ textarea:-webkit-autofill:focus {
 	}
 }
 
+@media only screen and (max-width: 1440px) {
+	.clients,
+	.column-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.testimonial {
+		flex-wrap: wrap;
+	}
+
+	.testimonial__area {
+		max-width: 100%;
+	}
+
+	.testimonial-container.filter.manual {
+		max-width: 100%;
+	}
+
+	.controls {
+		margin-top: 4rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	section {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	h1,
+	.h1 {
+		/* H1-tablet */
+		font-family: Inter;
+		font-size: 3.5rem;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 1.25; /* 125% */
+		letter-spacing: -0.96px;
+	}
+
+	h2,
+	.h2 {
+		/* H2-tablet */
+		font-family: Inter;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.22222; /* 122.222% */
+		letter-spacing: -0.36px;
+	}
+}
+
 @media only screen and (max-width: 478px) {
 	.error .warning-indicator {
 		transform: translate(0rem, 28px);
@@ -665,6 +863,38 @@ textarea:-webkit-autofill:focus {
 
 	.error .error-message {
 		transform: translate(28px, 0rem);
+	}
+
+	section {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	h1,
+	.h1 {
+		/* H1-mobile */
+		font-family: Inter;
+		font-size: 3rem;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 1.25; /* 125% */
+		letter-spacing: -0.96px;
+	}
+
+	h2,
+	.h2 {
+		/* H2-mobile */
+		font-family: Inter;
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.22222; /* 122.222% */
+		letter-spacing: -0.36px;
+	}
+
+	.clients,
+	.column-grid {
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
