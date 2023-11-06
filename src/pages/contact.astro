@@ -9,6 +9,137 @@ import Base from '../layouts/Base.astro'
 				Let’s talk about your next project, collaborating together, or
 				simply say hello
 			</h1>
+			<div class='visible-form-block w-form'>
+				<form
+					id='contact-form'
+					name='contact-form'
+					data-name='Contact form'
+					aria-label='Contact form'
+				>
+					<div class='input-div'>
+						<label
+							id='visible-name-label'
+							for='visible-name'
+							class='visible-field-label placeholder'>Name</label
+						>
+						<input
+							type='text'
+							class='visible-text-field'
+							maxlength='256'
+							name='name'
+							data-name='Name'
+							placeholder=''
+							id='visible-name'
+							tabindex='0'
+						/>
+						<img
+							loading='lazy'
+							src='images/warning-filled.svg'
+							alt='Indicating invalid form input'
+							class='warning-indicator'
+						/>
+						<div id='name-error-message' class='error-message'>
+							Error message
+						</div>
+					</div>
+					<div id='email-input-div' class='input-div'>
+						<label
+							id='visible-email-label'
+							for='visible-email'
+							class='visible-field-label placeholder'
+							>Email address</label
+						>
+						<input
+							type='email'
+							class='visible-text-field email w-input'
+							maxlength='256'
+							name='email'
+							data-name='Email'
+							placeholder=''
+							id='visible-email'
+							tabindex='0'
+							required=''
+						/>
+						<img
+							loading='lazy'
+							src='images/warning-filled.svg'
+							alt='Indicating invalid form input'
+							class='warning-indicator'
+						/>
+						<div id='email-error-message' class='error-message'>
+							Error message
+						</div>
+					</div>
+					<div id='message-input-div' class='input-div'>
+						<label
+							id='visible-message-label'
+							for='visible-message'
+							class='visible-field-label area placeholder'
+							>Your message</label
+						>
+						<textarea
+							class='visible-textarea w-input'
+							maxlength='5000'
+							name='message'
+							data-name='field'
+							placeholder=''
+							id='visible-message'
+							tabindex='0'
+							required=''></textarea>
+						<img
+							loading='lazy'
+							src='images/warning-filled.svg'
+							alt='Indicating invalid form input'
+							class='warning-indicator'
+						/>
+						<div id='message-error-message' class='error-message'>
+							Error message
+						</div>
+					</div>
+					<div id='notification' class='form-notification'>
+						<div
+							id='notification-emblem'
+							class='form-notification-emblem w-node-ebdfb84f-9538-4cdd-584a-1e5a58a588bb-bb4633d9'
+						>
+						</div>
+						<p
+							id='notification-title'
+							class='form-notification-title w-node-_7242ecc3-90ed-9866-ed3f-98eb434e96c7-bb4633d9'
+						>
+							Message sent
+						</p>
+						<p
+							id='notification-message'
+							class='form-notification-message w-node-_80e5ef1a-0f6e-7e5b-41a3-443b03bc56de-bb4633d9'
+						>
+							Your message has been sent. We’ll get back to you
+							shortly.
+						</p>
+					</div>
+					<div class='column-grid'>
+						<a
+							id='visible-submit-button'
+							tabindex='0'
+							href='#'
+							class='button submit w-button'>Send message</a
+						>
+					</div>
+				</form>
+				<div
+					class='success-message w-form-done'
+					tabindex='-1'
+					role='region'
+					aria-label='Email Form success'
+				>
+				</div>
+				<div
+					class='error-message-3 w-form-fail'
+					tabindex='-1'
+					role='region'
+					aria-label='Email Form failure'
+				>
+				</div>
+			</div>
 		</div>
 	</section>
 </Base>
