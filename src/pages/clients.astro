@@ -100,7 +100,143 @@ import Base from '../layouts/Base.astro'
 	</section>
 	<section>
 		<div class='container end'>
-			<h2>Testimonials</h2>
+			<div class='slider'>
+				<div class='canvas-embed'>
+					<svg
+						width='100'
+						height='100'
+						viewBox='0 0 100 100'
+						id='svgCanvas'
+						xmlns='http://www.w3.org/2000/svg'
+					>
+						<defs>
+							<filter
+								id='morph'
+								color-interpolation-filters='sRGB'
+							>
+								<feGaussianBlur
+									id='gaussianBlur'
+									in='SourceGraphic'
+									stdDeviation='0'
+									result='blur'
+								>
+								</feGaussianBlur>
+								<feComponentTransfer>
+									<feFuncA type='discrete' tableValues='0 1'>
+									</feFuncA>
+								</feComponentTransfer>
+							</filter>
+						</defs>
+					</svg>
+				</div>
+				<div id='testimonial-area' class='testimonial'>
+					<div
+						id='testimonial-container'
+						class='testimonial__area'
+						style='position: absolute;'
+					>
+						<h2 class='testimonial__text' id='quote'>
+							"I felt comfortable Chris understood the issue then
+							giving him the chance to diagnose it pretty much
+							confirmed it."
+						</h2>
+						<img
+							id='headshot'
+							src='/chrisdenais.com/images/chriswilson_headshot.png'
+						/>
+						<div>
+							<h2 class='testimonial__text' id='author'>
+								Chris Wilson
+							</h2>
+							<h2 class='testimonial__text' id='title'>
+								CEO, Monarch Enterprises
+							</h2>
+						</div>
+					</div>
+					<div
+						id='testimonial-container'
+						class='testimonial__area'
+						style='visibility: hidden;'
+					>
+						<h2 class='testimonial__text' id='longest-quote'></h2>
+						<img id='headshot' style='width: 96px; height: 96px;' />
+						<div>
+							<h2 class='testimonial__text' id='longest-author'>
+							</h2>
+							<h2 class='testimonial__text' id='longest-title'>
+							</h2>
+						</div>
+					</div>
+					<div class='controls'>
+						<div class='controls__arrows'>
+							<button
+								id='controls__left'
+								tabindex='0'
+								class='controls__arrow'
+								><img
+									src='images/arrow--left.svg'
+									loading='lazy'
+									alt='Indicating left'
+								/></button
+							>
+							<button
+								id='controls__right'
+								tabindex='0'
+								class='controls__arrow'
+							>
+								<img
+									src='images/arrow--right.svg'
+									loading='lazy'
+									alt='Indicating right'
+									class='image-3'
+								/>
+							</button>
+						</div>
+
+						<div
+							id='control-indicator-div'
+							class='control-indicators'
+						>
+							<div
+								class='control-indicator'
+								id='indicator-0'
+								style='background-color: rgb(58, 54, 69);'
+							>
+							</div>
+							<div
+								class='control-indicator'
+								id='indicator-1'
+								style='background-color: white;'
+							>
+							</div>
+							<div
+								class='control-indicator'
+								id='indicator-2'
+								style='background-color: rgb(58, 54, 69);'
+							>
+							</div>
+							<div
+								class='control-indicator'
+								id='indicator-3'
+								style='background-color: rgb(58, 54, 69);'
+							>
+							</div>
+							<div
+								class='control-indicator last-indicator'
+								id='indicator-4'
+								style='background-color: rgb(58, 54, 69);'
+							>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='mobile-detector' class='mobile-detector'></div>
 		</div>
 	</section>
+	<script
+		src='/chrisdenais.com/js/morph-slider.js'
+		type='module'
+		is:inline
+		async></script>
 </Base>
