@@ -1,0 +1,116 @@
+---
+import Base from '../../layouts/Base.astro'
+---
+
+<Base>
+	<section>
+		<div class='container'>
+			<h1>
+				Predicting mission readiness of pilots for The U.S. Department
+				of Defense
+			</h1>
+		</div>
+	</section>
+	<section>
+		<div class='container'>
+			<img
+				class='view-project-image'
+				src='/chrisdenais.com/content/projects/data-driven-readiness/first.png'
+				alt='Blank project image'
+				width='1600px'
+				height='1202px'
+			/>
+		</div>
+	</section>
+	<section>
+		<div class='container'>
+			<h1>
+				Air Force pilots conduct post-flight debriefing sessions to
+				assess their performance and mistakes, but analog tools such as
+				whiteboards for analyzing a 3D flying environment have hindered
+				their ability to learn effectively from missions.
+			</h1>
+		</div>
+	</section>
+	<section>
+		<div class='container end'>
+			<img
+				class='view-project-image'
+				src='/chrisdenais.com/content/projects/data-driven-readiness/second.png'
+				alt='Blank project image'
+				width='1600px'
+				height='1202px'
+			/>
+			<img
+				class='view-project-image'
+				src='/chrisdenais.com/content/projects/data-driven-readiness/third.png'
+				alt='Blank project image'
+				width='1600px'
+				height='1202px'
+			/>
+			<img
+				class='view-project-image'
+				src='/chrisdenais.com/content/projects/data-driven-readiness/fourth.png'
+				alt='Blank project image'
+				width='1600px'
+				height='1202px'
+			/>
+			<img
+				class='view-project-image'
+				src='/chrisdenais.com/content/projects/data-driven-readiness/fifth.png'
+				alt='Blank project image'
+				width='1600px'
+				height='1202px'
+			/>
+			<img
+				class='view-project-image'
+				src='/chrisdenais.com/content/projects/data-driven-readiness/sixth.png'
+				alt='Blank project image'
+				width='1600px'
+				height='1202px'
+			/>
+		</div>
+	</section>
+	<section>
+		<div class='container'>
+			<p>Press</p>
+			<a class='h1 link icon'
+				>How AI could help new Air Force pilots avoid costly mistakes</a
+			>
+			<a class='h1 link icon'
+				>Air Force Project Enhances Live F-15E Flight Training with xAPI</a
+			>
+		</div>
+	</section>
+	<section>
+		<div class='container end'>
+			<p>Next case study</p>
+			<a
+				class='h1 link next-case-study'
+				href='/chrisdenais.com/projects/atmos'
+				>Pioneering web3 user experiences for Exo pilots inhabiting
+				planet Atmos
+			</a>
+			<img
+				class='next-preview'
+				width='528px'
+				height='396px'
+				src='/chrisdenais.com/content/projects/atmos/thumbnail.png'
+			/>
+		</div>
+	</section>
+	<script is:inline>
+		const nextCaseStudy = document.querySelector('.next-case-study')
+		const nextPreview = document.querySelector('.next-preview')
+		nextCaseStudy.addEventListener('mousemove', evt => {
+			nextPreview.style.setProperty(
+				'--next-case-study-preview-top',
+				evt.clientY + 'px'
+			)
+			nextPreview.style.setProperty(
+				'--next-case-study-preview-left',
+				evt.clientX + 'px'
+			)
+		})
+	</script>
+</Base>
