@@ -4,142 +4,301 @@ import Base from '../layouts/Base.astro'
 
 <Base>
 	<section>
-		<div class='container end'>
+		<div class='container'>
 			<h1>
 				Let’s talk about your next project, collaborating together, or
 				simply say hello
 			</h1>
-			<div class='visible-form-block w-form'>
-				<form
-					id='contact-form'
-					name='contact-form'
-					data-name='Contact form'
-					aria-label='Contact form'
-				>
-					<div class='input-div'>
-						<label
-							id='visible-name-label'
-							for='visible-name'
-							class='visible-field-label placeholder'>Name</label
-						>
-						<input
-							type='text'
-							class='visible-text-field'
-							maxlength='256'
-							name='name'
-							data-name='Name'
-							placeholder=''
-							id='visible-name'
-							tabindex='0'
-						/>
-						<img
-							loading='lazy'
-							src='images/warning-filled.svg'
-							alt='Indicating invalid form input'
-							class='warning-indicator'
-						/>
-						<div id='name-error-message' class='error-message'>
-							Error message
-						</div>
+		</div>
+	</section>
+	<section>
+		<div class='container end'>
+			<form
+				id='contact-form'
+				name='contact-form'
+				data-name='Contact form'
+				aria-label='Contact form'
+				autocomplete='off'
+			>
+				<div class='form__field'>
+					<label for='name'>Name</label>
+					<input
+						type='text'
+						class='form__input'
+						name='name'
+						data-name='Name'
+						placeholder='​'
+						id='name'
+						tabindex='0'
+						aria-required='true'
+						aria-invalid='false'
+					/>
+					<img
+						loading='lazy'
+						src='images/warning-filled.svg'
+						alt='Indicating invalid form input'
+						class='warning-indicator'
+					/>
+					<div
+						id='name-error-message'
+						class='form__error'
+						aria-errormessage='Indicating invalid form input "name"'
+					>
+						Error message
 					</div>
-					<div id='email-input-div' class='input-div'>
-						<label
-							id='visible-email-label'
-							for='visible-email'
-							class='visible-field-label placeholder'
-							>Email address</label
-						>
-						<input
-							type='email'
-							class='visible-text-field email w-input'
-							maxlength='256'
-							name='email'
-							data-name='Email'
-							placeholder=''
-							id='visible-email'
-							tabindex='0'
-							required=''
-						/>
-						<img
-							loading='lazy'
-							src='images/warning-filled.svg'
-							alt='Indicating invalid form input'
-							class='warning-indicator'
-						/>
-						<div id='email-error-message' class='error-message'>
-							Error message
-						</div>
+				</div>
+				<div class='form__field'>
+					<label for='email'>Email address</label>
+					<input
+						type='email'
+						class='form__input'
+						name='email'
+						data-name='Email'
+						placeholder='​'
+						id='email'
+						tabindex='0'
+					/>
+					<img
+						loading='lazy'
+						src='images/warning-filled.svg'
+						alt='Indicating invalid form input'
+						class='warning-indicator'
+					/>
+					<div
+						id='email-error-message'
+						class='form__error'
+						aria-errormessage='Indicating invalid form input "email"'
+					>
+						Error message
 					</div>
-					<div id='message-input-div' class='input-div'>
-						<label
-							id='visible-message-label'
-							for='visible-message'
-							class='visible-field-label area placeholder'
-							>Your message</label
-						>
-						<textarea
-							class='visible-textarea w-input'
-							maxlength='5000'
-							name='message'
-							data-name='field'
-							placeholder=''
-							id='visible-message'
-							tabindex='0'
-							required=''></textarea>
-						<img
-							loading='lazy'
-							src='images/warning-filled.svg'
-							alt='Indicating invalid form input'
-							class='warning-indicator'
-						/>
-						<div id='message-error-message' class='error-message'>
-							Error message
-						</div>
+				</div>
+				<div class='form__field'>
+					<label for='visible-message'>Your message</label>
+					<textarea
+						class='form__input textarea'
+						maxlength='5000'
+						name='message'
+						data-name='Message'
+						placeholder='​'
+						id='message'
+						tabindex='0'></textarea>
+					<img
+						loading='lazy'
+						src='images/warning-filled.svg'
+						alt='Indicating invalid form input'
+						class='warning-indicator'
+					/>
+					<div
+						id='message-error-message'
+						class='form__error'
+						aria-errormessage='Indicating invalid form input "message"'
+					>
+						Error message
 					</div>
-					<div id='notification' class='form-notification'>
-						<div
+				</div>
+				<div>
+					<div id='notification' class='form__notification'>
+						<img
 							id='notification-emblem'
-							class='form-notification-emblem w-node-ebdfb84f-9538-4cdd-584a-1e5a58a588bb-bb4633d9'
-						>
-						</div>
+							src='/chrisdenais.com/images/check.svg'
+							class='notification__emblem'
+						/>
 						<p
-							id='notification-title'
-							class='form-notification-title w-node-_7242ecc3-90ed-9866-ed3f-98eb434e96c7-bb4633d9'
+							id='notification-message'
+							class='notification__title p1'
 						>
 							Message sent
 						</p>
 						<p
-							id='notification-message'
-							class='form-notification-message w-node-_80e5ef1a-0f6e-7e5b-41a3-443b03bc56de-bb4633d9'
+							id='notification-title'
+							class='notification__message'
 						>
 							Your message has been sent. We’ll get back to you
 							shortly.
 						</p>
 					</div>
-					<div class='column-grid'>
-						<a
-							id='visible-submit-button'
-							tabindex='0'
-							href='#'
-							class='button submit w-button'>Send message</a
-						>
-					</div>
-				</form>
-				<div
-					class='success-message w-form-done'
-					tabindex='-1'
-					role='region'
-					aria-label='Email Form success'
-				>
 				</div>
-				<div
-					class='error-message-3 w-form-fail'
-					tabindex='-1'
-					role='region'
-					aria-label='Email Form failure'
+			</form>
+			<div class='column-grid'>
+				<a
+					id='submit-button'
+					tabindex='0'
+					role='button'
+					type='submit'
+					class='button submit'>Send message</a
 				>
-				</div>
 			</div>
 		</div>
 	</section>
+	<div
+		class='success-message w-form-done'
+		tabindex='-1'
+		role='region'
+		aria-label='Email Form success'
+	>
+	</div>
+	<div
+		class='error-message-3 w-form-fail'
+		tabindex='-1'
+		role='region'
+		aria-label='Email Form failure'
+	>
+	</div>
 </Base>
+
+<script type='module' is:inline async>
+	import joi from 'https://cdn.jsdelivr.net/npm/joi@17.11.0/+esm'
+
+	const name = document.getElementById('name')
+	const email = document.getElementById('email')
+	const message = document.getElementById('message')
+
+	let notification = document.getElementById('notification')
+	let notificationEmblem = document.getElementById('notification-emblem')
+	let notificationMessage = document.getElementById('notification-message')
+	let notificationTitle = document.getElementById('notification-title')
+
+	const form = document.getElementById('contact-form')
+	const submit = document.getElementById('submit-button')
+
+	const schema = joi.object({
+		name: joi.string().required().messages({
+			'string.base': `There was an error with your name`,
+			'string.empty': `Your name is required`,
+			'string.required': `Your name is required`
+		}),
+		email: joi
+			.string()
+			.email({ tlds: { allow: false } })
+			.required()
+			.messages({
+				'string.base': `There was an error with your email address`,
+				'string.email': `Enter a valid email address`,
+				'string.required': `Your email address is required`,
+				'string.empty': `Your email address is required`
+			}),
+		message: joi.string().min(3).max(5000).required().messages({
+			'string.base': `There was an error with your message`,
+			'string.min': `Your message must be at least 3 characters long`,
+			'string.max': `Your message must be less than 5000 characters long`,
+			'string.required': `Your message is required`,
+			'string.empty': `Your message is required`
+		})
+	})
+
+	function onSubmit() {
+		const result = schema.validate({
+			name: name.value || '',
+			email: email.value || '',
+			message: message.value || ''
+		})
+
+		if (result.error) {
+			return
+		}
+
+		function send() {
+			// service_rm0lk0p template_umowtzz dev
+			// service_lb1roui template_7mjogek prod
+			emailjs.sendForm('service_lb1roui', 'template_7mjogek', form).then(
+				function (response) {
+					console.log('Successfully submitted form: ', response)
+					showSuccessState()
+				},
+
+				function (error) {
+					console.log('Failed to submit form: ', error)
+					showErrorState()
+				}
+			)
+		}
+	}
+
+	function onChange() {
+		const nameResult = schema.validate({
+			name: name.value || '',
+			email: 'a@a.a',
+			message: 'aaaa'
+		})
+		const emailResult = schema.validate({
+			email: email.value || '',
+			name: 'aaaa',
+			message: 'aaaa'
+		})
+		const messageResult = schema.validate({
+			message: message.value || '',
+			name: 'aaaa',
+			email: 'aaa@aaa.aaa'
+		})
+		setFieldError('name', nameResult.error)
+		setFieldError('email', emailResult.error)
+		setFieldError('message', messageResult.error)
+	}
+
+	function setFieldError(id, error) {
+		const field = document.getElementById(id)
+
+		if (!error) {
+			field.classList.remove('error')
+			field.setAttribute('aria-invalid', 'false')
+			field.parentElement.lastElementChild.innerHTML = ''
+			return
+		}
+
+		const prettyError = error.toString().replace('ValidationError:', '')
+
+		field.classList.add('error')
+		field.setAttribute('aria-invalid', 'true')
+		field.parentElement.lastElementChild.innerHTML = prettyError
+	}
+
+	function showNotification(error, title, message) {
+		notification.classList.remove('error')
+		notificationEmblem.classList.remove('error')
+		notification.style.display = 'grid'
+
+		if (error) {
+			notification.classList.add('error')
+			notificationEmblem.classList.add('error')
+		}
+
+		notificationTitle.innerText = title
+		notificationMessage.innerText = message
+	}
+
+	function hideNotification() {
+		notification.style.display = 'none'
+	}
+
+	function showErrorState() {
+		setButtonState('def', 'Send message', '', '')
+		showNotification(
+			true,
+			'Internal error',
+			'Please check your connection and try again. If this persists: chrisdenais@gmail.com'
+		)
+	}
+
+	function showSuccessState() {
+		setButtonState('complete', 'Message sent', '', 'sent')
+		setFieldError('name', null)
+		setFieldError('email', null)
+		setFieldError('message', null)
+		showNotification(
+			false,
+			'Message sent',
+			'Your message has been sent. We’ll get back to you shortly.'
+		)
+	}
+
+	function setButtonState(state, copy, remove, style) {
+		submit.innerText = copy
+
+		submit.classList.remove(remove)
+		submit.classList.add(style)
+	}
+
+	name.addEventListener('input', onChange)
+	email.addEventListener('input', onChange)
+	message.addEventListener('input', onChange)
+</script>
