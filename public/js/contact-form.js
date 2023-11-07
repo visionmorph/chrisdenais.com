@@ -77,8 +77,8 @@ function send() {
 }
 
 function onChange(event) {
-	console.log('name', event.target.name)
-	switch (event.target.name) {
+	const hasTarget = !!event
+	switch (hasTarget ? event.target.name : 'all') {
 		case 'name':
 			validateName()
 			break
@@ -126,11 +126,10 @@ function validateAll() {
 		},
 		{ abortEarly: false }
 	)
-	for (field of ['name', 'email', 'message']) {
-		setFieldError(
-			'name',
-			result.error?.details.find(d => d.context.key === 'name')
-		)
+	for (const field of ['name', 'email', 'message']) {
+		const error = result.error?.details.find(d => d.path[0] === field)
+		if (!error) continue
+		setFieldError(field, error.message)
 	}
 }
 
