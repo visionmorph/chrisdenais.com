@@ -12,6 +12,12 @@ let notificationTitle = document.getElementById('notification-title')
 const form = document.getElementById('contact-form')
 const submit = document.getElementById('submit-button')
 
+const passing = {
+	name: 'aaa',
+	email: 'a@a.a',
+	message: 'aaa'
+}
+
 const schema = joi.object({
 	name: joi.string().required().messages({
 		'string.base': `There was an error with your name`,
@@ -52,7 +58,6 @@ function onSubmit() {
 
 	setButtonState('Sending...', null, 'sending')
 	send()
-	console.log('sending')
 }
 
 function send() {
@@ -71,25 +76,62 @@ function send() {
 	)
 }
 
-function onChange() {
+function onChange(event) {
+	console.log('name', event.target.name)
+	switch (event.target.name) {
+		case 'name':
+			validateName()
+			break
+		case 'email':
+			validateEmail()
+			break
+		case 'message':
+			validateMessage()
+			break
+		default:
+			validateAll()
+	}
+}
+
+function validateName() {
 	const nameResult = schema.validate({
-		name: name.value || '',
-		email: 'a@a.a',
-		message: 'aaaa'
-	})
-	const emailResult = schema.validate({
-		email: email.value || '',
-		name: 'aaaa',
-		message: 'aaaa'
-	})
-	const messageResult = schema.validate({
-		message: message.value || '',
-		name: 'aaaa',
-		email: 'aaa@aaa.aaa'
+		...passing,
+		name: name.value || ''
 	})
 	setFieldError('name', nameResult.error)
+}
+
+function validateEmail() {
+	const emailResult = schema.validate({
+		...passing,
+		email: email.value || ''
+	})
 	setFieldError('email', emailResult.error)
+}
+
+function validateMessage() {
+	const messageResult = schema.validate({
+		...passing,
+		message: message.value || ''
+	})
 	setFieldError('message', messageResult.error)
+}
+
+function validateAll() {
+	const result = schema.validate(
+		{
+			name: name.value || '',
+			email: email.value || '',
+			message: message.value || ''
+		},
+		{ abortEarly: false }
+	)
+	for (field of ['name', 'email', 'message']) {
+		setFieldError(
+			'name',
+			result.error?.details.find(d => d.context.key === 'name')
+		)
+	}
 }
 
 function setFieldError(id, error) {

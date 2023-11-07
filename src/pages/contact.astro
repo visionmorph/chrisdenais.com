@@ -19,6 +19,7 @@ import Base from '../layouts/Base.astro'
 				data-name='Contact form'
 				aria-label='Contact form'
 				autocomplete='off'
+				aria-autocomplete='none'
 			>
 				<div class='form__field'>
 					<label for='name'>Name</label>
@@ -35,7 +36,7 @@ import Base from '../layouts/Base.astro'
 					/>
 					<img
 						loading='lazy'
-						src='images/warning-filled.svg'
+						src='/chrisdenais.com/images/warning-filled.svg'
 						alt='Indicating invalid form input'
 						class='warning-indicator'
 					/>
@@ -57,10 +58,12 @@ import Base from '../layouts/Base.astro'
 						placeholder='​'
 						id='email'
 						tabindex='0'
+						aria-required='true'
+						aria-invalid='false'
 					/>
 					<img
 						loading='lazy'
-						src='images/warning-filled.svg'
+						src='/chrisdenais.com/images/warning-filled.svg'
 						alt='Indicating invalid form input'
 						class='warning-indicator'
 					/>
@@ -68,6 +71,8 @@ import Base from '../layouts/Base.astro'
 						id='email-error-message'
 						class='form__error'
 						aria-errormessage='Indicating invalid form input "email"'
+						aria-required='true'
+						aria-invalid='false'
 					>
 						Error message
 					</div>
@@ -81,10 +86,12 @@ import Base from '../layouts/Base.astro'
 						data-name='Message'
 						placeholder='​'
 						id='message'
-						tabindex='0'></textarea>
+						tabindex='0'
+						aria-required='true'
+						aria-invalid='false'></textarea>
 					<img
 						loading='lazy'
-						src='images/warning-filled.svg'
+						src='/chrisdenais.com/images/warning-filled.svg'
 						alt='Indicating invalid form input'
 						class='warning-indicator'
 					/>
