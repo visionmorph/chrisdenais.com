@@ -51,7 +51,7 @@ function onSubmit() {
 	}
 
 	setButtonState('Sending...', null, 'sending')
-	//send()
+	send()
 	console.log('sending')
 }
 
