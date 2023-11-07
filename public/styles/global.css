@@ -120,6 +120,10 @@ section {
 	margin-top: 0rem;
 }
 
+.no-bottom-margin {
+	margin-bottom: 0rem;
+}
+
 .column-grid {
 	display: grid;
 	grid-template-rows: auto;
