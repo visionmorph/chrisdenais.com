@@ -141,6 +141,8 @@ section {
 	outline-offset: -2px;
 	outline: 2px solid rgba(255, 255, 255, 0);
 	margin-top: 2rem;
+	cursor: pointer;
+	user-select: none;
 	transition: background-color 0.125s;
 }
 
@@ -472,6 +474,10 @@ textarea:-webkit-autofill:focus {
 	transform: translate(0rem, -0.75rem);
 }
 
+.footer-button:focus:not(:hover) {
+	background-color: #12161900;
+}
+
 .submit.sent::after {
 	content: '';
 	opacity: 0;
@@ -482,6 +488,11 @@ textarea:-webkit-autofill:focus {
 	position: absolute;
 	right: 1rem;
 	transition: opacity 0.125s ease;
+}
+
+.submit {
+	box-sizing: border-box;
+	margin-top: 0;
 }
 
 .submit.sending::after {
@@ -503,30 +514,20 @@ textarea:-webkit-autofill:focus {
 	transition: opacity 0.125s ease;
 }
 
-.submit {
-	box-sizing: border-box;
-}
-
 .submit:focus:not(:hover) {
 	background-color: white;
-}
-
-.footer-button:focus:not(:hover) {
-	background-color: #12161900;
 }
 
 .submit.sending {
 	color: #4d5358 !important;
 	border: solid 1px #4d5358;
 	cursor: not-allowed;
-	margin-top: 2rem;
 }
 
 .submit.sent {
 	color: #4d5358 !important;
 	border: solid 1px #4d5358;
 	cursor: not-allowed;
-	margin-top: 2rem;
 }
 
 .submit.sent:hover,
@@ -694,7 +695,7 @@ form {
 }
 
 .form__notification {
-	display: grid;
+	display: none;
 	margin-bottom: 1rem;
 	padding-top: 1rem;
 	padding-right: 1rem;
