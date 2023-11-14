@@ -545,7 +545,7 @@ form {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
+	gap: 2.375rem;
 	font-family: inherit;
 }
 
@@ -620,18 +620,11 @@ form {
 .form__field {
 	position: relative;
 	width: 100%;
-	padding-top: 2rem;
 }
 
 .form__field label {
 	display: block;
-	position: absolute;
-	left: 0rem;
-	top: 0.125rem;
-	bottom: auto;
-	right: auto;
-
-	z-index: 75;
+	margin-bottom: 0.375rem;
 
 	color: #fff;
 	font-size: 1.25rem;
@@ -640,26 +633,10 @@ form {
 	opacity: 1;
 
 	pointer-events: none;
-
-	transition: opacity 200ms ease-in;
-	transition-property: top, left, font-size;
-	transition-duration: 200ms, 200ms;
-	transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94),
-		cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .form__field:focus-within label {
 	color: #fff;
-}
-
-.form__field:not(:focus-within):has(.form__input:placeholder-shown) label {
-	top: calc(2rem + 1.0625rem);
-	left: 1rem;
-	font-size: 1.5rem;
-	line-height: 30px;
-	font-weight: 400;
-	color: #697077;
-	opacity: 0;
 }
 
 /* -------------- Input ---------------- */
@@ -773,24 +750,6 @@ textarea:-webkit-autofill:focus {
 	transform: translate(0, 0);
 }
 
-.form__notification {
-	display: none;
-	margin-bottom: 1rem;
-	padding-top: 1rem;
-	padding-right: 1rem;
-	padding-bottom: 1rem;
-	padding-left: 12px;
-	grid-auto-columns: 1fr;
-	grid-column-gap: 1rem;
-	grid-row-gap: 0px;
-	grid-template-columns: 24.5px 1fr;
-	grid-template-rows: auto;
-	border-left-style: solid;
-	border-left-width: 4px;
-	border-left-color: #44bf41;
-	background-color: rgba(68, 191, 65, 0.3);
-}
-
 .warning-indicator {
 	max-width: 2rem;
 	position: absolute;
@@ -805,6 +764,25 @@ textarea:-webkit-autofill:focus {
 }
 
 /* -------------- Form notification ---------------- */
+
+.notification {
+	display: grid;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	padding-top: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 12px;
+	grid-auto-columns: 1fr;
+	grid-column-gap: 1rem;
+	grid-row-gap: 0px;
+	grid-template-columns: 24.5px 1fr;
+	grid-template-rows: auto;
+	border-left-style: solid;
+	border-left-width: 4px;
+	border-left-color: #44bf41;
+	background-color: rgba(68, 191, 65, 0.3);
+}
 
 .notification__emblem {
 	position: relative;

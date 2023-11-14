@@ -104,26 +104,20 @@ import Base from '../layouts/Base.astro'
 						Error message
 					</div>
 				</div>
-				<div>
-					<div
-						id='notification'
-						class='form__notification no-bottom-margin'
-					>
-						<img
-							id='notification-emblem'
-							src='/chrisdenais.com/images/check.svg'
-							class='notification__emblem'
-						/>
-						<p
-							id='notification-message'
-							class='notification__title p1'
-						>
-							Your message has been sent. We’ll get back to you
-							shortly.
-						</p>
-					</div>
-				</div>
 			</form>
+			<div>
+				<div id='notification' class='notification no-bottom-margin'>
+					<img
+						id='notification-emblem'
+						src='/chrisdenais.com/images/check.svg'
+						class='notification__emblem'
+					/>
+					<p id='notification-message' class='notification__title p1'>
+						Your message has been sent. We’ll get back to you
+						shortly.
+					</p>
+				</div>
+			</div>
 			<div class='column-grid' style='gap: 1rem;'>
 				<button
 					id='submit-button'
