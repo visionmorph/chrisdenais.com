@@ -766,7 +766,7 @@ textarea:-webkit-autofill:focus {
 /* -------------- Form notification ---------------- */
 
 .notification {
-	display: grid;
+	display: none;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
 	padding-top: 1rem;
