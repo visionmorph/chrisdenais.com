@@ -724,7 +724,7 @@ textarea:-webkit-autofill:focus {
 
 .form__input:focus,
 .form__input:focus-visible {
-	outline: 3px solid white;
+	outline: 2px solid white;
 	outline-offset: -2px;
 	background: #121619;
 }
