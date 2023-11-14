@@ -752,7 +752,6 @@ textarea:-webkit-autofill:focus {
 	outline: 2px solid #fa4d56;
 	outline-offset: -2px;
 	background-color: #000000;
-	border: none;
 }
 .form__field:has(.form__input.error),
 .form__field:has(.form__input.error) label {
