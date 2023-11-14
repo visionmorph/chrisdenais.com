@@ -616,7 +616,7 @@ form {
 	display: block;
 	position: absolute;
 	left: 0rem;
-	top: -0.75rem;
+	top: 0.125rem;
 	bottom: auto;
 	right: auto;
 
@@ -640,7 +640,7 @@ form {
 }
 
 .form__field:not(:focus-within):has(.form__input:placeholder-shown) label {
-	top: calc(1.25rem + 1.0625rem);
+	top: calc(2rem + 1.0625rem);
 	left: 1rem;
 	font-size: 1.5rem;
 	line-height: 30px;
