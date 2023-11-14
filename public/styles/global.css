@@ -82,10 +82,6 @@ nav {
 	width: 100%;
 	max-width: 100rem;
 
-	position: sticky;
-	top: 0;
-	z-index: 9999;
-
 	mix-blend-mode: exclusion;
 }
 
@@ -117,6 +113,12 @@ section {
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+	z-index: 9999;
 }
 
 .container {
