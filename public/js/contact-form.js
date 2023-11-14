@@ -7,7 +7,6 @@ const message = document.getElementById('message')
 let notification = document.getElementById('notification')
 let notificationEmblem = document.getElementById('notification-emblem')
 let notificationMessage = document.getElementById('notification-message')
-let notificationTitle = document.getElementById('notification-title')
 
 const form = document.getElementById('contact-form')
 const submit = document.getElementById('submit-button')
