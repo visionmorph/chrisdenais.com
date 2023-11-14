@@ -43,23 +43,20 @@ const schema = joi.object({
 })
 
 function onSubmit() {
-	// onChange()
+	onChange()
 
-	// const result = schema.validate({
-	// 	name: name.value || '',
-	// 	email: email.value || '',
-	// 	message: message.value || ''
-	// })
+	const result = schema.validate({
+		name: name.value || '',
+		email: email.value || '',
+		message: message.value || ''
+	})
 
-	// if (result.error) {
-	// 	return
-	// }
+	if (result.error) {
+		return
+	}
 
 	setButtonState('Sending...', true, true)
-	setTimeout(() => {
-		showSuccessState()
-	}, 2000)
-	// send()
+	send()
 }
 
 function send() {
