@@ -726,7 +726,7 @@ textarea:-webkit-autofill:focus {
 
 .form__error {
 	display: block;
-	margin-top: 4px;
+	margin-top: 6px;
 
 	font-family: Inter;
 	font-size: 16px;
@@ -741,9 +741,9 @@ textarea:-webkit-autofill:focus {
 }
 
 .form__input.error {
-	outline: 3px solid #fa4d56;
+	outline: 2px solid #fa4d56;
 	outline-offset: -2px;
-	background-color: #2d0709;
+	background-color: #000000;
 	border: none;
 }
 .form__field:has(.form__input.error),
