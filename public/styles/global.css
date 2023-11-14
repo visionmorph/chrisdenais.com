@@ -495,6 +495,11 @@ button.filled[disabled] {
 	height: 3rem;
 }
 
+.controls__arrow::after {
+	content: '';
+	display: none;
+}
+
 .control-indicators {
 	width: 100%;
 	height: 4px;
