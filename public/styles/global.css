@@ -692,12 +692,16 @@ textarea:-webkit-autofill:focus {
 
 	position: relative;
 	z-index: 50;
+
+	font-family: Inter;
 }
 
 .form__input:is(.textarea) {
 	min-height: 13.75rem;
 	resize: vertical;
 	position: relative;
+
+	font-family: Inter;
 }
 
 .form__input:is(.textarea)::-webkit-resizer {
