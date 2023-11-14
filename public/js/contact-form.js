@@ -44,20 +44,23 @@ const schema = joi.object({
 })
 
 function onSubmit() {
-	onChange()
+	// onChange()
 
-	const result = schema.validate({
-		name: name.value || '',
-		email: email.value || '',
-		message: message.value || ''
-	})
+	// const result = schema.validate({
+	// 	name: name.value || '',
+	// 	email: email.value || '',
+	// 	message: message.value || ''
+	// })
 
-	if (result.error) {
-		return
-	}
+	// if (result.error) {
+	// 	return
+	// }
 
-	setButtonState('Sending...', null, 'sending')
-	send()
+	setButtonState('Sending...', true, true)
+	setTimeout(() => {
+		showSuccessState()
+	}, 2000)
+	// send()
 }
 
 function send() {
@@ -150,7 +153,7 @@ function setFieldError(id, error) {
 	field.parentElement.lastElementChild.innerHTML = prettyError
 }
 
-function showNotification(error, title, message) {
+function showNotification(error, message) {
 	notification.classList.remove('error')
 	notificationEmblem.classList.remove('error')
 	notification.style.display = 'grid'
@@ -160,7 +163,6 @@ function showNotification(error, title, message) {
 		notificationEmblem.classList.add('error')
 	}
 
-	notificationTitle.innerText = title
 	notificationMessage.innerText = message
 }
 
@@ -169,33 +171,32 @@ function hideNotification() {
 }
 
 function showErrorState() {
-	setButtonState('Send message', null, '')
+	setButtonState('Send message', false, false)
 	showNotification(
 		true,
-		'Internal error',
 		'Please check your connection and try again. If this persists: chrisdenais@gmail.com'
 	)
 }
 
 function showSuccessState() {
-	setButtonState('Message sent', 'sending', 'sent')
+	setButtonState('Message sent', false, true)
 	setFieldError('name', null)
 	setFieldError('email', null)
 	setFieldError('message', null)
 	showNotification(
 		false,
-		'Message sent',
 		'Your message has been sent. We’ll get back to you shortly.'
 	)
 }
 
-function setButtonState(text, remove, style) {
+function setButtonState(text, sending, shouldDisable) {
 	submit.innerText = text
 
-	if (!!remove) {
-		submit.classList.remove(remove)
-	}
-	submit.classList.add(style)
+	submit.disabled = shouldDisable
+
+	submit.setAttribute('aria-busy', sending)
+	submit.setAttribute('aria-disabled', shouldDisable)
+	submit.setAttribute('data-sending', sending)
 }
 
 name.addEventListener('input', onChange)

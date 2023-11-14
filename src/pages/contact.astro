@@ -114,14 +114,8 @@ import Base from '../layouts/Base.astro'
 							class='notification__emblem'
 						/>
 						<p
-							id='notification-message'
-							class='notification__title p1'
-						>
-							Message sent
-						</p>
-						<p
 							id='notification-title'
-							class='notification__message'
+							class='notification__title p1'
 						>
 							Your message has been sent. We’ll get back to you
 							shortly.
@@ -129,13 +123,13 @@ import Base from '../layouts/Base.astro'
 					</div>
 				</div>
 			</form>
-			<div class='column-grid'>
-				<a
+			<div class='column-grid' style='gap: 1rem;'>
+				<button
 					id='submit-button'
 					tabindex='0'
 					role='button'
 					type='submit'
-					class='button submit'>Send message</a
+					class='filled submit'>Send message</button
 				>
 			</div>
 		</div>
