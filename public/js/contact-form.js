@@ -7,10 +7,15 @@ const message = document.getElementById('message')
 let notification = document.getElementById('notification')
 let notificationEmblem = document.getElementById('notification-emblem')
 let notificationMessage = document.getElementById('notification-message')
-let notificationTitle = document.getElementById('notification-title')
 
 const form = document.getElementById('contact-form')
 const submit = document.getElementById('submit-button')
+
+const passing = {
+	name: 'aaa',
+	email: 'a@a.a',
+	message: 'aaa'
+}
 
 const schema = joi.object({
 	name: joi.string().required().messages({
@@ -50,9 +55,8 @@ function onSubmit() {
 		return
 	}
 
-	setButtonState('Sending...', null, 'sending')
+	setButtonState('Sending...', true, true)
 	send()
-	console.log('sending')
 }
 
 function send() {
@@ -71,25 +75,61 @@ function send() {
 	)
 }
 
-function onChange() {
+function onChange(event) {
+	const hasTarget = !!event
+	switch (hasTarget ? event.target.name : 'all') {
+		case 'name':
+			validateName()
+			break
+		case 'email':
+			validateEmail()
+			break
+		case 'message':
+			validateMessage()
+			break
+		default:
+			validateAll()
+	}
+}
+
+function validateName() {
 	const nameResult = schema.validate({
-		name: name.value || '',
-		email: 'a@a.a',
-		message: 'aaaa'
-	})
-	const emailResult = schema.validate({
-		email: email.value || '',
-		name: 'aaaa',
-		message: 'aaaa'
-	})
-	const messageResult = schema.validate({
-		message: message.value || '',
-		name: 'aaaa',
-		email: 'aaa@aaa.aaa'
+		...passing,
+		name: name.value || ''
 	})
 	setFieldError('name', nameResult.error)
+}
+
+function validateEmail() {
+	const emailResult = schema.validate({
+		...passing,
+		email: email.value || ''
+	})
 	setFieldError('email', emailResult.error)
+}
+
+function validateMessage() {
+	const messageResult = schema.validate({
+		...passing,
+		message: message.value || ''
+	})
 	setFieldError('message', messageResult.error)
+}
+
+function validateAll() {
+	const result = schema.validate(
+		{
+			name: name.value || '',
+			email: email.value || '',
+			message: message.value || ''
+		},
+		{ abortEarly: false }
+	)
+	for (const field of ['name', 'email', 'message']) {
+		const error = result.error?.details.find(d => d.path[0] === field)
+		if (!error) continue
+		setFieldError(field, error.message)
+	}
 }
 
 function setFieldError(id, error) {
@@ -109,7 +149,7 @@ function setFieldError(id, error) {
 	field.parentElement.lastElementChild.innerHTML = prettyError
 }
 
-function showNotification(error, title, message) {
+function showNotification(error, message) {
 	notification.classList.remove('error')
 	notificationEmblem.classList.remove('error')
 	notification.style.display = 'grid'
@@ -119,7 +159,6 @@ function showNotification(error, title, message) {
 		notificationEmblem.classList.add('error')
 	}
 
-	notificationTitle.innerText = title
 	notificationMessage.innerText = message
 }
 
@@ -128,33 +167,32 @@ function hideNotification() {
 }
 
 function showErrorState() {
-	setButtonState('Send message', null, '')
+	setButtonState('Send message', false, false)
 	showNotification(
 		true,
-		'Internal error',
 		'Please check your connection and try again. If this persists: chrisdenais@gmail.com'
 	)
 }
 
 function showSuccessState() {
-	setButtonState('Message sent', 'sending', 'sent')
+	setButtonState('Message sent', false, true)
 	setFieldError('name', null)
 	setFieldError('email', null)
 	setFieldError('message', null)
 	showNotification(
 		false,
-		'Message sent',
 		'Your message has been sent. We’ll get back to you shortly.'
 	)
 }
 
-function setButtonState(text, remove, style) {
+function setButtonState(text, sending, shouldDisable) {
 	submit.innerText = text
 
-	if (!!remove) {
-		submit.classList.remove(remove)
-	}
-	submit.classList.add(style)
+	submit.disabled = shouldDisable
+
+	submit.setAttribute('aria-busy', sending)
+	submit.setAttribute('aria-disabled', shouldDisable)
+	submit.setAttribute('data-sending', sending)
 }
 
 name.addEventListener('input', onChange)

@@ -101,7 +101,7 @@ import Base from '../layouts/Base.astro'
 	<section>
 		<div class='container end'>
 			<div class='slider'>
-				<div class='canvas-embed'>
+				<div class='canvas'>
 					<svg
 						width='100'
 						height='100'
@@ -143,14 +143,18 @@ import Base from '../layouts/Base.astro'
 							</h2>
 							<img
 								id='headshot'
-								src='/chrisdenais.com/images/chriswilson_headshot.png'
+								src='/images/chriswilson_headshot.png'
+								alt="Headshot image of this quote's author"
+								author'
 							/>
-							<h2 class='testimonial__text p1' id='author'>
-								Chris Wilson
-							</h2>
-							<h2 class='testimonial__text p1' id='title'>
-								CEO, Monarch Enterprises
-							</h2>
+							<div>
+								<h2 class='testimonial__text p1' id='author'>
+									Chris Wilson
+								</h2>
+								<h2 class='testimonial__text p1' id='title'>
+									CEO, Monarch Enterprises
+								</h2>
+							</div>
 						</div>
 						<div
 							id='testimonial-container'
@@ -184,7 +188,7 @@ import Base from '../layouts/Base.astro'
 								tabindex='0'
 								class='controls__arrow'
 								><img
-									src='images/arrow--left.svg'
+									src='/images/arrow--left.svg'
 									loading='lazy'
 									alt='Indicating left'
 								/></button
@@ -195,7 +199,7 @@ import Base from '../layouts/Base.astro'
 								class='controls__arrow'
 							>
 								<img
-									src='images/arrow--right.svg'
+									src='/images/arrow--right.svg'
 									loading='lazy'
 									alt='Indicating right'
 									class='image-3'
@@ -207,36 +211,6 @@ import Base from '../layouts/Base.astro'
 							id='control-indicator-div'
 							class='control-indicators'
 						>
-							<div
-								class='control-indicator'
-								id='indicator-0'
-								style='background-color: rgb(58, 54, 69);'
-							>
-							</div>
-							<div
-								class='control-indicator'
-								id='indicator-1'
-								style='background-color: white;'
-							>
-							</div>
-							<div
-								class='control-indicator'
-								id='indicator-2'
-								style='background-color: rgb(58, 54, 69);'
-							>
-							</div>
-							<div
-								class='control-indicator'
-								id='indicator-3'
-								style='background-color: rgb(58, 54, 69);'
-							>
-							</div>
-							<div
-								class='control-indicator last-indicator'
-								id='indicator-4'
-								style='background-color: rgb(58, 54, 69);'
-							>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -244,9 +218,5 @@ import Base from '../layouts/Base.astro'
 			<div id='mobile-detector' class='mobile-detector'></div>
 		</div>
 	</section>
-	<script
-		src='/chrisdenais.com/js/morph-slider.js'
-		type='module'
-		is:inline
-		async></script>
+	<script src='/js/morph-slider.js' type='module' is:inline async></script>
 </Base>

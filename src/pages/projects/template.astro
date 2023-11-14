@@ -15,7 +15,7 @@ import Base from '../../layouts/Base.astro'
 		<div class='container'>
 			<img
 				class='view-project-image'
-				src='/chrisdenais.com/images/blank.webp'
+				src='/images/blank.webp'
 				alt='Blank project image'
 				width='1600px'
 				height='1202px'
@@ -36,21 +36,21 @@ import Base from '../../layouts/Base.astro'
 		<div class='container end'>
 			<img
 				class='view-project-image'
-				src='/chrisdenais.com/images/blank.webp'
+				src='/images/blank.webp'
 				alt='Blank project image'
 				width='1600px'
 				height='1202px'
 			/>
 			<img
 				class='view-project-image'
-				src='/chrisdenais.com/images/blank.webp'
+				src='/images/blank.webp'
 				alt='Blank project image'
 				width='1600px'
 				height='1202px'
 			/>
 			<img
 				class='view-project-image'
-				src='/chrisdenais.com/images/blank.webp'
+				src='/images/blank.webp'
 				alt='Blank project image'
 				width='1600px'
 				height='1202px'
@@ -74,7 +74,12 @@ import Base from '../../layouts/Base.astro'
 			<a class='h1 link next-case-study'
 				>Bridging the talent gap for youth sports with SkillMasters</a
 			>
-			<img class='next-preview' width='528px' height='396px' src='/chrisdenais.com/images/skills.png' />
+			<img
+				class='next-preview'
+				width='528px'
+				height='396px'
+				src='/images/skills.png'
+			/>
 		</div>
 	</section>
 	<script is:inline>
@@ -86,9 +91,9 @@ import Base from '../../layouts/Base.astro'
 				evt.clientY + 'px'
 			)
 			nextPreview.style.setProperty(
-						'--next-case-study-preview-left',
-					evt.clientX + 'px'
-				)
+				'--next-case-study-preview-left',
+				evt.clientX + 'px'
+			)
 		})
 	</script>
 </Base>

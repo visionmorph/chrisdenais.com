@@ -19,6 +19,7 @@ import Base from '../layouts/Base.astro'
 				data-name='Contact form'
 				aria-label='Contact form'
 				autocomplete='off'
+				aria-autocomplete='none'
 			>
 				<div class='form__field'>
 					<label for='name'>Name</label>
@@ -27,7 +28,7 @@ import Base from '../layouts/Base.astro'
 						class='form__input'
 						name='name'
 						data-name='Name'
-						placeholder='​'
+						placeholder='John Doe'
 						id='name'
 						tabindex='0'
 						aria-required='true'
@@ -35,7 +36,7 @@ import Base from '../layouts/Base.astro'
 					/>
 					<img
 						loading='lazy'
-						src='images/warning-filled.svg'
+						src='/images/warning-filled.svg'
 						alt='Indicating invalid form input'
 						class='warning-indicator'
 					/>
@@ -54,13 +55,15 @@ import Base from '../layouts/Base.astro'
 						class='form__input'
 						name='email'
 						data-name='Email'
-						placeholder='​'
+						placeholder='name@mail.com'
 						id='email'
 						tabindex='0'
+						aria-required='true'
+						aria-invalid='false'
 					/>
 					<img
 						loading='lazy'
-						src='images/warning-filled.svg'
+						src='/images/warning-filled.svg'
 						alt='Indicating invalid form input'
 						class='warning-indicator'
 					/>
@@ -68,6 +71,8 @@ import Base from '../layouts/Base.astro'
 						id='email-error-message'
 						class='form__error'
 						aria-errormessage='Indicating invalid form input "email"'
+						aria-required='true'
+						aria-invalid='false'
 					>
 						Error message
 					</div>
@@ -79,12 +84,14 @@ import Base from '../layouts/Base.astro'
 						maxlength='5000'
 						name='message'
 						data-name='Message'
-						placeholder='​'
+						placeholder='Enter a message'
 						id='message'
-						tabindex='0'></textarea>
+						tabindex='0'
+						aria-required='true'
+						aria-invalid='false'></textarea>
 					<img
 						loading='lazy'
-						src='images/warning-filled.svg'
+						src='/images/warning-filled.svg'
 						alt='Indicating invalid form input'
 						class='warning-indicator'
 					/>
@@ -103,18 +110,12 @@ import Base from '../layouts/Base.astro'
 					>
 						<img
 							id='notification-emblem'
-							src='/chrisdenais.com/images/check.svg'
+							src='/images/check.svg'
 							class='notification__emblem'
 						/>
 						<p
 							id='notification-message'
 							class='notification__title p1'
-						>
-							Message sent
-						</p>
-						<p
-							id='notification-title'
-							class='notification__message'
 						>
 							Your message has been sent. We’ll get back to you
 							shortly.
@@ -122,13 +123,13 @@ import Base from '../layouts/Base.astro'
 					</div>
 				</div>
 			</form>
-			<div class='column-grid'>
-				<a
+			<div class='column-grid' style='gap: 1rem;'>
+				<button
 					id='submit-button'
 					tabindex='0'
 					role='button'
 					type='submit'
-					class='button submit'>Send message</a
+					class='filled submit'>Send message</button
 				>
 			</div>
 		</div>
@@ -143,5 +144,4 @@ import Base from '../layouts/Base.astro'
 		emailjs.init('2rnRruRxFJi9LkaB-')
 	})()
 </script>
-<script src='/chrisdenais.com/js/contact-form.js' type='module' is:inline async
-></script>
+<script src='/js/contact-form.js' type='module' is:inline async></script>
