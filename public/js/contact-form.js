@@ -138,6 +138,9 @@ function setFieldError(id, error) {
 	if (!error) {
 		field.classList.remove('error')
 		field.setAttribute('aria-invalid', 'false')
+		field.parentElement.lastElementChild.style.display = 'none'
+		field.parentElement.lastElementChild.style.transform =
+			'translate(0, -2rem)'
 		field.parentElement.lastElementChild.innerHTML = ''
 		return
 	}
@@ -146,6 +149,8 @@ function setFieldError(id, error) {
 
 	field.classList.add('error')
 	field.setAttribute('aria-invalid', 'true')
+	field.parentElement.lastElementChild.style.display = 'block'
+	field.parentElement.lastElementChild.style.transform = 'translate(0, 0rem)'
 	field.parentElement.lastElementChild.innerHTML = prettyError
 }
 
@@ -195,7 +200,7 @@ function setButtonState(text, sending, shouldDisable) {
 	submit.setAttribute('data-sending', sending)
 }
 
-name.addEventListener('input', onChange)
-email.addEventListener('input', onChange)
-message.addEventListener('input', onChange)
+name.addEventListener('change', onChange)
+email.addEventListener('change', onChange)
+message.addEventListener('change', onChange)
 submit.addEventListener('click', onSubmit)
