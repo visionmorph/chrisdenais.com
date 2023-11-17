@@ -728,11 +728,14 @@ textarea:-webkit-autofill:focus {
 .form__input.error {
 	outline: 2px solid #fa4d56;
 	outline-offset: -2px;
-	background: #121619;
 }
 
 .form__field:has(.form__input.error) {
 	color: #fa4d56;
+}
+
+.form__field:focus-within .form__input.error {
+	background: #121619;
 }
 
 .form__field:has(.form__input.error) .warning-indicator {
