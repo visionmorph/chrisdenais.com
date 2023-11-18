@@ -81,8 +81,9 @@ nav {
 	margin-top: 9px;
 	width: 100%;
 	max-width: 100rem;
-
+	overflow: visible;
 	mix-blend-mode: exclusion;
+	padding-bottom: 0.125rem;
 }
 
 /* -------------- Footer ---------------- */
@@ -137,6 +138,10 @@ section {
 	margin-bottom: 10rem;
 }
 
+.container.extra-pb {
+	padding-bottom: 0.125rem;
+}
+
 .no-top-margin {
 	margin-top: 0rem;
 }
@@ -151,7 +156,19 @@ section {
 
 .underscore {
 	text-decoration: underline;
-	text-underline-offset: 0.5rem;
+	text-underline-position: under;
+}
+
+.underscore-offset-1 {
+	text-underline-offset: 1px;
+}
+
+.underscore-offset-2 {
+	text-underline-offset: 1px;
+}
+
+.underscore-offset-3 {
+	text-underline-offset: 1px;
 }
 
 .column-grid {
@@ -263,12 +280,13 @@ button.filled[disabled] {
 	color: var(--White, #fff);
 	display: block;
 	cursor: pointer;
+	overflow: visible;
 }
 
 .link:hover {
 	color: #fff;
 	text-decoration: underline;
-	text-underline-offset: 0.25rem;
+	text-underline-position: under;
 }
 
 .link:active {
@@ -462,6 +480,16 @@ button.filled[disabled] {
 .testimonial__text {
 	opacity: 1;
 	transition: opacity 2s ease;
+}
+
+.testimonial__text.hanging::before {
+	content: '“';
+	position: absolute;
+	left: -1rem;
+}
+
+.testimonial__text.hanging::after {
+	content: '”';
 }
 
 /* -------------- Testimonial controls ---------------- */
@@ -679,6 +707,11 @@ textarea:-webkit-autofill:focus {
 	z-index: 50;
 
 	font-family: Inter;
+
+	transition: outline 150ms linear;
+	transition-property: outline, background;
+	transition-duration: 150ms;
+	transition-timing-function: linear;
 }
 
 .form__input:is(.textarea) {
@@ -882,7 +915,7 @@ textarea:-webkit-autofill:focus {
 		font-size: 1.5rem;
 		font-style: normal;
 		font-weight: 400;
-		line-height: 1.22222; /* 122.222% */
+		line-height: 44px; /* 122.222% */
 		letter-spacing: -0.36px;
 	}
 
