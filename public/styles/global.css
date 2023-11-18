@@ -766,6 +766,10 @@ textarea:-webkit-autofill:focus {
 	outline-offset: -2px;
 }
 
+.form__input.error:focus-visible {
+	outline-color: white;
+}
+
 .form__field:has(.form__input.error) {
 	color: #fa4d56;
 }
