@@ -138,10 +138,11 @@ function setFieldError(id, error) {
 	if (!error) {
 		field.classList.remove('error')
 		field.setAttribute('aria-invalid', 'false')
-		field.parentElement.lastElementChild.style.display = 'none'
-		field.parentElement.lastElementChild.style.transform =
-			'translate(0, -2rem)'
-		field.parentElement.lastElementChild.innerHTML = ''
+		field.parentElement.lastElementChild.setAttribute(
+			'data-visible',
+			'false'
+		)
+		field.parentElement.lastElementChild.innerHTML = '​'
 		return
 	}
 
@@ -149,8 +150,7 @@ function setFieldError(id, error) {
 
 	field.classList.add('error')
 	field.setAttribute('aria-invalid', 'true')
-	field.parentElement.lastElementChild.style.display = 'block'
-	field.parentElement.lastElementChild.style.transform = 'translate(0, 0rem)'
+	field.parentElement.lastElementChild.setAttribute('data-visible', 'true')
 	field.parentElement.lastElementChild.innerHTML = prettyError
 }
 

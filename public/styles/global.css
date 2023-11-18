@@ -710,8 +710,8 @@ textarea:-webkit-autofill:focus {
 /* -------------- Form errors ---------------- */
 
 .form__error {
-	display: none;
-	margin-top: 6px;
+	display: block;
+	margin-top: calc(-2rem + 6px);
 
 	font-family: Inter;
 	font-size: 20px;
@@ -721,8 +721,11 @@ textarea:-webkit-autofill:focus {
 
 	position: relative;
 
-	transform: translate(0, -2rem);
-	transition: transform 0.3s;
+	transition: margin-top 0.3s;
+}
+
+.form__error[data-visible='true'] {
+	margin-top: 6px;
 }
 
 .form__input.error {
