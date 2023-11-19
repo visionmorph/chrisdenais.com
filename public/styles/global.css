@@ -155,20 +155,9 @@ section {
 }
 
 .underscore {
-	text-decoration: underline;
-	text-underline-position: under;
-}
-
-.underscore-offset-1 {
-	text-underline-offset: 1px;
-}
-
-.underscore-offset-2 {
-	text-underline-offset: 1px;
-}
-
-.underscore-offset-3 {
-	text-underline-offset: 1px;
+	text-decoration-line: underline;
+	text-decoration-thickness: 0.0625em;
+	text-underline-offset: 0.125em;
 }
 
 .column-grid {
@@ -212,9 +201,8 @@ button {
 
 button:not([disabled])::after {
 	content: '->';
-	min-width: 23px;
+	min-width: 27px;
 	text-wrap: none;
-	word-wrap: none;
 }
 
 button:hover {
@@ -285,8 +273,9 @@ button.filled[disabled] {
 
 .link:hover {
 	color: #fff;
-	text-decoration: underline;
-	text-underline-position: under;
+	text-decoration-line: underline;
+	text-decoration-thickness: 0.0625em;
+	text-underline-offset: 0.125em;
 }
 
 .link:active {
@@ -602,6 +591,12 @@ form {
 	transition: opacity 0.125s ease;
 }
 
+.submit[data-sending='false'][disabled]::after {
+	content: '->';
+	min-width: 27px;
+	text-wrap: none;
+}
+
 @-webkit-keyframes rotating {
 	/* Safari and Chrome */
 	from {
@@ -709,7 +704,7 @@ textarea:-webkit-autofill:focus {
 	font-family: Inter;
 
 	transition: outline 150ms linear;
-	transition-property: outline, background;
+	transition-property: outline-color;
 	transition-duration: 150ms;
 	transition-timing-function: linear;
 }
@@ -803,6 +798,8 @@ textarea:-webkit-autofill:focus {
 
 .notification {
 	display: none;
+	width: 100%;
+	box-sizing: border-box;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
 	padding-top: 1rem;
@@ -820,8 +817,14 @@ textarea:-webkit-autofill:focus {
 	background-color: rgba(68, 191, 65, 0.3);
 }
 
+.notification-wrapper {
+	width: 100%;
+	box-sizing: border-box;
+}
+
 .notification__emblem {
 	position: relative;
+	top: 0.125rem;
 	width: 24.5px;
 	object-fit: contain;
 
