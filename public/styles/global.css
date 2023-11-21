@@ -24,7 +24,7 @@ a {
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 30px; /* 125% */
+	line-height: 1.25; /* 125% */
 }
 
 h1,
@@ -46,7 +46,7 @@ h1,
 	font-size: 64px;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 80px; /* 125% */
+	line-height: 1.25; /* 125% */
 	letter-spacing: -0.96px;
 }
 
@@ -57,7 +57,7 @@ h2,
 	font-size: 36px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 44px; /* 122.222% */
+	line-height: 1.22222; /* 122.222% */
 	letter-spacing: -0.36px;
 }
 
@@ -68,7 +68,7 @@ p,
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 30px; /* 125% */
+	line-height: 1.25; /* 125% */
 }
 
 /* -------------- Nav ---------------- */
@@ -336,12 +336,14 @@ button.filled[disabled] {
 
 .feature {
 	display: flex;
+	width: 100%;
 }
 
 .feature__caption {
 	display: flex;
 	align-items: center;
 	width: 940px;
+	max-width: 100%;
 }
 
 .feature__graphic {
@@ -902,6 +904,45 @@ textarea:-webkit-autofill:focus {
 		line-height: 1.25; /* 125% */
 		letter-spacing: -0.96px;
 	}
+
+	h2,
+	.h2 {
+		/* H2-mobile */
+		font-family: Inter;
+		font-size: 2.25rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.25;
+		letter-spacing: -0.36px;
+	}
+
+	/* -------------- Layouts ---------------- */
+
+	.column-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	section {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	/* -------------- Clients ---------------- */
+
+	.clients {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* -------------- Form errors ---------------- */
+
+	.error .warning-indicator {
+		transform: translate(0rem, 28px);
+		max-width: 1.5rem;
+		left: 0rem;
+		bottom: 0rem;
+		top: auto;
+		right: auto;
+	}
 }
 
 @media only screen and (max-width: 478px) {
@@ -925,7 +966,7 @@ textarea:-webkit-autofill:focus {
 		font-size: 1.5rem;
 		font-style: normal;
 		font-weight: 400;
-		line-height: 44px; /* 122.222% */
+		line-height: 1.25;
 		letter-spacing: -0.36px;
 	}
 
@@ -937,25 +978,16 @@ textarea:-webkit-autofill:focus {
 	}
 
 	.column-grid {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 	}
 
 	/* -------------- Clients ---------------- */
 
 	.clients {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 	}
 
 	/* -------------- Form errors ---------------- */
-
-	.error .warning-indicator {
-		transform: translate(0rem, 28px);
-		max-width: 1.5rem;
-		left: 0rem;
-		bottom: 0rem;
-		top: auto;
-		right: auto;
-	}
 
 	.error .visible-text-field,
 	.error .visible-textarea {
@@ -964,5 +996,11 @@ textarea:-webkit-autofill:focus {
 
 	.error .error-message {
 		transform: translate(28px, 0rem);
+	}
+
+	/* -------------- Footer ---------------- */
+
+	.footer__menu {
+		flex-direction: column;
 	}
 }
