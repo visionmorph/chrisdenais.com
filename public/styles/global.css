@@ -157,7 +157,7 @@ section {
 .underscore {
 	text-decoration-line: underline;
 	text-decoration-thickness: 0.0625em;
-	text-underline-offset: 0.125em;
+	text-underline-offset: 0.15625em;
 }
 
 .column-grid {
@@ -275,7 +275,7 @@ button.filled[disabled] {
 	color: #fff;
 	text-decoration-line: underline;
 	text-decoration-thickness: 0.0625em;
-	text-underline-offset: 0.125em;
+	text-underline-offset: 0.15625em;
 }
 
 .link:active {
