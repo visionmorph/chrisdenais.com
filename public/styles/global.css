@@ -688,7 +688,10 @@ textarea:-webkit-autofill:focus {
 
 	border: none;
 	outline: none;
+	outline-width: 2px;
+	outline-style: solid;
 	outline-offset: -2px;
+	outline-color: transparent;
 	border: 1px solid #a2a9b0;
 	background: #000000;
 	border-radius: 0;
