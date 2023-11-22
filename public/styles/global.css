@@ -218,10 +218,12 @@ button:active {
 	outline: 2px solid #000;
 }
 
-button:focus {
+button:focus,
+button:focus-visible {
 	outline-offset: -4px;
 	color: #000;
 	outline: 2px solid #000;
+	background-color: #fff;
 }
 
 button:focus-visible:not(:hover) {
