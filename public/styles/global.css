@@ -102,6 +102,10 @@ footer {
 	gap: 32px;
 }
 
+.footer__contact {
+	max-width: 100%;
+}
+
 .footer__note {
 	margin-bottom: 2rem;
 }
@@ -167,6 +171,10 @@ section {
 	grid-column-gap: 0rem;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	width: 100%;
+}
+
+.email_link {
+	/* word-wrap: break-word; */
 }
 
 /* -------------- Button base ---------------- */
@@ -339,6 +347,7 @@ button.filled[disabled] {
 .feature {
 	display: flex;
 	width: 100%;
+	margin-bottom: 10rem;
 }
 
 .feature__caption {
@@ -349,15 +358,12 @@ button.filled[disabled] {
 }
 
 .feature__graphic {
-	height: 1080px;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.52%, #000 93.75%),
-		url(../images/graphic.webp), lightgray 50% / cover no-repeat;
-	width: 1080px;
 	outline: 4px solid black;
 	outline-offset: -2px;
+	max-width: 1080px;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1024px) {
 	.feature {
 		flex-direction: column;
 	}
@@ -745,7 +751,7 @@ textarea:-webkit-autofill:focus {
 /* -------------- Form errors ---------------- */
 
 .form__error {
-	display: block;
+	display: none;
 	margin-top: calc(-2rem + 6px);
 
 	font-family: Inter;
@@ -760,6 +766,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .form__error[data-visible='true'] {
+	display: block;
 	margin-top: 6px;
 }
 
@@ -869,6 +876,10 @@ textarea:-webkit-autofill:focus {
 		flex-wrap: wrap;
 	}
 
+	.testimonial-text {
+		max-width: 100%;
+	}
+
 	.testimonial__area {
 		max-width: 100%;
 	}
@@ -880,7 +891,7 @@ textarea:-webkit-autofill:focus {
 	/* -------------- Testimonial controls ---------------- */
 
 	.controls {
-		margin-top: 6rem;
+		margin-top: 3rem;
 	}
 }
 
@@ -945,6 +956,16 @@ textarea:-webkit-autofill:focus {
 		top: auto;
 		right: auto;
 	}
+
+	.mobile-detector {
+		display: none;
+	}
+
+	/* -------------- Footer ---------------- */
+
+	.footer__menu {
+		flex-direction: column;
+	}
 }
 
 @media only screen and (max-width: 478px) {
@@ -970,6 +991,12 @@ textarea:-webkit-autofill:focus {
 		font-weight: 400;
 		line-height: 1.25;
 		letter-spacing: -0.36px;
+	}
+
+	.testimonial__text.hanging::before {
+		content: '“';
+		position: absolute;
+		left: -0.5rem;
 	}
 
 	/* -------------- Layout ---------------- */
@@ -998,11 +1025,5 @@ textarea:-webkit-autofill:focus {
 
 	.error .error-message {
 		transform: translate(28px, 0rem);
-	}
-
-	/* -------------- Footer ---------------- */
-
-	.footer__menu {
-		flex-direction: column;
 	}
 }
