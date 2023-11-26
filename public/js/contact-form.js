@@ -11,6 +11,8 @@ let notificationMessage = document.getElementById('notification-message')
 const form = document.getElementById('contact-form')
 const submit = document.getElementById('submit-button')
 
+const onMobile = window.innerWidth < 768
+
 const passing = {
 	name: 'aaa',
 	email: 'a@a.a',
@@ -204,3 +206,7 @@ name.addEventListener('change', onChange)
 email.addEventListener('change', onChange)
 message.addEventListener('change', onChange)
 submit.addEventListener('click', onSubmit)
+
+if (onMobile) {
+	name.blur()
+}
