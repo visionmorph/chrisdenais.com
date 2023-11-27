@@ -13,17 +13,16 @@ import Base from '../../layouts/Base.astro'
 	</section>
 	<section>
 		<div class='container'>
-			<video
-				class='view-project-video'
-				autoplay
-				loop
-				muted
-				playsinline
-				width='1600px'
-				height='1138px'
-				style='border: 2px solid var(--Grey-80, #343a3f); height: auto;'
-				src='/content/projects/data-driven-readiness/animation.mp4'
-			></video>
+			<div class='view-project-video'>
+				<video
+					autoplay
+					loop
+					muted
+					playsinline
+					width='1600px'
+					height='1200px'
+					src='/content/projects/dod/animation.mp4'></video>
+			</div>
 		</div>
 	</section>
 	<section>
@@ -37,38 +36,38 @@ import Base from '../../layouts/Base.astro'
 		</div>
 	</section>
 	<section>
-		<div class='container end'>
+		<div class='container compact end'>
 			<img
 				class='view-project-image'
-				src='/content/projects/data-driven-readiness/second.png'
+				src='/content/projects/dod/01.png'
 				alt='Sortie #003 metadata'
 				width='1600px'
 				height='1202px'
 			/>
 			<img
 				class='view-project-image'
-				src='/content/projects/data-driven-readiness/third.png'
+				src='/content/projects/dod/02.png'
 				alt='Joint training FED-003 simulation'
 				width='1600px'
 				height='1202px'
 			/>
 			<img
 				class='view-project-image'
-				src='/content/projects/data-driven-readiness/fourth.png'
+				src='/content/projects/dod/03.png'
 				alt='Joint training FED-003 maps'
 				width='1600px'
 				height='1202px'
 			/>
 			<img
 				class='view-project-image'
-				src='/content/projects/data-driven-readiness/fifth.png'
+				src='/content/projects/dod/04.png'
 				alt='Dashboard'
 				width='1600px'
 				height='1202px'
 			/>
 			<img
 				class='view-project-image'
-				src='/content/projects/data-driven-readiness/sixth.png'
+				src='/content/projects/dod/05.png'
 				alt='333rd Fighter Squadron / John Smith profile'
 				width='1600px'
 				height='1202px'
@@ -76,20 +75,23 @@ import Base from '../../layouts/Base.astro'
 		</div>
 	</section>
 	<section>
-		<div class='container'>
+		<div class='container extra-pb'>
 			<p>Press</p>
 			<a
-				class='h1 link icon'
+				class='h1 link underscore-offset-2 icon'
+				target='_blank'
 				href='https://www.popsci.com/technology/air-force-artificial-intelligence-pi'
 				>How AI could help new Air Force pilots avoid costly mistakes</a
 			>
 			<a
-				class='h1 link icon'
+				class='h1 link underscore-offset-2 icon'
+				target='_blank'
 				href='https://adlnet.gov/news/2022/04/11/F15-xAPI-Training/'
 				>Air Force Project Enhances Live F-15E Flight Training with xAPI</a
 			>
 			<a
-				class='h1 link icon'
+				class='h1 link underscore-offset-2 icon'
+				target='_blank'
 				href='https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/'
 				>Air Force introduces AI to training program</a
 			>
@@ -98,7 +100,9 @@ import Base from '../../layouts/Base.astro'
 	<section>
 		<div class='container end'>
 			<p>Next case study</p>
-			<a class='h1 link next-case-study' href='/projects/atmos'
+			<a
+				class='h1 link underscore-offset-2 next-case-study'
+				href='/projects/atmos'
 				>Pioneering web3 user experiences for Exo pilots inhabiting
 				planet Atmos
 			</a>

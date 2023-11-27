@@ -12,24 +12,27 @@ import Base from '../layouts/Base.astro'
 		</div>
 	</section>
 	<section>
-		<a class='container' href='/projects/data-driven-readiness'>
-			<video
-				class='view-project-video'
-				autoplay
-				loop
-				muted
-				playsinline
-				width='1600px'
-				height='1138px'
-				style='border: 2px solid var(--Grey-80, #343a3f); height: auto;'
-				src='content/projects/data-driven-readiness/animation.mp4'
-			></video>
+		<a class='container' href='/projects/dod'>
+			<div class='view-project-video'>
+				<video
+					autoplay
+					loop
+					muted
+					playsinline
+					width='1600px'
+					height='1200px'
+					src='/content/projects/dod/animation.mp4'></video>
+			</div>
 			<h1>
 				Predicting mission readiness of pilots for The U.S. Department
 				of Defense
 			</h1>
 			<div class='column-grid'>
-				<button class='button' tabindex='0' class='no-margin'>
+				<button
+					class='button no-top-margin'
+					tabindex='0'
+					class='no-margin'
+				>
 					View case study
 				</button>
 			</div>
@@ -39,7 +42,7 @@ import Base from '../layouts/Base.astro'
 		<a class='container' href='/projects/atmos'>
 			<img
 				class='view-project-image'
-				src='/content/projects/atmos/first.png'
+				src='/content/projects/atmos/01.png'
 				alt='COWBOYCYBORG44'
 				width='1600px'
 				height='1202px'
@@ -49,7 +52,11 @@ import Base from '../layouts/Base.astro'
 				planet Atmos
 			</h1>
 			<div class='column-grid'>
-				<button class='button' tabindex='0' class='no-margin'>
+				<button
+					class='button no-top-margin'
+					tabindex='0'
+					class='no-margin'
+				>
 					View case study
 				</button>
 			</div>
@@ -58,15 +65,19 @@ import Base from '../layouts/Base.astro'
 	<section>
 		<a class='container' href='/projects/skillmasters'
 			><img
-				class='view-project-image'
-				src='/content/projects/skillmasters/first.png'
+				class='view-project-image borderless'
+				src='/content/projects/skillmasters/01.png'
 				alt='BRIDGING TALENT THE GAP FOR YOUTH SPORTS'
 				width='1600px'
 				height='1202px'
 			/>
 			<h1>Bridging the talent gap for youth sports with SkillMasters</h1>
 			<div class='column-grid'>
-				<button class='button' tabindex='0' class='no-margin'>
+				<button
+					class='button no-top-margin'
+					tabindex='0'
+					class='no-margin'
+				>
 					View case study
 				</button>
 			</div>
@@ -86,7 +97,9 @@ import Base from '../layouts/Base.astro'
 						</h2>
 					</div>
 				</div>
-				<div class='feature__graphic'></div>
+				<div class='feature__graphic'>
+					<img width='100%' src='/images/graphic.webp' />
+				</div>
 			</div>
 		</div>
 	</section>

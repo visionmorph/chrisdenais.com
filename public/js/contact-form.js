@@ -11,6 +11,8 @@ let notificationMessage = document.getElementById('notification-message')
 const form = document.getElementById('contact-form')
 const submit = document.getElementById('submit-button')
 
+const onMobile = window.innerWidth < 768
+
 const passing = {
 	name: 'aaa',
 	email: 'a@a.a',
@@ -138,7 +140,11 @@ function setFieldError(id, error) {
 	if (!error) {
 		field.classList.remove('error')
 		field.setAttribute('aria-invalid', 'false')
-		field.parentElement.lastElementChild.innerHTML = ''
+		field.parentElement.lastElementChild.setAttribute(
+			'data-visible',
+			'false'
+		)
+		field.parentElement.lastElementChild.innerHTML = '​'
 		return
 	}
 
@@ -146,6 +152,7 @@ function setFieldError(id, error) {
 
 	field.classList.add('error')
 	field.setAttribute('aria-invalid', 'true')
+	field.parentElement.lastElementChild.setAttribute('data-visible', 'true')
 	field.parentElement.lastElementChild.innerHTML = prettyError
 }
 
@@ -195,7 +202,11 @@ function setButtonState(text, sending, shouldDisable) {
 	submit.setAttribute('data-sending', sending)
 }
 
-name.addEventListener('input', onChange)
-email.addEventListener('input', onChange)
-message.addEventListener('input', onChange)
+name.addEventListener('change', onChange)
+email.addEventListener('change', onChange)
+message.addEventListener('change', onChange)
 submit.addEventListener('click', onSubmit)
+
+if (onMobile) {
+	name.blur()
+}

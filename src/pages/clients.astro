@@ -130,16 +130,16 @@ import Base from '../layouts/Base.astro'
 					</svg>
 				</div>
 				<div id='testimonial-area' class='testimonial'>
-					<div>
+					<div class='testimonial-text'>
 						<div
 							id='testimonial-container'
 							class='testimonial__area'
 							style='position: absolute;'
 						>
-							<h2 class='testimonial__text' id='quote'>
-								"I felt comfortable Chris understood the issue
+							<h2 class='testimonial__text hanging' id='quote'>
+								I felt comfortable Chris understood the issue
 								then giving him the chance to diagnose it pretty
-								much confirmed it."
+								much confirmed it.
 							</h2>
 							<img
 								id='headshot'
@@ -161,7 +161,10 @@ import Base from '../layouts/Base.astro'
 							class='testimonial__area'
 							style='visibility: hidden;'
 						>
-							<h2 class='testimonial__text' id='longest-quote'>
+							<h2
+								class='testimonial__text hanging'
+								id='longest-quote'
+							>
 							</h2>
 							<img
 								id='headshot'
@@ -183,7 +186,7 @@ import Base from '../layouts/Base.astro'
 					</div>
 					<div class='controls'>
 						<div class='controls__arrows'>
-							<button
+							<a
 								id='controls__left'
 								tabindex='0'
 								class='controls__arrow'
@@ -191,9 +194,9 @@ import Base from '../layouts/Base.astro'
 									src='/images/arrow--left.svg'
 									loading='lazy'
 									alt='Indicating left'
-								/></button
-							>
-							<button
+								/>
+							</a>
+							<a
 								id='controls__right'
 								tabindex='0'
 								class='controls__arrow'
@@ -204,7 +207,7 @@ import Base from '../layouts/Base.astro'
 									alt='Indicating right'
 									class='image-3'
 								/>
-							</button>
+							</a>
 						</div>
 
 						<div
