@@ -343,10 +343,20 @@ button.filled[disabled] {
 }
 
 .view-project-video {
+	border-radius: 0;
 	outline: 2px solid var(--Grey-80, #343a3f);
 	outline-offset: -2px;
 	max-width: 100%;
 	height: auto;
+}
+
+.view-project-video video {
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	z-index: -1;
+	margin: 0;
+	margin-bottom: -7.25px;
 }
 
 .next-preview {
