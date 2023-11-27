@@ -1027,6 +1027,11 @@ textarea:-webkit-autofill:focus {
 		outline-width: 1px;
 		outline-offset: -1px;
 	}
+
+	.view-project-video {
+		outline-width: 1px;
+		outline-offset: -1px;
+	}
 }
 
 @media only screen and (max-width: 478px) {
