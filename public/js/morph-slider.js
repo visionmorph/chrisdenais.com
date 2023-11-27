@@ -1,6 +1,5 @@
-const testimonials = (
-	await (await fetch('/chrisdenais.com/content/testimonials.json')).json()
-).all
+const testimonials = (await (await fetch('/content/testimonials.json')).json())
+	.all
 
 let currentSlideIndex = 0
 const quote = document.getElementById('quote')
