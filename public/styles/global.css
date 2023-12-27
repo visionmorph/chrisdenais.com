@@ -31,7 +31,11 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+ol,
+ul,
+li,
+blockquote {
 	/* Reset */
 	margin-block-start: 0rem;
 	margin-block-end: 0rem;
@@ -62,13 +66,46 @@ h2,
 }
 
 p,
-.p1 {
+.p1,
+ol,
+ul,
+li {
 	/* P1 */
 	font-family: Inter;
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.25; /* 125% */
+}
+
+.p2 {
+	color: #c1c7cd;
+	/* P2 */
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px; /* 130% */
+}
+
+blockquote {
+	position: relative;
+	font-family: Inter;
+	font-size: 48px;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 60px; /* 125% */
+	letter-spacing: -0.72px;
+}
+
+blockquote::before {
+	content: '"';
+	position: absolute;
+	left: -1.5rem;
+}
+
+blockquote::after {
+	content: '"';
 }
 
 /* -------------- Nav ---------------- */
@@ -120,6 +157,10 @@ section {
 	overflow: hidden;
 }
 
+section.left {
+	justify-content: flex-start;
+}
+
 .sticky {
 	position: sticky;
 	top: 0;
@@ -148,6 +189,25 @@ section {
 
 .container.extra-pb {
 	padding-bottom: 0.125rem;
+}
+
+.container.content {
+	margin-top: 0rem;
+	margin-bottom: 6rem;
+}
+
+.container.content.first {
+	margin-top: 6rem;
+}
+
+.content-width {
+	max-width: 1240px;
+
+	display: inherit;
+	flex-direction: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	gap: inherit;
 }
 
 .no-top-margin {
@@ -315,6 +375,20 @@ button.filled[disabled] {
 	display: inline-block;
 	margin-left: 0.5rem;
 	transform: translateY(0.75rem);
+}
+
+/* -------------- Content ----------------- */
+
+.content__flex {
+	display: flex;
+	gap: 2rem;
+}
+
+.content__info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 2rem;
 }
 
 /* -------------- Projects ---------------- */
@@ -542,7 +616,7 @@ button.filled[disabled] {
 }
 
 .testimonial__text.hanging::after {
-	content: '”';
+	content: '"';
 }
 
 /* -------------- Testimonial controls ---------------- */

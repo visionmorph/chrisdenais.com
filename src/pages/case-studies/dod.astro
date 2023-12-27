@@ -1,4 +1,6 @@
 ---
+import Content from '../../components/Content.astro'
+import ContentSummary from '../../components/ContentSummary.astro'
 import FeatureImageGroup from '../../components/FeatureImageGroup.astro'
 import FeatureVideo from '../../components/FeatureVideo.astro'
 import LinkGroup from '../../components/LinkGroup.astro'
@@ -10,41 +12,63 @@ import Base from '../../layouts/Base.astro'
 <Base>
 	<Title>Transforming flight debriefs for Air Force pilots using AI</Title>
 	<FeatureVideo src='/chrisdenais.com/content/projects/dod/animation.mp4' />
-	<Title>
-		Air Force pilots conduct post-flight debriefing sessions to assess their
-		performance and mistakes, but analog tools such as whiteboards for
-		analyzing a 3D flying environment have hindered their ability to learn
-		effectively from missions.
-	</Title>
-	<FeatureImageGroup
-		images={[
-			{
-				src: '/chrisdenais.com/content/projects/dod/01.png',
-				alt: 'Sortie #003 metadata',
-				size: [1600, 1202]
-			},
-			{
-				src: '/chrisdenais.com/content/projects/dod/02.png',
-				alt: 'Joint training FED-003 simulation',
-				size: [1600, 1202]
-			},
-			{
-				src: '/chrisdenais.com/content/projects/dod/03.png',
-				alt: 'Joint training FED-003 maps',
-				size: [1600, 1202]
-			},
-			{
-				src: '/chrisdenais.com/content/projects/dod/04.png',
-				alt: 'Dashboard',
-				size: [1600, 1202]
-			},
-			{
-				src: '/chrisdenais.com/content/projects/dod/05.png',
-				alt: '333rd Fighter Squadron / John Smith profile',
-				size: [1600, 1202]
-			}
-		]}
-	/>
+	<ContentSummary
+		roles={['UI design', 'UX research']}
+		company='U.S. Department of Defense'
+		website='www.defense.gov'
+		year='2022'
+	>
+		<h2>
+			The U.S. Department of Defense is America's largest government
+			agency which provides the military forces needed to deter war and to
+			protect the security of the United States. Our team at Crowdbotics
+			worked on the
+
+			<a class='h2 underscore' href='https://maneuver-id.mit.edu/'
+				>Maneuver Identification Challenge</a
+			> for The Department of the Air Force-MIT Artificial Intelligence
+			Accelerator.
+		</h2>
+	</ContentSummary>
+	<Content>
+		<h2>Problem</h2>
+		<p>
+			Air Force pilots conduct post-flight debriefing sessions to assess
+			their performance and mistakes, but analog tools such as whiteboards
+			and writing notes hinders their ability to effectively learn from
+			missions by relying on memory.
+		</p>
+	</Content>
+	<Content>
+		<h2>Business goals</h2>
+		<ul>
+			<li>Utilize avionics data collected on military aircraft</li>
+			<li>
+				Leverage AI for the identifying and grading of aerial maneuvers
+			</li>
+			<li>Plan for missions based on squadron or pilot proficiency</li>
+		</ul>
+	</Content>
+	<Content>
+		<h1>Research</h1>
+		<h2>User interviews</h2>
+		<p>
+			I conducted interviews with 4 pilots stationed at Seymour Johnson
+			Air Force Base to understand their work habits, pain points, and
+			expectations of flight debriefing in a digital workspace. The pilots
+			are familiar with their jargon and onboard flight instruments so
+			they didn’t want to relearn how to do simple things. Pilots wanted
+			to know at a glance what maneuvers were flown and how well they
+			performed each one.
+		</p>
+	</Content>
+	<Content>
+		<blockquote>
+			Typically at the end of the debrief the student keeps some notes,
+			but we erase our tapes. We erase our shot sheets and all the data
+			gets flushed.
+		</blockquote>
+	</Content>
 	<LinkGroup
 		title='Press'
 		links={[
