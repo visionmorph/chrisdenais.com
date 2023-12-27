@@ -1,0 +1,73 @@
+---
+import FeatureImageGroup from '../../components/FeatureImageGroup.astro'
+import FeatureVideo from '../../components/FeatureVideo.astro'
+import LinkGroup from '../../components/LinkGroup.astro'
+import NextCaseStudy from '../../components/NextCaseStudy.astro'
+import Title from '../../components/Title.astro'
+import Base from '../../layouts/Base.astro'
+---
+
+<Base>
+	<Title>Transforming flight debriefs for Air Force pilots using AI</Title>
+	<FeatureVideo src='/chrisdenais.com/content/projects/dod/animation.mp4' />
+	<Title>
+		Air Force pilots conduct post-flight debriefing sessions to assess their
+		performance and mistakes, but analog tools such as whiteboards for
+		analyzing a 3D flying environment have hindered their ability to learn
+		effectively from missions.
+	</Title>
+	<FeatureImageGroup
+		images={[
+			{
+				src: '/chrisdenais.com/content/projects/dod/01.png',
+				alt: 'Sortie #003 metadata',
+				size: [1600, 1202]
+			},
+			{
+				src: '/chrisdenais.com/content/projects/dod/02.png',
+				alt: 'Joint training FED-003 simulation',
+				size: [1600, 1202]
+			},
+			{
+				src: '/chrisdenais.com/content/projects/dod/03.png',
+				alt: 'Joint training FED-003 maps',
+				size: [1600, 1202]
+			},
+			{
+				src: '/chrisdenais.com/content/projects/dod/04.png',
+				alt: 'Dashboard',
+				size: [1600, 1202]
+			},
+			{
+				src: '/chrisdenais.com/content/projects/dod/05.png',
+				alt: '333rd Fighter Squadron / John Smith profile',
+				size: [1600, 1202]
+			}
+		]}
+	/>
+	<LinkGroup
+		title='Press'
+		links={[
+			{
+				href: 'https://www.popsci.com/technology/air-force-artificial-intelligence-pi',
+				label: 'How AI could help new Air Force pilots avoid costly mistakes'
+			},
+			{
+				href: 'https://adlnet.gov/news/2022/04/11/F15-xAPI-Training/',
+				label: 'Air Force Project Enhances Live F-15E Flight Training with xAPI'
+			},
+			{
+				href: 'https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/',
+				label: 'Air Force introduces AI to training program'
+			}
+		]}
+	/>
+	<NextCaseStudy
+		href='/chrisdenais.com/projects/atmos'
+		label='Pioneering web3 user experiences for Exo pilots inhabiting planet Atmos'
+		thumbnail={{
+			src: '/chrisdenais.com/content/projects/atmos/thumbnail.png',
+			size: [528, 396]
+		}}
+	/>
+</Base>
