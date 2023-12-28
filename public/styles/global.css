@@ -2,6 +2,13 @@
 
 /* -------------- General ---------------- */
 
+:root {
+	font-synthesis: style;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -370,8 +377,8 @@ button.filled[disabled] {
 
 .link.icon::after {
 	content: url(../images/link.svg);
-	width: 4rem;
-	height: 4rem;
+	width: 1.5rem;
+	height: 1.5rem;
 	display: inline-block;
 	margin-left: 0.5rem;
 	transform: translateY(0.75rem);
@@ -382,6 +389,11 @@ button.filled[disabled] {
 .content__flex {
 	display: flex;
 	gap: 2rem;
+}
+
+.content__flex.vertical {
+	flex-direction: column;
+	gap: 1rem;
 }
 
 .content__info {
