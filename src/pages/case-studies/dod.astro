@@ -69,6 +69,122 @@ import Base from '../../layouts/Base.astro'
 			gets flushed.
 		</blockquote>
 	</Content>
+	<Content>
+		<h2>User flow</h2>
+		<p>
+			The primary flow we considered is uploading the acquired flight
+			data, viewing the maneuver analysis, and adding comments about the
+			sortie.
+		</p>
+		<img
+			src='/chrisdenais.com/content/case-studies/dod/user-flow.png'
+			class='view-project-image'
+		/>
+	</Content>
+	<Content>
+		<h2>Usability testing</h2>
+		<p>
+			Releases were pushed at the end of every two-week sprint which gave
+			us time to incrementally make changes and gather feedback from
+			pilots such as:
+		</p>
+		<ul>
+			<li>
+				Renaming labels to be more familiar with Air Force pilots and
+				instructors
+			</li>
+			<li>Organizing large sums of data to be more easily scannable</li>
+			<li>
+				Inclusive design patterns to accommodate for users mental models
+			</li>
+		</ul>
+	</Content>
+	<Content>
+		<blockquote>
+			It allows them to get an objective view of what is happening and how
+			they flew and be able to make incremental, sometimes significant
+			changes to how they're flying to be safer, more effective or more
+			lethal
+		</blockquote>
+	</Content>
+	<Content>
+		<h2>Technical limitations</h2>
+		<p>
+			While striving towards an ideal user experience, our team
+			encountered a number of challenges throughout the development
+			process:
+		</p>
+		<ul>
+			<li>
+				Our team used Google’s Material design library to jumpstart the
+				implementation of our design system in Figma
+			</li>
+			<li>
+				Some design components were made to suit our specific use case
+				that are not a part of publicly accessible open-source design
+				libraries
+			</li>
+			<li>
+				Our team used CesiumJS to visualize the geospatial data in an
+				interactive and 3-dimensional space
+			</li>
+		</ul>
+	</Content>
+	<Content>
+		<h1>Design</h1>
+		<h2>Maneuvers</h2>
+		<p>
+			Detected maneuvers are classed by a passing, acceptable, or failed
+			grading scale. Maneuvers that can’t be identified with certainty are
+			considered possible detections. Selecting a maneuver jumps to that
+			timestamp in the viewer to be replayed.
+		</p>
+		<img
+			src='/chrisdenais.com/content/case-studies/dod/maneuvers.png'
+			class='view-project-image'
+		/>
+	</Content>
+	<Content>
+		<h2>Analysis</h2>
+		<p>
+			Pilots can replay their recently flown sorties allowing them to
+			pause, rewind, speed up, or jump to any maneuver on the timeline.
+			The viewport enhances the pilot's ability to objectively break down
+			their flight by simulating the flight as it happened, not as they
+			remember it happening.
+		</p>
+		<img
+			src='/chrisdenais.com/content/case-studies/dod/analysis.png'
+			class='view-project-image'
+		/>
+	</Content>
+	<Content>
+		<h2>Pilot profile</h2>
+		<p>
+			Every pilot is placed into a percentile within their squadron based
+			on the flight performance of their aircraft over a period of time.
+			These grades can then be collected by pilot instructors to more
+			accuractely assess the mission readiness of pilots.
+		</p>
+		<img
+			src='/chrisdenais.com/content/case-studies/dod/pilot-profile.png'
+			class='view-project-image'
+		/>
+	</Content>
+	<Content>
+		<h1>Conclusion</h1>
+		<h2>Results</h2>
+		<ul>
+			<li>
+				Expanded software testing with 59 Test and Evaluation Squadron
+				at Nellis Air Force Base
+			</li>
+			<li>
+				Crowdbotics was the first company to successfully leverage the
+				Maneuver Identification Challenge to advance the field of AI
+			</li>
+		</ul>
+	</Content>
 	<LinkGroup
 		title='Press'
 		links={[
