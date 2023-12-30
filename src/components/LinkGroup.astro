@@ -3,19 +3,22 @@ const { title, links } = Astro.props
 ---
 
 <section>
-	<div class='container extra-pb'>
-		<p>{title}</p>
-		{
-			links &&
-				links.map(({ href, label }) => (
-					<a
-						class='h1 link underscore icon'
-						target='_blank'
-						href={href}
-					>
-						{label}
-					</a>
-				))
-		}
+	<div class='container no-top-margin extra-pb'>
+		<div class='link__group'>
+			<p>{title}</p>
+			{
+				links &&
+					links.map(({ href, label }) => (
+						<a
+							class='h3 link underscore icon'
+							target='_blank'
+							href={href}
+						>
+							{label}
+						</a>
+					))
+			}	
+		</div>
+		
 	</div>
 </section>
