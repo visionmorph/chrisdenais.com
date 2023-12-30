@@ -7,30 +7,22 @@ const {
 ---
 
 <section>
-	<div class='container end'>
-		<p>Next case study</p>
-		<a class='h1 link underscore-offset-2 next-case-study' href={href}
-			>{label}
-		</a>
-		<img
-			class='next-preview'
-			width={thumbnailSize[0]}
-			height={thumbnailSize[1]}
-			src={thumbnailSrc}
-		/>
+	<div class='container slim'>
+		<h1>Next up</h1>
+		<div class='next__grid'>
+			<div class='next__caption'>
+				<h2>
+					{label}
+				</h2>
+				<button
+					class='button no-top-margin'
+					tabindex='0'
+					class='no-margin'
+				>
+					View case study
+				</button>
+			</div>
+			<img src={thumbnailSrc} class='view-project-image full' />
+		</div>
 	</div>
 </section>
-<script is:inline>
-	const nextCaseStudy = document.querySelector('.next-case-study')
-	const nextPreview = document.querySelector('.next-preview')
-	nextCaseStudy.addEventListener('mousemove', evt => {
-		nextPreview.style.setProperty(
-			'--next-case-study-preview-top',
-			evt.clientY + 'px'
-		)
-		nextPreview.style.setProperty(
-			'--next-case-study-preview-left',
-			evt.clientX + 'px'
-		)
-	})
-</script>
