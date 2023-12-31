@@ -538,6 +538,7 @@ button.filled[disabled] {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
+	row-gap: 2rem;
 
 	padding: 2rem;
 	border-radius: 0;
@@ -1119,6 +1120,23 @@ textarea:-webkit-autofill:focus {
 
 	.controls {
 		margin-top: 3rem;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.next__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.content__flex {
+		flex-direction: column-reverse;
+	}
+
+	.content__info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 2rem;
 	}
 }
 
