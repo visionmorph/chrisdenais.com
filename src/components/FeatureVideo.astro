@@ -1,17 +1,19 @@
 ---
-const { src, alt } = Astro.props
+const { src, alt, width, height } = Astro.props
 ---
 
 <section>
 	<div class='container'>
-		<video
-			class='view-project-video'
-			autoplay
-			loop
-			muted
-			playsinline
-			width='1600px'
-			height='1138px'
-			src='/chrisdenais.com/content/projects/dod/animation.mp4'></video>
+		<div class='video__wrapper'>
+			<video
+				class='video__player'
+				autoplay
+				loop
+				muted
+				playsinline
+				width={width}
+				height={height}
+				src={src}></video>
+		</div>
 	</div>
 </section>
