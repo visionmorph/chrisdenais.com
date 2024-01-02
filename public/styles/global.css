@@ -1148,12 +1148,6 @@ textarea:-webkit-autofill:focus {
 	.content__flex {
 		flex-direction: column-reverse;
 	}
-
-	.content__info {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-column-gap: 2rem;
-	}
 }
 
 @media screen and (max-width: 1024px) {
