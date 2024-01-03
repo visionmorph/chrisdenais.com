@@ -107,11 +107,11 @@ ul {
 }
 
 ul {
-    margin-left: 0;
-    padding-left: 0;
+	margin-left: 0;
+	padding-left: 0;
 }
 li {
-    margin-left: 1em;
+	margin-left: 1em;
 }
 
 .p2 {
@@ -128,10 +128,10 @@ li {
 blockquote {
 	position: relative;
 	font-family: Inter;
-	font-size: 24px;
+	font-size: 48px;
 	font-style: italic;
 	font-weight: 300;
-	line-height: 30px;
+	line-height: 60px;
 	/* 125% */
 	letter-spacing: -0.72px;
 }
@@ -139,11 +139,14 @@ blockquote {
 blockquote::before {
 	content: '"';
 	position: absolute;
-	left: -1rem;
+	left: -0.5em;
 }
 
 blockquote::after {
 	content: '"';
+}
+
+.link__icon {
 }
 
 /* -------------- Nav ---------------- */
@@ -432,11 +435,11 @@ button.filled[disabled] {
 
 .link.icon::after {
 	padding-right: 1.75rem;
-   background: url(../images/link_small.svg) no-repeat right top; 
-   content: "";
-   width: 1.75rem;
-   height: 1.75rem;
-   margin-left: 0.5rem;
+	background: url(../images/link_small.svg) no-repeat right top;
+	content: '';
+	width: 1.75rem;
+	height: 1.75rem;
+	margin-left: 0.5rem;
 }
 
 .link__group {
@@ -558,8 +561,12 @@ button.filled[disabled] {
 .next__grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 1rem;
-	row-gap: 1rem;
+	outline: 2px solid var(--Grey-80, #343a3f);
+	outline-offset: -2px;
+}
+
+.next__grid img.view-project-image {
+	outline: none;
 }
 
 .next__caption {
@@ -571,11 +578,21 @@ button.filled[disabled] {
 
 	padding: 2rem;
 	border-radius: 0;
-	outline: 2px solid var(--Grey-80, #343a3f);
-	outline-offset: -2px;
+	background-color: #121619;
+
+	aspect-ratio: 4 / 3;
 }
 
-.next-case-study:hover+.next-preview {
+.next__container {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.next__arrow {
+}
+
+.next-case-study:hover + .next-preview {
 	visibility: visible;
 	opacity: 1;
 }
@@ -864,7 +881,6 @@ form {
 }
 
 @-webkit-keyframes rotating {
-
 	/* Safari and Chrome */
 	from {
 		-webkit-transform: rotate(0deg);
@@ -1159,7 +1175,23 @@ textarea:-webkit-autofill:focus {
 	}
 
 	.content__flex {
-		flex-direction: column-reverse;
+		flex-direction: column;
+	}
+
+	blockquote {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+
+	blockquote::before {
+		content: '"';
+		position: absolute;
+		left: -0.5em;
+	}
+
+	blockquote::after {
+		content: '"';
 	}
 }
 
@@ -1258,6 +1290,11 @@ textarea:-webkit-autofill:focus {
 	}
 
 	.view-project-video {
+		outline-width: 1px;
+		outline-offset: -1px;
+	}
+
+	.video__wrapper {
 		outline-width: 1px;
 		outline-offset: -1px;
 	}

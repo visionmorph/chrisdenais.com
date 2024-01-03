@@ -10,17 +10,13 @@ const {
 	<div class='container slim'>
 		<h1>Next up</h1>
 		<a href={href} class='next__grid'>
-			<div  class='next__caption'>
+			<div class='next__caption'>
 				<h2>
 					{label}
 				</h2>
-				<button
-					class='button no-top-margin'
-					tabindex='0'
-					class='no-margin'
-				>
-					View case study
-				</button>
+				<div class='next__container'>
+					<p class='next__arrow' style='font-size: 36px;'>-></p>
+				</div>
 			</div>
 			<img src={thumbnailSrc} class='view-project-image full' />
 		</a>
