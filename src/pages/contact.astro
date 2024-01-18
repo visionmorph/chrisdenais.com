@@ -3,141 +3,140 @@ import Base from '../layouts/Base.astro'
 ---
 
 <Base>
-	<section>
-		<div class='container'>
-			<h1>
-				Let’s talk about your next project, collaborating together, or
-				simply say hello
-			</h1>
-		</div>
-	</section>
-	<section>
-		<div class='container end'>
-			<form
-				id='contact-form'
-				name='contact-form'
-				data-name='Contact form'
-				aria-label='Contact form'
-				autocomplete='off'
-				aria-autocomplete='none'
-			>
-				<div class='form__field'>
-					<label for='name'>Name</label>
-					<input
-						type='text'
-						class='form__input'
-						name='name'
-						data-name='Name'
-						placeholder='John Doe'
-						id='name'
-						tabindex='0'
-						aria-required='true'
-						aria-invalid='false'
-						autofocus
-					/>
-					<img
-						loading='lazy'
-						src='/chrisdenais.com/images/warning-filled.svg'
-						alt='Indicating invalid form input'
-						class='warning-indicator'
-					/>
-					<div
-						id='name-error-message'
-						class='form__error'
-						aria-errormessage='Indicating invalid form input "name"'
-					>
-						Error message
-					</div>
-				</div>
-				<div class='form__field'>
-					<label for='email'>Email address</label>
-					<input
-						type='email'
-						class='form__input'
-						name='email'
-						data-name='Email'
-						placeholder='name@mail.com'
-						id='email'
-						tabindex='0'
-						aria-required='true'
-						aria-invalid='false'
-					/>
-					<img
-						loading='lazy'
-						src='/chrisdenais.com/images/warning-filled.svg'
-						alt='Indicating invalid form input'
-						class='warning-indicator'
-					/>
-					<div
-						id='email-error-message'
-						class='form__error'
-						aria-errormessage='Indicating invalid form input "email"'
-						aria-required='true'
-						aria-invalid='false'
-					>
-						Error message
-					</div>
-				</div>
-				<div class='form__field'>
-					<label for='message'>Your message</label>
-					<textarea
-						class='form__input textarea'
-						maxlength='5000'
-						name='message'
-						data-name='Message'
-						placeholder='Enter a message'
-						id='message'
-						tabindex='0'
-						aria-required='true'
-						aria-invalid='false'></textarea>
-					<img
-						loading='lazy'
-						src='/chrisdenais.com/images/warning-filled.svg'
-						alt='Indicating invalid form input'
-						class='warning-indicator'
-					/>
-					<div
-						id='message-error-message'
-						class='form__error'
-						aria-errormessage='Indicating invalid form input "message"'
-					>
-						Error message
-					</div>
-				</div>
-			</form>
-			<div class='notification-wrapper'>
-				<div id='notification' class='notification no-bottom-margin'>
-					<img
-						id='notification-emblem'
-						src='/chrisdenais.com/images/check.svg'
-						class='notification__emblem'
-					/>
-					<p id='notification-message' class='notification__title p1'>
-						Your message has been sent. We’ll get back to you
-						shortly.
-					</p>
-				</div>
-			</div>
-			<div class='column-grid' style='gap: 1rem;'>
-				<button
-					id='submit-button'
-					tabindex='0'
-					role='button'
-					type='submit'
-					class='filled submit'>Send message</button
-				>
-			</div>
-		</div>
-	</section>
+  <section>
+    <div class='container'>
+      <h1>
+        Let’s talk about your next project, collaborating together, or simply
+        say hello
+      </h1>
+    </div>
+  </section>
+  <section>
+    <div class='container end'>
+      <form
+        id='contact-form'
+        name='contact-form'
+        data-name='Contact form'
+        aria-label='Contact form'
+        autocomplete='off'
+        aria-autocomplete='none'
+      >
+        <div class='form__field'>
+          <label for='name'>Name</label>
+          <input
+            type='text'
+            class='form__input'
+            name='name'
+            data-name='Name'
+            placeholder='John Doe'
+            id='name'
+            tabindex='0'
+            aria-required='true'
+            aria-invalid='false'
+            autofocus
+          />
+          <img
+            loading='lazy'
+            src='/chrisdenais.com/images/warning-filled.svg'
+            alt='Indicating invalid form input'
+            class='warning-indicator'
+          />
+          <div
+            id='name-error-message'
+            class='form__error'
+            aria-errormessage='Indicating invalid form input "name"'
+          >
+            Error message
+          </div>
+        </div>
+        <div class='form__field'>
+          <label for='email'>Email address</label>
+          <input
+            type='email'
+            class='form__input'
+            name='email'
+            data-name='Email'
+            placeholder='name@mail.com'
+            id='email'
+            tabindex='0'
+            aria-required='true'
+            aria-invalid='false'
+          />
+          <img
+            loading='lazy'
+            src='/chrisdenais.com/images/warning-filled.svg'
+            alt='Indicating invalid form input'
+            class='warning-indicator'
+          />
+          <div
+            id='email-error-message'
+            class='form__error'
+            aria-errormessage='Indicating invalid form input "email"'
+            aria-required='true'
+            aria-invalid='false'
+          >
+            Error message
+          </div>
+        </div>
+        <div class='form__field'>
+          <label for='message'>Your message</label>
+          <textarea
+            class='form__input textarea'
+            maxlength='5000'
+            name='message'
+            data-name='Message'
+            placeholder='Enter a message'
+            id='message'
+            tabindex='0'
+            aria-required='true'
+            aria-invalid='false'></textarea>
+          <img
+            loading='lazy'
+            src='/chrisdenais.com/images/warning-filled.svg'
+            alt='Indicating invalid form input'
+            class='warning-indicator'
+          />
+          <div
+            id='message-error-message'
+            class='form__error'
+            aria-errormessage='Indicating invalid form input "message"'
+          >
+            Error message
+          </div>
+        </div>
+      </form>
+      <div class='notification-wrapper'>
+        <div id='notification' class='notification no-bottom-margin'>
+          <img
+            id='notification-emblem'
+            src='/chrisdenais.com/images/check.svg'
+            class='notification__emblem'
+          />
+          <p id='notification-message' class='notification__title p1'>
+            Your message has been sent. We’ll get back to you shortly.
+          </p>
+        </div>
+      </div>
+      <div class='column-grid' style='gap: 1rem;'>
+        <button
+          id='submit-button'
+          tabindex='0'
+          role='button'
+          type='submit'
+          class='filled submit'>Send message</button
+        >
+      </div>
+    </div>
+  </section>
 </Base>
 <script
-	type='text/javascript'
-	src='https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js'
-	is:inline></script>
+  type='text/javascript'
+  src='https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js'
+  is:inline></script>
 <script type='text/javascript' is:inline>
-	;(function () {
-		emailjs.init('2rnRruRxFJi9LkaB-')
-	})()
+  ;(function () {
+    emailjs.init('2rnRruRxFJi9LkaB-')
+  })()
 </script>
 <script src='/chrisdenais.com/js/contact-form.js' type='module' is:inline async
 ></script>

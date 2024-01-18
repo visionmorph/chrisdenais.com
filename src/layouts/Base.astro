@@ -3,88 +3,83 @@
 ---
 
 <html lang='en'>
-	<head>
-		<meta charset='utf-8' />
-		<link rel='icon' href='/chrisdenais.com/images/favicon.svg' />
-		<link rel='stylesheet' href='/chrisdenais.com/styles/global.css' />
-		<meta name='viewport' content='width=device-width' />
-		<meta name='generator' content={Astro.generator} />
-		<meta
-			name='description'
-			content='Christopher Denais is a designer who makes software easier to
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' href='/chrisdenais.com/images/favicon.svg' />
+    <link rel='stylesheet' href='/chrisdenais.com/styles/global.css' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <meta
+      name='description'
+      content='Christopher Denais is a designer who makes software easier to
 			use and increases work productivity for B2B SaaS companies.'
-		/>
-		<title>Christopher Denais - B2B UX Designer</title>
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src='https://www.googletagmanager.com/gtag/js?id=G-GNFKJNNPQX'
-			is:inline></script>
-		<script is:inline>
-			window.dataLayer = window.dataLayer || []
-			function gtag() {
-				dataLayer.push(arguments)
-			}
-			gtag('js', new Date())
+    />
+    <title>Christopher Denais - B2B UX Designer</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src='https://www.googletagmanager.com/gtag/js?id=G-GNFKJNNPQX'
+      is:inline></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-			gtag('config', 'G-GNFKJNNPQX')
-		</script>
-	</head>
-	<body>
-		<section class='sticky'>
-			<div class='container no-top-margin'>
-				<nav>
-					<a class='h2 link' href='/chrisdenais.com/'>Home</a>
-					<a class='h2 link' href='/chrisdenais.com/clients'
-						>Clients</a
-					>
-					<a class='h2 link' href='/chrisdenais.com/contact'
-						>Contact</a
-					>
-				</nav>
-			</div>
-		</section>
-		<main>
-			<slot />
-		</main>
-		<section>
-			<div class='container slim'>
-				<footer>
-					<div class='footer__contact'>
-						<h1>Let's talk</h1>
-						<a
-							class='h1 underscore underscore-offset-1 email_link'
-							href='/chrisdenais.com/contact'
-							>chrisdenais​@gmail.com</a
-						>
-					</div>
-					<div class='footer__menu'>
-						<a
-							class='h2 link'
-							href='https://www.linkedin.com/in/chrisdenais/'
-							target='_blank'>LinkedIn</a
-						>
-						<a
-							class='h2 link'
-							href='https://www.instagram.com/chrisdenais/'
-							target='_blank'>Instagram</a
-						>
-						<a
-							class='h2 link'
-							href='https://dribbble.com/chrisdenais'
-							target='_blank'>Dribbble</a
-						>
-						<a
-							class='h2 link'
-							href='https://www.upwork.com/freelancers/~01631a81c014160c13'
-							target='_blank'>Upwork</a
-						>
-					</div>
-					<div class='footer__note'>
-						<p>Positively disrupting the paradigm</p>
-					</div>
-				</footer>
-			</div>
-		</section>
-	</body>
+      gtag('config', 'G-GNFKJNNPQX')
+    </script>
+  </head>
+  <body>
+    <section class='sticky'>
+      <div class='container no-top-margin'>
+        <nav>
+          <a class='h2 link' href='/chrisdenais.com/'>Home</a>
+          <a class='h2 link' href='/chrisdenais.com/clients'>Clients</a>
+          <a class='h2 link' href='/chrisdenais.com/contact'>Contact</a>
+        </nav>
+      </div>
+    </section>
+    <main>
+      <slot />
+    </main>
+    <section>
+      <div class='container slim'>
+        <footer>
+          <div class='footer__contact'>
+            <h1>Let's talk</h1>
+            <a
+              class='h1 underscore underscore-offset-1 email_link'
+              href='/chrisdenais.com/contact'>chrisdenais​@gmail.com</a
+            >
+          </div>
+          <div class='footer__menu'>
+            <a
+              class='h2 link'
+              href='https://www.linkedin.com/in/chrisdenais/'
+              target='_blank'>LinkedIn</a
+            >
+            <a
+              class='h2 link'
+              href='https://www.instagram.com/chrisdenais/'
+              target='_blank'>Instagram</a
+            >
+            <a
+              class='h2 link'
+              href='https://dribbble.com/chrisdenais'
+              target='_blank'>Dribbble</a
+            >
+            <a
+              class='h2 link'
+              href='https://www.upwork.com/freelancers/~01631a81c014160c13'
+              target='_blank'>Upwork</a
+            >
+          </div>
+          <div class='footer__note'>
+            <p>Positively disrupting the paradigm</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </body>
 </html>

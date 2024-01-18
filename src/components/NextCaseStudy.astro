@@ -1,29 +1,29 @@
 ---
 const {
-	href,
-	label,
-	thumbnail: { src: thumbnailSrc, size: thumbnailSize }
+  href,
+  label,
+  thumbnail: { src: thumbnailSrc, size: thumbnailSize }
 } = Astro.props
 ---
 
 <section>
-	<div class='container slim'>
-		<h1>Next up</h1>
-		<a href={href} class='next__grid'>
-			<div class='next__caption'>
-				<h2>
-					{label}
-				</h2>
-				<div class='next__container'>
-					<p class='next__arrow' style='font-size: 36px;'>-></p>
-				</div>
-			</div>
-			<img
-				src={thumbnailSrc}
-				width='1600px'
-				height='1200px'
-				class='view-project-image full'
-			/>
-		</a>
-	</div>
+  <div class='container slim'>
+    <h1>Next up</h1>
+    <a href={href} class='next__grid'>
+      <div class='next__caption'>
+        <h2>
+          {label}
+        </h2>
+        <div class='next__container'>
+          <p class='next__arrow' style='font-size: 36px;'>-></p>
+        </div>
+      </div>
+      <img
+        src={thumbnailSrc}
+        width='1600px'
+        height='1200px'
+        class='view-project-image full'
+      />
+    </a>
+  </div>
 </section>

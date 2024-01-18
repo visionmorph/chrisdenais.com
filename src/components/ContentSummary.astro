@@ -3,33 +3,33 @@ const { roles, company, website, year } = Astro.props
 ---
 
 <section>
-	<div class='container content compact first'>
-		<div class='content__flex'>
-			<div class='text-width'>
-				<slot />
-			</div>
-			<div class='content__info'>
-				<span>
-					<p class='p2'>Role</p>
-					{roles ? roles.map((role, i) => <p>{role}</p>) : null}
-				</span>
-				<span>
-					<p class='p2'>Company</p>
-					<p>{company}</p>
-				</span>
-				<span>
-					<p class='p2'>Website</p>
-					<a
-						class='p1 link underscore icon'
-						href='https://defense.gov'
-						target='_blank'>{website}</a
-					>
-				</span>
-				<span>
-					<p class='p2'>Year</p>
-					<p>{year}</p>
-				</span>
-			</div>
-		</div>
-	</div>
+  <div class='container content compact first'>
+    <div class='content__flex'>
+      <div class='text-width'>
+        <slot />
+      </div>
+      <div class='content__info'>
+        <span>
+          <p class='p2'>Role</p>
+          {roles ? roles.map((role, i) => <p>{role}</p>) : null}
+        </span>
+        <span>
+          <p class='p2'>Company</p>
+          <p>{company}</p>
+        </span>
+        <span>
+          <p class='p2'>Website</p>
+          <a
+            class='p1 link underscore icon'
+            href='https://defense.gov'
+            target='_blank'>{website}</a
+          >
+        </span>
+        <span>
+          <p class='p2'>Year</p>
+          <p>{year}</p>
+        </span>
+      </div>
+    </div>
+  </div>
 </section>

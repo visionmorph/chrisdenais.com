@@ -3,18 +3,18 @@ const { images } = Astro.props
 ---
 
 <section>
-	<div class='container compact end'>
-		{
-			images &&
-				images.map(({ src, alt, size }) => (
-					<img
-						class='view-project-image'
-						src={src}
-						alt={alt}
-						width={size[0]}
-						height={size[1]}
-					/>
-				))
-		}
-	</div>
+  <div class='container compact end'>
+    {
+      images &&
+        images.map(({ src, alt, size }) => (
+          <img
+            class='view-project-image'
+            src={src}
+            alt={alt}
+            width={size[0]}
+            height={size[1]}
+          />
+        ))
+    }
+  </div>
 </section>

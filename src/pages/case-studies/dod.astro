@@ -10,244 +10,226 @@ import Base from '../../layouts/Base.astro'
 ---
 
 <Base>
-	<Title>Transforming flight debriefs for Air Force pilots using AI</Title>
-	<FeatureVideo src='/chrisdenais.com/content/projects/dod/animation.mp4' />
-	<ContentSummary
-		roles={['UI design', 'UX research']}
-		company='U.S. Department of Defense'
-		website='www.defense.gov'
-		year='2022'
-	>
-		<h2>
-			The U.S. Department of Defense is America's largest government
-			agency which provides the military forces needed to deter war and to
-			protect the security of the United States. Our team at Crowdbotics
-			worked on the
+  <Title>Transforming flight debriefs for Air Force pilots using AI</Title>
+  <FeatureVideo src='/chrisdenais.com/content/projects/dod/animation.mp4' />
+  <ContentSummary
+    roles={['UI design', 'UX research']}
+    company='U.S. Department of Defense'
+    website='www.defense.gov'
+    year='2022'
+  >
+    <h2>
+      The U.S. Department of Defense is America's largest government agency
+      which provides the military forces needed to deter war and to protect the
+      security of the United States. Our team at Crowdbotics worked on the
 
-			<a
-				class='h2 underscore'
-				target='_blank'
-				href='https://maneuver-id.mit.edu/'
-				>Maneuver Identification Challenge</a
-			> for The Department of the Air Force-MIT Artificial Intelligence Accelerator.
-		</h2>
-	</ContentSummary>
-	<Content>
-		<div class='text-width'>
-			<h2>Problem</h2>
-			<p>
-				Air Force pilots conduct post-flight debriefing sessions to
-				assess their performance and mistakes, but analog tools such as
-				whiteboards and writing notes hinders their ability to
-				effectively learn from missions by relying on memory.
-			</p>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h2>Business goals</h2>
-			<ul>
-				<li>Utilize avionics data collected on military aircraft</li>
-				<li>
-					Leverage AI for the identifying and grading of aerial
-					maneuvers
-				</li>
-				<li>
-					Plan for missions based on squadron or pilot proficiency
-				</li>
-			</ul>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h1>Research</h1>
-			<h2>User interviews</h2>
-			<p>
-				I conducted interviews with 4 pilots stationed at Seymour
-				Johnson Air Force Base to understand their work habits, pain
-				points, and expectations of flight debriefing in a digital
-				workspace. The pilots are familiar with their jargon and onboard
-				flight instruments so they didn’t want to relearn how to do
-				simple things. Pilots wanted to know at a glance what maneuvers
-				were flown and how well they performed each one.
-			</p>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<blockquote>
-				Typically at the end of the debrief the student keeps some
-				notes, but we erase our tapes. We erase our shot sheets and all
-				the data gets flushed.
-			</blockquote>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h2>User flow</h2>
-			<p>
-				The primary flow we considered is uploading the acquired flight
-				data, viewing the maneuver analysis, and adding comments about
-				the sortie.
-			</p>
-		</div>
-		<img
-			src='/chrisdenais.com/content/case-studies/dod/user-flow.png'
-			class='view-project-image content'
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h2>Usability testing</h2>
-			<p>
-				Releases were pushed at the end of every two-week sprint which
-				gave us time to incrementally make changes and gather feedback
-				from pilots such as:
-			</p>
-			<ul>
-				<li>
-					Renaming labels to be more familiar with Air Force pilots
-					and instructors
-				</li>
-				<li>
-					Organizing large sums of data to be more easily scannable
-				</li>
-				<li>
-					Inclusive design patterns to accommodate for users mental
-					models
-				</li>
-			</ul>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<blockquote>
-				It allows them to get an objective view of what is happening and
-				how they flew and be able to make incremental, sometimes
-				significant changes to how they're flying to be safer, more
-				effective or more lethal
-			</blockquote>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h2>Technical limitations</h2>
-			<p>
-				While striving towards an ideal user experience, our team
-				encountered a number of challenges throughout the development
-				process:
-			</p>
-			<ul>
-				<li>
-					Our team used Google’s Material design library to jumpstart
-					the implementation of our design system in Figma
-				</li>
-				<li>
-					Some design components were made to suit our specific use
-					case that are not a part of publicly accessible open-source
-					design libraries
-				</li>
-				<li>
-					Our team used CesiumJS to visualize the geospatial data in
-					an interactive and 3-dimensional space
-				</li>
-			</ul>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h1>Design</h1>
-			<h2>Maneuvers</h2>
-			<p>
-				Detected maneuvers are classed by a passing, acceptable, or
-				failed grading scale. Maneuvers that can’t be identified with
-				certainty are considered possible detections. Selecting a
-				maneuver jumps to that timestamp in the viewer to be replayed.
-			</p>
-		</div>
-		<video
-			src='/chrisdenais.com/content/case-studies/dod/joint_training_fed-003.mp4'
-			class='view-project-video content'
-			autoplay
-			loop
-			muted
-			playsinline
-			width='1600px'
-			height='1138px'></video>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h2>Analysis</h2>
-			<p>
-				Pilots can replay their recently flown sorties allowing them to
-				pause, rewind, speed up, or jump to any maneuver on the
-				timeline. The viewport enhances the pilot's ability to
-				objectively break down their flight by simulating the flight as
-				it happened, not as they remember it happening.
-			</p>
-		</div>
-		<img
-			src='/chrisdenais.com/content/case-studies/dod/analysis.png'
-			class='view-project-image content'
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h2>Pilot profile</h2>
-			<p>
-				Every pilot is placed into a percentile within their squadron
-				based on the flight performance of their aircraft over a period
-				of time. These grades can then be collected by pilot instructors
-				to more accuractely assess the mission readiness of pilots.
-			</p>
-		</div>
-		<img
-			src='/chrisdenais.com/content/case-studies/dod/pilot-profile.png'
-			width='1600px'
-			height='1200px'
-			class='view-project-image content'
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h1>Conclusion</h1>
-			<h2>Results</h2>
-			<ul>
-				<li>
-					Expanded software testing with 59 Test and Evaluation
-					Squadron at Nellis Air Force Base
-				</li>
-				<li>
-					Crowdbotics was the first company to successfully leverage
-					the Maneuver Identification Challenge to advance the field
-					of AI
-				</li>
-			</ul>
-		</div>
-	</Content>
-	<LinkGroup
-		title='Press'
-		links={[
-			{
-				href: 'https://www.popsci.com/technology/air-force-artificial-intelligence-pi',
-				label: 'How AI could help new Air Force pilots avoid costly mistakes'
-			},
-			{
-				href: 'https://adlnet.gov/news/2022/04/11/F15-xAPI-Training/',
-				label: 'Air Force Project Enhances Live F-15E Flight Training with xAPI'
-			},
-			{
-				href: 'https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/',
-				label: 'Air Force introduces AI to training program'
-			}
-		]}
-	/>
-	<NextCaseStudy
-		href='/chrisdenais.com/projects/atmos'
-		label='Pioneering web3 user experiences for Exo pilots inhabiting planet Atmos'
-		thumbnail={{
-			src: '/chrisdenais.com/content/projects/atmos/thumbnail.png',
-			size: [528, 396]
-		}}
-	/>
+      <a
+        class='h2 underscore'
+        target='_blank'
+        href='https://maneuver-id.mit.edu/'>Maneuver Identification Challenge</a
+      > for The Department of the Air Force-MIT Artificial Intelligence Accelerator.
+    </h2>
+  </ContentSummary>
+  <Content>
+    <div class='text-width'>
+      <h2>Problem</h2>
+      <p>
+        Air Force pilots conduct post-flight debriefing sessions to assess their
+        performance and mistakes, but analog tools such as whiteboards and
+        writing notes hinders their ability to effectively learn from missions
+        by relying on memory.
+      </p>
+    </div>
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <h2>Business goals</h2>
+      <ul>
+        <li>Utilize avionics data collected on military aircraft</li>
+        <li>Leverage AI for the identifying and grading of aerial maneuvers</li>
+        <li>Plan for missions based on squadron or pilot proficiency</li>
+      </ul>
+    </div>
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <h1>Research</h1>
+      <h2>User interviews</h2>
+      <p>
+        I conducted interviews with 4 pilots stationed at Seymour Johnson Air
+        Force Base to understand their work habits, pain points, and
+        expectations of flight debriefing in a digital workspace. The pilots are
+        familiar with their jargon and onboard flight instruments so they didn’t
+        want to relearn how to do simple things. Pilots wanted to know at a
+        glance what maneuvers were flown and how well they performed each one.
+      </p>
+    </div>
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <blockquote>
+        Typically at the end of the debrief the student keeps some notes, but we
+        erase our tapes. We erase our shot sheets and all the data gets flushed.
+      </blockquote>
+    </div>
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <h2>User flow</h2>
+      <p>
+        The primary flow we considered is uploading the acquired flight data,
+        viewing the maneuver analysis, and adding comments about the sortie.
+      </p>
+    </div>
+    <img
+      src='/chrisdenais.com/content/case-studies/dod/user-flow.png'
+      class='view-project-image content'
+    />
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <h2>Usability testing</h2>
+      <p>
+        Releases were pushed at the end of every two-week sprint which gave us
+        time to incrementally make changes and gather feedback from pilots such
+        as:
+      </p>
+      <ul>
+        <li>
+          Renaming labels to be more familiar with Air Force pilots and
+          instructors
+        </li>
+        <li>Organizing large sums of data to be more easily scannable</li>
+        <li>
+          Inclusive design patterns to accommodate for users mental models
+        </li>
+      </ul>
+    </div>
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <blockquote>
+        It allows them to get an objective view of what is happening and how
+        they flew and be able to make incremental, sometimes significant changes
+        to how they're flying to be safer, more effective or more lethal
+      </blockquote>
+    </div>
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <h2>Technical limitations</h2>
+      <p>
+        While striving towards an ideal user experience, our team encountered a
+        number of challenges throughout the development process:
+      </p>
+      <ul>
+        <li>
+          Our team used Google’s Material design library to jumpstart the
+          implementation of our design system in Figma
+        </li>
+        <li>
+          Some design components were made to suit our specific use case that
+          are not a part of publicly accessible open-source design libraries
+        </li>
+        <li>
+          Our team used CesiumJS to visualize the geospatial data in an
+          interactive and 3-dimensional space
+        </li>
+      </ul>
+    </div>
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <h1>Design</h1>
+      <h2>Maneuvers</h2>
+      <p>
+        Detected maneuvers are classed by a passing, acceptable, or failed
+        grading scale. Maneuvers that can’t be identified with certainty are
+        considered possible detections. Selecting a maneuver jumps to that
+        timestamp in the viewer to be replayed.
+      </p>
+    </div>
+    <video
+      src='/chrisdenais.com/content/case-studies/dod/joint_training_fed-003.mp4'
+      class='view-project-video content'
+      autoplay
+      loop
+      muted
+      playsinline
+      width='1600px'
+      height='1138px'></video>
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <h2>Analysis</h2>
+      <p>
+        Pilots can replay their recently flown sorties allowing them to pause,
+        rewind, speed up, or jump to any maneuver on the timeline. The viewport
+        enhances the pilot's ability to objectively break down their flight by
+        simulating the flight as it happened, not as they remember it happening.
+      </p>
+    </div>
+    <img
+      src='/chrisdenais.com/content/case-studies/dod/analysis.png'
+      class='view-project-image content'
+    />
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <h2>Pilot profile</h2>
+      <p>
+        Every pilot is placed into a percentile within their squadron based on
+        the flight performance of their aircraft over a period of time. These
+        grades can then be collected by pilot instructors to more accuractely
+        assess the mission readiness of pilots.
+      </p>
+    </div>
+    <img
+      src='/chrisdenais.com/content/case-studies/dod/pilot-profile.png'
+      width='1600px'
+      height='1200px'
+      class='view-project-image content'
+    />
+  </Content>
+  <Content>
+    <div class='text-width'>
+      <h1>Conclusion</h1>
+      <h2>Results</h2>
+      <ul>
+        <li>
+          Expanded software testing with 59 Test and Evaluation Squadron at
+          Nellis Air Force Base
+        </li>
+        <li>
+          Crowdbotics was the first company to successfully leverage the
+          Maneuver Identification Challenge to advance the field of AI
+        </li>
+      </ul>
+    </div>
+  </Content>
+  <LinkGroup
+    title='Press'
+    links={[
+      {
+        href: 'https://www.popsci.com/technology/air-force-artificial-intelligence-pi',
+        label: 'How AI could help new Air Force pilots avoid costly mistakes'
+      },
+      {
+        href: 'https://adlnet.gov/news/2022/04/11/F15-xAPI-Training/',
+        label: 'Air Force Project Enhances Live F-15E Flight Training with xAPI'
+      },
+      {
+        href: 'https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/',
+        label: 'Air Force introduces AI to training program'
+      }
+    ]}
+  />
+  <NextCaseStudy
+    href='/chrisdenais.com/projects/atmos'
+    label='Pioneering web3 user experiences for Exo pilots inhabiting planet Atmos'
+    thumbnail={{
+      src: '/chrisdenais.com/content/projects/atmos/thumbnail.png',
+      size: [528, 396]
+    }}
+  />
 </Base>

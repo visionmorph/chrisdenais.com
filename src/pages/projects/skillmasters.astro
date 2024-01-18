@@ -3,90 +3,90 @@ import Base from '../../layouts/Base.astro'
 ---
 
 <Base>
-	<section>
-		<div class='container'>
-			<h1>Bridging the talent gap for youth sports with SkillMasters</h1>
-		</div>
-	</section>
-	<section>
-		<div class='container'>
-			<img
-				class='view-project-image borderless'
-				src='/chrisdenais.com/content/projects/skillmasters/01.png'
-				alt='Blank project image'
-				width='1600px'
-				height='1202px'
-			/>
-		</div>
-	</section>
-	<section>
-		<div class='container'>
-			<h1>
-				SkillMasters gives young athletes access to college coaches for
-				personalized feedback. The mobile app was further optimized for
-				onboarding new signups and recording training workouts.
-			</h1>
-		</div>
-	</section>
-	<section>
-		<div class='container compact end'>
-			<img
-				class='view-project-image borderless'
-				src='/chrisdenais.com/content/projects/skillmasters/02.png'
-				alt='Blank project image'
-				width='1600px'
-				height='1202px'
-			/>
-			<img
-				class='view-project-image borderless'
-				src='/chrisdenais.com/content/projects/skillmasters/03.png'
-				alt='Blank project image'
-				width='1600px'
-				height='1202px'
-			/>
-			<div class='view-project-flex'>
-				<img
-					class='view-project-image borderless flex-child'
-					src='/chrisdenais.com/content/projects/skillmasters/04.png'
-					alt='Blank project image'
-				/>
-				<img
-					class='view-project-image borderless flex-child'
-					src='/chrisdenais.com/content/projects/skillmasters/05.png'
-					alt='Blank project image'
-				/>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class='container end'>
-			<p>Next case study</p>
-			<a
-				class='h1 link underscore-offset next-case-study'
-				href='/chrisdenais.com/case-studies/dod'
-				>Predicting mission readiness of pilots for The U.S. Department
-				of Defense</a
-			>
-			<img
-				class='next-preview'
-				width='528px'
-				height='396px'
-				src='/chrisdenais.com/content/projects/dod/thumbnail.png'
-			/>
-		</div>
-	</section>
-	<script is:inline>
-		const nextCaseStudy = document.querySelector('.next-case-study')
-		const nextPreview = document.querySelector('.next-preview')
-		nextCaseStudy.addEventListener('mousemove', evt => {
-			nextPreview.style.setProperty(
-				'--next-case-study-preview-top',
-				evt.clientY + 'px'
-			)
-			nextPreview.style.setProperty(
-				'--next-case-study-preview-left',
-				evt.clientX + 'px'
-			)
-		})
-	</script>
+  <section>
+    <div class='container'>
+      <h1>Bridging the talent gap for youth sports with SkillMasters</h1>
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <img
+        class='view-project-image borderless'
+        src='/chrisdenais.com/content/projects/skillmasters/01.png'
+        alt='Blank project image'
+        width='1600px'
+        height='1202px'
+      />
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <h1>
+        SkillMasters gives young athletes access to college coaches for
+        personalized feedback. The mobile app was further optimized for
+        onboarding new signups and recording training workouts.
+      </h1>
+    </div>
+  </section>
+  <section>
+    <div class='container compact end'>
+      <img
+        class='view-project-image borderless'
+        src='/chrisdenais.com/content/projects/skillmasters/02.png'
+        alt='Blank project image'
+        width='1600px'
+        height='1202px'
+      />
+      <img
+        class='view-project-image borderless'
+        src='/chrisdenais.com/content/projects/skillmasters/03.png'
+        alt='Blank project image'
+        width='1600px'
+        height='1202px'
+      />
+      <div class='view-project-flex'>
+        <img
+          class='view-project-image borderless flex-child'
+          src='/chrisdenais.com/content/projects/skillmasters/04.png'
+          alt='Blank project image'
+        />
+        <img
+          class='view-project-image borderless flex-child'
+          src='/chrisdenais.com/content/projects/skillmasters/05.png'
+          alt='Blank project image'
+        />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class='container end'>
+      <p>Next case study</p>
+      <a
+        class='h1 link underscore-offset next-case-study'
+        href='/chrisdenais.com/case-studies/dod'
+        >Predicting mission readiness of pilots for The U.S. Department of
+        Defense</a
+      >
+      <img
+        class='next-preview'
+        width='528px'
+        height='396px'
+        src='/chrisdenais.com/content/projects/dod/thumbnail.png'
+      />
+    </div>
+  </section>
+  <script is:inline>
+    const nextCaseStudy = document.querySelector('.next-case-study')
+    const nextPreview = document.querySelector('.next-preview')
+    nextCaseStudy.addEventListener('mousemove', evt => {
+      nextPreview.style.setProperty(
+        '--next-case-study-preview-top',
+        evt.clientY + 'px'
+      )
+      nextPreview.style.setProperty(
+        '--next-case-study-preview-left',
+        evt.clientX + 'px'
+      )
+    })
+  </script>
 </Base>
