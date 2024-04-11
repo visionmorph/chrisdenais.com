@@ -247,6 +247,22 @@ section.left {
 	margin-top: 6rem;
 }
 
+.content-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+}
+
+@media (max-width: 1366px) {
+	.content-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.content-grid .content-copy {
+		order: -1;
+	}
+}
+
 .text-width {
 	max-width: 1240px;
 }
