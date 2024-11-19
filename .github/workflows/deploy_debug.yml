@@ -1,4 +1,4 @@
-name: Bluehost Github Action
+name: Bluehost Github Action Debug
 
 on:
   push:
