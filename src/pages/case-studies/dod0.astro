@@ -37,10 +37,12 @@ import Base from '../../layouts/Base.astro'
 				Readiness between January 2022 and May 2022 while gathering feedback 
 				from pilots and stakeholders. The team also consisted of three developers, 
 				two data scientists, and a project manager.
-
-				The team disbanded during the development phase after we won the AI Accelerator’s 
-				Maneuver ID Challenge.
-
+			</p>
+			<p>
+				The team disbanded during the development phase after we won the <a href="https://maneuver-id.mit.edu/>"AI Accelerator’s 
+				Maneuver ID Challenge.</a>
+			</p>
+			<p>
 				Since then DDR has expanded testing across multiple US Air Force bases.
 			</p>
 		</div>
@@ -49,13 +51,14 @@ import Base from '../../layouts/Base.astro'
 		<div class='text-width'>
 			<h2>Post-flight debriefs doesn't accurately measure pilot performance</h2>
 			<p>
-				After every flight pilots have a debrief to assess their recent performance. Pilot 
+				After every flight pilots have a debriefing to assess their recent performance. Pilot 
 				instructors review using whiteboards and video recordings as a teaching aid, while 
 				pilots take notes and rely on memory to recall moments from their last flight. The 
-				lack of capability to measure the difference between perspective and reality of how 
-				maneuvers are performed limits the Air Force’s ability to effectively determine proficiency 
+				lack of capability <b>to measure the difference between perspective and reality of how 
+				maneuvers are performed</b> limits the Air Force’s ability to effectively determine proficiency 
 				level of pilots.
-
+			</p>
+			<p>
 				The existing design was difficult for customers to complete tasks, resulting in low user 
 				engagement and a general dissatisfaction. The usability of Data Driven Readiness (DDR) struggled 
 				to keep up with the project's functional ambition, disregarding fundamental design principles.
@@ -74,21 +77,21 @@ import Base from '../../layouts/Base.astro'
 				to the design basics. Our best guess was: by reducing complexity we can improve clarity. The mission was 
 				to create a strong foundation built with purpose to support the platform's evolution and its diverse set 
 				of users.
-
+			</p>
+			<p>
 				At a high level our goals were:
 			</p>
 			<ul>
-				<li>Utilize avionics data collected on military aircraft</li>
 				<li>
-					Reduce cognitive overload: Simplify the process of learning a new tool for people of all technical 
+					<b>Reduce cognitive overload:</b> Simplify the process of learning a new tool for people of all technical 
 					skill levels
 				</li>
 				<li>
-					Familiarity: Define the vision for a consumer-friendly enterprise web app that contrasts legacy 
+					<b>Familiarity:</b> Define the vision for a consumer-friendly enterprise web app that contrasts legacy 
 					systems the government often uses
 				</li>
 				<li>
-					Independence: Raise the confidence level of pilots when reviewing past flights by increasing their 
+					<b>Independence:</b> Raise the confidence level of pilots when reviewing past flights by increasing their 
 					ability to work autonomously
 				</li>
 			</ul>
@@ -101,27 +104,28 @@ import Base from '../../layouts/Base.astro'
 				At the start of the project we didn’t have a clear set of specific goals for the maneuver analysis experience. 
 				Without any prior insights, I partnered with our data scientist and a key stakeholder to understand how pilots 
 				were using the software.
-
+			</p>
+			<p>
 				We also tested the existing DDR app with 5 participants at Seymour Johnson Air Force Base. Our goals were to better 
 				understand the challenges pilots and instructors faced such as:
 			</p>
 			<ul>
 				<li>
-					Grades don’t tell a complete story: The values for how a maneuver was flown are only shown as averages. This 
+					<b>Grades don’t tell a complete story:</b> The values for how a maneuver was flown are only shown as averages. This 
 					left pilots filling in the blanks yet again as to their true performance.
 				</li>
 				<li>
-					Finding the true timestamp is tedious: When a maneuver starts and ends on the timeline isn’t when maneuvers 
+					<b>Finding the true timestamp is tedious:</b> When a maneuver starts and ends on the timeline isn’t when maneuvers 
 					were actually performed. An additional amount of scrubbing was required to find the exact start time of a 
 					maneuver. This was wasting a significant amount of time for what should have been a simple task.
 				</li>
 				<li>
-					Clumsy camera controls: Achieving the desired camera settings happens by making selections at random. The 
+					<b>Clumsy camera controls:</b> Achieving the desired camera settings happens by making selections at random. The 
 					lack of clear descriptions led them to use the visual feedback of toggling selections on and off to 
 					understand what it does.
 				</li>
 				<li>
-					Lack of motivation: Pilots expressed a lack of motivation to explore since they also have to stay current 
+					<b>Lack of motivation:</b> Pilots expressed a lack of motivation to explore since they also have to stay current 
 					with a number of avionics onboard their aircraft.
 				</li>
 			</ul>
@@ -143,31 +147,33 @@ import Base from '../../layouts/Base.astro'
 				workflow, but want to do so with a minimal amount of effort. The biggest motivator was to save time 
 				by completing tasks quicker, leading to an increase in the rate of learning. As the capabilities of 
 				the platform continue to expand, the expectations pilots have is evolving as well.
-
+			</p>
+			<p>
 				This insight was crucial, as it indicated that if early adopters—who are technically proficient and 
 				well-educated pilots—were experiencing usability issues, how likely would newer customers in different 
 				contexts struggle even more?
-
+			</p>
+			<p>
 				There were a few patterns that emerged from our data:
 			</p>
 			<ul>
 				<li>
-					Inspect real time performance of maneuvers: No supplemental information to drill down further means 
+					<b>Inspect real time performance of maneuvers:</b> No supplemental information to drill down further means 
 					pilots and instructors have no way to diagnose issues with a maneuver. Revealing real time information 
 					behind the flight data would give context to understand their aircraft performance.
 				</li>
 				<li>
-					Show data points with precision: By chronologically visualizing data we can give pilots the ability to 
+					<b>Show data points with precision:</b> By chronologically visualizing data we can give pilots the ability to 
 					navigate with more precision and accuracy. This opens up the opportunity for patterns and anomalies to 
 					be manually detected which wasn’t possible before.
 				</li>
 				<li>
-					Maintain situational awareness: Bring clarity to when and where maneuvers and comments are located at 
+					<b>Maintain situational awareness:</b> Bring clarity to when and where maneuvers and comments are located at 
 					in time. The group of actions give pilots the ability to make fine-tuned adjustments to further 
 					analyze their flight.
 				</li>
 				<li>
-					Lack of motivation: Pilots expressed a lack of motivation to explore since they also have to stay current 
+					<b>Lack of motivation:</b> Pilots expressed a lack of motivation to explore since they also have to stay current 
 					with a number of avionics onboard their aircraft.
 				</li>
 			</ul>
@@ -241,7 +247,8 @@ import Base from '../../layouts/Base.astro'
 				compact format. Comments and maneuver markers are embedded within the timeline reel that 
 				spatially orients events at specific moments of time. This change alone brings a fresh perspective 
 				for pilots to see when and what activity has occurred in the file at a high-level.
-
+			</p>
+			<p>
 				Realtime information of the aircraft's performance is now displayed to pilots in a visually 
 				engaging format. While the addition of parameters gives pilots an extra level of information 
 				awareness, it also opens the opportunity for human intervention to manually inspect the 
@@ -261,20 +268,21 @@ import Base from '../../layouts/Base.astro'
 				resulting in an increase in engagement and user satisfaction. The final design solution successfully met our 
 				user and business goals by establishing a seamless experience that encourages autonomy and self-improvement 
 				as a pilot.
-
+			</p>
+			<p>
 				Some of the noticeable improvements our team observed are:
 			</p>
 			<ul>
 				<li>
-					Increased average session duration: Feature engagement improved by 40% as users spent more time 
+					<b>Increased average session duration:</b> Feature engagement improved by 40% as users spent more time 
 					interacting with the product
 				</li>
 				<li>
-					Improved workflow speed: The task completion rate for primary tasks (upload file, add note) 
+					<b>Improved workflow speed:</b> The task completion rate for primary tasks (upload file, add note) 
 					improved by 15%
 				</li>
 				<li>
-					Happier customers: Post-launch interviews revealed an increase in user satisfaction with using 
+					<b>Happier customers:</b> Post-launch interviews revealed an increase in user satisfaction with using 
 					the web application
 				</li>
 			</ul>
@@ -283,40 +291,6 @@ import Base from '../../layouts/Base.astro'
 				adding comments such as “The new design is much more intuitive and easier to use” and “This is a 
 				serious upgrade compared to what was available before”.
 			</p>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h2>Pilot profile</h2>
-			<p>
-				Every pilot is placed into a percentile within their squadron
-				based on the flight performance of their aircraft over a period
-				of time. These grades can then be collected by pilot instructors
-				to more accuractely assess the mission readiness of pilots.
-			</p>
-		</div>
-		<img
-			src='/content/case-studies/dod/pilot-profile.png'
-			width='1600px'
-			height='1200px'
-			class='view-project-image content'
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h1>Conclusion</h1>
-			<h2>Results</h2>
-			<ul>
-				<li>
-					Expanded software testing with 59 Test and Evaluation
-					Squadron at Nellis Air Force Base
-				</li>
-				<li>
-					Crowdbotics was the first company to successfully leverage
-					the Maneuver Identification Challenge to advance the field
-					of AI
-				</li>
-			</ul>
 		</div>
 	</Content>
 	<LinkGroup
