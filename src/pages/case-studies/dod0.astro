@@ -10,13 +10,13 @@ import Base from '../../layouts/Base.astro'
 ---
 
 <Base>
-	<Title>Transforming flight debriefs for Air Force pilots using AI</Title>
+	<Title>Reimagining how U.S. Air Force pilots analyze aircraft maneuvers</Title>
 	<FeatureVideo src='/content/projects/dod/animation.mp4' />
 	<ContentSummary
-		roles={['UI design', 'UX research']}
+		year='Jan 2022 - May 2022'
 		company='U.S. Department of Defense'
 		website='www.defense.gov'
-		year='2022'
+		roles={['User research', 'Interaction design','Usability testing', 'UI design']}
 	>
 		<h2>
 			The U.S. Department of Defense is America's largest government
@@ -31,61 +31,34 @@ import Base from '../../layouts/Base.astro'
 	</ContentSummary>
 	<Content>
 		<div class='text-width'>
-			<h2>Problem</h2>
+			<h2>My role</h2>
 			<p>
-				Air Force pilots conduct post-flight debriefing sessions to
-				assess their performance and mistakes, but analog tools such as
-				whiteboards and writing notes hinders their ability to
-				effectively learn from missions by relying on memory.
+				My role focused on user research and interface design for Data Driven
+				Readiness between January 2022 and May 2022 while gathering feedback 
+				from pilots and stakeholders. The team also consisted of three developers, 
+				two data scientists, and a project manager.
+
+				The team disbanded during the development phase after we won the AI Accelerator’s 
+				Maneuver ID Challenge.
+
+				Since then DDR has expanded testing across multiple US Air Force bases.
 			</p>
 		</div>
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Business goals</h2>
-			<ul>
-				<li>Utilize avionics data collected on military aircraft</li>
-				<li>
-					Leverage AI for the identifying and grading of aerial
-					maneuvers
-				</li>
-				<li>
-					Plan for missions based on squadron or pilot proficiency
-				</li>
-			</ul>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h1>Research</h1>
-			<h2>User interviews</h2>
+			<h2>Post-flight debriefs doesn't accurately measure pilot performance</h2>
 			<p>
-				I conducted interviews with 4 pilots stationed at Seymour
-				Johnson Air Force Base to understand their work habits, pain
-				points, and expectations of flight debriefing in a digital
-				workspace. The pilots are familiar with their jargon and onboard
-				flight instruments so they didn’t want to relearn how to do
-				simple things. Pilots wanted to know at a glance what maneuvers
-				were flown and how well they performed each one.
-			</p>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<blockquote>
-				Typically at the end of the debrief the student keeps some
-				notes, but we erase our tapes. We erase our shot sheets and all
-				the data gets flushed.
-			</blockquote>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h2>User flow</h2>
-			<p>
-				The primary flow we considered is uploading the acquired flight
-				data, viewing the maneuver analysis, and adding comments about
-				the sortie.
+				After every flight pilots have a debrief to assess their recent performance. Pilot 
+				instructors review using whiteboards and video recordings as a teaching aid, while 
+				pilots take notes and rely on memory to recall moments from their last flight. The 
+				lack of capability to measure the difference between perspective and reality of how 
+				maneuvers are performed limits the Air Force’s ability to effectively determine proficiency 
+				level of pilots.
+
+				The existing design was difficult for customers to complete tasks, resulting in low user 
+				engagement and a general dissatisfaction. The usability of Data Driven Readiness (DDR) struggled 
+				to keep up with the project's functional ambition, disregarding fundamental design principles.
 			</p>
 		</div>
 		<img
@@ -95,23 +68,107 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Usability testing</h2>
+			<h2>Reimagining the maneuver analysis experience</h2>
 			<p>
-				Releases were pushed at the end of every two-week sprint which
-				gave us time to incrementally make changes and gather feedback
-				from pilots such as:
+				Our main goal for the project was to reimagine the aircraft maneuver analysis experience by returning 
+				to the design basics. Our best guess was: by reducing complexity we can improve clarity. The mission was 
+				to create a strong foundation built with purpose to support the platform's evolution and its diverse set 
+				of users.
+
+				At a high level our goals were:
+			</p>
+			<ul>
+				<li>Utilize avionics data collected on military aircraft</li>
+				<li>
+					Reduce cognitive overload: Simplify the process of learning a new tool for people of all technical 
+					skill levels
+				</li>
+				<li>
+					Familiarity: Define the vision for a consumer-friendly enterprise web app that contrasts legacy 
+					systems the government often uses
+				</li>
+				<li>
+					Independence: Raise the confidence level of pilots when reviewing past flights by increasing their 
+					ability to work autonomously
+				</li>
+			</ul>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>Understanding the landscape</h2>
+			<p>
+				At the start of the project we didn’t have a clear set of specific goals for the maneuver analysis experience. 
+				Without any prior insights, I partnered with our data scientist and a key stakeholder to understand how pilots 
+				were using the software.
+
+				We also tested the existing DDR app with 5 participants at Seymour Johnson Air Force Base. Our goals were to better 
+				understand the challenges pilots and instructors faced such as:
 			</p>
 			<ul>
 				<li>
-					Renaming labels to be more familiar with Air Force pilots
-					and instructors
+					Grades don’t tell a complete story: The values for how a maneuver was flown are only shown as averages. This 
+					left pilots filling in the blanks yet again as to their true performance.
 				</li>
 				<li>
-					Organizing large sums of data to be more easily scannable
+					Finding the true timestamp is tedious: When a maneuver starts and ends on the timeline isn’t when maneuvers 
+					were actually performed. An additional amount of scrubbing was required to find the exact start time of a 
+					maneuver. This was wasting a significant amount of time for what should have been a simple task.
 				</li>
 				<li>
-					Inclusive design patterns to accommodate for users mental
-					models
+					Clumsy camera controls: Achieving the desired camera settings happens by making selections at random. The 
+					lack of clear descriptions led them to use the visual feedback of toggling selections on and off to 
+					understand what it does.
+				</li>
+				<li>
+					Lack of motivation: Pilots expressed a lack of motivation to explore since they also have to stay current 
+					with a number of avionics onboard their aircraft.
+				</li>
+			</ul>
+			<blockquote>
+				It allows them to get an objective view of what is happening and how they flew and be able to make incremental, 
+				sometimes significant changes to how they're flying to be safer, more effective or more lethal.
+			</blockquote>
+			<img
+				src='/content/case-studies/dod/analysis.png'
+				class='view-project-image content'
+			/>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>Pilots want to integrate DDR in their workflow with a minimal amount effort</h2>
+			<p>
+				Our findings led us to believe that pilots have a desire to integrate DDR into their already existing 
+				workflow, but want to do so with a minimal amount of effort. The biggest motivator was to save time 
+				by completing tasks quicker, leading to an increase in the rate of learning. As the capabilities of 
+				the platform continue to expand, the expectations pilots have is evolving as well.
+
+				This insight was crucial, as it indicated that if early adopters—who are technically proficient and 
+				well-educated pilots—were experiencing usability issues, how likely would newer customers in different 
+				contexts struggle even more?
+
+				There were a few patterns that emerged from our data:
+			</p>
+			<ul>
+				<li>
+					Inspect real time performance of maneuvers: No supplemental information to drill down further means 
+					pilots and instructors have no way to diagnose issues with a maneuver. Revealing real time information 
+					behind the flight data would give context to understand their aircraft performance.
+				</li>
+				<li>
+					Show data points with precision: By chronologically visualizing data we can give pilots the ability to 
+					navigate with more precision and accuracy. This opens up the opportunity for patterns and anomalies to 
+					be manually detected which wasn’t possible before.
+				</li>
+				<li>
+					Maintain situational awareness: Bring clarity to when and where maneuvers and comments are located at 
+					in time. The group of actions give pilots the ability to make fine-tuned adjustments to further 
+					analyze their flight.
+				</li>
+				<li>
+					Lack of motivation: Pilots expressed a lack of motivation to explore since they also have to stay current 
+					with a number of avionics onboard their aircraft.
 				</li>
 			</ul>
 		</div>
@@ -119,74 +176,114 @@ import Base from '../../layouts/Base.astro'
 	<Content>
 		<div class='text-width'>
 			<blockquote>
-				It allows them to get an objective view of what is happening and
-				how they flew and be able to make incremental, sometimes
-				significant changes to how they're flying to be safer, more
-				effective or more lethal
+				While we spend hours analyzing and debriefing each training mission to maximize learning, our instructors are 
+				very time-limited and can only record some of the subjective data to summarize a student's performance on 
+				syllabus sorties.
 			</blockquote>
 		</div>
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Technical limitations</h2>
+			<h2>Refining the information architecture</h2>
 			<p>
-				While striving towards an ideal user experience, our team
-				encountered a number of challenges throughout the development
-				process:
+				By defining a page template pilots can expect to find certain types of content throughout using the 
+				product. This reduces the cognitive load on users by displaying web content in a consistent, visible, 
+				and easy to use way as the platform continues to scale. This was further enhanced with the addition of 
+				a header section to include global navigation links and system-level actions that are persistent on 
+				pages across the product.
 			</p>
-			<ul>
-				<li>
-					Our team used Google’s Material design library to jumpstart
-					the implementation of our design system in Figma
-				</li>
-				<li>
-					Some design components were made to suit our specific use
-					case that are not a part of publicly accessible open-source
-					design libraries
-				</li>
-				<li>
-					Our team used CesiumJS to visualize the geospatial data in
-					an interactive and 3-dimensional space
-				</li>
-			</ul>
+		</div>
+		<img
+			src='/content/case-studies/dod/user-flow.png'
+			class='view-project-image content'
+		/>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>Mapping out the mouse and keyboard controls</h2>
+			<p>
+				Following the team's decision to implement Cesium Ion to simulate flights in the browser, we 
+				tested the usability of the default camera controls. Pilots said the viewport camera mouse controls 
+				were redundant, clunky, and lacked variety. There was no keyboard functionality. Based on their 
+				feedback we added keyboard bindings for power users to quickly use timeline actions. Orienting 
+				the viewport camera with a mouse was further refined for ease of use.
+			</p>
+		<img
+			src='/content/case-studies/dod/user-flow.png'
+			class='view-project-image content'
+		/>
+		<img
+			src='/content/case-studies/dod/user-flow.png'
+			class='view-project-image content'
+		/>
 		</div>
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h1>Design</h1>
-			<h2>Maneuvers</h2>
+			<h2>Bringing clarity to aircraft maneuver grades</h2>
 			<p>
-				Detected maneuvers are classed by a passing, acceptable, or
-				failed grading scale. Maneuvers that can’t be identified with
-				certainty are considered possible detections. Selecting a
-				maneuver jumps to that timestamp in the viewer to be replayed.
+				Instead of assigning mixed grades for each maneuver performed, grades were passed down 
+				to each parameter inside of a maneuver. This gives pilots a more complete view of the 
+				flight characteristics from when each maneuver was performed. The intent to prioritize 
+				the findability of page content gives pilots a streamlined way to process information.
 			</p>
+		<img
+			src='/content/case-studies/dod/user-flow.png'
+			class='view-project-image content'
+		/>
 		</div>
-		<video
-			src='/content/case-studies/dod/joint_training_fed-003.mp4'
-			class='view-project-video content'
-			autoplay
-			loop
-			muted
-			playsinline
-			width='1600px'
-			height='1138px'></video>
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Analysis</h2>
+			<h2>Visualizing aircraft performance in real time</h2>
 			<p>
-				Pilots can replay their recently flown sorties allowing them to
-				pause, rewind, speed up, or jump to any maneuver on the
-				timeline. The viewport enhances the pilot's ability to
-				objectively break down their flight by simulating the flight as
-				it happened, not as they remember it happening.
+				Timeline reel now displays numerical timestamps and vertical dividers in a layered yet 
+				compact format. Comments and maneuver markers are embedded within the timeline reel that 
+				spatially orients events at specific moments of time. This change alone brings a fresh perspective 
+				for pilots to see when and what activity has occurred in the file at a high-level.
+
+				Realtime information of the aircraft's performance is now displayed to pilots in a visually 
+				engaging format. While the addition of parameters gives pilots an extra level of information 
+				awareness, it also opens the opportunity for human intervention to manually inspect the 
+				performance of maneuvers graded by artificial intelligence.
 			</p>
 		</div>
 		<img
 			src='/content/case-studies/dod/analysis.png'
 			class='view-project-image content'
 		/>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>Results</h2>
+			<p>
+				The redesign of DDR saw significant improvements across the customer journey by reducing points of friction, 
+				resulting in an increase in engagement and user satisfaction. The final design solution successfully met our 
+				user and business goals by establishing a seamless experience that encourages autonomy and self-improvement 
+				as a pilot.
+
+				Some of the noticeable improvements our team observed are:
+			</p>
+			<ul>
+				<li>
+					Increased average session duration: Feature engagement improved by 40% as users spent more time 
+					interacting with the product
+				</li>
+				<li>
+					Improved workflow speed: The task completion rate for primary tasks (upload file, add note) 
+					improved by 15%
+				</li>
+				<li>
+					Happier customers: Post-launch interviews revealed an increase in user satisfaction with using 
+					the web application
+				</li>
+			</ul>
+			<p>
+				Pilots reported feeling more confident in their decisions and less frustrated by the application, 
+				adding comments such as “The new design is much more intuitive and easier to use” and “This is a 
+				serious upgrade compared to what was available before”.
+			</p>
+		</div>
 	</Content>
 	<Content>
 		<div class='text-width'>
@@ -226,12 +323,20 @@ import Base from '../../layouts/Base.astro'
 		title='Press'
 		links={[
 			{
-				href: 'https://www.popsci.com/technology/air-force-artificial-intelligence-pi',
+				href: 'https://www.aiaccelerator.af.mil/News/News-Article-View/Article/3270293/first-commercial-company-leverages-daf-mit-maneuver-id-challenge-to-advance-ai',
+				label: 'First Commercial Company Leverages DAF-MIT Maneuver ID Challenge to Advance AI'
+			},
+			{
+				href: 'https://www.popsci.com/technology/air-force-artificial-intelligence-pilot-training/',
 				label: 'How AI could help new Air Force pilots avoid costly mistakes'
 			},
 			{
 				href: 'https://adlnet.gov/news/2022/04/11/F15-xAPI-Training/',
 				label: 'Air Force Project Enhances Live F-15E Flight Training with xAPI'
+			},
+			{
+				href: 'https://www.ktnv.com/news/exclusive-nellis-air-force-base-testing-artificial-intelligence-in-combat-training',
+				label: 'Exclusive: Nellis Air Force Base tests new artificial intelligence program for combat training'
 			},
 			{
 				href: 'https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/',
