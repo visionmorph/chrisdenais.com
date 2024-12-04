@@ -60,6 +60,7 @@ h1,
 	font-weight: 300;
 	line-height: 1.25;
 	/* 125% */
+	letter-spacing: 0px;
 }
 
 h2,
@@ -71,6 +72,7 @@ h2,
 	font-weight: 400;
 	line-height: 1.22222;
 	/* 122.222% */
+	letter-spacing: 0px;
 }
 
 h3,
@@ -87,7 +89,7 @@ p,
 .p1,
 ol,
 ul,
- {
+li {
 	/* P1 */
 	font-family: Inter;
 	font-size: 24px;
