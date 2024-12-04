@@ -60,7 +60,6 @@ h1,
 	font-weight: 300;
 	line-height: 1.25;
 	/* 125% */
-	letter-spacing: -0.96px;
 }
 
 h2,
@@ -72,7 +71,6 @@ h2,
 	font-weight: 400;
 	line-height: 1.22222;
 	/* 122.222% */
-	letter-spacing: -0.36px;
 }
 
 h3,
@@ -89,7 +87,7 @@ p,
 .p1,
 ol,
 ul,
-li {
+ {
 	/* P1 */
 	font-family: Inter;
 	font-size: 24px;
@@ -111,7 +109,9 @@ ul {
 	padding-left: 0;
 }
 li {
+	list-style-type: '- ';
 	margin-left: 1em;
+	margin-bottom: 1em;
 }
 
 .p2 {
@@ -129,11 +129,9 @@ blockquote {
 	position: relative;
 	font-family: Inter;
 	font-size: 48px;
-	font-style: italic;
 	font-weight: 300;
 	line-height: 60px;
 	/* 125% */
-	letter-spacing: -0.72px;
 }
 
 blockquote::before {
