@@ -11,10 +11,12 @@ import Base from '../../layouts/Base.astro'
 
 <Base>
 	<Title>Reimagining how U.S. Air Force pilots analyze aircraft maneuvers</Title>
+		<div class="content__flex">
 		<img
 			src='/content/case-studies/dod/DDR.png'
 			class='view-project-image content'
 		/>
+		</div>
 	<ContentSummary
 		year='Jan 2022 - May 2022'
 		company='U.S. Department of Defense'
@@ -133,10 +135,10 @@ import Base from '../../layouts/Base.astro'
 				</li>
 			</ul>
 		</div>
-		<div>
+		<div class='text-width'>
 			<blockquote>
-				It allows them to get an objective view of what is happening and how they flew and be able to make incremental, 
-				sometimes significant changes to how they're flying to be safer, more effective or more lethal.
+				"It allows them to get an objective view of what is happening and how they flew and be able to make incremental, 
+				sometimes significant changes to how they're flying to be safer, more effective or more lethal."
 			</blockquote>
 			<p><b>Adam Ha</b></p>
 			<p>Lead F-15E Flight Test Engineer</p>
@@ -189,12 +191,14 @@ import Base from '../../layouts/Base.astro'
 	<Content>
 		<div class='text-width'>
 			<blockquote>
-				While we spend hours analyzing and debriefing each training mission to maximize learning, our instructors are 
+				"While we spend hours analyzing and debriefing each training mission to maximize learning, our instructors are 
 				very time-limited and can only record some of the subjective data to summarize a student's performance on 
-				syllabus sorties.
+				syllabus sorties."
 			</blockquote>
-			<p><b>Major Mark Poppler</b></p>
-			<p>Chief of Innovation for the 4th Training Squadron</p>
+			<div>
+				<p><b>Major Mark Poppler</b></p>
+				<p>Chief of Innovation for the 4th Training Squadron</p>
+			</div>
 		</div>
 	</Content>
 	<Content>
@@ -224,7 +228,16 @@ import Base from '../../layouts/Base.astro'
 				the viewport camera with a mouse was further refined for ease of use.
 			</p>
 		</div>
-		<FeatureVideo src='/content/projects/dod/Viewport-animation.mp4' />
+		<video
+			src='/content/case-studies/dod/viewport-animation.mp4'
+			class='view-project-video content'
+			autoplay
+			loop
+			muted
+			playsinline
+			width='1600px'
+			height='1200px'>
+		</video>
 		<img
 			src='/content/case-studies/dod/Keyboard-controls.png'
 			class='view-project-image content'
