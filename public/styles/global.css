@@ -438,6 +438,10 @@ button.filled[disabled] {
 	align-items: flex-start;
 }
 
+h3.link {
+    color: #78A9FF;
+}
+
 /* -------------- Content ----------------- */
 
 .content__flex {
