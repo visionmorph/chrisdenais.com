@@ -25,7 +25,7 @@ video {
 }
 
 a {
-	color: #78A9FF;
+	color: inherit;
 	text-decoration: none;
 	font-family: Inter;
 	font-size: 24px;
@@ -59,7 +59,6 @@ h1,
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.25;
-	color: #ffffff;
 	/* 125% */
 	letter-spacing: 0px;
 }
@@ -72,7 +71,6 @@ h2,
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.22222;
-	color: #ffffff;
 	/* 122.222% */
 	letter-spacing: 0px;
 }
@@ -439,7 +437,6 @@ button.filled[disabled] {
 	gap: 1rem;
 	align-items: flex-start;
 }
-
 /* -------------- Content ----------------- */
 
 .content__flex {
@@ -454,11 +451,9 @@ button.filled[disabled] {
 
 .content__info {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: flex-start;
 	gap: 2rem;
-	width: 100%;
-	justify-content: space-between;
 }
 
 /* -------------- Projects ---------------- */
@@ -949,7 +944,6 @@ textarea:-webkit-autofill {
 	-webkit-box-shadow: 0 0 0 50px #151515 inset;
 	-webkit-text-fill-color: white;
 }
-
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill:focus {
 	-webkit-box-shadow: 0 0 0 50px #011917 inset;
