@@ -114,7 +114,9 @@ ul {
 	padding-left: 0;
 }
 li {
-	margin-left: 1em;
+	list-style-type: '- ';
+	margin-left: .75em;
+	margin-bottom: 1em;
 }
 
 .p2 {
@@ -132,23 +134,9 @@ blockquote {
 	position: relative;
 	font-family: Inter;
 	font-size: 48px;
-	font-style: italic;
 	font-weight: 300;
 	line-height: 60px;
 	/* 125% */
-	letter-spacing: -0.72px;
-}
-
-blockquote::before {
-	content: '"';
-	position: absolute;
-	left: -0.375em;
-}
-
-blockquote::after {
-	content: '"';
-	position: relative;
-	left: -0.25em;
 }
 
 /* -------------- Nav ---------------- */
@@ -417,6 +405,14 @@ button.filled[disabled] {
 }
 
 /* -------------- Fancy Link ---------------- */
+.h2.link {
+	color: #fff;
+}
+
+.h2.link:hover {
+	color: #fff;
+}
+
 
 .link {
 	color: #78a9ff;
@@ -444,20 +440,6 @@ button.filled[disabled] {
 
 .link:focus-visible {
 	color: #fff;
-}
-
-.link.icon {
-	display: block;
-	/* padding-right: 1.75rem; */
-}
-
-.link.icon::after {
-	padding-right: 1.75rem;
-	background: url(../images/link_small.svg) no-repeat right top;
-	content: '';
-	width: 1.75rem;
-	height: 1.75rem;
-	margin-left: 0.5rem;
 }
 
 .link__group {
@@ -524,7 +506,7 @@ button.filled[disabled] {
 .view-project-video {
 	border-radius: 0;
 	outline: 2px solid var(--Grey-80, #343a3f);
-	outline-offset: 2px;
+	outline-offset: -2px;
 	max-width: 100%;
 	height: auto;
 }
@@ -1340,7 +1322,6 @@ textarea:-webkit-autofill:focus {
 		font-weight: 300;
 		line-height: 1.25;
 		/* 125% */
-		letter-spacing: -0.96px;
 	}
 
 	h2,
@@ -1349,9 +1330,8 @@ textarea:-webkit-autofill:focus {
 		font-family: Inter;
 		font-size: 1.5rem;
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 1.25;
-		letter-spacing: -0.36px;
 	}
 
 	.testimonial__text.hanging::before {
