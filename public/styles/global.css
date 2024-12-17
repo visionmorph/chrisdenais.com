@@ -58,10 +58,9 @@ h1,
 	font-size: 64px;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 1.25;
+	line-height: 80px;
 	color: #ffffff;
 	/* 125% */
-	letter-spacing: -0.96px;
 }
 
 h2,
@@ -71,19 +70,18 @@ h2,
 	font-size: 36px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 1.22222;
+	line-height: 44px;
 	color: #ffffff;
 	/* 122.222% */
-	letter-spacing: -0.36px;
 }
 
 h3,
 .h3 {
 	font-family: Inter;
-	font-size: 1.5rem;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 1.875rem;
+	line-height: 30px;
 	color: #ffffff;
 	/* 125% */
 }
@@ -137,6 +135,12 @@ blockquote {
 	font-weight: 300;
 	line-height: 60px;
 	/* 125% */
+}
+
+.mono {
+	font-family: IBM Plex Mono;
+	margin-bottom: 1rem !important;
+	text-transform: uppercase;
 }
 
 /* -------------- Nav ---------------- */
@@ -1196,9 +1200,9 @@ textarea:-webkit-autofill:focus {
 	}
 
 	blockquote {
-		font-size: 24px;
+		font-size: 36px;
 		font-weight: 400;
-		line-height: 30px;
+		line-height: 44px;
 	}
 }
 
@@ -1232,7 +1236,7 @@ textarea:-webkit-autofill:focus {
 		font-family: Inter;
 		font-size: 3rem;
 		font-style: normal;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.25;
 		/* 125% */
 		letter-spacing: -0.96px;
