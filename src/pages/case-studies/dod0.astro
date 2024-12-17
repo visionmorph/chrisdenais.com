@@ -23,16 +23,6 @@ import Base from '../../layouts/Base.astro'
 		website='www.defense.gov'
 		roles={['User research', 'Interaction design','Usability testing', 'UI design']}
 	>
-		<h2>
-			The U.S. Department of Defense is America's largest government
-			agency which provides the military forces needed to deter war and to
-			protect the security of the United States. Our team at Crowdbotics
-			worked on the
-
-			<a class='h2 underscore' href='https://maneuver-id.mit.edu/'
-				>Maneuver Identification Challenge</a
-			> for The Department of the Air Force-MIT Artificial Intelligence Accelerator.
-		</h2>
 	</ContentSummary>
 	<Content>
 		<div class='text-width'>
@@ -44,7 +34,7 @@ import Base from '../../layouts/Base.astro'
 				two data scientists, and a project manager.
 			</p>
 			<p>
-				The team disbanded during the development phase after we won the <a href="https://maneuver-id.mit.edu/">AI Accelerator’s 
+				The team disbanded during the development phase after we won the <a class='underscore' href="https://maneuver-id.mit.edu/">AI Accelerator’s 
 				Maneuver ID Challenge.</a>
 			</p>
 			<p>
@@ -54,8 +44,10 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<p class='p2 no-bottom-margin'>Problem</p>
-			<h2>Post-flight debriefs doesn't accurately measure pilot performance</h2>
+			<span>
+				<p class='p2'>Problem</p>
+				<h2>Post-flight debriefs doesn't accurately measure pilot performance</h2>
+			</span>
 			<p>
 				After every flight pilots have a debriefing to assess their recent performance. Pilot 
 				instructors review using whiteboards and video recordings as a teaching aid, while 
