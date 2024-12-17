@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 /* -------------- General ---------------- */
 
 :root {
@@ -566,6 +566,14 @@ button.filled[disabled] {
 	outline-offset: -2px;
 }
 
+.next__grid:focus {
+	outline: 2px solid #fff;
+}
+
+.next__grid:active {
+	outline: 2px solid #fff;
+}
+
 .next__grid img.view-project-image {
 	outline: none;
 }
@@ -584,6 +592,10 @@ button.filled[disabled] {
 	aspect-ratio: 4 / 3;
 	max-height: 600px;
 	box-sizing: border-box;
+}
+
+.next__caption:hover {
+	background-color: #21272A;
 }
 
 .next__container {
@@ -1175,6 +1187,8 @@ textarea:-webkit-autofill:focus {
 	.next__grid {
 		display: grid;
 		grid-template-columns: 1fr;
+		outline-width: 1px;
+		outline-offset: -1px;
 	}
 
 	.content__flex {
@@ -1185,18 +1199,6 @@ textarea:-webkit-autofill:focus {
 		font-size: 24px;
 		font-weight: 400;
 		line-height: 30px;
-	}
-
-	blockquote::before {
-		content: '"';
-		position: absolute;
-		left: -0.5em;
-	}
-
-	blockquote::after {
-		content: '"';
-		position: relative;
-		left: -0.125em;
 	}
 }
 
@@ -1262,6 +1264,11 @@ textarea:-webkit-autofill:focus {
 		padding: 1rem;
 	}
 
+	.next__caption:hover {
+		padding: 1rem;
+	}
+
+
 	/* -------------- Clients ---------------- */
 
 	.clients {
@@ -1302,11 +1309,6 @@ textarea:-webkit-autofill:focus {
 	.video__wrapper {
 		outline-width: 1px;
 		outline-offset: -1px;
-	}
-
-	.next__grid {
-		outline-width: 1px;
-		outline-offset: -1x;
 	}
 }
 
