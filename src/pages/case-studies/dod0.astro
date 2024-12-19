@@ -18,14 +18,16 @@ import Base from '../../layouts/Base.astro'
 		roles={['User research', 'Interaction design','Usability testing', 'UI design']}
 	>
 	</ContentSummary>
-	<div class='container'>
-		<div class='video__wrapper'>
-			<img
-				src='/content/case-studies/dod/ddr.png'
-				class='view-project-image content'
-			/>
+	<Content>
+		<div class='container'>
+			<div>
+				<img
+					src='/content/case-studies/dod/ddr.png'
+					class='view-project-image content'
+				/>
+			</div>
 		</div>
-	</div>
+	</Content>
 	<Content>
 		<div class='text-width'>
 			<h2>My role</h2>
@@ -137,8 +139,10 @@ import Base from '../../layouts/Base.astro'
 				"It allows them to get an objective view of what is happening and how they flew and be able to make incremental, 
 				sometimes significant changes to how they're flying to be safer, more effective or more lethal."
 			</blockquote>
-			<p class=""><b>Adam Ha</b></p>
-			<p>Lead F-15E Flight Test Engineer</p>
+			<div>
+				<p><b>Adam Ha</b></p>
+				<p>Lead F-15E Flight Test Engineer</p>
+			</div>
 		</div>
 		<img
 			src='/content/case-studies/dod/journey-map.png'
@@ -191,7 +195,7 @@ import Base from '../../layouts/Base.astro'
 					syllabus sorties."
 				</blockquote>
 				<div>
-					<p class="no-bottom-margin"><b>Major Mark Poppler</b></p>
+					<p><b>Major Mark Poppler</b></p>
 					<p>Chief of Innovation for the 4th Training Squadron</p>
 				</div>
 			</div>
@@ -316,8 +320,10 @@ import Base from '../../layouts/Base.astro'
 				freed up other team members to do their jobs. Before working with Chris I didn’t realize how much it would take to 
 				do the research sitting down with pilots to better solve their problems.”
 			</blockquote>
-			<p class=""><b>Julian Capps</b></p>
-			<p>Head of Defense, Crowdbotics</p>
+			<div>
+				<p><b>Julian Capps</b></p>
+				<p>Head of Defense, Crowdbotics</p>
+			</div>
 		</div>
 	</Content>
 	<LinkGroup
