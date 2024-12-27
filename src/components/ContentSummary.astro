@@ -10,19 +10,11 @@ const { roles, company, website, year } = Astro.props
 				{roles ? roles.map((role, i) => <p>{role}</p>) : null}
 			</span>
 			<span>
-				<p class='p2'>Company</p>
-				<p>{company}</p>
+				<p class='p2'>Industries</p>
+				{industry ? industry.map((ind, i) => <p key={i}>{ind}</p>) : null}
 			</span>
 			<span>
-				<p class='p2'>Website</p>
-				<a
-					class='p1 link underscore icon'
-					href='https://defense.gov'
-					target='_blank'>{website}</a
-				>
-			</span>
-			<span>
-				<p class='p2'>Year</p>
+				<p class='p2'>Timeline</p>
 				<p>{year}</p>
 			</span>
 		</div>
