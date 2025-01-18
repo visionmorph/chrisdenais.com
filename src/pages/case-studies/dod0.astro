@@ -27,107 +27,53 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>My role</h2>
+			<h2>Challenge</h2>
 			<p>
-				My role focused on user research and interface design for Data Driven
-				Readiness between January 2022 and May 2022 while gathering feedback 
-				from pilots and stakeholders. The team also consisted of three developers, 
-				two data scientists, and a project manager.
+				The U.S. Department of Defense knew it had a problem determining the 
+				proficiency level of pilots. While debriefs are held to evaluate the 
+				pilot’s most recent flight, there are also millions of data points recorded 
+				onboard their aircraft being wasted that could be used to measure and track 
+				pilot performance.
 			</p>
 			<p>
-				The team disbanded during the development phase after we won the <a class='underscore' href="https://maneuver-id.mit.edu/">AI Accelerator’s 
-				Maneuver ID Challenge.</a>
+				The 333rd Fighter Squadron at Seymour Johnson Air Force Base began looking at 
+				technologies and apps that address these problems, when Julian Capps from Crowdbotics 
+				recommended a larger research and design effort to understand usability problems with 
+				the Data Driven Readiness (DDR) software design. Along with Julian and myself, the core 
+				team during this phase included the development team, data scientists, and project management.
 			</p>
-			<p>
-				Since then DDR has expanded testing across multiple US Air Force bases.
-			</p>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<span>
-				<p class='p2 mono'>Problem</p>
-				<h2>Post-flight debriefs doesn't accurately measure pilot performance</h2>
-			</span>
-			<p>
-				After every flight pilots have a debriefing to assess their recent performance. Pilot 
-				instructors review using whiteboards and video recordings as a teaching aid, while 
-				pilots take notes and rely on memory to recall moments from their last flight. The 
-				lack of capability <b>to measure the difference between perspective and reality of how 
-				maneuvers are performed</b> limits the Air Force’s ability to effectively determine proficiency 
-				level of pilots.
-			</p>
-			<p>
-				The existing design was difficult for customers to complete tasks, resulting in low user 
-				engagement and a general dissatisfaction. The usability of Data Driven Readiness (DDR) struggled 
-				to keep up with the project's functional ambition, disregarding fundamental design principles.
-			</p>
-		</div>
-		<img
-			src='/content/case-studies/dod/original-ddr.png'
-			class='view-project-image content'
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<p class='p2 mono'>Goals</p>
-			<h2>Reimagining the maneuver analysis experience</h2>
-			<p>
-				Our main goal for the project was to reimagine the aircraft maneuver analysis experience by returning 
-				to the design basics. Our best guess was: by reducing complexity we can improve clarity. The mission was 
-				to create a strong foundation built with purpose to support the platform's evolution and its diverse set 
-				of users.
-			</p>
-			<p>
-				At a high level our goals were:
-			</p>
-			<ul>
-				<li>
-					<b>Reduce cognitive overload:</b> Simplify the process of learning a new tool for people of all technical 
-					skill levels
-				</li>
-				<li>
-					<b>Familiarity:</b> Define the vision for a consumer-friendly enterprise web app that contrasts legacy 
-					systems the government often uses
-				</li>
-				<li>
-					<b>Independence:</b> Raise the confidence level of pilots when reviewing past flights by increasing their 
-					ability to work autonomously
-				</li>
-			</ul>
 		</div>
 	</Content>
 	<Content>
 		<div class='text-width'>
 			<p class='p2 mono'>Kick-off</p>
-			<h2>Understanding the landscape</h2>
+			<h2>Identifying pain points in the maneuver analysis experience</h2>
 			<p>
-				At the start of the project we didn’t have a clear set of specific goals for the maneuver analysis experience. 
-				Without any prior insights, I partnered with our data scientist and a key stakeholder to understand how pilots 
-				were using the software.
+				At the start of the project, we didn’t have clear goals for improving the maneuver analysis experience. 
+				To gain insights, I teamed up with our data scientists and key stakeholders to learn how pilots were 
+				using the software.
 			</p>
 			<p>
-				We also tested the existing DDR app with 5 participants at Seymour Johnson Air Force Base. Our goals were to better 
-				understand the challenges pilots and instructors faced such as:
+				We tested the current DDR application with five participants at Seymour Johnson Air Force Base to understand 
+				their experiences. Our goal was to identify the challenges they faced, such as:
 			</p>
 			<ul>
 				<li>
-					<b>Grades don’t tell a complete story:</b> The values for how a maneuver was flown are only shown as averages. This 
-					left pilots filling in the blanks yet again as to their true performance.
+					<b>Grades are unclear:</b> Without descriptions, pilots had to guess and experiment to figure out 
+					how the camera views worked.
 				</li>
 				<li>
-					<b>Finding the true timestamp is tedious:</b> When a maneuver starts and ends on the timeline isn’t when maneuvers 
+					<b>Camera controls are awkward:</b> When a maneuver starts and ends on the timeline isn’t when maneuvers 
 					were actually performed. An additional amount of scrubbing was required to find the exact start time of a 
 					maneuver. This was wasting a significant amount of time for what should have been a simple task.
 				</li>
 				<li>
-					<b>Clumsy camera controls:</b> Achieving the desired camera settings happens by making selections at random. The 
-					lack of clear descriptions led them to use the visual feedback of toggling selections on and off to 
-					understand what it does.
+					<b>Timestamps are off:</b> Pilots had to spend extra time searching the timeline to find when maneuvers 
+					actually started.
 				</li>
 				<li>
-					<b>Lack of motivation:</b> Pilots expressed a lack of motivation to explore since they also have to stay current 
-					with a number of avionics onboard their aircraft.
+					<b>Notes feel isolated:</b> The notes feature was only good for personal use, offering no way to 
+					collaborate or have discussions.
 				</li>
 			</ul>
 		</div>
@@ -142,43 +88,42 @@ import Base from '../../layouts/Base.astro'
 			</div>
 		</div>
 		<img
-			src='/content/case-studies/dod/journey-map.png'
+			src='/content/case-studies/dod/original-ddr.png'
 			class='view-project-image content'
 		/>
 	</Content>
 	<Content>
 		<div class='text-width'>
 			<p class='p2 mono'>The discovery</p>
-			<h2>Pilots want to integrate DDR in their workflow with a minimal amount effort</h2>
+			<h2>Streamlining DDR integration into pilots workflow</h2>
 			<p>
-				Our findings led us to believe that pilots have a desire to integrate DDR into their already existing 
-				workflow, but want to do so with a minimal amount of effort. The biggest motivator was to save time 
-				by completing tasks quicker, leading to an increase in the rate of learning. As the capabilities of 
-				the platform continue to expand, the expectations pilots have is evolving as well.
+				While some usability issues were uncovered, pilots appreciated DDR’s ability to provide immediate feedback 
+				from flight data and personalized input from instructors. They want to keep using DDR in their workflow but 
+				prefer a design that doesn’t require much effort to relearn. As the platform grows, so have their expectations.
 			</p>
 			<p>
-				This insight was crucial, as it indicated that if early adopters—who are technically proficient and 
-				well-educated pilots—were experiencing usability issues, how likely would newer customers in different 
-				contexts struggle even more?
+				These insights were crucial. If even our early adopters—highly skilled and educated pilots—faced usability 
+				challenges, users in other contexts would likely struggle even more.
 			</p>
 			<p>
-				There were a few patterns that emerged from our data:
+				From our research, a few key patterns emerged:
 			</p>
 			<ul>
 				<li>
-					<b>Inspect real time performance of maneuvers:</b> No supplemental information to drill down further means 
-					pilots and instructors have no way to diagnose issues with a maneuver. Revealing real time information 
-					behind the flight data would give context to understand their aircraft performance.
+					<b>Clear and transparent grading system:</b> Develop a grading system with clear criteria, detailed explanations, 
+					and visual indicators to help pilots better understand their performance.
 				</li>
 				<li>
-					<b>Show data points with precision:</b> By chronologically visualizing data we can give pilots the ability to 
-					navigate with more precision and accuracy. This opens up the opportunity for patterns and anomalies to 
-					be manually detected which wasn’t possible before.
+					<b>Easy-to-use camera controls:</b> Design user-friendly camera controls with intuitive descriptions, tooltips, 
+					and an interactive tutorial to make navigation easier
 				</li>
 				<li>
-					<b>Maintain situational awareness:</b> Bring clarity to when and where maneuvers and comments are located at 
-					in time. The group of actions give pilots the ability to make fine-tuned adjustments to further 
-					analyze their flight.
+					<b>Accurate and automated timestamps:</b> Introduce automatic, precise timestamping that aligns with the start of each 
+					maneuver, making it quicker to locate events on the timeline.
+				</li>
+				<li>
+					<b>Collaborative and interactive notes:</b> Expand the notes feature to include collaborative tools like tagging 
+					team members to foster teamwork and discussions.
 				</li>
 			</ul>
 			<div>
@@ -192,26 +137,10 @@ import Base from '../../layouts/Base.astro'
 					<p>Chief of Innovation for the 4th Training Squadron</p>
 				</div>
 			</div>
-		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<p class='p2 mono'>Page navigation</p>
-			<h2>Refining the information architecture</h2>
-			<p>
-				By defining a page template pilots can expect to find certain types of content throughout using the 
-				product. This reduces the cognitive load on users by displaying web content in a consistent, visible, 
-				and easy to use way as the platform continues to scale. This was further enhanced with the addition of 
-				a header section to include global navigation links and system-level actions that are persistent on 
-				pages across the product.
-			</p>
-		</div>
-		<div>
 			<img
-				src='/content/case-studies/dod/ui-template.png'
+				src='/content/case-studies/dod/journey-map.png'
 				class='view-project-image content'
 			/>
-			<p class='p2'>1. Header 2. Side panel 3. Viewport 4. Timeline</p>
 		</div>
 	</Content>
 	<Content>
@@ -219,11 +148,13 @@ import Base from '../../layouts/Base.astro'
 			<p class='p2 mono'>Human-computer interaction</p>
 			<h2>Mapping out the mouse and keyboard controls</h2>
 			<p>
-				Following the team's decision to implement Cesium Ion to simulate flights in the browser, we 
-				tested the usability of the default camera controls. Pilots said the viewport camera mouse controls 
-				were redundant, clunky, and lacked variety. There was no keyboard functionality. Based on their 
-				feedback we added keyboard bindings for power users to quickly use timeline actions. Orienting 
-				the viewport camera with a mouse was further refined for ease of use.
+				Since the viewport simulates the aircraft and maneuvers in the browser we included this as 
+				part of our testing with participants. We learned that the default mouse controls were 
+				difficult to orient the camera view with and that no actions were bound to the keyboard.
+			</p>
+			<p>
+				Based on the feedback received we simplified the mouse controls to be easier to approach. 
+				We also introduced keyboard controls to timeline actions for quick access by power users.
 			</p>
 		</div>
 		<video
@@ -244,33 +175,66 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
+			<p class='p2 mono'>Content guidelines</p>
+			<h2>Refining the information architecture</h2>
+			<p>
+				Defining areas of the page into sections allowed our team to communicate and limit design decisions 
+				while customers can safely expect to see these patterns reused in different ways throughout the 
+				product experience.
+			</p>
+			<p>
+				This helps reduce cognitive load by displaying information that's visible, predictable, and 
+				consistently applied. We further enhanced the page template by including a header section 
+				to support global navigation links and system-level actions that are accessible from all 
+				pages across the product.
+			</p>
+		</div>
+		<div>
+			<img
+				src='/content/case-studies/dod/ui-template.png'
+				class='view-project-image content'
+			/>
+			<p class='p2'>1. Header 2. Side panel 3. Viewport 4. Timeline</p>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
 			<h2>Bringing clarity to aircraft maneuver grades</h2>
 			<p>
-				Instead of assigning mixed grades for each maneuver performed, grades were passed down 
-				to each parameter inside of a maneuver. This gives pilots a more complete view of the 
-				flight characteristics from when each maneuver was performed. The intent to prioritize 
-				the findability of page content gives pilots a streamlined way to process information.
+				Instead of assigning grades on a sliding scale to each maneuver, a simple pass or 
+				fail grade is assigned to each parameter to aid pilots in narrowing down areas of 
+				improvement. We focused on making content easier to read so that information can be 
+				processed more efficiently.
 			</p>
 		</div>
 		<img
-			src='/content/case-studies/dod/left-sidebar.png'
+			src='/content/case-studies/dod/maneuvers.png'
 			class='view-project-image content'
 		/>
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Visualizing aircraft performance in real time</h2>
+			<h2>Stay connected to your team members</h2>
 			<p>
-				Timeline reel now displays numerical timestamps and vertical dividers in a layered yet 
-				compact format. Comments and maneuver markers are embedded within the timeline reel that 
-				spatially orients events at specific moments of time. This change alone brings a fresh perspective 
-				for pilots to see when and what activity has occurred in the file at a high-level.
+				We made it easier to keep everyone in the loop by tagging team members and sending notifications 
+				when mentioned. The addition of note timestamps was also introduced so that pilots are able to mark 
+				the exact point on the timeline being referred to. While these changes make notes more interactive 
+				it also encourages social engagement between pilots and instructors.
 			</p>
+		</div>
+		<img
+			src='/content/case-studies/dod/notes.png'
+			class='view-project-image content'
+		/>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>Visualizing real time aircraft performance</h2>
 			<p>
-				Realtime information of the aircraft's performance is now displayed to pilots in a visually 
-				engaging format. While the addition of parameters gives pilots an extra level of information 
-				awareness, it also opens the opportunity for human intervention to manually inspect the 
-				performance of maneuvers graded by artificial intelligence.
+				Maneuver and note indicators are now both shown on the timeline reel to give an overview of where events 
+				have happened at. Real time information of the aircraft's performance is also visualized on the timeline 
+				to raise the level of information awareness, which opens the opportunity for humans to manually inspect 
+				maneuvers graded by artificial intelligence.
 			</p>
 		</div>
 		<img
@@ -280,28 +244,26 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Results</h2>
-			<p>
-				The redesign of DDR saw significant improvements across the customer journey by reducing points of friction, 
-				resulting in an increase in engagement and user satisfaction. The final design solution successfully met our 
-				user and business goals by establishing a seamless experience that encourages autonomy and self-improvement 
-				as a pilot.
-			</p>
-			<p>
-				Some of the noticeable improvements our team observed are:
-			</p>
+			<h2>Final thoughts</h2>
 			<ul>
 				<li>
-					<b>Increased average session duration:</b> Feature engagement improved by 40% as users spent more time 
-					interacting with the product
+					<b>Adapt research methods to user constraints</b> Talking to pilots provided valuable insights, and their limited 
+					availability highlighted the need for a more flexible research approach. Adapting methodologies to fit our 
+					users constraints could have made our process more effective.
 				</li>
 				<li>
-					<b>Improved workflow speed:</b> The task completion rate for primary tasks (upload file, add note) 
-					improved by 15%
+					<b>Embrace the learning curve:</b> The project's complexity was a challenge, and gaining industry-specific 
+					knowledge was key to building up my confidence. Knowing how to navigate through uncertainty became an essential 
+					part of solving design problems and taking the lead.
 				</li>
 				<li>
-					<b>Happier customers:</b> Post-launch interviews revealed an increase in user satisfaction with using 
-					the web application
+					<b>Organize a research repository:</b> While Figma worked well for design assets, research and documentation grew harder to 
+					access over time. A better system for organizing research would have made sharing insights with stakeholders easier.
+				</li>
+				<li>
+					<b>Be a GitHub contributor:</b> Working closely with the development team made me a better designer by learning how CSS frameworks leverage design tokens. Implementing 
+					tokens in our design system allowed me to then make small updates to front-end code, speeding up the development and enhancing 
+					team collaboration.
 				</li>
 			</ul>
 			<p>
