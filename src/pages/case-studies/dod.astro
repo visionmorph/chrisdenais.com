@@ -27,52 +27,48 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Challenge</h2>
+			<h2>The hallenge</h2>
 			<p>
-				The U.S. Department of Defense knew it had a problem determining the 
-				proficiency level of pilots. While debriefs are held to evaluate the 
-				pilot’s most recent flight, there are also millions of data points recorded 
-				onboard their aircraft being wasted that could be used to measure and track 
-				pilot performance.
+				The U.S. Department of Defense faced a critical issue: how to accurately assess mission readiness of pilots.
 			</p>
+			<ul>
+				<li>
+					<b>Current approach:</b> Post-flight debriefs that heavily rely on instructor feedback
+				</li>
+				<li>
+					<b>Missed opportunity:</b> Each aircraft generates millions of data points during flight, but this data wasn’t 
+					being fully leveraged to evaluate and track performance.
+				</li>
+			</ul>
 			<p>
-				The 333rd Fighter Squadron at Seymour Johnson Air Force Base began looking at 
-				technologies and apps that address these problems, when Julian Capps from Crowdbotics 
-				recommended a larger research and design effort to understand usability problems with 
-				the Data Driven Readiness (DDR) software design. Along with Julian and myself, the core 
-				team during this phase included the development team, data scientists, and project management.
+				To address this the 333rd Fighter Squadron at Seymour Johnson Air Force Base partnered with Crowdbotics. 
+				I joined a cross-functional team of developers, data scientists, and project managers to redesign the Data 
+				Driven Readiness (DDR) software. Our mission was to enhance how pilots analyze maneuvers and seamlessly integrate 
+				flight data into their daily workflow.
 			</p>
 		</div>
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<p class='p2 mono'>Kick-off</p>
-			<h2>Identifying pain points in the maneuver analysis experience</h2>
+			<h2>Research Kick-off</h2>
 			<p>
-				At the start of the project, we didn’t have clear goals for improving the maneuver analysis experience. 
-				To gain insights, I teamed up with our data scientists and key stakeholders to learn how pilots were 
-				using the software.
+				To understand the problem we conducted usability tests of the current DDR software with five pilots.
 			</p>
 			<p>
-				We tested the current DDR application with five participants at Seymour Johnson Air Force Base to understand 
-				their experiences. Our goal was to identify the challenges they faced, such as:
+				Pain points we uncovered:
 			</p>
 			<ul>
 				<li>
-					<b>Grades are unclear:</b> Pilots found it hard to understand how well they performed maneuvers because
-					the grades were ambiguous.
+					<b>Unclear grades</b> -> Ambiguous scoring made it hard for pilots to know how well they performed
 				</li>
 				<li>
-					<b>Camera controls are awkward:</b> Without clear descriptions pilots struggled to change the camera 
-					to the desired angles.
+					<b>Awkward controls</b> -> Limited descriptions made it difficult to view maneuvers from the right angles
 				</li>
 				<li>
-					<b>Timestamps are off:</b> When a maneuver starts and ends on the timeline isn’t when maneuvers were actually 
-					performed. An additional amount of scrubbing was required to find the exact start time of a maneuver.
+					<b>Inaccurate timestamps</b> -> Maneuvers on the timeline didn’t match actual flight events, requiring tedious scrubbing
 				</li>
 				<li>
-					<b>Notes feel isolated:</b> The notes feature was only used for personal use, offering little in terms of 
-					collaboration or having discussions.
+					<b>Isolated notes</b> -> Missing collaboration features made notes only useful as personal reminders
 				</li>
 			</ul>
 		</div>
@@ -93,38 +89,25 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<p class='p2 mono'>The discovery</p>
-			<h2>Streamlining DDR integration into pilots workflow</h2>
+			<h2>Key Insights</h2>
 			<p>
-				While some usability issues were uncovered, pilots appreciated DDR’s ability to provide immediate feedback 
-				from flight data and personalized input from instructors. They want to keep using DDR in their workflow but 
-				prefer a design that doesn’t require much effort to relearn. As the platform grows, so have their expectations.
+				Pilots valued DDR’s potential but needed usability improvements before they could fully rely on it. 
+				Our research revealed four design priorities:
 			</p>
-			<p>
-				These insights were crucial. If even our early adopters—highly skilled and educated pilots—faced usability 
-				challenges, users in other contexts would likely struggle even more.
-			</p>
-			<p>
-				From our research, a few key patterns emerged:
-			</p>
-			<ul>
+			<ol>
 				<li>
-					<b>Clear and transparent grading system:</b> Develop a grading system with clear criteria, detailed explanations, 
-					and visual indicators to help pilots better understand their performance.
+					<b>Transparent grading system:</b> Define a clear criteria with detailed explanations and visual indicators
 				</li>
 				<li>
-					<b>Easy-to-use camera controls:</b> Design user-friendly camera controls with intuitive descriptions, tooltips, 
-					and an interactive tutorial to make navigation easier.
+					<b>Intuitive camera controls:</b> Simplify the interactions and guide users
 				</li>
 				<li>
-					<b>Accurate and automated timestamps:</b> Introduce automatic, precise timestamping that aligns with the start of each 
-					maneuver, making it quicker to locate events on the timeline.
+					<b>Accurate timestamps:</b> Automatic alignment with actual maneuvers
 				</li>
 				<li>
-					<b>Collaborative and interactive notes:</b> Expand the notes feature to include collaborative tools like tagging 
-					team members to foster teamwork and discussions.
+					<b>Collaborative notes:</b> Ability to tag team members, add context, and foster discussion
 				</li>
-			</ul>
+			</ol>
 			<div>
 				<blockquote>
 					"While we spend hours analyzing and debriefing each training mission to maximize learning, our instructors are 
@@ -137,24 +120,33 @@ import Base from '../../layouts/Base.astro'
 				</div>
 			</div>
 		</div>
-			<img
-				src='/content/case-studies/dod/journey-map.png'
-				class='view-project-image content'
-			/>
 	</Content>
 	<Content>
 		<div class='text-width'>
 			<p class='p2 mono'>Human-computer interaction</p>
-			<h2>Mapping out the mouse and keyboard controls</h2>
+			<h2>Mapping mouse and keyboard controls</h2>
 			<p>
-				Since the viewport simulates the aircraft and maneuvers in the browser we included this as 
-				part of our testing with participants. We learned that the default mouse controls were 
-				difficult to orient the camera view with and that no actions were bound to the keyboard.
+				The DDR viewport simulates the aircraft and maneuvers in the browser. Through our user testing it was revealed that:
 			</p>
+			<ul>
+				<li>
+					Default mouse controls were restrictive and disorienting
+				</li>
+				<li>
+					No keyboard shortcuts were available
+				</li>
+			</ul>
 			<p>
-				Based on the feedback received we simplified the mouse controls to be easier to approach. 
-				We also introduced keyboard controls to timeline actions for quick access by power users.
+				I reassigned the mapping of keyboard and mouse controls to:
 			</p>
+			<ul>
+				<li>
+					Simplify the controls for better accessability
+				</li>
+				<li>
+					Added keyboard shortcuts to quickly navigate the timeline
+				</li>
+			</ul>
 		</div>
 		<video
 			src='/content/case-studies/dod/viewport-animation.mp4'
@@ -174,18 +166,27 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<p class='p2 mono'>Content guidelines</p>
-			<h2>Refining the information architecture</h2>
+			<p class='p2 mono'>Information Architecture</p>
+			<h2>Reducing cognitive load</h2>
 			<p>
-				Defining areas of the page into sections allowed our team to communicate and limit design decisions 
-				while customers can safely expect to see these patterns reused in different ways throughout the 
-				product experience.
+				We reorganized DDR’s core layout into clear, repeatable sections:
 			</p>
+			<ol>
+				<li>
+					<b>Header</b> -> Global navigation and system actions
+				</li>
+				<li>
+					<b>Side panel</b> -> Supporting details
+				</li>
+				<li>
+					<b>Viewport</b> -> Maneuver visualization
+				</li>
+				<li>
+					<b>Timeline</b> -> Performance metrics
+				</li>
+			</ol>
 			<p>
-				This helps reduce cognitive load by displaying information that's visible, predictable, and 
-				consistently applied. We further enhanced the page template by including a header section 
-				to support global navigation links and system-level actions that are accessible from all 
-				pages across the product.
+				This consistency reduced cognitive load and improved predictability across the platform.
 			</p>
 		</div>
 		<div>
@@ -193,17 +194,14 @@ import Base from '../../layouts/Base.astro'
 				src='/content/case-studies/dod/ui-template.png'
 				class='view-project-image content'
 			/>
-			<p class='p2'>1. Header 2. Side panel 3. Viewport 4. Timeline</p>
 		</div>
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Bringing clarity to aircraft maneuver grades</h2>
+			<h2>Clarity to Maneuver Grades</h2>
 			<p>
-				Instead of assigning grades on a sliding scale to each maneuver, a simple pass or 
-				fail grade is assigned to each parameter to aid pilots in narrowing down areas of 
-				improvement. We focused on making content easier to read so that information can be 
-				processed more efficiently.
+				Instead of vague sliding scales, we introduced parameter-level pass/fail grades. 
+				This helped pilots pinpoint areas for improvement without ambiguity.
 			</p>
 		</div>
 		<img
@@ -213,13 +211,10 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Stay connected to your team members</h2>
-			<p>
-				We made it easier to keep everyone in the loop by tagging team members and sending notifications 
-				when mentioned. The addition of note timestamps was also introduced so that pilots are able to mark 
-				the exact point on the timeline being referred to. While these changes make notes more interactive 
-				it also encourages social engagement between pilots and instructors.
-			</p>
+			<p class='p2 mono'>Design solution #2</p>
+			<h2>Collaborative Notetaking</h2>
+			<p>Pilots can now tag teammates, trigger email notifications with mentions, and timestamp notes to reference exact moments 
+			in the timeline. These features increase the collaboration between pilots and instructors.</p>
 		</div>
 		<img
 			src='/content/case-studies/dod/notes.png'
@@ -228,13 +223,20 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Visualizing real time aircraft performance</h2>
-			<p>
-				Maneuver and note indicators are now both shown on the timeline reel to give an overview of where events 
-				have happened at. Real time information of the aircraft's performance is also visualized on the timeline 
-				to raise the level of information awareness, which opens the opportunity for humans to manually inspect 
-				maneuvers graded by artificial intelligence.
-			</p>
+			<p class='p2 mono'>Design solution #3</p>
+			<h2>Real-Time Performance Visualization</h2>
+			<p>We layered user-generated and AI-driven notes directly onto the timeline reel. Pilots could now:</p>
+			<ul>
+				<li>
+					View note indicators directly on the timeline
+				</li>
+				<li>
+					Access to layered real-time aircraft performance data
+				</li>
+				<li>
+					Cross-check AI evaluations using human judgment
+				</li>
+			</ul>
 		</div>
 		<img
 			src='/content/case-studies/dod/timeline.png'
@@ -243,26 +245,43 @@ import Base from '../../layouts/Base.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Final thoughts</h2>
+			<h2>Impact</h2>
+			<p>"We transformed DDR from being difficult to use into a collaborative tool that pilots trust to evaluate and improve their 
+			performance, while still fitting into their demanding workflows. The improvements that made the biggest impact for pilots were:</p>
 			<ul>
 				<li>
-					<b>Adapt your research methods to user constraints</b> Talking to pilots provided valuable insights, and their limited 
-					availability highlighted the need for a more flexible research approach. Adapting methodologies to fit our 
-					users constraints could have made our process more effective.
+					Quickly identify performance gaps through transparent grading
 				</li>
 				<li>
-					<b>Embrace the learning curve:</b> The project's complexity was a challenge, and gaining industry-specific 
-					knowledge was key to building up my confidence. Knowing how to navigate through uncertainty became an essential 
-					part of solving design problems and taking the lead.
+					Navigate flight simulations more efficiently with intuitive controls
 				</li>
 				<li>
-					<b>Organize a research repository:</b> While Figma worked well for design assets, research and documentation grew harder to 
-					access over time. A better system for organizing research would have made sharing insights with stakeholders easier.
+					Collaborate with instructors with interactive notes
 				</li>
 				<li>
-					<b>Be a GitHub contributor:</b> Working with developers taught me how CSS frameworks leverage design tokens. Implementing 
-					tokens in our design system allowed me to then make small updates to front-end code, speeding up the development and enhancing 
-					team collaboration.
+					Cross-evaluations with human analysis from the enhanced visualizations
+				</li>
+			</ul>
+		/>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>Final Thoughts</h2>
+			<p>This project was as much about adapting design methods to constraints as it was about building a better tool:</p>
+			<ul>
+				<li>
+					<b>Adapt to user constraints</b> -> Pilots limited availability required leaner, flexible research methods
+				</li>
+				<li>
+					<b>Embrace the learning curve</b>-> The aviation industry is highly technical. Building domain knowledge gave me 
+					confidence to drive design decisions
+				</li>
+				<li>
+					<b>Organize research better</b> -> A dedicated repository would have made user research insights easier to share with stakeholders
+				</li>
+				<li>
+					<b>Bridge design and development:</b> By learning GitHub workflows and contributing to CSS tokens, I accelerated implementation and improved 
+					team collaboration
 				</li>
 			</ul>
 		</div>
@@ -282,6 +301,10 @@ import Base from '../../layouts/Base.astro'
 	<LinkGroup
 		title='Press coverage'
 		links={[
+			{
+				href: 'https://shield.ai/shield-ai-acquires-crowdbotics-data-driven-readiness-software-tools/',
+				label: 'Shield AI acquires Crowdbotics’ Data Driven Readiness software tools'
+			},
 			{
 				href: 'https://www.aiaccelerator.af.mil/News/News-Article-View/Article/3270293/first-commercial-company-leverages-daf-mit-maneuver-id-challenge-to-advance-ai',
 				label: 'First Commercial Company Leverages DAF-MIT Maneuver ID Challenge to Advance AI'
