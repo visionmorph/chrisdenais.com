@@ -104,15 +104,9 @@ ol,
 ul {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
-}
-
-ul {
+	gap: 1rem;
 	margin-left: 0;
 	padding-left: 0;
-}
-li {
-	margin-left: .75em;
 }
 
 .p2 {
