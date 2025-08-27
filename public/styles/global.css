@@ -37,7 +37,7 @@ a {
 
 b {
 	font-weight: 600;
-{
+}
 
 h1,
 h2,
@@ -1196,7 +1196,7 @@ textarea:-webkit-autofill:focus {
 		flex-direction: column;
 	}
 
-	 {
+	blockquote {
 		font-size: 36px;
 		font-weight: 300;
 		line-height: 44px;
