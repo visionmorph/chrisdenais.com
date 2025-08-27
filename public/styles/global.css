@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 /* -------------- General ---------------- */
 
@@ -30,10 +30,14 @@ a {
 	font-family: Inter;
 	font-size: 24px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.25;
 	/* 125% */
 }
+
+b {
+	font-weight: 600;
+{
 
 h1,
 h2,
@@ -57,7 +61,7 @@ h1,
 	font-family: Inter;
 	font-size: 64px;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 200;
 	line-height: 80px;
 	color: #ffffff;
 	/* 125% */
@@ -69,7 +73,7 @@ h2,
 	font-family: Inter;
 	font-size: 36px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 44px;
 	color: #ffffff;
 	/* 122.222% */
@@ -80,7 +84,7 @@ h3,
 	font-family: Inter;
 	font-size: 24px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 30px;
 	color: #ffffff;
 	/* 125% */
@@ -95,7 +99,7 @@ li {
 	font-family: Inter;
 	font-size: 24px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.25;
 	/* 125% */
 }
@@ -117,7 +121,7 @@ ul {
 	font-family: Inter;
 	font-size: 20px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 26px;
 	/* 130% */
 }
@@ -1042,7 +1046,7 @@ textarea:-webkit-autofill:focus {
 	font-family: Inter;
 	font-size: 20px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 26px;
 
 	position: relative;
@@ -1135,7 +1139,7 @@ textarea:-webkit-autofill:focus {
 
 .notification__title {
 	margin-bottom: 0px;
-	font-weight: 400;
+	font-weight: 300;
 
 	grid-column-start: span 1;
 	grid-column-end: span 1;
@@ -1194,7 +1198,7 @@ textarea:-webkit-autofill:focus {
 
 	 {
 		font-size: 36px;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 44px;
 	}
 }
@@ -1229,7 +1233,7 @@ textarea:-webkit-autofill:focus {
 		font-family: Inter;
 		font-size: 3rem;
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 1.25;
 		/* 125% */
 		letter-spacing: -0.96px;
