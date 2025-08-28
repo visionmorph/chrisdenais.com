@@ -582,7 +582,6 @@ button.filled[disabled] {
 	background-color: #121619;
 
 	aspect-ratio: 4 / 3;
-	max-height: 600px;
 	box-sizing: border-box;
 }
 
