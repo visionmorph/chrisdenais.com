@@ -109,7 +109,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	margin-left: 3rem;
+	margin-left: 1.5rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	padding-left: 0;
@@ -218,7 +218,7 @@ section.left {
 }
 
 .container.slim {
-	margin-top: 6rem;
+	margin-top: 8rem;
 }
 
 .container.end {
@@ -231,11 +231,12 @@ section.left {
 
 .container.content {
 	margin-top: 0rem;
-	margin-bottom: 6rem;
+	margin-bottom: 8rem;
 }
 
 .container.content.first {
-	margin-top: 6rem;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 }
 
 .content-grid {
@@ -255,7 +256,7 @@ section.left {
 }
 
 .text-width {
-	max-width: 1240px;
+	max-width: 1024px;
 }
 
 .text-width h1 {
@@ -473,7 +474,6 @@ button.filled[disabled] {
 
 .view-project-image {
 	outline: 2px solid var(--Grey-80, #343a3f);
-	outline-offset: -2px;
 	max-width: 100%;
 	height: auto;
 	aspect-ratio: 4 / 3;
@@ -481,10 +481,6 @@ button.filled[disabled] {
 
 .view-project-image.borderless {
 	outline-color: transparent;
-}
-
-.view-project-image.content {
-	margin-top: 2rem;
 }
 
 .view-project-image.full {
@@ -507,7 +503,6 @@ button.filled[disabled] {
 .view-project-video {
 	border-radius: 0;
 	outline: 2px solid var(--Grey-80, #343a3f);
-	outline-offset: -2px;
 	max-width: 100%;
 	height: auto;
 }
@@ -525,16 +520,13 @@ button.filled[disabled] {
 	height: auto;
 	position: relative;
 	z-index: -1;
-	margin-bottom: -7.25px;
 }
 
 .view-project-video.content {
-	margin-top: 2rem;
 	max-width: 100%;
 	height: auto;
 	position: relative;
 	z-index: -1;
-	margin-bottom: -7.25px;
 }
 
 .view-project-video video {
@@ -543,7 +535,6 @@ button.filled[disabled] {
 	position: relative;
 	z-index: -1;
 	margin: 0;
-	margin-bottom: -7.25px;
 }
 
 .next-preview {
