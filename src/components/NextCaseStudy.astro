@@ -11,19 +11,32 @@ const {
 		<h1>Next up</h1>
 		<a href={href} class='next__grid'>
 			<div class='next__caption'>
-				<h2>
-					{label}
-				</h2>
+				<h2>{label}</h2>
 				<div class='next__container'>
 					<p class='next__arrow' style='font-size: 36px;'>-></p>
 				</div>
 			</div>
-			<img
-				src={thumbnailSrc}
-				width='1600px'
-				height='1200px'
-				class='view-project-image full'
-			/>
+
+			{thumbnail.video ? (
+				<video 
+				  autoplay 
+				  loop 
+				  muted 
+				  playsinline 
+				  class="full"
+				  style="width: 100%; height: auto;"
+				>
+				  <source src={thumbnail.video} type="video/mp4" />
+				  Your browser does not support the video tag.
+				</video>
+			) : (
+				<img
+					src={thumbnail.src}
+					width={thumbnail.size?.[0] || '1600'}
+					height={thumbnail.size?.[1] || '1200'}
+					class='view-project-image full'
+				/>
+			)}
 		</a>
 	</div>
 </section>
