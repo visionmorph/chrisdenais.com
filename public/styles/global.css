@@ -458,7 +458,7 @@ button.filled[disabled] {
 
 .content__flex.vertical {
 	flex-direction: column;
-	gap: 1rem;
+	gap: 2rem;
 }
 
 .content__info {
