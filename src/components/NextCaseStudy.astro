@@ -4,8 +4,12 @@ const {
   label,
   thumbnail: { src, size, video }
 } = Astro.props
----
 
+// Determine if we should render a video
+const isVideo = video || (src && src.endsWith('.mp4'))
+const videoSrc = video || (isVideo ? src : null)
+const imgSrc = !isVideo ? src : null
+---
 <section>
   <div class='container slim'>
     <h1>Next up</h1>
@@ -17,7 +21,7 @@ const {
         </div>
       </div>
 
-      {video ? (
+      {isVideo ? (
         <video 
           autoplay 
           loop 
@@ -26,12 +30,12 @@ const {
           class="full"
           style="width: 100%; height: auto;"
         >
-          <source src={video} type="video/mp4" />
+          <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       ) : (
         <img
-          src={src}
+          src={imgSrc}
           width={size?.[0] || '1600'}
           height={size?.[1] || '1200'}
           class='view-project-image full'
