@@ -1,0 +1,17 @@
+---
+const { quote, author, title, link, linkLabel } = Astro.props;
+---
+
+<div style="display: flex; flex-direction: column; gap: 3rem;">
+  <blockquote>"{quote}"</blockquote>
+  <div>
+    <p><b>{author}</b></p>
+    <p>{title}</p>
+  </div>
+  
+  <hr />
+  
+  <a class="h3 link" target="_blank" href={link}>
+    {linkLabel}
+  </a>
+</div>
