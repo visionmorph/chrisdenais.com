@@ -5,7 +5,7 @@ const { quote, author, title, link, linkLabel } = Astro.props;
 <div style="display: flex; flex-direction: column; gap: 3rem;">
   <blockquote>"{quote}"</blockquote>
   <div>
-    <p><b>{author}</b></p>
+    <p style="margin-bottom: 0;"><b>{author}</b></p>
     <p>{title}</p>
   </div>
   
