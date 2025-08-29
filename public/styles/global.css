@@ -135,6 +135,17 @@ blockquote {
 	/* 125% */
 }
 
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.author {
+  margin-bottom: 0;
+}
+
+
 hr {
   border: 0;
   border-top: 1px solid #fff;
