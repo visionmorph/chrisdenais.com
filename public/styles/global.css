@@ -135,6 +135,13 @@ blockquote {
 	/* 125% */
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  width: 100%;
+  margin: 0;
+}
+
 .mono {
 	font-family: IBM Plex Mono;
 	margin-bottom: 1rem !important;
