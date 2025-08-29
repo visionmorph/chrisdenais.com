@@ -1337,6 +1337,10 @@ textarea:-webkit-autofill:focus {
 		/* 125% */
 	}
 
+	.quote-container {
+		gap: 1rem;
+	}
+
 	/* -------------- Layouts ---------------- */
 
 	.column-grid {
