@@ -1338,7 +1338,7 @@ textarea:-webkit-autofill:focus {
 	}
 
 	.quote-container {
-		gap: 1rem;
+		gap: 2rem;
 	}
 
 	/* -------------- Layouts ---------------- */
