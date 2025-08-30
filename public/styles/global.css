@@ -602,11 +602,9 @@ button.filled[disabled] {
 	justify-content: space-between;
 	align-items: end;
 	row-gap: 2rem;
-
-	padding: 1rem;
+	padding: 2rem;
 	border-radius: 0;
 	background-color: #121619;
-
 	aspect-ratio: 4 / 3;
 	box-sizing: border-box;
 }
@@ -1365,10 +1363,6 @@ textarea:-webkit-autofill:focus {
 	.next__grid video,
 	.next__grid img {
 		aspect-ratio: 1 / 1;
-	}
-
-	.next__caption:hover {
-		padding: 1rem;
 	}
 
 	.content__info {
