@@ -217,6 +217,11 @@ section.left {
 	top: 0;
 	z-index: 9999;
 	mix-blend-mode: exclusion;
+	transition: transform 0.3s ease;
+}
+
+.sticky.hide {
+	transform: translateY(-100%);
 }
 
 .container {
