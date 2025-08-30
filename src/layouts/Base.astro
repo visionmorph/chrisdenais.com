@@ -46,23 +46,11 @@
     <section>
       <div class='container slim'>
         <footer>
-          <div class='footer__contact'>
-            <h1>Let's talk</h1>
-            <a
-              class='h1 underscore underscore-offset-1 email_link'
-              href='/contact'>chrisdenais​@gmail.com</a
-            >
-          </div>
           <div class='footer__menu'>
             <a
               class='h2 link'
               href='https://www.linkedin.com/in/chrisdenais/'
               target='_blank'>LinkedIn</a
-            >
-            <a
-              class='h2 link'
-              href='https://www.instagram.com/chrisdenais/'
-              target='_blank'>Instagram</a
             >
             <a
               class='h2 link'
@@ -81,5 +69,18 @@
         </footer>
       </div>
     </section>
+    <script is:inline>
+      let lastScrollY = window.scrollY;
+      const nav = document.querySelector('.sticky');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+          nav.classList.add('hide');
+        } else {
+          nav.classList.remove('hide');
+        }
+        lastScrollY = window.scrollY;
+      });
+    </script>
   </body>
 </html>
