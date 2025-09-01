@@ -180,8 +180,9 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 96px;
+	gap: 2rem;
 	align-self: stretch;
+	margin-bottom: 4rem;
 }
 
 .footer__menu {
@@ -435,6 +436,13 @@ button.filled[disabled] {
 	color: #fff;
 }
 
+.p2.link {
+	color: #c1c7cd;
+}
+
+.p2.link:hover {
+	color: #fff;
+}
 
 .link {
 	color: #78a9ff;
