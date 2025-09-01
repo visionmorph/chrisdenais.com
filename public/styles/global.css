@@ -601,7 +601,6 @@ button.filled[disabled] {
 	outline: 2px solid #343a3f;
 	outline-offset: -2px;
 	align-items: start;
-	position: relative;
 }
 
 .next__grid:focus {
@@ -619,12 +618,6 @@ button.filled[disabled] {
 	height: 100%;
 	object-fit: cover;
 	aspect-ratio: 4 / 3;
-	transition: opacity 0.3s ease;
-}
-
-.next__grid:hover video,
-.next__grid:hover img {
-	opacity: 0.9; /* 10% fade */
 }
 
 .next__grid img.view-project-image {
@@ -641,15 +634,6 @@ button.filled[disabled] {
 	background-color: #121619;
 	aspect-ratio: 4 / 3;
 	box-sizing: border-box;
-	transition: background-color 0.3s ease;
-}
-
-.next__grid:hover .next__caption {
-	background-color: #21272A; /* caption hover effect */
-}
-
-.next__grid img.view-project-image {
-	outline: none;
 }
 
 .next__caption:hover {
