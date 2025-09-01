@@ -10,12 +10,13 @@ const { title, links } = Astro.props
 				links &&
 					links.map(({ href, label }) => (
 						<a
-							class='h3 link underscore icon'
+							class='link'
 							target='_blank'
 							href={href}
 						>
 							{label}
 						</a>
+						<hr />
 					))
 			}	
 		</div>
