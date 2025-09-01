@@ -689,23 +689,39 @@ button.filled[disabled] {
 
 .clients {
 	display: grid;
-	grid-column-gap: 2rem;
-	grid-row-gap: 4rem;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	background: #343A3F;
+	gap: 1px;
+	align-items: start;
 }
 
 .clients__item {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 16px;
-	flex: 1 0 0;
+	gap: 1rem;
+	padding: 1rem;
+	background: #000000;
+	aspect-ratio: 1 / 1;
 }
 
 @media screen and (max-width: 428px) {
 	.client-collection-item:not(:nth-child(-n + 5)) {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.clients__item {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+		padding: 1rem;
+		padding: 0rem;
+		background: #000000;
+		aspect-ratio: 3 / 1;
 	}
 }
 
