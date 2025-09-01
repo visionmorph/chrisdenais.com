@@ -586,6 +586,7 @@ button.filled[disabled] {
 	grid-template-columns: 1fr 1fr;
 	outline: 2px solid #343a3f;
 	outline-offset: -2px;
+	align-items: start;
 }
 
 .next__grid:focus {
@@ -1385,12 +1386,6 @@ textarea:-webkit-autofill:focus {
 	section {
 		padding-left: 2rem;
 		padding-right: 2rem;
-	}
-
-	.next__caption,
-	.next__grid video,
-	.next__grid img {
-		aspect-ratio: 1 / 1;
 	}
 
 	.content__info {
