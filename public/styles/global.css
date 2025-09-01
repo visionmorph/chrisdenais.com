@@ -613,8 +613,7 @@ button.filled[disabled] {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: end;
-	row-gap: 2rem;
+	align-items: flex-end;
 	padding: 2rem;
 	border-radius: 0;
 	background-color: #121619;
