@@ -153,6 +153,20 @@ hr {
   margin: 0;
 }
 
+.hr-strong {
+  border: 0;
+  border-top: 1px solid #697077;
+  width: 100%;
+  margin: 0;
+}
+
+.hr-subtle {
+  border: 0;
+  border-top: 1px solid #343A3F;
+  width: 100%;
+  margin: 0;
+}
+
 .mono {
 	font-family: IBM Plex Mono;
 	margin-bottom: 1rem !important;
