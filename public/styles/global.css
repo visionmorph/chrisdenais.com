@@ -170,7 +170,6 @@ hr {
 .mono {
 	font-family: IBM Plex Mono;
 	margin-bottom: 1rem !important;
-	text-transform: uppercase;
 }
 
 /* -------------- Nav ---------------- */
