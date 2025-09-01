@@ -170,6 +170,9 @@ hr {
 .mono {
 	font-family: IBM Plex Mono;
 	margin-bottom: 1rem !important;
+	color: #c1c7cd;
+	font-size: 1rem;
+	font-style: normal;
 }
 
 /* -------------- Nav ---------------- */
