@@ -719,7 +719,7 @@ button.filled[disabled] {
 		align-items: flex-start;
 		gap: 1rem;
 		padding: 1rem;
-		padding: 0rem;
+		padding-left: 0rem;
 		background: #000000;
 		aspect-ratio: 3 / 1;
 	}
