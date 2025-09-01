@@ -442,12 +442,16 @@ button.filled[disabled] {
 }
 
 /* -------------- Fancy Link ---------------- */
-.h2.link {
+.p.link {
 	color: #fff;
 }
 
-.h2.link:hover {
+.p.link:hover {
 	color: #fff;
+}
+
+.p.link:visited {
+	color: #be95ff;
 }
 
 .p2.link {
@@ -456,6 +460,10 @@ button.filled[disabled] {
 
 .p2.link:hover {
 	color: #fff;
+}
+
+.p2.link:visited {
+	color: #be95ff;
 }
 
 .link {
@@ -484,6 +492,10 @@ button.filled[disabled] {
 
 .link:focus-visible {
 	color: #fff;
+}
+
+.link:visited {
+	color: #be95ff;
 }
 
 .link__group {
