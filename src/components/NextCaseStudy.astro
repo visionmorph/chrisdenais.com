@@ -2,6 +2,8 @@
 const {
   href,
   label,
+  subtitle,
+  description,
   thumbnail: { src, size, video }
 } = Astro.props
 
@@ -15,8 +17,10 @@ const imgSrc = !isVideo ? src : null
         <h1>Next up</h1>
         <a href={href} class='next__grid'>
             <div class='next__caption'>
+                <p class="p2">{subtitle}</p>
                 <h2>{label}</h2>
-                <h2>-></h2>
+                <p>{description}</p>
+                <p>-></p>
             </div>
             {isVideo ? (
             <video 
