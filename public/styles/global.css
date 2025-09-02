@@ -109,7 +109,6 @@ ol,
 ul {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
 	margin-left: 1.5rem;
 	padding-left: 0;
 }
@@ -174,9 +173,8 @@ hr {
 
 .mono {
 	font-family: IBM Plex Mono;
-	margin-bottom: 1rem !important;
 	color: #c1c7cd;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-style: normal;
 }
 
