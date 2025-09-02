@@ -51,10 +51,12 @@ import Quote from '../../components/Quote.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Research Kick-off</h2>
-			<p>
-				To understand the problem we conducted usability tests of the current DDR software with five pilots.
-			</p>
+			<div>
+				<h2>Research Kick-off</h2>
+				<p>
+					To understand the problem we conducted usability tests of the current DDR software with five pilots.
+				</p>
+			</div>
 			<p>
 				Pain points we uncovered:
 			</p>
@@ -77,21 +79,23 @@ import Quote from '../../components/Quote.astro'
 			src='/content/case-studies/dod/original-ddr.png'
 			class='view-project-image content'
 		/>
-<Quote
-  quote={`It allows them to get an objective view of what is happening and how they flew and be able to make incremental, sometimes significant changes to how they're flying to be safer, more effective or more lethal.`}
-  author="Adam Ha"
-  title="Lead F-15E Flight Test Engineer"
-  link="https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/"
-  linkLabel="Learn more about how Nellis Air Force Base uses Data Driven Readiness"
-/>
+		<Quote
+			quote={`It allows them to get an objective view of what is happening and how they flew and be able to make incremental, sometimes significant changes to how they're flying to be safer, more effective or more lethal.`}
+			author="Adam Ha"
+			title="Lead F-15E Flight Test Engineer"
+			link="https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/"
+			linkLabel="Learn more about how Nellis Air Force Base uses Data Driven Readiness"
+		/>
 	</Content>
 	<Content>
 		<div class='text-width'>
+			<div>
 			<h2>Key Insights</h2>
-			<p>
-				Pilots valued DDR’s potential but needed usability improvements before they could fully rely on it. 
-				Our research revealed four design priorities:
-			</p>
+				<p>
+					Pilots valued DDR’s potential but needed usability improvements before they could fully rely on it. 
+					Our research revealed four design priorities:
+				</p>
+			</div>
 			<ol>
 				<li>
 					<b>Transparent grading system:</b> Define a clear criteria with detailed explanations and visual indicators
@@ -106,19 +110,21 @@ import Quote from '../../components/Quote.astro'
 					<b>Collaborative notes:</b> Ability to tag team members, add context, and foster discussion
 				</li>
 			</ol>
-<Quote
-  quote={`While we spend hours analyzing and debriefing each training mission to maximize learning, our instructors are very time-limited and can only record some of the subjective data to summarize a student's performance on syllabus sorties.`}
-  author="Major Mark Poppler"
-  title="Chief of Innovation for the 4th Training Squadron"
-  link="https://www.adlnet.gov/news/2022/04/11/F15-xAPI-Training/"
-  linkLabel="Explore how Seymour Johnson Air Force Base is benefiting from Data Driven Readiness"
-/>
 		</div>
+		<Quote
+			quote={`While we spend hours analyzing and debriefing each training mission to maximize learning, our instructors are very time-limited and can only record some of the subjective data to summarize a student's performance on syllabus sorties.`}
+			author="Major Mark Poppler"
+			title="Chief of Innovation for the 4th Training Squadron"
+			link="https://www.adlnet.gov/news/2022/04/11/F15-xAPI-Training/"
+			linkLabel="Explore how Seymour Johnson Air Force Base is benefiting from Data Driven Readiness"
+		/>
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<p class='p2 mono'>Human-computer interaction</p>
-			<h2>Mapping mouse and keyboard controls</h2>
+			<div>
+				<p class='mono'>Human-computer interaction</p>
+				<h2>Mapping mouse and keyboard controls</h2>
+			</div>
 			<p>
 				The DDR viewport simulates the aircraft and maneuvers in the browser. Through our user testing it was revealed that:
 			</p>
@@ -133,7 +139,7 @@ import Quote from '../../components/Quote.astro'
 			<p>
 				I reassigned the mapping of keyboard and mouse controls to:
 			</p>
-			<ul style="margin-bottom: 0;">
+			<ul>
 				<li>
 					Simplify the controls for better accessibility
 				</li>
@@ -160,9 +166,12 @@ import Quote from '../../components/Quote.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<p class='p2 mono'>Information Architecture</p>
-			<h2>Reducing cognitive load</h2>
+			<div>
+				<p class='mono'>Information Architecture</p>
+				<h2>Reducing cognitive load</h2>
+			</div>
 			<p>
+				Promoting consistency reduced cognitive load and improved predictability across the platform. 
 				We reorganized DDR’s core layout into clear, repeatable sections:
 			</p>
 			<ol>
@@ -179,9 +188,6 @@ import Quote from '../../components/Quote.astro'
 					<b>Timeline</b> -> Performance metrics
 				</li>
 			</ol>
-			<p>
-				This consistency reduced cognitive load and improved predictability across the platform.
-			</p>
 		</div>
 			<img
 				src='/content/case-studies/dod/ui-template.png'
@@ -190,8 +196,10 @@ import Quote from '../../components/Quote.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<p class='p2 mono'>Design solution #1</p>
-			<h2>Clarity to Maneuver Grades</h2>
+			<div>
+				<p class='mono'>Design solution #1</p>
+				<h2>Clarity to Maneuver Grades</h2>
+			</div>
 			<p>
 				Instead of vague sliding scales, we introduced parameter-level pass/fail grades. 
 				This helped pilots pinpoint areas for improvement without ambiguity.
@@ -204,8 +212,10 @@ import Quote from '../../components/Quote.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<p class='p2 mono'>Design solution #2</p>
-			<h2>Collaborative Notetaking</h2>
+			<div>
+				<p class='mono'>Design solution #2</p>
+				<h2>Collaborative Notetaking</h2>
+			</div>
 			<p>Pilots can now tag teammates, trigger email notifications with mentions, and timestamp notes to reference exact moments 
 			in the timeline. These features increase the collaboration between pilots and instructors.</p>
 		</div>
@@ -216,10 +226,12 @@ import Quote from '../../components/Quote.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<p class='p2 mono'>Design solution #3</p>
-			<h2>Real-Time Performance Visualization</h2>
+			<div>
+				<p class='mono'>Design solution #3</p>
+				<h2>Real-Time Performance Visualization</h2>
+			</div>
 			<p>We layered user-generated and AI-driven notes directly onto the timeline reel. Pilots could now:</p>
-			<ul style="margin-bottom: 0;">
+			<ul>
 				<li>
 					View note indicators directly on the timeline
 				</li>
@@ -243,7 +255,7 @@ import Quote from '../../components/Quote.astro'
 				We transformed DDR from being difficult to use into a collaborative tool that pilots trust to evaluate and improve their 
 				performance, while still fitting into their demanding workflows. The improvements that made the biggest impact for pilots were:
 			</p>
-			<ul style="margin-bottom: 0;">
+			<ul>
 				<li>
 					Quickly identify performance gaps through transparent grading
 				</li>
@@ -280,15 +292,11 @@ import Quote from '../../components/Quote.astro'
 				</li>
 			</ul>
 		</div>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<Quote
-				quote={`Hiring Chris brought us instant relaxation. Before working with Chris I didn’t realize how much it would take to do the research sitting down with pilots to better solve their problems.`}
-				author="Julian Capps"
-				title="Head of Defense, Crowdbotics"
-			/>
-		</div>
+		<Quote
+			quote={`Hiring Chris brought us instant relaxation. Before working with Chris I didn’t realize how much it would take to do the research sitting down with pilots to better solve their problems.`}
+			author="Julian Capps"
+			title="Head of Defense, Crowdbotics"
+		/>
 	</Content>
 	<LinkGroup
 		title='Press coverage'
