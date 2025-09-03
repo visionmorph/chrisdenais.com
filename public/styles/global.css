@@ -607,11 +607,19 @@ button.filled[disabled] {
 	background-color: #121619;
 	aspect-ratio: 4 / 3;
 	box-sizing: border-box;
-	transition: background-color 0.3s ease;
 }
 
 .next__caption:hover {
 	background-color: #21272A;
+}
+
+.next__caption:hover h2 {
+	text-decoration: underline;
+	color: #78a9ff;
+}
+
+.next__caption:hover > p:nth-of-type(2) {
+  color: #78a9ff;
 }
 
 .next__container {
