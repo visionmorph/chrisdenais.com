@@ -10,8 +10,8 @@ const { roles, industry, year } = Astro.props
 				{roles ? roles.map((role, i) => <p>{role}</p>) : null}
 			</span>
 			<span>
-				<p class='p2'>Industries</p>
-				{industry ? industry.map((ind, i) => <p key={i}>{ind}</p>) : null}
+				<p class='p2'>Industry</p>
+				<p>{industry}</p>
 			</span>
 			<span>
 				<p class='p2'>Timeline</p>
