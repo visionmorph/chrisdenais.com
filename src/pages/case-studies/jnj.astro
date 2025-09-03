@@ -11,11 +11,11 @@ import Quote from '../../components/Quote.astro'
 ---
 
 <Base>
-	<Title>Shaping the future of pilot training with AI-driven maneuver analysis</Title>
+	<Title>Unifying design systems to scale accessibility in healthcare</Title>
 	<ContentSummary
-		year='Jan–May 2022'
+		year='Nov 2021–Jan 2022'
 		industry={['AI', 'Aviation','Government']}
-		roles={['User research', 'UI design','Interaction design', 'Usability testing']}
+		roles={['Design systems','UI design', 'Accessibility']}
 	>
 	</ContentSummary>
 	<Content>
@@ -30,128 +30,59 @@ import Quote from '../../components/Quote.astro'
 		<div class='text-width'>
 			<h2>The Challenge</h2>
 			<p>
-				The U.S. Department of Defense faced a critical issue: how to accurately assess mission readiness of pilots.
+				Johnson & Johnson's Figma component and icon libraries were used across multiple digital teams but had become fragmented over time. 
+                Components were inconsistent, documentation was limited, and accessibility standards were unevenly applied.
 			</p>
-			<ul>
-				<li>
-					<b>Current approach:</b> Post-flight debriefs that heavily rely on instructor feedback
-				</li>
-				<li>
-					<b>Missed opportunity:</b> Each aircraft generates millions of data points during flight, but this data wasn’t 
-					being fully leveraged to evaluate and track performance.
-				</li>
-			</ul>
+            <p>
+                The project goal was to unify and modernize the design system to create a single, accessible resource that could be adopted across 
+                teams and scaled for future use.
+            </p>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>System audit</h2>
 			<p>
-				To address this the 333rd Fighter Squadron at Seymour Johnson Air Force Base partnered with Crowdbotics. 
-				I joined a cross-functional team of developers, data scientists, and project managers to redesign the Data 
-				Driven Readiness (DDR) software. Our mission was to enhance how pilots analyze maneuvers and seamlessly integrate 
-				flight data into their daily workflow.
+				I began by auditing existing libraries to identify inconsistencies and opportunities for improvement. There were components 
+				that had duplicate variations, inconsistent naming conventions, and interactive states that were poorly documented. 
+				Visual inconsistensies between components created a misalignment across design patterns with several components failing 
+				to meet WCAG accessibility standards. This audit became the foundation for our consolidation and standardization efforts.
 			</p>
 		</div>
 	</Content>
 	<Content>
 		<div class='text-width'>
-				<h2>Research Kick-off</h2>
-				<p>
-					To understand the problem we conducted usability tests of the current DDR software with five pilots. Pain points we uncovered:
-				</p>
-			<ul>
-				<li>
-					<b>Unclear grades</b> -> Ambiguous scoring made it hard for pilots to know how well they performed
-				</li>
-				<li>
-					<b>Awkward controls</b> -> Limited descriptions made it difficult to view maneuvers from the right angles
-				</li>
-				<li>
-					<b>Inaccurate timestamps</b> -> Maneuvers on the timeline didn’t match actual flight events, requiring tedious scrubbing
-				</li>
-				<li>
-					<b>Isolated notes</b> -> Missing collaboration features made notes only useful as personal reminders
-				</li>
-			</ul>
-		</div>
-		<img
-			src='/content/case-studies/dod/original-ddr.png'
-			class='view-project-image content'
-		/>
-		<Quote
-			quote={`It allows them to get an objective view of what is happening and how they flew and be able to make incremental, sometimes significant changes to how they're flying to be safer, more effective or more lethal.`}
-			author="Adam Ha"
-			title="Lead F-15E Flight Test Engineer"
-			link="https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/"
-			linkLabel="Learn more about how Nellis Air Force Base uses Data Driven Readiness"
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h2>Key Insights</h2>
+			<h2>Design priorities</h2>
 				<p>
 					Pilots valued DDR’s potential but needed usability improvements before they could fully rely on it. 
 					Our research revealed four design priorities:
 				</p>
 			<ol>
 				<li>
-					<b>Transparent grading system:</b> Define a clear criteria with detailed explanations and visual indicators
+					<b>Consistency:</b> Consolidate duplicate components and standardize naming, spacing, and hierarchy.
+				</li>
 				</li>
 				<li>
-					<b>Intuitive camera controls:</b> Simplify the interactions and guide users
+					<b>Accessibility:</b> Many patterns failed WCAG color contrast or lacked clear focus states
 				</li>
 				<li>
-					<b>Accurate timestamps:</b> Automatic alignment with actual maneuvers
-				</li>
-				<li>
-					<b>Collaborative notes:</b> Ability to tag team members, add context, and foster discussion
+					<b>Scalability:</b> A grid-based foundation that could adapt to future needs
 				</li>
 			</ol>
 		</div>
-		<Quote
-			quote={`While we spend hours analyzing and debriefing each training mission to maximize learning, our instructors are very time-limited and can only record some of the subjective data to summarize a student's performance on syllabus sorties.`}
-			author="Major Mark Poppler"
-			title="Chief of Innovation for the 4th Training Squadron"
-			link="https://www.adlnet.gov/news/2022/04/11/F15-xAPI-Training/"
-			linkLabel="Explore how Seymour Johnson Air Force Base is benefiting from Data Driven Readiness"
-		/>
 	</Content>
 	<Content>
 		<div class='text-width'>
 			<div>
-				<p class='mono'>Human-computer interaction</p>
-				<h2>Mapping mouse and keyboard controls</h2>
+				<p class='mono'>Design solution #1</p>
+				<h2>Grid and scaling</h2>
 			</div>
 			<p>
-				The DDR viewport simulates the aircraft and maneuvers in the browser. Through our user testing it was revealed that:
+				A 4px baseline grid was applied to all components to maintain visual harmony and proportionality. 
+                This ensured consistent spacing, scalable typography, and alignment across elements, making layouts 
+                predictable and easy to implement.
 			</p>
-			<ul>
-				<li>
-					Default mouse controls were restrictive and disorienting
-				</li>
-				<li>
-					No keyboard shortcuts were available
-				</li>
-			</ul>
-			<p>
-				I reassigned the mapping of keyboard and mouse controls to:
-			</p>
-			<ul>
-				<li>
-					Simplify the controls for better accessibility
-				</li>
-				<li>
-					Added keyboard shortcuts to quickly navigate the timeline
-				</li>
-			</ul>
 		</div>
-		<video
-			src='/content/case-studies/dod/viewport-animation.mp4'
-			src='/content/case-studies/dod/viewport-animation.webm'
-			class='view-project-video content'
-			autoplay
-			loop
-			muted
-			playsinline
-			width='1600px'
-			height='1200px'>
-		</video>
 		<img
 			src='/content/case-studies/dod/keyboard-controls.png'
 			class='view-project-image content'
@@ -160,27 +91,14 @@ import Quote from '../../components/Quote.astro'
 	<Content>
 		<div class='text-width'>
 			<div>
-				<p class='mono'>Information Architecture</p>
-				<h2>Reducing cognitive load</h2>
+				<p class='mono'>Design solution #2</p>
+				<h2>Accessible by design</h2>
 			</div>
 			<p>
-				Promoting consistency reduced cognitive load and improved predictability across the platform. 
-				We reorganized DDR’s core layout into clear, repeatable sections:
+				Accessibility was integrated into every component. Colors were adjusted for contrast, type scales were reviewed for legibility, 
+                and interactive states were clearly defined. By embedding accessibility into the foundation, all future designs built from the 
+                system are inclusive by default.
 			</p>
-			<ol>
-				<li>
-					<b>Header</b> -> Global navigation and system actions
-				</li>
-				<li>
-					<b>Side panel</b> -> Supporting details
-				</li>
-				<li>
-					<b>Viewport</b> -> Maneuver visualization
-				</li>
-				<li>
-					<b>Timeline</b> -> Performance metrics
-				</li>
-			</ol>
 		</div>
 			<img
 				src='/content/case-studies/dod/ui-template.png'
@@ -190,12 +108,13 @@ import Quote from '../../components/Quote.astro'
 	<Content>
 		<div class='text-width'>
 			<div>
-				<p class='mono'>Design solution #1</p>
-				<h2>Clarity to Maneuver Grades</h2>
+				<p class='mono'>Design solution #3</p>
+				<h2>Workflow optimization</h2>
 			</div>
 			<p>
-				Instead of vague sliding scales, we introduced parameter-level pass/fail grades. 
-				This helped pilots pinpoint areas for improvement without ambiguity.
+                Using Figma’s latest features, I organized components with variants, auto layout, and conditional logic. Interactive states like hover, 
+                active, and toggle were fully documented, and notes were included directly in Figma to guide designers and developers. This reduced duplication, 
+                accelerated template building, and encouraged adoption across teams.
 			</p>
 		</div>
 		<img
@@ -205,68 +124,23 @@ import Quote from '../../components/Quote.astro'
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<div>
-				<p class='mono'>Design solution #2</p>
-				<h2>Collaborative Notetaking</h2>
-			</div>
-			<p>Pilots can now tag teammates, trigger email notifications with mentions, and timestamp notes to reference exact moments 
-			in the timeline. These features increase the collaboration between pilots and instructors.</p>
-		</div>
-		<img
-			src='/content/case-studies/dod/notes.png'
-			class='view-project-image content'
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<div>
-				<p class='mono'>Design solution #3</p>
-				<h2>Real-Time Performance Visualization</h2>
-			</div>
-			<p>We layered user-generated and AI-driven notes directly onto the timeline reel. Pilots could now:</p>
-			<ul>
-				<li>
-					View note indicators directly on the timeline
-				</li>
-				<li>
-					Access to layered real-time aircraft performance data
-				</li>
-				<li>
-					Cross-check AI evaluations using human judgment
-				</li>
-			</ul>
-		</div>
-		<img
-			src='/content/case-studies/dod/timeline.png'
-			class='view-project-image content'
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
 			<h2>Impact</h2>
 			<p>
-				We transformed DDR from being difficult to use into a collaborative tool that pilots trust to evaluate and improve their 
-				performance, while still fitting into their demanding workflows. The improvements that made the biggest impact for pilots were:
+				We successfully merged multiple design systems into a single, accessible resource. Designers and developers now work from a unified 
+                source of truth, accessibility is built in by default, and adoption across teams has increased. The system provides a scalable foundation 
+                for future projects while reducing inconsistencies, design debt, refactoring.
 			</p>
-			<ul>
-				<li>
-					Quickly identify performance gaps through transparent grading
-				</li>
-				<li>
-					Navigate flight simulations more efficiently with intuitive controls
-				</li>
-				<li>
-					Collaborate with instructors with interactive notes
-				</li>
-				<li>
-					Cross-evaluations with human analysis from the enhanced visualizations
-				</li>
-			</ul>
 		</div>
 	</Content>
 	<Content>
 		<div class='text-width'>
 			<h2>Final Thoughts</h2>
+			<p>
+				This project reinforced the importance of precision, accessibility, and scalability in design systems. Clear documentation, 
+	            shared knowledge, and accessible patterns can have a large impact on adoption and workflow efficiency. Moving forward, I would focus more on measuring 
+	            adoption metrics and gathering direct feedback from contributors to further optimize the system.
+			</p>
+		</div>
 		<Quote
 			quote={`Hiring Chris brought us instant relaxation. Before working with Chris I didn’t realize how much it would take to do the research sitting down with pilots to better solve their problems.`}
 			author="Julian Capps"
