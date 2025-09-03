@@ -44,9 +44,7 @@ import Quote from '../../components/Quote.astro'
 			<h2>System audit</h2>
 			<p>
 				I began by auditing existing libraries to identify inconsistencies and opportunities for improvement. There were components 
-				that had duplicate variations, inconsistent naming conventions, and interactive states that were poorly documented.
-			</p>
-			<p>
+				that had duplicate variations, inconsistent naming conventions, and interactive states that were poorly documented. 
 				Visual inconsistensies between components created a misalignment across design patterns with several components failing 
 				to meet WCAG accessibility standards. This audit became the foundation for our consolidation and standardization efforts.
 			</p>
@@ -143,15 +141,10 @@ import Quote from '../../components/Quote.astro'
 	            adoption metrics and gathering direct feedback from contributors to further optimize the system.
 			</p>
 		</div>
+		<Quote
+			quote={`Hiring Chris brought us instant relaxation. Before working with Chris I didn’t realize how much it would take to do the research sitting down with pilots to better solve their problems.`}
+			author="Julian Capps"
+			title="Head of Defense, Crowdbotics"
+		/>
 	</Content>
-	<NextCaseStudy
-		href='/projects/atmos'
-		subtitle='Government'
-		label='Shaping the future of pilot training with AI-driven maneuver analysis'
-		description='The new DDR experience clarified performance grading, streamlined controls, and layered AI insights, giving pilots a clear path 
-        to improving mission readiness'
-		thumbnail={{
-			src: '/content/case-studies/dod/ddr.png',
-		}}
-	/>
 </Base>
