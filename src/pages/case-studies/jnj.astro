@@ -1,0 +1,153 @@
+---
+import Content from '../../components/Content.astro'
+import ContentSummary from '../../components/ContentSummary.astro'
+import FeatureImageGroup from '../../components/FeatureImageGroup.astro'
+import FeatureVideo from '../../components/FeatureVideo.astro'
+import LinkGroup from '../../components/LinkGroup.astro'
+import NextCaseStudy from '../../components/NextCaseStudy.astro'
+import Title from '../../components/Title.astro'
+import Base from '../../layouts/Base.astro'
+import Quote from '../../components/Quote.astro'
+---
+
+<Base>
+	<Title>Unifying design systems to scale accessibility in healthcare</Title>
+	<ContentSummary
+		year='Nov 2021–Jan 2022'
+		industry={['Healthcare']}
+		roles={['Design systems','UI design', 'Accessibility']}
+	>
+	</ContentSummary>
+	<Content>
+		<div>
+			<img
+				src='/content/case-studies/dod/ddr.png'
+				class='view-project-image content'
+			/>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>The Challenge</h2>
+			<p>
+				Johnson & Johnson's Figma component and icon libraries were used across multiple digital teams but had become fragmented over time. 
+                Components were inconsistent, documentation was limited, and accessibility standards were unevenly applied.
+			</p>
+            <p>
+                The project goal was to unify and modernize the design system to create a single, accessible resource that could be adopted across 
+                teams and scaled for future use.
+            </p>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+				<h2>System audit</h2>
+				<p>
+                    I began by auditing existing libraries to identify inconsistencies and opportunities for improvement. There were components 
+                    that had duplicate variations, inconsistent naming conventions, and interactive states that were poorly documented. 
+                    Visual inconsistensies between components created a misalignment across design patterns with several components failing 
+                    to meet WCAG accessibility standards. This audit became the foundation for our consolidation and standardization efforts.
+				</p>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>Design priorities</h2>
+				<p>
+					From the audit and speaking with project stakeholders I established three guiding principles for the new system:
+				</p>
+			<ol>
+				<li>
+					<b>Consistency:</b> Consolidate duplicate components and standardize naming, spacing, and hierarchy.
+				</li>
+				<li>
+					<b>Accessibility:</b> Many patterns failed WCAG color contrast or lacked clear focus states
+				</li>
+				<li>
+					<b>Scalability:</b> A grid-based foundation that could adapt to future needs
+				</li>
+			</ol>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<div>
+				<p class='mono'>Design solution #1</p>
+				<h2>Grid and scaling</h2>
+			</div>>
+			<p>
+				A 4px baseline grid was applied to all components to maintain visual harmony and proportionality. 
+                This ensured consistent spacing, scalable typography, and alignment across elements, making layouts 
+                predictable and easy to implement.
+			</p>
+		</div>
+		<img
+			src='/content/case-studies/dod/keyboard-controls.png'
+			class='view-project-image content'
+		/>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<div>
+				<p class='mono'>Design solution #2</p>
+				<h2>Accessibile by design</h2>
+			</div>
+			<p class='text-width'>
+				Accessibility was integrated into every component. Colors were adjusted for contrast, type scales were reviewed for legibility, 
+                and interactive states were clearly defined. By embedding accessibility into the foundation, all future designs built from the 
+                system are inclusive by default.
+			</p>
+		</div>
+			<img
+				src='/content/case-studies/dod/ui-template.png'
+				class='view-project-image content'
+			/>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<div>
+				<p class='mono'>Design solution #3</p>
+				<h2>Workflow optimization</h2>
+			</div>
+			<p>
+                Using Figma’s latest features, I organized components with variants, auto layout, and conditional logic. Interactive states like hover, 
+                active, and toggle were fully documented, and notes were included directly in Figma to guide designers and developers. This reduced duplication, 
+                accelerated template building, and encouraged adoption across teams.
+			</p>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>Impact</h2>
+			<p>
+				We successfully merged multiple design systems into a single, accessible resource. Designers and developers now work from a unified 
+                source of truth, accessibility is built in by default, and adoption across teams has increased. The system provides a scalable foundation 
+                for future projects while reducing inconsistencies, design debt, refactoring.
+			</p>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>Final Thoughts</h2>
+			<p>This project reinforced the importance of precision, accessibility, and scalability in design systems. Clear documentation, 
+            shared knowledge, and accessible patterns can have a large impact on adoption and workflow efficiency. Moving forward, I would focus more on measuring 
+            adoption metrics and gathering direct feedback from contributors to further optimize the system.</p>
+		</div>
+		<Quote
+			quote={`Chris' quality of work and commitment to the project timeline, and the satisfaction of the end users was top notch. He's a talented and 
+            highly capable designer.`}
+			author="Mason Shewman"
+			title="CEO, Anvil Digital"
+		/>
+	</Content>
+	<NextCaseStudy
+		href='/projects/dod'
+		subtitle='Government'
+		label='Shaping the future of pilot training with AI-driven maneuver analysis'
+		description='The new DDR experience clarified performance grading, streamlined controls, and layered AI insights, giving pilots a clear path 
+        to improving mission readiness.'
+		thumbnail={{
+			src: '/content/case-studies/dod-ddr.png',
+		}}
+	/>
+</Base>
