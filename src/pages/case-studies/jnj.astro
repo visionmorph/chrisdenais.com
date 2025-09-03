@@ -19,10 +19,16 @@ import Quote from '../../components/Quote.astro'
 	/>
 	<Content>
 		<div>
-			<img
-				src='/content/case-studies/dod/ddr.png'
-				class='view-project-image content'
-			/>
+			<video
+				class='view-project-video'
+				autoplay
+				loop
+				muted
+				playsinline
+				width='1600px'
+				height='1200px'
+				src='/content/case-studies/jnj/responsive.mp4'
+			></video>
 		</div>
 	</Content>
 	<Content>
@@ -149,4 +155,14 @@ import Quote from '../../components/Quote.astro'
 			title="CEO, Anvil Digital, LLC"
 		/>
 	</Content>
+	<NextCaseStudy
+		href='/projects/dod'
+		subtitle='Government'
+		label='Shaping the future of pilot training with AI-driven maneuver analysis'
+		description='The new DDR experience clarified performance grading, streamlined controls, and layered AI insights, giving pilots a clear path 
+        to improving mission readiness.'
+		thumbnail={{
+			src: '/content/case-studies/dod/ddr.png',
+		}}
+	/>
 </Base>
