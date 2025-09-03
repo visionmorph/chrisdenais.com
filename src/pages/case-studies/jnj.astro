@@ -20,10 +20,16 @@ import Quote from '../../components/Quote.astro'
 	</ContentSummary>
 	<Content>
 		<div>
-			<img
+			<video
+				class='view-project-video'
+				autoplay
+				loop
+				muted
+				playsinline
+				width='1600px'
+				height='1200px'
 				src='/content/case-studies/jnj/responsive.mp4'
-				class='view-project-image content'
-			/>
+			></video>
 		</div>
 	</Content>
 	<Content>
@@ -47,7 +53,7 @@ import Quote from '../../components/Quote.astro'
 				that had duplicate variations, inconsistent naming conventions, and interactive states that were poorly documented.
 			</p>
 			<p>
-				Visual inconsistensies between components created a misalignment across design patterns with several components failing 
+				Visual inconsistencies between components created a misalignment across design patterns with several components failing 
 				to meet WCAG accessibility standards. This audit became the foundation for our consolidation and standardization efforts.
 			</p>
 		</div>
@@ -62,7 +68,6 @@ import Quote from '../../components/Quote.astro'
 			<ol>
 				<li>
 					<b>Consistency:</b> Consolidate duplicate components and standardize naming, spacing, and hierarchy.
-				</li>
 				</li>
 				<li>
 					<b>Accessibility:</b> Many patterns failed WCAG color contrast or lacked clear focus states
