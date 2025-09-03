@@ -1,9 +1,6 @@
 ---
 import Content from '../../components/Content.astro'
 import ContentSummary from '../../components/ContentSummary.astro'
-import FeatureImageGroup from '../../components/FeatureImageGroup.astro'
-import FeatureVideo from '../../components/FeatureVideo.astro'
-import LinkGroup from '../../components/LinkGroup.astro'
 import NextCaseStudy from '../../components/NextCaseStudy.astro'
 import Title from '../../components/Title.astro'
 import Base from '../../layouts/Base.astro'
@@ -16,22 +13,7 @@ import Quote from '../../components/Quote.astro'
 		year='Nov 2021–Jan 2022'
 		industry={['AI', 'Aviation','Government']}
 		roles={['Design systems','UI design', 'Accessibility']}
-	>
-	</ContentSummary>
-	<Content>
-		<div>
-			<video
-				class='view-project-video'
-				autoplay
-				loop
-				muted
-				playsinline
-				width='1600px'
-				height='1200px'
-				src='/content/case-studies/jnj/responsive.mp4'
-			></video>
-		</div>
-	</Content>
+	/>
 	<Content>
 		<div class='text-width'>
 			<h2>The Challenge</h2>
@@ -160,7 +142,7 @@ import Quote from '../../components/Quote.astro'
 		subtitle='Government'
 		label='Shaping the future of pilot training with AI-driven maneuver analysis'
 		description='The new DDR experience clarified performance grading, streamlined controls, and layered AI insights, giving pilots a clear path 
-        to improving mission readiness.'
+		to improving mission readiness.'
 		thumbnail={{
 			src: '/content/case-studies/dod/ddr.png',
 		}}
