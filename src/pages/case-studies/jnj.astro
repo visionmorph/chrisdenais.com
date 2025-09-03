@@ -1,6 +1,9 @@
 ---
 import Content from '../../components/Content.astro'
 import ContentSummary from '../../components/ContentSummary.astro'
+import FeatureImageGroup from '../../components/FeatureImageGroup.astro'
+import FeatureVideo from '../../components/FeatureVideo.astro'
+import LinkGroup from '../../components/LinkGroup.astro'
 import NextCaseStudy from '../../components/NextCaseStudy.astro'
 import Title from '../../components/Title.astro'
 import Base from '../../layouts/Base.astro'
@@ -13,7 +16,16 @@ import Quote from '../../components/Quote.astro'
 		year='Nov 2021–Jan 2022'
 		industry={['AI', 'Aviation','Government']}
 		roles={['Design systems','UI design', 'Accessibility']}
-	/>
+	>
+	</ContentSummary>
+	<Content>
+		<div>
+			<img
+				src='/content/case-studies/dod/ddr.png'
+				class='view-project-image content'
+			/>
+		</div>
+	</Content>
 	<Content>
 		<div class='text-width'>
 			<h2>The Challenge</h2>
@@ -35,7 +47,7 @@ import Quote from '../../components/Quote.astro'
 				that had duplicate variations, inconsistent naming conventions, and interactive states that were poorly documented.
 			</p>
 			<p>
-				Visual inconsistencies between components created a misalignment across design patterns with several components failing 
+				Visual inconsistensies between components created a misalignment across design patterns with several components failing 
 				to meet WCAG accessibility standards. This audit became the foundation for our consolidation and standardization efforts.
 			</p>
 		</div>
@@ -50,6 +62,7 @@ import Quote from '../../components/Quote.astro'
 			<ol>
 				<li>
 					<b>Consistency:</b> Consolidate duplicate components and standardize naming, spacing, and hierarchy.
+				</li>
 				</li>
 				<li>
 					<b>Accessibility:</b> Many patterns failed WCAG color contrast or lacked clear focus states
@@ -73,7 +86,7 @@ import Quote from '../../components/Quote.astro'
 			</p>
 		</div>
 		<img
-			src='/content/case-studies/jnj/grid.png'
+			src='/content/case-studies/dod/keyboard-controls.png'
 			class='view-project-image content'
 		/>
 	</Content>
@@ -90,7 +103,7 @@ import Quote from '../../components/Quote.astro'
 			</p>
 		</div>
 			<img
-				src='/content/case-studies/jnj/measure.png'
+				src='/content/case-studies/dod/ui-template.png'
 				class='view-project-image content'
 			/>
 	</Content>
@@ -107,7 +120,7 @@ import Quote from '../../components/Quote.astro'
 			</p>
 		</div>
 		<img
-			src='/content/case-studies/jnj/dashboard.png'
+			src='/content/case-studies/dod/maneuvers.png'
 			class='view-project-image content'
 		/>
 	</Content>
@@ -137,14 +150,4 @@ import Quote from '../../components/Quote.astro'
 			title="CEO, Anvil Digital, LLC"
 		/>
 	</Content>
-	<NextCaseStudy
-		href='/case-studies/dod'
-		subtitle='Government'
-		label='Shaping the future of pilot training with AI-driven maneuver analysis'
-		description='The new DDR experience clarified performance grading, streamlined controls, and layered AI insights, giving pilots a clear path 
-		to improving mission readiness.'
-		thumbnail={{
-			src: '/content/case-studies/dod/ddr.png',
-		}}
-	/>
 </Base>
