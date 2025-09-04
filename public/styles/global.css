@@ -85,10 +85,10 @@ h3,
 .h3 {
 	/* H3-desktop */
 	font-family: Inter;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 1.75rem;
+	line-height: 2.5rem;
 	color: #ffffff;
 	/* 125% */
 }
@@ -1254,15 +1254,6 @@ textarea:-webkit-autofill:focus {
 		letter-spacing: 0px;
 	}
 
-	h3,
-	.h3 {
-		font-family: Inter;
-		font-size: 1.25rem;
-		font-style: normal;
-		font-weight: 300;
-		line-height: 1.75rem;
-	}
-
 	p,
 	.p1,
 	a,
@@ -1319,6 +1310,15 @@ textarea:-webkit-autofill:focus {
 		font-weight: 300;
 		line-height: 3.125rem;
 		letter-spacing: 0px;
+	}
+
+	h3,
+	.h3 {
+		font-family: Inter;
+		font-size: 1.75rem;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 2.25rem;
 	}
 
 	blockquote {
