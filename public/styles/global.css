@@ -58,10 +58,11 @@ h1,
 .h1 {
 	/* H1-desktop */
 	font-family: Inter;
-	font-size: 4rem;
+	font-size: 5.25rem;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 5rem;
+	line-height: 5.875rem;
+	letter-spacing: -.96px;
 	color: #ffffff;
 	/* 125% */
 }
@@ -70,10 +71,11 @@ h2,
 .h2 {
 	/* H2-desktop */
 	font-family: Inter;
-	font-size: 2rem;
+	font-size: 3.75rem;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 2.5rem;
+	line-height: 4.375rem;
+	letter-spacing: 0px;
 	color: #ffffff;
 	/* 122.222% */
 }
@@ -1233,21 +1235,22 @@ textarea:-webkit-autofill:focus {
 	h1,
 	.h1 {
 		font-family: Inter;
-		font-size: 3rem;
+		font-size: 4.75rem;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 3.5rem;
+		line-height: 5.375rem;
 		/* 125% */
-		letter-spacing: -0px;
+		letter-spacing: -.64px;
 	}
 
 	h2,
 	.h2 {
 		font-family: Inter;
-		font-size: 2rem;
+		font-size: 3rem;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 2.5rem;
+		line-height: 3.5rem;
+		letter-spacing: 0px;
 	}
 
 	h3,
@@ -1300,20 +1303,20 @@ textarea:-webkit-autofill:focus {
 	h1,
 	.h1 {
 		font-family: Inter;
-		font-size: 2.625rem;
+		font-size: 3.75rem;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 3.125rem;
-		letter-spacing: 0px;
+		line-height: 4.375rem;
+		letter-spacing: -.64px;
 	}
 
 	h2,
 	.h2 {
 		font-family: Inter;
-		font-size: 1.75rem;
+		font-size: 2.625rem;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 2.25rem;
+		line-height: 3.125rem;
 		letter-spacing: 0px;
 	}
 
@@ -1350,20 +1353,20 @@ textarea:-webkit-autofill:focus {
 	h1,
 	.h1 {
 		font-family: Inter;
-		font-size: 2.25rem;
+		font-size: 3.375rem;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 2.75rem;
+		line-height: 4rem;
 		letter-spacing: 0px;
 	}
 
 	h2,
 	.h2 {
 		font-family: Inter;
-		font-size: 1.75rem;
+		font-size: 2.25rem;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 2.25rem;
+		line-height: 2.75rem;
 		letter-spacing: 0px;
 	}
 	
@@ -1445,10 +1448,11 @@ textarea:-webkit-autofill:focus {
 	.h1 {
 		/* H1-mobile */
 		font-family: Inter;
-		font-size: 2rem;
+		font-size: 2.625rem;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 2.5rem;
+		line-height: 3.125rem;
+		letter-spacing: 0px;
 		/* 125% */
 	}
 
@@ -1456,10 +1460,11 @@ textarea:-webkit-autofill:focus {
 	.h2 {
 		/* H2-mobile */
 		font-family: Inter;
-		font-size: 1.75rem;
+		font-size: 2rem;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 2.25rem;
+		line-height: 2.5rem;
+		letter-spacing: 0px;
 	}
 
 	.testimonial__text.hanging::before {
