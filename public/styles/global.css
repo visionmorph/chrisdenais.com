@@ -617,12 +617,12 @@ button.filled[disabled] {
 	background-color: #21272A;
 }
 
-.next__caption:hover h2 {
+.next__caption:hover h3 {
 	text-decoration: underline;
 	color: #78a9ff;
 }
 
-.next__caption:hover > p:nth-of-type(2) {
+.next__caption > p:nth-of-type(2) {
   color: #78a9ff;
 }
 
