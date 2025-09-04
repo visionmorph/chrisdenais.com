@@ -216,8 +216,8 @@ footer {
 /* -------------- Layout ---------------- */
 
 section {
-	padding-left: 10rem;
-	padding-right: 10rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
@@ -1233,6 +1233,14 @@ textarea:-webkit-autofill:focus {
 }
 
 @media screen and (max-width: 1280px) {
+	section {
+		padding-left: 3rem;
+		padding-right: 3rem;
+		display: flex;
+		justify-content: center;
+		overflow: hidden;
+	}
+
 	h1,
 	.h1 {
 		font-family: Inter;
@@ -1329,11 +1337,6 @@ textarea:-webkit-autofill:focus {
 		line-height: 1.875rem;
 		/* 125% */
 	}
-	
-	section {
-		padding-left: 6rem;
-		padding-right: 6rem;
-	}
 
 	/* -------------- Layouts ---------------- */
 
@@ -1391,8 +1394,8 @@ textarea:-webkit-autofill:focus {
 	}
 
 	section {
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
 	.content__info {
