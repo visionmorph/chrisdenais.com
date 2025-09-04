@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
 /* -------------- General ---------------- */
 
 :root {
@@ -247,7 +246,7 @@ section.left {
 	justify-content: center;
 	align-items: flex-start;
 	max-width: 100rem;
-	margin-top: 10rem;
+	margin-top: 9rem;
 	gap: 2rem;
 }
 
