@@ -46,7 +46,7 @@ h4,
 p,
 ol,
 ul,
-li,
+,
 blockquote {
 	/* Reset */
 	margin-block-start: 0rem;
@@ -114,6 +114,7 @@ ul {
 	flex-direction: column;
 	margin-left: 1.5rem;
 	padding-left: 0;
+	gap: 1rem;
 }
 
 .p2 {
@@ -136,7 +137,7 @@ ul {
 
 blockquote {
 	position: relative;
-	font-family: Jura;
+	font-family: Inter;
 	font-size: 2rem;
 	font-weight: 300;
 	line-height: 2.5rem;
