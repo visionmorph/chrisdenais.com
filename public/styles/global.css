@@ -1276,13 +1276,6 @@ textarea:-webkit-autofill:focus {
 		letter-spacing: 0px;
 		/* 125% */
 	}
-	
-	.next__grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		outline-width: 1px;
-		outline-offset: -1px;
-	}
 
 	.content__flex {
 		flex-direction: column;
@@ -1327,6 +1320,13 @@ textarea:-webkit-autofill:focus {
 		font-style: normal;
 		font-weight: 300;
 		line-height: 2.25rem;
+	}
+
+	.next__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		outline-width: 1px;
+		outline-offset: -1px;
 	}
 
 	blockquote {
