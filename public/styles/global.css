@@ -605,7 +605,7 @@ button.filled[disabled] {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-start;
 	padding: 2rem;
 	border-radius: 0;
 	background-color: #121619;
@@ -623,7 +623,9 @@ button.filled[disabled] {
 }
 
 .next__caption > p:nth-of-type(2) {
-  color: #78a9ff;
+	color: #78a9ff;
+	align-self: stretch;
+	text-align: right;
 }
 
 .next__container {
