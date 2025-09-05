@@ -1,6 +1,7 @@
 ---
 import Title from '../../components/Title.astro'
 import Base from '../../layouts/Base.astro'
+import NextCaseStudy from '../../components/NextCaseStudy.astro'
 ---
 
 <Base>
@@ -70,35 +71,13 @@ import Base from '../../layouts/Base.astro'
 			/>
 		</div>
 	</section>
-	<section>
-		<div class='container end'>
-			<p>Next case study</p>
-			<a
-				class='h1 link underscore-offset next-case-study'
-				href='/projects/skillmasters'
-				>Bridging the talent gap for youth sports with SkillMasters</a
-			>
-			<img
-				class='next-preview'
-				width='528px'
-				height='396px'
-				src='/content/projects/skillmasters/thumbnail.png'
-				alt='Thumbnail of SkillMasters case study'
-			/>
-		</div>
-	</section>
-	<script is:inline>
-		const nextCaseStudy = document.querySelector('.next-case-study')
-		const nextPreview = document.querySelector('.next-preview')
-		nextCaseStudy.addEventListener('mousemove', evt => {
-			nextPreview.style.setProperty(
-				'--next-case-study-preview-top',
-				evt.clientY + 'px'
-			)
-			nextPreview.style.setProperty(
-				'--next-case-study-preview-left',
-				evt.clientX + 'px'
-			)
-		})
-	</script>
+	<NextCaseStudy
+		href='/projects/skillmasters'
+		subtitle='Sports'
+		label='Bridging the talent gap for youth sports with SkillMasters'
+		description='Streamlining onboarding and workout recordings for young athletes to connect with college coaches for personalized feedback'
+		thumbnail={{
+			src: '/content/projects/skillmasters/01.png',
+		}}
+	/>
 </Base>
