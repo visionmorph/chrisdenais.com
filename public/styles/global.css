@@ -516,8 +516,8 @@ button.filled[disabled] {
 }
 
 .view-project-image.flex-child {
-	flex: 1 1 auto;
 	min-width: 0;
+	aspect-ratio: 1 / 1;
 }
 
 .view-project-video {
