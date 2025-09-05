@@ -48,6 +48,13 @@ import Quote from '../../components/Quote.astro'
 				flight data into their daily workflow.
 			</p>
 		</div>
+		<Quote
+			quote={`Typically at the end of the debrief the student keeps some notes, but we erase our tapes. We erase our shot sheets and all the data gets flushed.`}
+			author="Major Mark Poppler"
+			title="Chief of Innovation, 4th Training Squadron"
+			link="https://www.popsci.com/technology/air-force-artificial-intelligence-pilot-training/"
+			linkLabel="Learn more about how Seymour Johnson AFB uses Data Driven Readiness"
+		/>
 	</Content>
 	<Content>
 		<div class='text-width'>
@@ -74,13 +81,6 @@ import Quote from '../../components/Quote.astro'
 			src='/content/case-studies/dod/original-ddr.png'
 			class='view-project-image content'
 		/>
-		<Quote
-			quote={`It allows them to get an objective view of what is happening and how they flew and be able to make incremental, sometimes significant changes to how they're flying to be safer, more effective or more lethal.`}
-			author="Adam Ha"
-			title="Lead F-15E Flight Test Engineer"
-			link="https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/"
-			linkLabel="Learn more about how Nellis Air Force Base uses Data Driven Readiness"
-		/>
 	</Content>
 	<Content>
 		<div class='text-width'>
@@ -105,11 +105,11 @@ import Quote from '../../components/Quote.astro'
 			</ol>
 		</div>
 		<Quote
-			quote={`While we spend hours analyzing and debriefing each training mission to maximize learning, our instructors are very time-limited and can only record some of the subjective data to summarize a student's performance on syllabus sorties.`}
-			author="Major Mark Poppler"
-			title="Chief of Innovation for the 4th Training Squadron"
-			link="https://www.adlnet.gov/news/2022/04/11/F15-xAPI-Training/"
-			linkLabel="Explore how Seymour Johnson Air Force Base is benefiting from Data Driven Readiness"
+			quote={`It allows them to get an objective view of what is happening and how they flew and be able to make incremental, sometimes significant changes to how they're flying to be safer, more effective or more lethal.`}
+			author="Adam Ha"
+			title="Lead F-15E Flight Test Engineer"
+			link="https://www.ktnv.com/news/exclusive-nellis-air-force-base-testing-artificial-intelligence-in-combat-training"
+			linkLabel="Explore how Nellis Air Force Base is testing Data Driven Readiness"
 		/>
 	</Content>
 	<Content>
@@ -248,6 +248,11 @@ import Quote from '../../components/Quote.astro'
 				</li>
 			</ul>
 		</div>
+		<Quote
+			quote={`Hiring Chris brought us instant relaxation. Before working with Chris I didn’t realize how much it would take to do the research sitting down with pilots to better solve their problems.`}
+			author="Julian Capps"
+			title="Head of Defense, Crowdbotics"
+		/>
 	</Content>
 	<Content>
 		<div class='text-width'>
@@ -270,11 +275,6 @@ import Quote from '../../components/Quote.astro'
 				</li>
 			</ul>
 		</div>
-		<Quote
-			quote={`Hiring Chris brought us instant relaxation. Before working with Chris I didn’t realize how much it would take to do the research sitting down with pilots to better solve their problems.`}
-			author="Julian Capps"
-			title="Head of Defense, Crowdbotics"
-		/>
 	</Content>
 	<LinkGroup
 		title='Press coverage'
@@ -284,16 +284,12 @@ import Quote from '../../components/Quote.astro'
 				label: 'Shield AI acquires Crowdbotics’ Data Driven Readiness software tools'
 			},
 			{
-				href: 'https://www.aiaccelerator.af.mil/News/News-Article-View/Article/3270293/first-commercial-company-leverages-daf-mit-maneuver-id-challenge-to-advance-ai',
-				label: 'First Commercial Company Leverages DAF-MIT Maneuver ID Challenge to Advance AI'
-			},
-			{
 				href: 'https://www.popsci.com/technology/air-force-artificial-intelligence-pilot-training/',
 				label: 'How AI could help new Air Force pilots avoid costly mistakes'
 			},
 			{
-				href: 'https://adlnet.gov/news/2022/04/11/F15-xAPI-Training/',
-				label: 'Air Force Project Enhances Live F-15E Flight Training with xAPI'
+				href: 'https://www.aiaccelerator.af.mil/News/News-Article-View/Article/3270293/first-commercial-company-leverages-daf-mit-maneuver-id-challenge-to-advance-ai',
+				label: 'First Commercial Company Leverages DAF-MIT Maneuver ID Challenge to Advance AI'
 			},
 			{
 				href: 'https://www.ktnv.com/news/exclusive-nellis-air-force-base-testing-artificial-intelligence-in-combat-training',
@@ -303,6 +299,10 @@ import Quote from '../../components/Quote.astro'
 				href: 'https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/',
 				label: 'Air Force introduces AI to training program'
 			}
+			{
+				href: 'https://adlnet.gov/news/2022/04/11/F15-xAPI-Training/',
+				label: 'Air Force Project Enhances Live F-15E Flight Training with xAPI'
+			},
 		]}
 	/>
 	<NextCaseStudy
