@@ -58,35 +58,13 @@ import Base from '../../layouts/Base.astro'
 			</div>
 		</div>
 	</section>
-	<section>
-		<div class='container end'>
-			<p>Next case study</p>
-			<a
-				class='h1 link underscore-offset next-case-study'
-				href='/case-studies/dod'
-				>Predicting mission readiness of pilots for The U.S. Department
-				of Defense</a
-			>
-			<img
-				class='next-preview'
-				width='528px'
-				height='396px'
-				src='/content/projects/dod/thumbnail.png'
-			/>
-		</div>
-	</section>
-	<script is:inline>
-		const nextCaseStudy = document.querySelector('.next-case-study')
-		const nextPreview = document.querySelector('.next-preview')
-		nextCaseStudy.addEventListener('mousemove', evt => {
-			nextPreview.style.setProperty(
-				'--next-case-study-preview-top',
-				evt.clientY + 'px'
-			)
-			nextPreview.style.setProperty(
-				'--next-case-study-preview-left',
-				evt.clientX + 'px'
-			)
-		})
-	</script>
+	<NextCaseStudy
+		href='/projects/atmos'
+		subtitle='Government'
+		label='Shaping the future of pilot training with AI-driven maneuver analysis'
+		description='The new DDR experience clarified performance grading, streamlined controls, and layered AI insights, giving pilots a clear path to improving mission readiness.'
+		thumbnail={{
+			src: '/content/case-studies/dod/ddr.png',
+		}}
+	/>
 </Base>
