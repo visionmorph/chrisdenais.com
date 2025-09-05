@@ -204,6 +204,7 @@ footer {
 	align-items: flex-start;
 	gap: 2rem;
 	align-self: stretch;
+	margin-top: 4rem;
 	margin-bottom: 4rem;
 }
 
