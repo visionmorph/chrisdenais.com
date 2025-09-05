@@ -246,16 +246,12 @@ section.left {
 	justify-content: center;
 	align-items: flex-start;
 	max-width: 100rem;
-	margin-top: 9rem;
+	margin-top: 12rem;
 	gap: 2rem;
 }
 
 .container.slim {
-	margin-top: 8rem;
-}
-
-.container.end {
-	margin-bottom: 10rem;
+	margin-top: 0rem;
 }
 
 .container.extra-pb {
@@ -268,8 +264,8 @@ section.left {
 }
 
 .container.content.first {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+	margin-top: 12rem;
+	margin-bottom: 2rem;
 }
 
 .content-grid {
@@ -487,7 +483,7 @@ button.filled[disabled] {
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: space-between;
-	gap: 2rem;
+	gap: 1rem;
 }
 
 /* -------------- Projects ---------------- */
@@ -788,7 +784,7 @@ button.filled[disabled] {
 	width: 940px;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 16px;
+	gap: 2rem;
 	flex-shrink: 0;
 }
 
