@@ -1,0 +1,82 @@
+---
+import Content from '../../components/Content.astro'
+import ContentSummary from '../../components/ContentSummary.astro'
+import NextCaseStudy from '../../components/NextCaseStudy.astro'
+import Title from '../../components/Title.astro'
+import Base from '../../layouts/Base.astro'
+import Quote from '../../components/Quote.astro'
+---
+
+<Base>
+	<Title>Pioneering the Web3 portal experience for Exo pilots on Planet Atmos</Title>
+	<ContentSummary
+		year='10 months'
+		industry='Gaming'
+		roles={['UI design','Interaction design']}
+	>
+	</ContentSummary>
+ 	<Content>
+		<div>
+			<video
+				class='view-project-video'
+				autoplay
+				loop
+				muted
+				playsinline
+				width='1600px'
+				height='1200px'
+				src='/content/projects/atmos/animation.mp4'
+			></video>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>The challenge</h2>
+			<p>
+        		Atmos is an expansive universe dedicated to metaverse-native sports. The portal area 
+                exists as a pre-cursor to ExoGP racing for players to further interact with items they 
+                own on the blockchain.
+			</p>
+       </div>
+	</Content>
+	<Content>
+		<img
+			src='content/projects/atmos/02.png'
+			class='view-project-image content'
+		/>
+  	    <img
+			src='content/projects/atmos/03.png'
+			class='view-project-image content'
+		/>
+    	<img
+			src='content/projects/atmos/04.png'
+			class='view-project-image content'
+		/>
+      	<img
+			src='content/projects/atmos/05.png'
+			class='view-project-image content'
+		/>
+      	<img
+			src='content/projects/atmos/06.png'
+			class='view-project-image content'
+		/>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>Testimonial</h2>
+            <Quote
+                quote={`We were particularly impressed with both his efficiency and thoroughness—he thought through all necessary states when building components, which enabled our engineers to move faster.`}
+                author="Stephen Kurshner"
+                title="Product Manager, Atmos Labs"
+            />
+	</Content>
+	<NextCaseStudy
+		href='/case-studies/skillmasters'
+		subtitle='Sports'
+		label='Bridging the talent gap for youth sports with SkillMasters'
+		description='SkillMasters gives young athletes access to college coaches for personalized feedback.'
+		thumbnail={{
+			src: '/content/projects/skillmasters/01.png',
+		}}
+	/>
+</Base>
