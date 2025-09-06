@@ -202,7 +202,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	gap: 1rem;
+	gap: 2rem;
 	align-self: stretch;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
@@ -211,7 +211,7 @@ footer {
 .footer__menu {
 	display: flex;
 	align-items: flex-start;
-	gap: 1rem;
+	gap: .5rem;
 	flex-direction: column;
 	flex: auto;
 }
@@ -1401,13 +1401,7 @@ textarea:-webkit-autofill:focus {
 	}
 
 	footer {
-		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
-		gap: 2rem;
-		align-self: stretch;
-		margin-top: 4rem;
-		margin-bottom: 4rem;
 }
 
 	/* -------------- Layouts ---------------- */
