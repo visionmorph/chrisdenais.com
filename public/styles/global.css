@@ -279,6 +279,14 @@ section.left {
 	gap: 4rem;
 }
 
+.content-copy {
+	order: -1;
+	gap: 1rem;
+	flex: auto;
+	flex-direction: column;
+	display: flex;
+}
+
 @media (max-width: 1366px) {
 	.content-grid {
 		grid-template-columns: 1fr;
@@ -286,10 +294,6 @@ section.left {
 
 	.content-grid .content-copy {
 		order: -1;
-		gap: 1rem;
-		flex: auto;
-		flex-direction: column;
-		display: flex;
 	}
 }
 
