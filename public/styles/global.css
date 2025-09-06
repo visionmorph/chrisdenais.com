@@ -216,6 +216,10 @@ footer {
 	flex: auto;
 }
 
+footer .p2:last-of-type {
+  margin-top: auto;
+}
+
 /* -------------- Layout ---------------- */
 
 section {
