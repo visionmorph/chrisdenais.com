@@ -200,9 +200,9 @@ nav {
 
 footer {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: flex-start;
-	gap: 2rem;
+	gap: 1rem;
 	align-self: stretch;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
@@ -211,7 +211,9 @@ footer {
 .footer__menu {
 	display: flex;
 	align-items: flex-start;
-	gap: 32px;
+	gap: 1rem;
+	flex-direction: column;
+	flex: auto;
 }
 
 /* -------------- Layout ---------------- */
