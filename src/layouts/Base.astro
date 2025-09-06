@@ -29,44 +29,103 @@
 
       gtag('config', 'G-GNFKJNNPQX')
     </script>
-  </head>
-  <body>
-    <section class='sticky'>
-      <div class='container no-top-margin'>
-        <nav>
-          <a class='p link' href='/'>Work</a>
-          <a class='p link' href='/about'>About</a>
-          <a class='p link' href='/contact'>Contact</a>
-        </nav>
-      </div>
-    </section>
+	</head>
+	<body>
+	<section class='sticky'>
+		<div class='container no-top-margin'>
+			<nav>
+				<a class='p link' href='/'>Work</a>
+				<a class='p link' href='/about'>About</a>
+				<a class='p link' href='/contact'>Contact</a>
+			</nav>
+		</div>
+	</section>
     <main>
-      <slot />
+		<slot />
     </main>
-    <section>
-      <div class='container slim'>
-        <footer>
-          <div class='footer__menu'>
-            <a
-              class='p2 link'
-              href='https://www.linkedin.com/in/chrisdenais/'
-              target='_blank'>LinkedIn</a
-            >
-            <a
-              class='p2 link'
-              href='https://dribbble.com/chrisdenais'
-              target='_blank'>Dribbble</a
-            >
-            <a
-              class='p2 link'
-              href='https://www.upwork.com/freelancers/~01631a81c014160c13'
-              target='_blank'>Upwork</a
-            >
-          </div>
-            <p class="p2">Made in America © 2025 Christopher Denais</p>
-        </footer>
-      </div>
-    </section>
+	<section>
+		<div class='container slim'>
+			<footer>
+				<div class='footer__menu'>
+					<p class="p2">
+						<b>
+							Explore
+						</b>
+					</p>
+					<a
+						class='p2 link'
+						href='/'
+						target='_blank'>Work
+					</a>
+					<a
+						class='p2 link'
+						href='/about'
+						target='_blank'>About
+					</a>
+					<a
+						class='p2 link'
+						href='/contact'
+						target='_blank'>Contact
+					</a>
+				</div>
+				<div class='footer__menu'>
+					<p class="p2">
+						<b>
+							Case studies
+						</b>
+					</p>
+					<a
+						class='p2 link'
+						href='/case-studies/dod'
+						target='_blank'>Department of Defense
+					</a>
+					<a
+						class='p2 link'
+						href='/case-studies/jnj'
+						target='_blank'>Johnson & Johnson
+					</a>
+					<a
+						class='p2 link'
+						href='/case-studies/atmos'
+						target='_blank'>Planet Atmos
+					</a>
+					<a
+						class='p2 link'
+						href='/case-studies/skillmasters'
+						target='_blank'>Skillmasters
+					</a>
+				</div>
+				<div class='footer__menu'>
+					<p class="p2">
+						<b>
+							Follow
+						</b>
+					</p>
+					<a
+						class='p2 link'
+						href='https://www.linkedin.com/in/chrisdenais/'
+						target='_blank'>LinkedIn
+					</a>
+					<a
+						class='p2 link'
+						href='https://dribbble.com/chrisdenais'
+						target='_blank'>Dribbble
+					</a>
+					<a
+						class='p2 link'
+						href='https://www.upwork.com/freelancers/~01631a81c014160c13'
+						target='_blank'>Upwork
+					</a>
+					<a
+						class='p2 link'
+						href='https://www.instagram.com/chrisdenais/'
+						target='_blank'>Instagram
+					</a>
+				</div>
+				<p class="p2">Made in America © 2025 Christopher Denais</p>
+			</footer>
+		</div>
+	</section>
     <script is:inline>
       let lastScrollY = window.scrollY;
       const nav = document.querySelector('.sticky');
@@ -79,6 +138,6 @@
         }
         lastScrollY = window.scrollY;
       });
-    </script>
-  </body>
+	</script>
+	</body>
 </html>
