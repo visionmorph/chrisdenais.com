@@ -501,7 +501,7 @@ button.filled[disabled] {
 }
 
 .view-project-image.borderless {
-	outline-color: transparent;
+	outline: none;
 }
 
 .view-project-image.full {
