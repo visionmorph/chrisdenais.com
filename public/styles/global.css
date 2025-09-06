@@ -286,6 +286,10 @@ section.left {
 
 	.content-grid .content-copy {
 		order: -1;
+		gap: 1rem;
+		flex: auto;
+		flex-direction: column;
+		display: flex;
 	}
 }
 
