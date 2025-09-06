@@ -830,7 +830,7 @@ button.filled[disabled] {
 }
 
 .testimonial__text.hanging::before {
-	content: '“';
+	content: '"';
 	position: absolute;
 	left: -1rem;
 }
@@ -880,8 +880,8 @@ button.filled[disabled] {
 
 .control-indicators {
 	width: 100%;
-	height: 4px;
-	grid-column-gap: 0.25rem;
+	height: 0.125rem;
+	grid-column-gap: 0.125rem;
 	display: flex;
 }
 
