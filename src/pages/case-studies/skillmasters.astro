@@ -1,0 +1,76 @@
+---
+import Content from '../../components/Content.astro'
+import ContentSummary from '../../components/ContentSummary.astro'
+import NextCaseStudy from '../../components/NextCaseStudy.astro'
+import Title from '../../components/Title.astro'
+import Base from '../../layouts/Base.astro'
+import Quote from '../../components/Quote.astro'
+---
+
+<Base>
+	<Title>SkillMasters gives young athletes access to college coaches for personalized feedback</Title>
+	<ContentSummary
+		year='3 months'
+		industry='Sports'
+		roles={['UI design','Interaction design']}
+	>
+	</ContentSummary>
+	<Content>
+		<div>
+			<img
+				src='/content/projects/skillmasters/01.png'
+				class='view-project-image content'
+			/>
+		</div>
+	</Content>
+	<Content>
+		<div class='text-width'>
+			<h2>The challenge</h2>
+			<p>
+                SkillMasters gives young athletes access to college coaches for personalized feedback. The mobile app was further optimized for onboarding new 
+                signups and recording training workouts.
+			</p>
+       </div>
+	</Content>
+	<Content>
+		<img
+			class='view-project-image'
+			src='/content/projects/skillmasters/02.png'
+			width='1600px'
+			height='1200px'
+		/>
+		<img
+			class='view-project-image'
+			src='/content/projects/skillmasters/03.png'
+			width='1600px'
+			height='1200px'
+		/>
+        <div class='view-project-flex'>
+            <img
+                class='view-project-image borderless flex-child'
+                src='/content/projects/skillmasters/04.png'
+            />
+            <img
+                class='view-project-image borderless flex-child'
+                src='/content/projects/skillmasters/05.png'
+            />
+        </div>
+	</Content>
+	<Content>
+			<h2>Testimonial</h2>
+            <Quote
+                quote={`Christopher is a very talented designer that has a deep knowledge and understanding on how to go about conceptualizing design tasks.`}
+                author="Matthew LaCrosse"
+                title="Product Manager, Atmos Labs"
+            />
+	</Content>
+	<NextCaseStudy
+		href='/case-studies/skillmasters'
+		subtitle='Sports'
+		label='Bridging the talent gap for youth sports with SkillMasters'
+		description='SkillMasters gives young athletes access to college coaches for personalized feedback.'
+		thumbnail={{
+			src: '/content/projects/skillmasters/01.png',
+		}}
+	/>
+</Base>
