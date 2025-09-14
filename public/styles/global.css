@@ -518,11 +518,6 @@ button.filled[disabled] {
 	outline: none;
 }
 
-.view-project-image.full {
-	width: 100%;
-	max-width: 100%;
-}
-
 .view-project-flex {
 	display: flex;
 	gap: 1rem;
