@@ -36,11 +36,7 @@ const imgSrc = !isVideo ? src : null
                 Your browser does not support the video tag.
             </video>
             ) : (
-            <img
-                src={imgSrc}
-                width={size?.[0] || '1600'}
-                height={size?.[1] || '1200'}
-            />
+            <img src={imgSrc}/>
             )}
         </a>
     </div>
