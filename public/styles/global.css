@@ -512,6 +512,7 @@ button.filled[disabled] {
 	max-width: 100%;
 	height: auto;
 	aspect-ratio: 4 / 3;
+	margin-top: 2px;
 }
 
 .view-project-image.borderless {
