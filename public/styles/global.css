@@ -539,7 +539,7 @@ button.filled[disabled] {
 	border-radius: 0;
 	outline: 2px solid var(--Grey-80, #343a3f);
 	max-width: 100%;
-	height: auto;
+	height: 1200px;
 	margin-top: 2px;
 }
 
