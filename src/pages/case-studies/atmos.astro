@@ -12,21 +12,15 @@ import Quote from '../../components/Quote.astro'
 	<ContentSummary
 		year='10 months'
 		industry='Gaming'
-		roles={['UI design','Interaction design']}
+		roles={['UI design','Design systems']}
 	>
 	</ContentSummary>
  	<Content>
 		<div>
-			<video
-				class='view-project-video'
-				autoplay
-				loop
-				muted
-				playsinline
-				width='1600px'
-				height='1200px'
-				src='/content/projects/atmos/animation.mp4'
-			></video>
+			<img
+				src='/content/case-studies/atmos/home.png'
+				class='view-project-image content'
+			/>
 		</div>
 	</Content>
 	<Content>
@@ -42,31 +36,31 @@ import Quote from '../../components/Quote.astro'
 	<Content>
 		<img
 			class='view-project-image'
-			src='/content/projects/atmos/02.png'
+			src='/content/case-studies/atmos/login.png'
 			width='1600px'
 			height='1200px'
 		/>
 		<img
 			class='view-project-image'
-			src='/content/projects/atmos/03.png'
+			src='/content/case-studies/atmos/home.png'
 			width='1600px'
 			height='1200px'
 		/>
 		<img
 			class='view-project-image'
-			src='/content/projects/atmos/04.png'
+			src='/content/case-studies/atmos/collections.png'
 			width='1600px'
 			height='1200px'
 		/>
 		<img
 			class='view-project-image'
-			src='/content/projects/atmos/05.png'
+			src='/content/case-studies/atmos/transfer.png'
 			width='1600px'
 			height='1200px'
 		/>
 		<img
 			class='view-project-image'
-			src='/content/projects/atmos/06.png'
+			src='/content/case-studies/atmos/garage.png'
 			width='1600px'
 			height='1200px'
 		/>
@@ -74,7 +68,7 @@ import Quote from '../../components/Quote.astro'
 	<Content>
 			<h2>Testimonial</h2>
             <Quote
-                quote={`We were particularly impressed with both his efficiency and thoroughness—he thought through all necessary states when building components, which enabled our engineers to move faster.`}
+                quote={`Working with Chris was an excellent experience. He was able to put forth thoughtful solutions and have solid reasoning to back up his design decisions. We were particularly impressed with both his efficiency and thoroughness.`}
                 author="Stephen Kurshner"
                 title="Product Manager, Atmos Labs"
             />
