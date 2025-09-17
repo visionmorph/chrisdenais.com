@@ -1,0 +1,43 @@
+---
+const {
+  href,
+  label,
+  subtitle,
+  description,
+  thumbnail: { src, size, video }
+} = Astro.props
+
+// Determine if we should render a video
+const isVideo = video || (src && src.endsWith('.mp4'))
+const videoSrc = video || (isVideo ? src : null)
+const imgSrc = !isVideo ? src : null
+---
+<section>
+    <div class='container content'>
+        <h2>Next up</h2>
+        <a href={href} class='next__grid'>
+            <div class='next__caption'>
+                  <div style="gap: .5rem;display: flex;flex-direction: column;">
+                    <p class="p2">{subtitle}</p>
+                    <h3>{label}</h3>
+                  </div>
+                <p>{description}</p>
+                <p>-></p>
+            </div>
+            {isVideo ? (
+            <video 
+                autoplay 
+                loop 
+                muted 
+                playsinline 
+                class="full"
+            >
+                <source src={videoSrc} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            ) : (
+            <img src={imgSrc}/>
+            )}
+        </a>
+    </div>
+</section>
