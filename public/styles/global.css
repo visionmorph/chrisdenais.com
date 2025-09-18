@@ -173,13 +173,6 @@ hr {
   margin: 0;
 }
 
-.mono {
-	font-family: IBM Plex Mono;
-	color: #c1c7cd;
-	font-size: 1.25rem;
-	font-style: normal;
-}
-
 /* -------------- Nav ---------------- */
 
 nav {
@@ -607,6 +600,18 @@ button.filled[disabled] {
 
 .next__grid img.view-project-image {
 	outline: none;
+}
+
+.lead__tile {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.lead__caption {
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+	padding-right: 2rem;
 }
 
 .next__caption {
@@ -1339,6 +1344,19 @@ textarea:-webkit-autofill:focus {
 		outline-offset: -1px;
 	}
 
+	.lead__tile {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.lead__caption {
+		gap: 2rem;
+		display: flex;
+		flex-direction: column;
+		padding-right: 2rem;
+		padding-bottom: 2rem;
+	}	
+	
 	blockquote {
 		position: relative;
 		font-family: Inter;
