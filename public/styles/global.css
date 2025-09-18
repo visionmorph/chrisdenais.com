@@ -330,10 +330,9 @@ section.left {
 
 button {
 	position: relative;
-
-	margin-top: 2rem;
-	padding: 1.0625rem 1rem;
-
+	padding-left: 1rem;
+	padding-right: 1rem;
+	height: 4rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -347,7 +346,7 @@ button {
 	text-decoration: none;
 	text-align: left;
 	font-size: 1.5rem;
-	font-weight: inherit;
+	font-weight: 300;
 	line-height: inherit;
 	font-family: Inter;
 
@@ -359,9 +358,6 @@ button {
 
 button:not([disabled])::after {
 	content: '->';
-	min-width: 27px;
-	text-wrap: none;
-	margin-left: 2rem;
 }
 
 button:hover {
@@ -1058,7 +1054,9 @@ textarea:-webkit-autofill:focus {
 	background: #000000;
 	border-radius: 0;
 	margin: 0;
-	padding: 17px 16px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	height: 4rem;
 	font-size: 1.5rem;
 	line-height: 30px;
 	caret-color: white;
