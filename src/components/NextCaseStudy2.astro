@@ -12,27 +12,27 @@ const videoSrc = video || (isVideo ? src : null)
 const imgSrc = !isVideo ? src : null
 ---
 <section>
-    <div class='container content'>
-        <div class='next__grid2'>
-            <div class='next__caption2'>
-                <h3>{label}</h3>
-                <p>{description}</p>
-                <a href={href}></a>
-            </div>
-            {isVideo ? (
-            <video 
-                autoplay 
-                loop 
-                muted 
-                playsinline 
-                class="full"
-            >
-                <source src={videoSrc} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            ) : (
-            <img src={imgSrc}/>
-            )}
-        </div>
-    </div>
+  <div class='container content'>
+    <a href={href} class='next__grid2'>
+      <div class='next__caption2'>
+        <h2>{label}</h2>
+        <p>{description}</p>
+        <p>-></p>
+      </div>
+      {isVideo ? (
+      <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          class="full"
+      >
+          <source src={videoSrc} type="video/mp4" />
+          Your browser does not support the video tag.
+      </video>
+      ) : (
+      <img src={imgSrc}/>
+      )}
+    </a>
+  </div>
 </section>
