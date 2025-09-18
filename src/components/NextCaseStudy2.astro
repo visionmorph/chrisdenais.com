@@ -2,8 +2,9 @@
 const {
   href,
   label,
+  subtitle,
   description,
-  thumbnail: { src, size, video } = {}
+  thumbnail: { src, size, video }
 } = Astro.props
 
 // Determine if we should render a video
@@ -12,27 +13,28 @@ const videoSrc = video || (isVideo ? src : null)
 const imgSrc = !isVideo ? src : null
 ---
 <section>
-  <div class='container content'>
-    <a href={href} class='next__grid2'>
-      <div class='next__caption2'>
-        <h2>{label}</h2>
-        <p>{description}</p>
-        <p>-></p>
-      </div>
-      {isVideo ? (
-      <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
-          class="full"
-      >
-          <source src={videoSrc} type="video/mp4" />
-          Your browser does not support the video tag.
-      </video>
-      ) : (
-      <img src={imgSrc} alt={label}/>
-      )}
-    </a>
-  </div>
+    <div class='container content'>
+        <h2>Next up</h2>
+        <a href={href} class='next__grid2'>
+            <div class='next__caption2'>
+              <p class="p2">{subtitle}</p>
+              <h2>{label}</h2>
+              <p>{description}</p>
+            </div>
+            {isVideo ? (
+            <video 
+                autoplay 
+                loop 
+                muted 
+                playsinline 
+                class="full"
+            >
+                <source src={videoSrc} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            ) : (
+            <img src={imgSrc}/>
+            )}
+        </a>
+    </div>
 </section>
