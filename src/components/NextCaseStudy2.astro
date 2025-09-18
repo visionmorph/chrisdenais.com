@@ -3,7 +3,7 @@ const {
   href,
   label,
   description,
-  thumbnail: { src, size, video }
+  thumbnail: { src, size, video } = {}
 } = Astro.props
 
 // Determine if we should render a video
@@ -21,17 +21,17 @@ const imgSrc = !isVideo ? src : null
       </div>
       {isVideo ? (
       <video 
-          autoplay 
+          autoPlay 
           loop 
           muted 
-          playsinline 
+          playsInline 
           class="full"
       >
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
       </video>
       ) : (
-      <img src={imgSrc}/>
+      <img src={imgSrc} alt={label}/>
       )}
     </a>
   </div>
