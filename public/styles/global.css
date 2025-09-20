@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 /* -------------- General ---------------- */
 
 :root {
@@ -118,10 +118,10 @@ ul {
 	color: #c1c7cd;
 	/* P2 */
 	font-family: Inter;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 1.5rem;
+	line-height: 1.75rem;
 	/* 130% */
 }
 
@@ -565,13 +565,13 @@ button.filled[disabled] {
 .lead__tile {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
 }
 
 .lead__caption {
 	gap: 2rem;
 	display: flex;
 	flex-direction: column;
-	padding-right: 2rem;
 }
 
 .next__caption {
