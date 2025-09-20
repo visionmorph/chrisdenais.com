@@ -574,6 +574,10 @@ button.filled[disabled] {
 	flex-direction: column;
 }
 
+.lead__caption a {
+	align-self: flex-start;
+}
+
 .next__caption {
 	display: flex;
 	flex-direction: column;
