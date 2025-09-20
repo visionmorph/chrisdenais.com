@@ -325,7 +325,8 @@ section.left {
 
 /* -------------- Button base ---------------- */
 
-button {
+button, 
+.button {
 	position: relative;
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -353,18 +354,21 @@ button {
 	transition: background-color 0.125s;
 }
 
-button:not([disabled])::after {
+button:not([disabled])::after, 
+.button:not([disabled])::after {
 	content: '->';
 	margin-left: 1rem;
 }
 
-button:hover {
+button:hover, 
+.button:hover {
 	color: #000;
 	background-color: #fff;
 	color: #121619;
 }
 
-button:active {
+button:active, 
+.button:active {
 	outline-offset: -4px;
 	color: #121619;
 	background-color: #c1c7cd;
@@ -372,18 +376,22 @@ button:active {
 }
 
 button:focus,
-button:focus-visible {
+button:focus-visible, 
+.button:focus,
+.button:focus-visible {
 	outline-offset: -4px;
 	color: #000;
 	outline: 2px solid #000;
 	background-color: #fff;
 }
 
-button:focus-visible:not(:hover) {
+button:focus-visible:not(:hover), 
+.button:focus-visible:not(:hover) {
 	background-color: #fff;
 }
 
-button[disabled] {
+button[disabled], 
+.button[disabled] {
 	color: #4d5358 !important;
 	border: solid 1px #4d5358;
 	cursor: not-allowed;
