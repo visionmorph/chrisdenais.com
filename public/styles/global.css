@@ -152,6 +152,8 @@ blockquote {
   margin-bottom: 0;
 }
 
+/* -------------- Horizontal rule ---------------- */
+
 hr {
   border: 0;
   border-top: 1px solid #fff;
@@ -301,10 +303,6 @@ section.left {
 
 .no-bottom-margin {
 	margin-bottom: 0rem;
-}
-
-.no-margin {
-	margin: 0;
 }
 
 .underscore {
@@ -497,15 +495,9 @@ button.filled[disabled] {
 /* -------------- Projects ---------------- */
 
 .view-project-image {
-	outline: 2px solid var(--Grey-80, #343a3f);
 	max-width: 100%;
 	height: auto;
 	aspect-ratio: 4 / 3;
-	margin-bottom: 2px;
-}
-
-.view-project-image.borderless {
-	outline: none;
 }
 
 .view-project-flex {
@@ -521,26 +513,8 @@ button.filled[disabled] {
 }
 
 .view-project-video {
-	border-radius: 0;
-	outline: 2px solid var(--Grey-80, #343a3f);
 	max-width: 100%;
 	aspect-ratio: 4 / 3;
-	margin-top: 2px;
-}
-
-.video__wrapper {
-	border-radius: 0;
-	outline: 2px solid var(--Grey-80, #343a3f);
-	outline-offset: -2px;
-	max-width: 100%;
-	height: auto;
-}
-
-.video__player {
-	max-width: 100%;
-	height: auto;
-	position: relative;
-	z-index: -1;
 }
 
 .view-project-video.content {
@@ -556,20 +530,6 @@ button.filled[disabled] {
 	position: relative;
 	z-index: -1;
 	margin: 0;
-}
-
-.next-preview {
-	pointer-events: none;
-	width: 528px;
-	height: 396px;
-	position: fixed;
-	top: var(--next-case-study-preview-top, 0);
-	left: var(--next-case-study-preview-left, 0);
-	z-index: 9999;
-	visibility: hidden;
-	opacity: 0;
-	transform: translateY(-100%);
-	transition: opacity 0.25s ease-in-out;
 }
 
 .next__grid {
@@ -593,10 +553,6 @@ button.filled[disabled] {
 	display: block;
 	object-fit: cover;
 	aspect-ratio: 4 / 3;
-}
-
-.next__grid img.view-project-image {
-	outline: none;
 }
 
 .lead__tile {
@@ -645,11 +601,6 @@ button.filled[disabled] {
 }
 
 .next__arrow {
-}
-
-.next-case-study:hover + .next-preview {
-	visibility: visible;
-	opacity: 1;
 }
 
 .feature {
@@ -1456,24 +1407,6 @@ textarea:-webkit-autofill:focus {
 	.mobile-detector {
 		display: none;
 	}
-
-	/* -------------- Footer ---------------- */
-
-	.view-project-image {
-		outline-width: 1px;
-		outline-offset: -1px;
-	}
-
-	.view-project-video {
-		outline-width: 1px;
-		outline-offset: -1px;
-	}
-
-	.video__wrapper {
-		outline-width: 1px;
-		outline-offset: -1px;
-	}
-}
 
 @media only screen and (max-width: 478px) {
 	/* -------------- General ---------------- */
