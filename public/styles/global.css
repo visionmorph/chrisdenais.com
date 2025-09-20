@@ -1027,7 +1027,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .form__input:is(.textarea) {
-	paddint-top: 1rem;
+	padding-top: 1rem;
 	min-height: 12rem;
 	resize: vertical;
 	position: relative;
