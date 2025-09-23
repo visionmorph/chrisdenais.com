@@ -26,10 +26,10 @@ video {
 a {
 	text-decoration: none;
 	font-family: Inter;
-	font-size: 24px;
+	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 1.25;
+	line-height: 1.75rem;
 	/* 125% */
 }
 
@@ -85,7 +85,7 @@ h3,
 	font-family: Inter;
 	font-size: 1.5rem;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.75rem;
 	color: #ffffff;
 	/* 125% */
@@ -118,10 +118,10 @@ ul {
 	color: #c1c7cd;
 	/* P2 */
 	font-family: Inter;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 1.75rem;
+	line-height: 1.25rem;
 	/* 130% */
 }
 
@@ -261,6 +261,7 @@ section.left {
 .container.content {
 	margin-top: 0rem;
 	margin-bottom: 12rem;
+	align-items: center;
 }
 
 .container.first {
@@ -343,9 +344,9 @@ button,
 
 	text-decoration: none;
 	text-align: left;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: 300;
-	line-height: inherit;
+	line-height: 1.75rem;
 	font-family: Inter;
 
 	cursor: pointer;
@@ -594,7 +595,7 @@ button.filled[disabled] {
 	background-color: #21272A;
 }
 
-.next__caption:hover h3 {
+.next__caption:hover h2 {
 	text-decoration: underline;
 	color: #78a9ff;
 }
@@ -969,19 +970,13 @@ form {
 .form__field label {
 	display: block;
 	margin-bottom: 0.5rem;
-
 	color: #c1c7cd;
-	font-size: 1.25rem;
-	line-height: 1.625rem;
+	font-size: 1rem;
+	line-height: 1.25rem;
 	font-family: 'Inter';
 	font-weight: 300;
 	opacity: 1;
-
 	pointer-events: none;
-}
-
-.form__field:focus-within label {
-	color: #fff;
 }
 
 /* -------------- Input ---------------- */
@@ -1021,9 +1016,9 @@ textarea:-webkit-autofill:focus {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	height: 4rem;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: 300;
-	line-height: 30px;
+	line-height: 1.75rem;
 	caret-color: white;
 
 	position: relative;
@@ -1236,7 +1231,7 @@ textarea:-webkit-autofill:focus {
 		font-family: Inter;
 		font-size: 1.25rem;
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 1.75rem;
 		letter-spacing: 0px;
 	}
