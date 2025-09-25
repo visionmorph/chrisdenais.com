@@ -966,11 +966,13 @@ form {
 .form__field {
 	position: relative;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
 }
 
 .form__field label {
 	display: block;
-	margin-bottom: 0.5rem;
 	color: #c1c7cd;
 	font-size: 1rem;
 	line-height: 1.25rem;
@@ -1018,8 +1020,8 @@ textarea:-webkit-autofill:focus {
 	padding-right: 1rem;
 	height: 4rem;
 	font-size: 1.25rem;
-	font-weight: 300;
 	line-height: 1.75rem;
+	font-weight: 300;
 	caret-color: white;
 
 	position: relative;
@@ -1064,22 +1066,17 @@ textarea:-webkit-autofill:focus {
 
 .form__error {
 	display: none;
-	margin-top: calc(-2rem + 6px);
-
 	font-family: Inter;
-	font-size: 20px;
+	font-size: 1rem;
+	line-height: 1.25rem;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 26px;
-
 	position: relative;
-
 	transition: margin-top 0.3s;
 }
 
 .form__error[data-visible='true'] {
 	display: block;
-	margin-top: 6px;
 }
 
 .form__input.error {
