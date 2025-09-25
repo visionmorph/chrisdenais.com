@@ -332,7 +332,7 @@ button,
 	position: relative;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	height: 4rem;
+	height: 3rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -978,8 +978,6 @@ form {
 	line-height: 1.25rem;
 	font-family: 'Inter';
 	font-weight: 300;
-	opacity: 1;
-	pointer-events: none;
 }
 
 /* -------------- Input ---------------- */
@@ -1014,11 +1012,9 @@ textarea:-webkit-autofill:focus {
 	outline-color: transparent;
 	border: 1px solid #a2a9b0;
 	background: #000000;
-	border-radius: 0;
-	margin: 0;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	height: 4rem;
+	height: 3rem;
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 	font-weight: 300;
@@ -1081,7 +1077,6 @@ textarea:-webkit-autofill:focus {
 
 .form__input.error {
 	outline: 2px solid #fa4d56;
-	outline-offset: -2px;
 }
 
 .form__input.error:focus-visible {
@@ -1105,13 +1100,9 @@ textarea:-webkit-autofill:focus {
 }
 
 .warning-indicator {
-	max-width: 2rem;
 	position: absolute;
-	top: calc(2rem + 1.0625rem);
+	top: 2.5rem;
 	right: 1rem;
-	left: auto;
-	bottom: auto;
-
 	z-index: 100;
 	opacity: 0;
 	transition: opacity 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
