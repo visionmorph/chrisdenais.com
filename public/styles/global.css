@@ -357,11 +357,15 @@ button,
 	transition: background-color 0.125s;
 }
 
+/* Filled variant */
+
 button.filled {
 	color: #000;
 	background-color: #fff;
 	border: none;
 }
+
+/* Shared hover, active, and focus styles */
 
 button:hover,
 .button:hover,
@@ -374,7 +378,7 @@ button.filled:hover,
 button:active, 
 .button:active,
 button.filled:active,
-.button.filled:active, {
+.button.filled:active {
 	outline-offset: -4px;
 	color: #121619;
 	background-color: #a2a9b0;
