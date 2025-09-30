@@ -672,8 +672,6 @@ button.filled[disabled] {
 	display: grid;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	background: #343A3F;
-	gap: 1px;
 	align-items: start;
 }
 
@@ -683,7 +681,7 @@ button.filled[disabled] {
 	align-items: flex-start;
 	gap: 1rem;
 	padding: 1rem;
-	background: #000000;
+	outline: 1px solid #343A3F;
 	aspect-ratio: 1 / 1;
 }
 
