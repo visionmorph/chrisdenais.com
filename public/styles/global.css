@@ -750,11 +750,13 @@ button.filled[disabled] {
 }
 
 .testimonial {
+	flex-direction: column;
 	position: relative;
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	align-items: flex-start;
+	gap: 2rem;
 }
 
 .testimonial__area {
@@ -808,9 +810,8 @@ button.filled[disabled] {
 
 .controls__arrows {
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-self: stretch;
+	justify-content: flex-start;
+	align-items: center;
 	gap: 1rem;
 }
 
