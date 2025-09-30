@@ -673,6 +673,7 @@ button.filled[disabled] {
 	grid-template-rows: auto;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	align-items: start;
+	padding-bottom: 1px;
 }
 
 .clients__item {
@@ -681,7 +682,7 @@ button.filled[disabled] {
 	align-items: flex-start;
 	gap: 1rem;
 	padding: 1rem;
-	outline: 1px solid #343A3F;
+	border: 1px solid #343A3F;
 	aspect-ratio: 1 / 1;
 }
 
@@ -698,9 +699,10 @@ button.filled[disabled] {
 		align-items: flex-start;
 		gap: 1rem;
 		padding: 1rem;
+		border-left: 0px;
+		border-right: 0px;
 		padding-left: 0rem;
-		background: #000000;
-		aspect-ratio: 3 / 1;
+		aspect-ratio: 4 / 1;
 	}
 }
 
@@ -1210,16 +1212,6 @@ textarea:-webkit-autofill:focus {
 		font-weight: 300;
 		line-height: 3.5rem;
 		/* 125% */
-		letter-spacing: 0px;
-	}
-
-	h3,
-	.h3 {
-		font-family: Inter;
-		font-size: 1.25rem;
-		font-style: normal;
-		font-weight: 300;
-		line-height: 1.75rem;
 		letter-spacing: 0px;
 	}
 
