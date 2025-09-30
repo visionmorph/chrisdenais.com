@@ -336,6 +336,7 @@ button,
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 1rem;
 
 	color: #fff;
 	background-color: rgba(255, 255, 255, 0);
@@ -359,7 +360,6 @@ button,
 button:not([disabled])::after, 
 .button:not([disabled])::after {
 	content: '->';
-	margin-left: 1rem;
 }
 
 button:hover, 
@@ -373,7 +373,7 @@ button:active,
 .button:active {
 	outline-offset: -4px;
 	color: #121619;
-	background-color: #c1c7cd;
+	background-color: #a2a9b0;
 	outline: 2px solid #000;
 }
 
