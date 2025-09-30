@@ -402,6 +402,34 @@ button.filled:focus-visible,
 	background-color: #fff;
 }
 
+/* Focus + hover */
+button:focus:hover,
+button:focus-visible:hover,
+.button:focus:hover,
+.button:focus-visible:hover,
+button.filled:focus:hover,
+button.filled:focus-visible:hover,
+.button.filled:focus:hover,
+.button.filled:focus-visible:hover {
+	color: #000;
+	background-color: #c1c7cd;
+}
+
+/* Focus + hover + active (pressed) */
+button:focus:hover:active,
+button:focus-visible:hover:active,
+.button:focus:hover:active,
+.button:focus-visible:hover:active,
+button.filled:focus:hover:active,
+button.filled:focus-visible:hover:active,
+.button.filled:focus:hover:active,
+.button.filled:focus-visible:hover:active {
+	outline-offset: -4px;
+	color: #121619;
+	background-color: #a2a9b0;
+	outline: 2px solid #000;
+}
+
 /* Disabled */
 
 button[disabled], 
