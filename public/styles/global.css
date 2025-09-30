@@ -354,7 +354,6 @@ button,
 	cursor: pointer;
 	user-select: none;
 	box-sizing: border-box;
-	transition: background-color 0.125s;
 }
 
 /* Filled variant */
@@ -365,7 +364,7 @@ button.filled {
 	border: none;
 }
 
-/* Shared hover, active, and focus styles */
+/* Hover */
 
 button:hover,
 .button:hover,
@@ -374,6 +373,8 @@ button.filled:hover,
 	color: #000;
 	background-color: #c1c7cd;
 }
+
+/* Active */
 
 button:active, 
 .button:active,
@@ -384,6 +385,8 @@ button.filled:active,
 	background-color: #a2a9b0;
 	outline: 2px solid #000;
 }
+
+/* Focus */
 
 button:focus,
 .button:focus,
@@ -399,14 +402,7 @@ button.filled:focus-visible,
 	background-color: #fff;
 }
 
-button:focus-visible:not(:hover), 
-.button:focus-visible:not(:hover) {
-	background-color: #fff;
-}
-
-button.filled:focus-visible:not(:hover) {
-	background-color: #fff;
-}
+/* Disabled */
 
 button[disabled], 
 .button[disabled] {
