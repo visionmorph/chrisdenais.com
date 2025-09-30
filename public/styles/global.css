@@ -181,7 +181,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	align-self: stretch;
-	margin-top: 9px;
+	height: 4rem;
 	width: 100%;
 	max-width: 100rem;
 	overflow: visible;
@@ -806,21 +806,12 @@ button.filled[disabled] {
 
 /* -------------- Testimonial controls ---------------- */
 
-.controls {
-	display: flex;
-	width: 160px;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 28px;
-	flex-shrink: 0;
-}
-
 .controls__arrows {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	align-self: stretch;
-	gap: 4rem;
+	gap: 1rem;
 }
 
 .controls__arrows img {
