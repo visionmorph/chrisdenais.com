@@ -795,7 +795,6 @@ button:not([disabled])::after,
 	display: block;
 	position: absolute;
 }
-}
 
 @media only screen and (max-width: 1295px) {
 	.controls-area {
@@ -1285,6 +1284,7 @@ textarea:-webkit-autofill:focus {
 	.mobile-detector {
 		display: none;
 	}
+}
 
 @media only screen and (max-width: 478px) {
 	/* -------------- General ---------------- */
