@@ -2,7 +2,7 @@
 interface Props {
   href: string;
   text: string;
-  icon?: string; // optional SVG path or icon HTML string
+  icon?: any; // optional JSX/HTML element
   target?: string;
   rel?: string;
 }
@@ -18,5 +18,5 @@ const {
 
 <a href={href} target={target} rel={rel} class="link">
   <span class="link-text">{text}</span>
-  {icon && <span class="link-icon" innerHTML={icon} />}
+  {icon && icon}
 </a>
