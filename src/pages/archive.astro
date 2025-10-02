@@ -1,33 +1,10 @@
 ---
 import Base from '../layouts/Base.astro'
-import NextCaseStudy2 from '../../components/NextCaseStudy.astro'
 import Link from '../../components/Link.astro'
 ---
 
 <Base>
 	<section>
-		<div class="container">
-			<div class="lead__tile">
-				<div class="lead__caption">
-					<h2>
-						Shaping the future of pilot training with AI-driven maneuver analysis
-					</h2>
-					<p>The new DDR experience clarified performance grading, streamlined controls, and layered AI insights, giving pilots a clear path to improving mission readiness</p>
-					<a href='/case-studies/dod'>
-						<button
-							tabindex='0'
-						>
-							Read case study
-						</button>
-					</a>
-				</div>
-			<Link href="/about" text="About" class="link" icon="/images/link.svg" />
-			<img
-				class='view-project-image'
-				src='/content/case-studies/dod/ddr.png'
-				alt='User interface design of Data Driven Readines with maneuvers graded by AI, a viewport that simulates flights, and a timeline that visualizes flight performance data'
-			/>
-			</div>
-		</div>
+		<Link href="/about" text="About" class="link" icon="/images/link.svg" />
 	</section>
 </Base>
