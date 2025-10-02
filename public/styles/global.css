@@ -183,7 +183,6 @@ footer {
 	align-self: stretch;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
-	justify-content: space-between;
 }
 
 .footer__menu {
@@ -1285,7 +1284,6 @@ textarea:-webkit-autofill:focus {
 	.mobile-detector {
 		display: none;
 	}
-}
 
 @media only screen and (max-width: 478px) {
 	/* -------------- General ---------------- */
