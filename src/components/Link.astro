@@ -20,3 +20,48 @@ const {
   <span class="link-text">{text}</span>
   {icon && <span class="link-icon" set:html={icon} />}
 </a>
+
+<style>
+.link {
+	color: #78a9ff;
+	display: inline-flex;     /* align text and icon horizontally */
+	align-items: center;
+	cursor: pointer;
+	overflow: visible;
+	gap: 0.5em;              /* space between text and icon */
+}
+
+.link:hover {
+	color: #a6c8ff;
+	text-decoration-line: underline;
+	text-decoration-thickness: 0.0625em;
+	text-underline-offset: 0.15625em;
+}
+
+.link:active {
+	outline-offset: -2px;
+	outline: 2px solid #fff;
+}
+
+.link:focus {
+	outline-offset: -2px;
+	outline: 2px solid #fff;
+}
+
+.link:focus-visible {
+	color: #fff;
+}
+
+.link-icon {
+	display: inline-flex;
+	width: 1em;
+	height: 1em;
+	color: inherit;           /* inherit link color */
+}
+
+.link-icon svg {
+	width: 100%;
+	height: 100%;
+	fill: currentColor;        /* match text color */
+}
+</style>
