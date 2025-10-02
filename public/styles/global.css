@@ -183,6 +183,9 @@ footer {
 	align-self: stretch;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
+	justify-content: space-between;
+
+
 }
 
 .footer__menu {
@@ -937,8 +940,8 @@ textarea:-webkit-autofill:focus {
 	outline-style: solid;
 	outline-offset: -2px;
 	outline-color: transparent;
-	border: 1px solid #a2a9b0;
-	background: #000000;
+	border: 1px solid #878D96;
+	background: #121619;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	height: 3rem;
