@@ -937,8 +937,8 @@ textarea:-webkit-autofill:focus {
 	outline-style: solid;
 	outline-offset: -2px;
 	outline-color: transparent;
-	border: 1px solid #878D96;
-	background: #121619;
+	border: 1px solid #a2a9b0;
+	background: #000000;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	height: 3rem;
@@ -982,6 +982,7 @@ textarea:-webkit-autofill:focus {
 .form__input:focus-visible {
 	outline: 2px solid white;
 	outline-offset: -2px;
+	background: #121619;
 }
 
 /* -------------- Form errors ---------------- */
@@ -1284,7 +1285,6 @@ textarea:-webkit-autofill:focus {
 	.mobile-detector {
 		display: none;
 	}
-}
 
 @media only screen and (max-width: 478px) {
 	/* -------------- General ---------------- */
