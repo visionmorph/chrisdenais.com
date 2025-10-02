@@ -10,7 +10,8 @@ const { quote, author, title, link, linkLabel } = Astro.props;
     <p>{title}</p>
   </div>
   <hr class="hr-strong" />
-  <a class="link" target="_blank" href={link}>
+  <p class="link" target="_blank" href={link}>
     {linkLabel}
   </a>
+  <img src="/images/link.svg" width="24" style="color: #78a9ff; margin-top: 2px; margin-bottom: 2px;">
 </div>
