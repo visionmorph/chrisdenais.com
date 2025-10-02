@@ -1,12 +1,5 @@
 ---
-interface Props {
-  href: string;
-  text: string;
-  className?: string; // "link", "p link", "p2 link", etc.
-  icon?: string;      // optional path to svg or img
-}
-
-const { href, text, className = "link", icon } = Astro.props;
+const { href, text, class: className = "link", icon, alt = "" } = Astro.props;
 ---
 
 <a href={href} class={className}>
@@ -14,8 +7,8 @@ const { href, text, className = "link", icon } = Astro.props;
   {icon && (
     <img 
       src={icon} 
-      alt="" 
-      aria-hidden="true" 
+      alt={alt} 
+      aria-hidden={alt ? "false" : "true"} 
       class="inline-block" 
     />
   )}
