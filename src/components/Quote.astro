@@ -1,5 +1,22 @@
 ---
-const { quote, author, title, link, linkLabel } = Astro.props;
+interface LinkProps {
+  href: string;
+  text: string;
+  icon?: string;
+  target?: string;
+  rel?: string;
+}
+
+interface BlockquoteProps {
+  quote: string;
+  author: string;
+  title: string;
+  link?: LinkProps;
+}
+
+const { quote, author, title, link } = Astro.props;
+
+import Link from './Link.astro';
 ---
 
 <div class="quote-container text-width">
@@ -12,21 +29,12 @@ const { quote, author, title, link, linkLabel } = Astro.props;
   <hr class="hr-strong" />
 
   {link && (
-    <p class="link">
-      <a target="_blank" href={link} class="link-with-icon">
-        {linkLabel}
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          width="24" 
-          height="24" 
-          viewBox="0 0 64 64" 
-          fill="currentColor" 
-          style="margin-top: 2px; margin-bottom: 2px;"
-        >
-          <path d="M52 56H12C10.9396 55.9986 9.92299 55.5767 9.17315 54.8269C8.42331 54.077 8.00143 53.0604 8 52V12C8.00143 10.9396 8.42331 9.92299 9.17315 9.17315C9.92299 8.42331 10.9396 8.00143 12 8H32V12H12V52H52V32H56V52C55.9986 53.0604 55.5767 54.077 54.8269 54.8269C54.077 55.5767 53.0604 55.9986 52 56Z"/>
-          <path d="M40 4V8H53.172L36 25.172L38.828 28L56 10.828V24H60V4H40Z"/>
-        </svg>
-      </a>
-    </p>
+    <Link 
+      href={link.href}
+      text={link.text}
+      icon={link.icon}
+      target={link.target}
+      rel={link.rel}
+    />
   )}
 </div>
