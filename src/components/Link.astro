@@ -1,18 +1,22 @@
 ---
 interface Props {
-    href: string;
-    target?: string;
-    rel?: string;
+  href: string;
+  text: string;
+  icon?: string; // optional SVG path or icon HTML string
+  target?: string;
+  rel?: string;
 }
 
 const {
-    href,
-    target = "_self",
-    rel = "noopener noreferrer"
+  href,
+  text,
+  icon,
+  target = "_self",
+  rel = "noopener noreferrer",
 } = Astro.props;
 ---
 
 <a href={href} target={target} rel={rel} class="link">
-    <span class="link-text"><slot /></span>
-    <slot name="icon" />
+  <span class="link-text">{text}</span>
+  {icon && <span class="link-icon" innerHTML={icon} />}
 </a>
