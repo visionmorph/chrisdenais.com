@@ -183,6 +183,7 @@ footer {
 	align-self: stretch;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
+	justify-content: space-between;
 }
 
 .footer__menu {
