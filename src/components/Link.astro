@@ -1,15 +1,29 @@
 ---
-const { href, text, className = "link", icon, alt = "" } = Astro.props;
+const {
+  href,
+  text,
+  icon,
+  variant,
+  target,
+  rel
+} = Astro.props
+
+// Determine if we should render an icon
+const hasIcon = icon !== undefined && icon !== null
+
+// Build class string
+const classNames = ['link', variant].filter(Boolean).join(' ')
+
+// Set default rel for external links
+const linkRel = rel || (target === '_blank' ? 'noopener noreferrer' : undefined)
 ---
 
-<a href={href} class={className}>
+<a 
+  href={href} 
+  class={classNames}
+  target={target}
+  rel={linkRel}
+>
   {text}
-  {icon && (
-    <img 
-      src={icon} 
-      alt={alt} 
-      aria-hidden={alt ? "false" : "true"} 
-      class="inline-block" 
-    />
-  )}
+  {hasIcon && <span>{icon}</span>}
 </a>
