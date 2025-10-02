@@ -1221,123 +1221,123 @@ textarea:-webkit-autofill:focus {
 }
 
 @media only screen and (max-width: 768px) {
-	/* -------------- General ---------------- */
+    /* -------------- General ---------------- */
 
-	h1,
-	.h1 {
-		font-family: Inter;
-		font-size: 2.25rem;
-		font-style: normal;
-		font-weight: 300;
-		line-height: 2.75rem;
-		letter-spacing: 0px;
-	}
-	
-	blockquote {
-		position: relative;
-		font-family: Inter;
-		font-size: 1.25rem;
-		font-weight: 300;
-		line-height: 1.625rem;
-		/* 125% */
-	}
+    h1,
+    .h1 {
+        font-family: Inter;
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2.75rem;
+        letter-spacing: 0px;
+    }
+    
+    blockquote {
+        position: relative;
+        font-family: Inter;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.625rem;
+        /* 125% */
+    }
 
-	.quote-container {
-		gap: 2rem;
-	}
+    .quote-container {
+        gap: 2rem;
+    }
 
-	footer {
-		flex-direction: column;
-}
+    footer {
+        flex-direction: column;
+    }
 
-	/* -------------- Layouts ---------------- */
+    /* -------------- Layouts ---------------- */
 
-	.column-grid {
-		grid-template-columns: 1fr;
-	}
+    .column-grid {
+        grid-template-columns: 1fr;
+    }
 
-	section {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-	.content__info {
-    	flex-direction: column;
-	}
+    .content__info {
+        flex-direction: column;
+    }
 
-	/* -------------- Clients ---------------- */
+    /* -------------- Clients ---------------- */
 
-	.clients {
-		grid-template-columns: 1fr;
-	}
+    .clients {
+        grid-template-columns: 1fr;
+    }
 
-	/* -------------- Form errors ---------------- */
+    /* -------------- Form errors ---------------- */
 
-	.error .warning-indicator {
-		transform: translate(0rem, 28px);
-		max-width: 1.5rem;
-		left: 0rem;
-		bottom: 0rem;
-		top: auto;
-		right: auto;
-	}
+    .error .warning-indicator {
+        transform: translate(0rem, 28px);
+        max-width: 1.5rem;
+        left: 0rem;
+        bottom: 0rem;
+        top: auto;
+        right: auto;
+    }
 
-	.mobile-detector {
-		display: none;
-	}
+    .mobile-detector {
+        display: none;
+    }
 
-@media only screen and (max-width: 478px) {
-	/* -------------- General ---------------- */
+    @media only screen and (max-width: 478px) {
+        /* -------------- General ---------------- */
 
-	h1,
-	.h1 {
-		/* H1-mobile */
-		font-family: Inter;
-		font-size: 2rem;
-		font-style: normal;
-		font-weight: 300;
-		line-height: 2.5rem;
-		letter-spacing: 0px;
-		/* 125% */
-	}
+        h1,
+        .h1 {
+            font-family: Inter;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 2.5rem;
+            letter-spacing: 0px;
+            /* 125% */
+        }
 
-	.testimonial__text.hanging::before {
-		content: '“';
-		position: absolute;
-		left: -0.5rem;
-	}
+        .testimonial__text.hanging::before {
+            content: '“';
+            position: absolute;
+            left: -0.5rem;
+        }
 
-	/* -------------- Layout ---------------- */
+        /* -------------- Layout ---------------- */
 
-	section {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
+        section {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
 
-	.column-grid {
-		grid-template-columns: 1fr;
-	}
+        .column-grid {
+            grid-template-columns: 1fr;
+        }
 
-	/* -------------- Clients ---------------- */
+        /* -------------- Clients ---------------- */
 
-	.clients {
-		grid-template-columns: 1fr;
-	}
+        .clients {
+            grid-template-columns: 1fr;
+        }
 
-	/* -------------- Form errors ---------------- */
+        /* -------------- Form errors ---------------- */
 
-	.error .visible-text-field,
-	.error .visible-textarea {
-		padding-right: 1rem;
-	}
+        .error .visible-text-field,
+        .error .visible-textarea {
+            padding-right: 1rem;
+        }
 
-	.error .error-message {
-		transform: translate(28px, 0rem);
-	}
+        .error .error-message {
+            transform: translate(28px, 0rem);
+        }
 
-	/* -------------- Blockquote rule -------------- */
-	
-	.text-width blockquote + div > p {
-		margin-bottom: 0rem;
-	}
-}
+        /* -------------- Blockquote rule -------------- */
+        
+        .text-width blockquote + div > p {
+            margin-bottom: 0rem;
+        }
+    } /* end max-width: 478px */
+} /* end max-width: 768px */
