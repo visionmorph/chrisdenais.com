@@ -10,7 +10,7 @@ const { title, links } = Astro.props
 			{
 				links &&
 					links.map(({ href, label, icon, target, rel }) => (
-						<>
+						<div>
 							<Link
 								href={href}
 								text={label}
@@ -19,7 +19,7 @@ const { title, links } = Astro.props
 								rel={rel}
 							/>
 							<hr class='hr-subtle' />
-						</>
+						</div>
 					))
 			}
 		</div>
