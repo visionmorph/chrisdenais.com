@@ -8,6 +8,8 @@ interface LinkProps {
   target?: string;
   rel?: string;
 }
+
+const { title, link } = Astro.props;
 ---
 
 <section>
@@ -23,6 +25,7 @@ interface LinkProps {
 					target={link.target}
 					rel={link.rel}
 				/>
+				)}
 				<hr class='hr-subtle' />
 			</div>
 		</div>
