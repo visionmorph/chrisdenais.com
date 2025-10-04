@@ -6,6 +6,12 @@ import NextCaseStudy from '../../components/NextCaseStudy.astro'
 import Title from '../../components/Title.astro'
 import Base from '../../layouts/Base.astro'
 import Quote from '../../components/Quote.astro'
+import fs from 'fs'
+import path from 'path'
+
+// Read the SVG icon
+const iconPath = path.join(process.cwd(), 'public/images/link.svg')
+const linkIcon = fs.readFileSync(iconPath, 'utf-8')
 ---
 
 <Base>
@@ -107,6 +113,7 @@ import Quote from '../../components/Quote.astro'
 			link={{
 			href: "https://www.ktnv.com/news/exclusive-nellis-air-force-base-testing-artificial-intelligence-in-combat-training",
 			text: "Explore how Nellis Air Force Base is testing Data Driven Readiness",
+			icon: linkIcon,
 			target: "_blank"
 			}}
 		/>
