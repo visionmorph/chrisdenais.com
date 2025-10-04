@@ -38,11 +38,7 @@ const {
 	text-underline-offset: 0.15625em;
 }
 
-.link:active {
-	outline-offset: -2px;
-	outline: 2px solid #fff;
-}
-
+.link:active,
 .link:focus {
 	outline-offset: -2px;
 	outline: 2px solid #fff;
@@ -56,12 +52,14 @@ const {
 	display: inline-flex;
 	width: 1.25rem;
 	height: 1.25rem;
-	color: inherit;           /* inherit link color */
 }
 
 .link-icon svg {
 	width: 100%;
 	height: 100%;
-	fill: currentColor;        /* match text color */
+}
+
+.link-icon svg path {
+	fill: currentColor;
 }
 </style>
