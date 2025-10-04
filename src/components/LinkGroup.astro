@@ -14,22 +14,17 @@ interface LinkProps {
 	<div class='container content'>
 		<div class='link__group text-width'>
 			<h2>{title}</h2>
-			{
-				links &&
-					links.map(({ href, label, icon, target, rel }) => (
-						<div>
-							{link && (
-							<Link 
-								href={link.href}
-								text={link.text}
-								icon={link.icon}
-								target={link.target}
-								rel={link.rel}
-							/>
-							<hr class='hr-subtle' />
-						</div>
-					))
-			}
+			<div>
+				{link && (
+				<Link 
+					href={link.href}
+					text={link.text}
+					icon={link.icon}
+					target={link.target}
+					rel={link.rel}
+				/>
+				<hr class='hr-subtle' />
+			</div>
 		</div>
 	</div>
 </section>
