@@ -6,6 +6,8 @@ import NextCaseStudy from '../../components/NextCaseStudy.astro'
 import Title from '../../components/Title.astro'
 import Base from '../../layouts/Base.astro'
 import Quote from '../../components/Quote.astro'
+import linkIcon from '../assets/link.svg?raw';
+import arrowIcon from '../assets/arrow--right.svg?raw';
 ---
 
 <Base>
@@ -107,7 +109,8 @@ import Quote from '../../components/Quote.astro'
 			link={{
 			href: "https://www.ktnv.com/news/exclusive-nellis-air-force-base-testing-artificial-intelligence-in-combat-training",
 			text: "Explore how Nellis Air Force Base is testing Data Driven Readiness",
-			target: "_blank"
+			target: "_blank",
+			icon: linkIcon
 			}}
 		/>
 	</Content>
