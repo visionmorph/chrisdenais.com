@@ -28,7 +28,7 @@ const { quote, author, title, link } = Astro.props;
   </div>
   <hr class="hr-strong" />
 
-  {link && (
+  {link ? (
     <Link 
       href={link.href}
       text={link.text}
@@ -36,5 +36,5 @@ const { quote, author, title, link } = Astro.props;
       target={link.target}
       rel={link.rel}
     />
-  )}
+  ) : null}
 </div>
