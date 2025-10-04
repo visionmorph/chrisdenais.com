@@ -11,16 +11,14 @@ const { title, links } = Astro.props
 			{
 				links &&
 					links.map(({ href, label, icon, target, rel }) => (
-						<div>
-							<Link
-								href={href}
-								text={label}
-								icon={icon}
-								target={target || '_blank'}
-								rel={rel}
-							/>
-							<hr class='hr-subtle' />
-						</div>
+						<Link
+							href={href}
+							text={label}
+							icon={icon}
+							target={target || '_blank'}
+							rel={rel}
+						/>
+						<hr class='hr-subtle' />
 					))
 			}
 		</div>
