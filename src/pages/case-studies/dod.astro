@@ -11,7 +11,8 @@ import path from 'path'
 
 // Read the SVG icon
 const iconPath = path.join(process.cwd(), 'public/images/link.svg')
-const linkIcon = fs.readFileSync(iconPath, 'utf-8')
+let linkIcon = fs.readFileSync(iconPath, 'utf-8')
+linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 ---
 
 <Base>
