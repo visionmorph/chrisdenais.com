@@ -1,33 +1,28 @@
 ---
-import Link from './Link.astro';
+import Link from './Link.astro'
 
-interface LinkProps {
-  href: string;
-  text: string;
-  icon?: string;
-  target?: string;
-  rel?: string;
-}
-
-const { title, link } = Astro.props;
+const { title, links } = Astro.props
 ---
 
 <section>
 	<div class='container content'>
 		<div class='link__group text-width'>
 			<h2>{title}</h2>
-			<div>
-				{link && (
-				<Link 
-					href={link.href}
-					text={link.text}
-					icon={link.icon}
-					target={link.target}
-					rel={link.rel}
-				/>
-				)}
-				<hr class='hr-subtle' />
-			</div>
+			{
+				links &&
+					links.map(({ href, label, icon, target, rel }) => (
+						<div>
+							<Link
+								href={href}
+								text={label}
+								icon={icon}
+								target={target || '_blank'}
+								rel={rel}
+							/>
+							<hr class='hr-subtle' />
+						</div>
+					))
+			}
 		</div>
 	</div>
 </section>
