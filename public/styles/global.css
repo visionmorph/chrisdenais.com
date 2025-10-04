@@ -456,6 +456,14 @@ button:not([disabled])::after,
 	align-items: flex-start;
 }
 
+.link__group .link {
+  width: 100%;
+}
+
+.link__group .link-text {
+  width: 100%;
+}
+
 .link__row {
 	display: flex;
 	width: 100%;
