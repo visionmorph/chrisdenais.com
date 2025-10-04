@@ -25,7 +25,7 @@ const {
 .link {
 	color: #78a9ff;
 	display: inline-flex;     /* align text and icon horizontally */
-	align-items: center;
+	align-items: flex-start;
 	overflow: visible;
 	gap: 0.5em;              /* space between text and icon */
 	width: fit-content;
@@ -52,6 +52,9 @@ const {
 	display: inline-flex;
 	width: 1.25rem;
 	height: 1.25rem;
+	min-width: 1.25rem;
+	min-height: 1.25rem;
+	margin-top: .25rem;
 }
 
 .link-icon :global(svg) {
