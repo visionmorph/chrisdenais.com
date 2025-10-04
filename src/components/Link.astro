@@ -48,6 +48,39 @@ const {
 	color: #fff;
 }
 
+.p.link {
+	color: #fff;
+}
+
+.p.link:hover {
+	color: #fff;
+}
+
+.p2.link {
+	color: #c1c7cd;
+}
+
+.p2.link:hover {
+	color: #fff;
+}
+
+.link__group {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.link__row {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	gap: 1rem;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
 .link-icon {
 	display: inline-flex;
 	width: 1.25rem;
@@ -64,5 +97,13 @@ const {
 
 .link-icon :global(svg path) {
 	fill: currentColor;
+}
+
+.link__group .link {
+  width: 100%;
+}
+
+.link__group .link-text {
+  width: 100%;
 }
 </style>
