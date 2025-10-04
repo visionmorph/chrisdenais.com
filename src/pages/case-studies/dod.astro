@@ -104,8 +104,10 @@ import Quote from '../../components/Quote.astro'
 			quote={`It allows them to get an objective view of what is happening and how they flew and be able to make incremental, sometimes significant changes to how they're flying to be safer, more effective or more lethal.`}
 			author="Adam Ha"
 			title="Lead F-15E Flight Test Engineer"
-			link="https://www.ktnv.com/news/exclusive-nellis-air-force-base-testing-artificial-intelligence-in-combat-training"
-			linkLabel="Explore how Nellis Air Force Base is testing Data Driven Readiness"
+			link={{
+			href: "https://www.ktnv.com/news/exclusive-nellis-air-force-base-testing-artificial-intelligence-in-combat-training",
+			text: "Explore how Nellis Air Force Base is testing Data Driven Readiness"
+			}}
 		/>
 	</Content>
 	<Content>
