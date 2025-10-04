@@ -1,11 +1,6 @@
 ---
-interface Props {
-  href: string;
-  text: string;
-  icon?: string;
-  target?: string;
-  rel?: string;
-}
+import fs from "fs";
+import path from "path";
 
 const {
   href,
@@ -14,11 +9,27 @@ const {
   target = "_self",
   rel = "noopener noreferrer",
 } = Astro.props;
----
 
+// Helper to load SVG file as inline markup
+let iconHTML = "";
+if (icon) {
+  if (icon.endsWith(".svg")) {
+    const svgPath = path.resolve(Astro.srcDir, icon.startsWith("/") ? `.${icon}` : icon);
+    try {
+      iconHTML = fs.readFileSync(svgPath, "utf-8");
+      // Replace hard-coded fills (e.g., fill="white") with fill="currentColor"
+      iconHTML = iconHTML.replace(/fill="(?!none)[^"]*"/g, 'fill="currentColor"');
+    } catch (err) {
+      console.error(`⚠️ Could not load SVG at ${svgPath}:`, err);
+    }
+  } else {
+    iconHTML = icon; // inline SVG string already passed
+  }
+}
+---
 <a href={href} target={target} rel={rel} class="link">
   <span class="link-text">{text}</span>
-  {icon && <span class="link-icon" set:html={icon} />}
+  {iconHTML && <span class="link-icon" set:html={iconHTML} />}
 </a>
 
 <style>
