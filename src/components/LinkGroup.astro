@@ -1,6 +1,6 @@
 ---
-const { title, links } = Astro.props
 import Link from './link.astro'
+const { title, links } = Astro.props
 ---
 
 <section>
@@ -11,17 +11,17 @@ import Link from './link.astro'
 				links &&
 					links.map(({ href, label, icon, target, rel }) => (
 						<>
-							<Link 
+							<Link
 								href={href}
 								text={label}
 								icon={icon}
 								target={target || '_blank'}
 								rel={rel}
 							/>
-							<hr class="hr-subtle" />
+							<hr class='hr-subtle' />
 						</>
 					))
-			}	
+			}
 		</div>
 	</div>
 </section>
