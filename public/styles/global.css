@@ -145,6 +145,19 @@ blockquote {
   gap: 3rem;
 }
 
+:global(.p.link) {
+	color: #fff;
+}
+:global(.p.link:hover) {
+	color: #fff;
+}
+:global(.p2.link) {
+	color: #c1c7cd;
+}
+:global(.p2.link:hover) {
+	color: #fff;
+}
+
 /* -------------- Horizontal rule ---------------- */
 
 .hr-strong {
