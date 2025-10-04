@@ -1,4 +1,6 @@
 ---
+import Link from './Link.astro';
+
 interface LinkProps {
   href: string;
   text: string;
@@ -7,7 +9,7 @@ interface LinkProps {
   rel?: string;
 }
 
-interface BlockquoteProps {
+interface Props {
   quote: string;
   author: string;
   title: string;
@@ -15,13 +17,11 @@ interface BlockquoteProps {
 }
 
 const { quote, author, title, link } = Astro.props;
-
-import Link from './Link.astro';
 ---
 
 <div class="quote-container text-width">
   <hr class="hr-strong" />
-  <blockquote>"{quote}"</blockquote>
+  <blockquote>{quote}</blockquote>
   <div>
     <p><b>{author}</b></p>
     <p>{title}</p>
