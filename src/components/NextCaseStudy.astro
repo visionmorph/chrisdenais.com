@@ -24,20 +24,22 @@ const imgSrc = !isVideo ? src : null
                 <p>{description}</p>
                 <p>-></p>
             </div>
-            {isVideo ? (
-            <video 
-                autoplay 
-                loop 
-                muted 
-                playsinline 
-                class="full"
-            >
-                <source src={videoSrc} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            ) : (
-            <img src={imgSrc}/>
-            )}
+            <div class'media-overlay'>
+              {isVideo ? (
+              <video 
+                  autoplay 
+                  loop 
+                  muted 
+                  playsinline 
+                  class="full"
+              >
+                  <source src={videoSrc} type="video/mp4" />
+                  Your browser does not support the video tag.
+              </video>
+              ) : (
+              <img src={imgSrc}/>
+              )}
+            </div>
         </a>
     </div>
 </section>
