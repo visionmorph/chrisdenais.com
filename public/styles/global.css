@@ -554,17 +554,27 @@ button:not([disabled])::after,
 .next__grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	outline: 2px solid #343a3f;
-	outline-offset: -2px;
+	border: 1px solid #343a3f;
 	align-items: start;
+}
+
+.next__grid:hover {
+	background-color: #21272A;
+}
+
+.next__grid:hover h2 {
+	text-decoration: underline;
+	color: #78a9ff;
 }
 
 .next__grid:focus {
 	outline: 2px solid #fff;
+	outline-offset: -2px;
 }
 
 .next__grid:active {
 	outline: 2px solid #fff;
+	outline-offset: -2px;
 }
 
 .next__grid video,
@@ -600,15 +610,6 @@ button:not([disabled])::after,
 	background-color: #121619;
 	aspect-ratio: 4 / 3;
 	box-sizing: border-box;
-}
-
-.next__caption:hover {
-	background-color: #21272A;
-}
-
-.next__caption:hover h2 {
-	text-decoration: underline;
-	color: #78a9ff;
 }
 
 .next__caption > p:nth-of-type(2) {
