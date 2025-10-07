@@ -567,6 +567,10 @@ button:not([disabled])::after,
 	color: #78a9ff;
 }
 
+.next__grid:hover .next__caption {
+	background-color: #21272A;
+}
+
 .next__grid:focus {
 	outline: 2px solid #fff;
 	outline-offset: -2px;
@@ -1209,8 +1213,6 @@ textarea:-webkit-autofill:focus {
 	.next__grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		outline-width: 1px;
-		outline-offset: -1px;
 	}
 
 	.lead__tile {
