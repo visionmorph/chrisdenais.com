@@ -398,7 +398,6 @@ button,
 button.filled {
 	color: #000;
 	background-color: #fff;
-	border: none;
 }
 
 /* Hover */
@@ -409,7 +408,6 @@ button.filled:hover,
 .button.filled:hover {
 	color: #000;
 	background-color: #c1c7cd;
-	border: 1px solid #c1c7cd
 }
 
 /* Active */
