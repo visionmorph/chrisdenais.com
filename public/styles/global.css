@@ -559,7 +559,7 @@ button:not([disabled])::after,
 }
 
 .next__grid:hover {
-	background-color: #21272A;
+	border: 1px solid #697077;
 }
 
 .next__grid:hover h2 {
