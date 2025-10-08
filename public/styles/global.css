@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 /* -------------- General ---------------- */
 
 :root {
+	font-family: 'Inter', sans-serif;
 	font-synthesis: style;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
