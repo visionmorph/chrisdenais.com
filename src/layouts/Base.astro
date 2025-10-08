@@ -19,8 +19,12 @@
 		/>
 		<title>Christopher Denais - B2B UX Designer</title>
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GNFKJNNPQX"></script>
-		<script is:inline>
+		<script client:idle>
+			const script = document.createElement('script');
+			script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GNFKJNNPQX';
+			script.async = true;
+			document.head.appendChild(script);
+			
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
