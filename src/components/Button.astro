@@ -1,0 +1,134 @@
+---
+interface Props {
+	variant?: 'outlined' | 'filled';
+	iconOnly?: boolean;
+	disabled?: boolean;
+	class?: string;
+	type?: 'button' | 'submit' | 'reset';
+	ariaLabel?: string;
+}
+
+const { 
+	variant = 'outlined', 
+	iconOnly = false, 
+	disabled = false,
+	class: className = '',
+	type = 'button',
+	ariaLabel
+} = Astro.props;
+
+const variantClass = variant === 'filled' ? 'filled' : '';
+const iconOnlyClass = iconOnly ? 'icon-only' : '';
+---
+
+<button 
+	type={type}
+	class:list={[variantClass, iconOnlyClass, className]}
+	disabled={disabled}
+	aria-label={iconOnly ? ariaLabel : undefined}
+>
+	<slot />
+</button>
+
+<style>
+/* -------------- Buttons ---------------- */
+button {
+	position: relative;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0);
+	border: 1px solid #fff;
+	outline-offset: -2px;
+	outline: 2px solid rgba(255, 255, 255, 0);
+	text-decoration: none;
+	text-align: left;
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+	font-family: Inter, sans-serif;
+	cursor: pointer;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+/* Icon Only variant */
+button.icon-only {
+	width: 3rem;
+	padding: 0;
+	justify-content: center;
+}
+
+/* Filled variant */
+button.filled {
+	color: #000;
+	background-color: #fff;
+}
+
+/* Hover */
+button:hover,
+button.filled:hover {
+	color: #000;
+	background-color: #c1c7cd;
+}
+
+/* Active */
+button:active,
+button.filled:active {
+	outline-offset: -4px;
+	color: #121619;
+	background-color: #a2a9b0;
+	outline: 2px solid #000;
+}
+
+/* Focus */
+button:focus,
+button:focus-visible,
+button.filled:focus,
+button.filled:focus-visible {
+	outline-offset: -4px;
+	color: #000;
+	outline: 2px solid #000;
+	background-color: #fff;
+}
+
+/* Focus + hover */
+button:focus:hover,
+button:focus-visible:hover,
+button.filled:focus:hover,
+button.filled:focus-visible:hover {
+	color: #000;
+	background-color: #c1c7cd;
+}
+
+/* Focus + hover + active (pressed) */
+button:focus:hover:active,
+button:focus-visible:hover:active,
+button.filled:focus:hover:active,
+button.filled:focus-visible:hover:active {
+	outline-offset: -4px;
+	color: #121619;
+	background-color: #a2a9b0;
+	outline: 2px solid #000;
+}
+
+/* Disabled */
+button[disabled] {
+	color: #4d5358 !important;
+	border: solid 1px #4d5358;
+	cursor: not-allowed;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+button.filled[disabled] {
+	color: #a2a9b0 !important;
+	outline: none;
+	border: none;
+	background-color: #4d5358;
+}
+</style>
