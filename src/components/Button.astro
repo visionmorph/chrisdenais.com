@@ -1,16 +1,14 @@
 ---
 interface Props {
-	variant?: 'outlined' | 'filled';
-	iconOnly?: boolean;
+	variant?: 'filled' | 'outline';
 	disabled?: boolean;
 	class?: string;
 	type?: 'button' | 'submit' | 'reset';
-	ariaLabel?: string;
+	ariaLabel: string;
 }
 
 const { 
-	variant = 'outlined', 
-	iconOnly = false, 
+	variant = 'outline', 
 	disabled = false,
 	class: className = '',
 	type = 'button',
@@ -18,14 +16,13 @@ const {
 } = Astro.props;
 
 const variantClass = variant === 'filled' ? 'filled' : '';
-const iconOnlyClass = iconOnly ? 'icon-only' : '';
 ---
 
 <button 
 	type={type}
-	class:list={[variantClass, iconOnlyClass, className]}
+	class:list={['icon-only', variantClass, className]}
 	disabled={disabled}
-	aria-label={iconOnly ? ariaLabel : undefined}
+	aria-label={ariaLabel}
 >
 	<slot />
 </button>
