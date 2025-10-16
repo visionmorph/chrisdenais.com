@@ -297,12 +297,24 @@ import Base from '../layouts/Base.astro'
 							class='button'
 						>
 						</a>
-						<a
-							id='controls__right'
-							tabindex='0'
-							class='button'
-						>
-						</a>
+			            <Button
+			                id='controls__right'
+			                tabIndex={0}
+			                ariaLabel='Add item'
+			            >
+			                <svg
+			                    width='20'
+			                    height='20'
+			                    viewBox='0 0 48 48'
+			                    fill='none'
+			                    xmlns='http://www.w3.org/2000/svg'
+			                >
+			                <path
+			                    d='M27 9L24.855 11.0895L36.225 22.5H6V25.5H36.225L24.855 36.8595L27 39L42 24L27 9Z'
+			                    fill='currentColor'
+			                />
+			                </svg>
+			            </Button>
 					</div>
 					<div
 						id='control-indicator-div'
