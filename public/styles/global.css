@@ -393,6 +393,12 @@ button,
 	box-sizing: border-box;
 }
 
+button.icon-only {
+	width: 3rem;
+	padding: 0;
+	justify-content: center;
+}
+
 /* Filled variant */
 
 button.filled {
@@ -481,11 +487,6 @@ button.filled[disabled] {
 	outline: none;
 	border: none;
 	background-color: #4d5358;
-}
-
-button:not([disabled])::after, 
-.button:not([disabled])::after {
-	content: '->';
 }
 
 /* -------------- Content ----------------- */
