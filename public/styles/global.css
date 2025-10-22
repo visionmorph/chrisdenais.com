@@ -57,11 +57,11 @@ h1,
 .h1 {
 	/* H1-desktop */
 	font-family: Inter;
-	font-size: 3.75rem;
+	font-size: 6rem;
 	font-style: normal;
-	font-weight: 300;
-	line-height: 4.375rem;
-	letter-spacing: 0px;
+	font-weight: 400;
+	line-height: 6.5rem;
+	letter-spacing: -1px;
 	color: #ffffff;
 	/* 125% */
 }
