@@ -149,12 +149,12 @@ blockquote {
   gap: 3rem;
 }
 
-.p.link {
+.h2.link {
 	color: #fff;
 }
 
-.p.link:hover {
-	color: #fff;
+.h2.link:hover {
+	color: #FF2200;
 }
 
 .p2.link {
