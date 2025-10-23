@@ -627,9 +627,9 @@ button.filled[disabled] {
 .clients {
 	display: grid;
 	grid-template-rows: auto;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	align-items: start;
-	padding-bottom: 1px;
+	gap: 4rem;
 }
 
 .clients__item {
@@ -637,28 +637,18 @@ button.filled[disabled] {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 1rem;
-	padding: 1rem;
-	border: 1px solid #343A3F;
-	aspect-ratio: 1 / 1;
 }
 
-@media screen and (max-width: 428px) {
-	.client-collection-item:not(:nth-child(-n + 5)) {
-		display: none;
-	}
+.clients__author {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
-	.clients__item {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 1rem;
-		padding: 1rem;
-		border-left: 0px;
-		border-right: 0px;
-		padding-left: 0rem;
-		aspect-ratio: 4 / 1;
+	.clients {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -1113,10 +1103,6 @@ textarea:-webkit-autofill:focus {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
-	/* -------------- Clients ---------------- */
-	.clients {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
 
 	/* -------------- Testimonials ---------------- */
 
@@ -1226,12 +1212,6 @@ textarea:-webkit-autofill:focus {
 	.column-grid {
 		grid-template-columns: 1fr 1fr;
 	}
-
-	/* -------------- Clients ---------------- */
-
-	.clients {
-		grid-template-columns: 1fr 1fr;
-	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -1276,13 +1256,6 @@ textarea:-webkit-autofill:focus {
     .content__info {
         flex-direction: column;
     }
-
-    /* -------------- Clients ---------------- */
-
-    .clients {
-        grid-template-columns: 1fr;
-    }
-
     /* -------------- Form errors ---------------- */
 
     .error .warning-indicator {
@@ -1325,12 +1298,6 @@ textarea:-webkit-autofill:focus {
         }
 
         .column-grid {
-            grid-template-columns: 1fr;
-        }
-
-        /* -------------- Clients ---------------- */
-
-        .clients {
             grid-template-columns: 1fr;
         }
 
