@@ -631,11 +631,33 @@ button.filled[disabled] {
 	gap: 4rem;
 }
 
+@media screen and (max-width: 768px) {
+	.clients {
+		grid-template-columns: 1fr;
+		padding-left: 1rem;
+	}
+}
+
 .clients__item {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 1rem;
+}
+
+.clients__item h2 {
+  position: relative;
+}
+
+.clients__item h2::before {
+  content: '"';
+  position: absolute;
+  left: -1rem;
+}
+
+.clients__item h2::after {
+  content: '"';
+  margin-left: -0.5rem;
 }
 
 .clients__author {
@@ -645,9 +667,10 @@ button.filled[disabled] {
 	gap: 0.5rem;
 }
 
-@media screen and (max-width: 768px) {
-	.clients {
-		grid-template-columns: 1fr;
+@media screen and (max-width: 1280px) {
+	.clients__author {
+		flex-direction: column;
+		gap: 0rem;
 	}
 }
 
