@@ -119,238 +119,77 @@ import Button from '../components/Button.astro'
 	</section>
 	<section>
 		<div class='container'>
-			<h2 class="h1">Previous clients</h2>
 			<div class='clients'>
 				<div class='clients__item'>
-					<h3>Monaco Enterprises</h3>
-					<p>
-						User research and design for an emergency
-						management software
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>AIOZ</h3>
-					<p>
-						Page architecture and design system for layer-1
-						blockchain network
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>U.S. Department of Defense</h3>
-					<p>
-						Design of next-generation flight aircraft maneuver
-						analysis software
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>Johnson & Johnson</h3>
-					<p>
-						Optimized a design system for a touchscreen device used
-						in surgical operating rooms
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>Atmos</h3>
-					<p>
-						User experience design for a blockchain-based racing
-						game 400 years in the future
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>Vecna</h3>
-					<p>
-						Design of electronic medical records
-						software and patient check-in kiosk experiences
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>Andover</h3>
-					<p>
-						Participated in usability tests for optimizing 
-						the design of insurance agent portal
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>Prysm</h3>
-					<p>
-						Concept designs and interactive prototypes for wall
-						mounted touchscreen displays
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>R3VOLUTION DIGITAL</h3>
-					<p>
-						Mobile UI designs for blockchain-based live music event
-						application
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>Wirehead</h3>
-					<p>
-						Responsive website design for gaming metaverse
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>Skillmasters</h3>
-					<p>
-						Design and branding for on-demand youth 
-						sports coaching
-					</p>
-				</div>
-				<div class='clients__item'>
-					<h3>Azarus</h3>
-					<p>
-						Designed concepts and UI for blockchain-based Twitch
-						extension overlay games
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class='container'>
-			<h2 class="h1">Testimonials</h2>
-			<div class='slider'>
-				<div class='canvas'>
-					<svg
-						width='100'
-						height='100'
-						viewBox='0 0 100 100'
-						id='svgCanvas'
-						xmlns='http://www.w3.org/2000/svg'
-					>
-						<defs>
-							<filter
-								id='morph'
-								color-interpolation-filters='sRGB'
-							>
-								<feGaussianBlur
-									id='gaussianBlur'
-									in='SourceGraphic'
-									stdDeviation='0'
-									result='blur'
-								>
-								</feGaussianBlur>
-								<feComponentTransfer>
-									<feFuncA type='discrete' tableValues='0 1'>
-									</feFuncA>
-								</feComponentTransfer>
-							</filter>
-						</defs>
-					</svg>
-				</div>
-				<div id='testimonial-area' class='testimonial'>
-					<div class='testimonial-text'>
-						<div
-							id='testimonial-container'
-							class='testimonial__area'
-							style='position: absolute;'
-						>
-							<h2 class='testimonial__text hanging' id='quote'>
-								I felt comfortable Chris understood the issue
-								then giving him the chance to diagnose it pretty
-								much confirmed it.
-							</h2>
-							<img
-								id='headshot'
-								src='/images/chriswilson_headshot.png'
-								alt="Headshot image of this quote's author"
-								author'
-							/>
-							<div>
-								<p id='author' style='font-weight: 600;'>
-									Chris Wilson
-								</p>
-								<p class='testimonial__text' id='title'>
-									CEO, Monarch Enterprises
-								</p>
-							</div>
-						</div>
-						<div
-							id='testimonial-container'
-							class='testimonial__area'
-							style='visibility: hidden;'
-						>
-							<h2
-								class='testimonial__text hanging'
-								id='longest-quote'
-							>
-							</h2>
-							<img
-								id='headshot'
-								style='width: 96px; height: 96px;'
-							/>
-							<div>
-								<p
-									class='testimonial__text'
-									id='longest-author'
-								>
-								<b></b>
-								</p>
-								<p
-									class='testimonial__text'
-									id='longest-title'
-								>
-								</p>
-							</div>
-						</div>
+					<h2>
+						Chris was able to look at the problem space and come up with a paradigm of what the high level flow should be.
+					</h2>
+					<div>
+						<p>
+							Mike McGonagle
+						</p>
+						<p class='text-secondary'>
+							CTO Practice Lead, BostonCIO
+						</p>
 					</div>
-					<div class='controls__arrows'>
-						<p>1 of 5</p>
-			            <button
-			                id='controls__left'
-							type='button'
-							class='button icon-only'
-			                tabIndex={0}
-			                ariaLabel='Previous testimonial'
-			            >
-			                <svg
-			                    width='20'
-			                    height='20'
-			                    viewBox='0 0 48 48'
-			                    fill='none'
-			                    xmlns='http://www.w3.org/2000/svg'
-			                >
-			                <path
-			                    d='M21 39L23.115 36.885L11.745 25.5H42V22.5H11.745L23.115 11.115L21 9L6 24L21 39Z'
-			                    fill='currentColor'
-			                />
-			                </svg>
-			            </button>
-			            <button
-			                id='controls__right'
-							type='button'
-							class='button icon-only'
-			                tabIndex={0}
-			                ariaLabel='Next testimonial'
-			            >
-			                <svg
-			                    width='20'
-			                    height='20'
-			                    viewBox='0 0 48 48'
-			                    fill='none'
-			                    xmlns='http://www.w3.org/2000/svg'
-			                >
-			                <path
-			                    d='M27 9L24.855 11.0895L36.225 22.5H6V25.5H36.225L24.855 36.8595L27 39L42 24L27 9Z'
-			                    fill='currentColor'
-			                />
-			                </svg>
-			            </button>
+				</div>
+			<div class='clients'>
+				<div class='clients__item'>
+					<h2>
+						Chris was able to look at the problem space and come up with a paradigm of what the high level flow should be.
+					</h2>
+					<div>
+						<p>
+							Mike McGonagle
+						</p>
+						<p class='text-secondary'>
+							CTO Practice Lead, BostonCIO
+						</p>
 					</div>
-					<div
-						id='control-indicator-div'
-						class='control-indicators'
-					>
+				</div>
+			<div class='clients'>
+				<div class='clients__item'>
+					<h2>
+						Chris was able to look at the problem space and come up with a paradigm of what the high level flow should be.
+					</h2>
+					<div>
+						<p>
+							Mike McGonagle
+						</p>
+						<p class='text-secondary'>
+							CTO Practice Lead, BostonCIO
+						</p>
+					</div>
+				</div>
+			<div class='clients'>
+				<div class='clients__item'>
+					<h2>
+						Chris was able to look at the problem space and come up with a paradigm of what the high level flow should be.
+					</h2>
+					<div>
+						<p>
+							Mike McGonagle
+						</p>
+						<p class='text-secondary'>
+							CTO Practice Lead, BostonCIO
+						</p>
+					</div>
+				</div>
+			<div class='clients'>
+				<div class='clients__item'>
+					<h2>
+						Chris was able to look at the problem space and come up with a paradigm of what the high level flow should be.
+					</h2>
+					<div>
+						<p>
+							Mike McGonagle
+						</p>
+						<p class='text-secondary'>
+							CTO Practice Lead, BostonCIO
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<script
-		src='/js/morph-slider.js'
-		type='module'
-		is:inline
-		async>
-	</script>
 </Base>
