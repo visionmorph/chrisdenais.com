@@ -72,7 +72,7 @@ h2,
 	font-family: Inter;
 	font-size: 2rem;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 500;
 	line-height: 2.5rem;
 	letter-spacing: 0px;
 	color: #ffffff;
@@ -121,6 +121,10 @@ ul {
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.25rem;
+}
+
+.text-secondary {
+	color: #697077;
 }
 
 .text-width {
@@ -265,26 +269,12 @@ footer {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	gap: 2rem;
+	gap: 1rem;
 	align-self: stretch;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
 	justify-content: space-between;
-
-
 }
-
-.footer__menu {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: .5rem;
-}
-
-footer .p2:last-of-type {
-  margin-top: auto;
-}
-
 /* -------------- Layout ---------------- */
 
 section {
