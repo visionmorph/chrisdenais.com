@@ -5,6 +5,7 @@ interface Props {
 	icon?: string;
 	target?: string;
 	rel?: string;
+	size?: "default" | "h2";
 }
 
 const {
@@ -13,10 +14,13 @@ const {
 	icon,
 	target = "_self",
 	rel = "noopener noreferrer",
+	size = "default",
 } = Astro.props;
+
+const sizeClass = size === "h2" ? "link-h2" : "link-default";
 ---
 
-<a href={href} target={target} rel={rel} class="link">
+<a href={href} target={target} rel={rel} class={`link ${sizeClass}`}>
 	<span class="link-text">{text}</span>
 	{icon && <span class="link-icon" set:html={icon} />}
 </a>
