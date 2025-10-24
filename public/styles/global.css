@@ -555,10 +555,6 @@ button.filled[disabled] {
 	color: #FF2200;
 }
 
-.next__grid:hover > h2:nth-of-type(1) {
-	text-decoration: underline;
-}
-
 .next__grid:hover .next__caption {
 	background-color: #21272A;
 }
@@ -613,6 +609,10 @@ button.filled[disabled] {
 	color: #FF2200;
 	align-self: stretch;
 	text-align: right;
+}
+
+.next__caption:hover > h2:nth-of-type(1) {
+	text-decoration: underline;
 }
 
 .next__container {
