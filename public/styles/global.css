@@ -28,7 +28,7 @@ a {
 	font-family: Inter;
 	font-size: 1.25rem;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.75rem;
 	/* 125% */
 }
@@ -85,7 +85,7 @@ h3,
 	font-family: Inter;
 	font-size: 1.5rem;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.75rem;
 	color: #ffffff;
 	/* 125% */
@@ -101,7 +101,7 @@ li {
 	color: #ffffff;
 	font-size: 1.25rem;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.75rem;
 	/* 125% */
 }
@@ -166,7 +166,7 @@ blockquote {
 }
 
 .link {
-	color: #78a9ff;
+	color: #FF2200;
 	display: inline-flex;     /* align text and icon horizontally */
 	align-items: flex-start;
 	overflow: visible;
@@ -175,7 +175,7 @@ blockquote {
 }
 
 .link:hover {
-	color: #a6c8ff;
+	color: #FF2200;
 	text-decoration: underline;
 	text-decoration-thickness: 0.0625em;
 	text-underline-offset: 0.15625em;
@@ -328,7 +328,7 @@ section {
 	gap: 4rem;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 768px) {
 	.content-grid {
 		grid-template-columns: 1fr;
 	}
