@@ -552,6 +552,7 @@ button.filled[disabled] {
 
 .next__grid:hover h2 {
 	color: #FF2200;
+	text-decoration: underline;
 }
 
 .next__grid:hover > h2:nth-of-type(1) {
@@ -607,8 +608,8 @@ button.filled[disabled] {
 	box-sizing: border-box;
 }
 
-.next__caption > p:nth-of-type(2) {
-	color: #78a9ff;
+.next__caption > h2:nth-of-type(2) {
+	color: #FF2200;
 	align-self: stretch;
 	text-align: right;
 }
