@@ -17,12 +17,8 @@ const imgSrc = !isVideo ? src : null
         <h1>Next up</h1>
         <a href={href} class='next__grid'>
             <div class='next__caption'>
-                  <div style="gap: .5rem;display: flex;flex-direction: column;">
-                    <p class="p2">{subtitle}</p>
-                    <h2>{label}</h2>
-                  </div>
-                <p>{description}</p>
-                <p>-></p>
+              <h2>{label}<span class='text-secondary'>{description}</span></h2>
+              <p>-></p>
             </div>
             <div class='media-overlay'>
               {isVideo ? (
