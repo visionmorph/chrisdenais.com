@@ -21,9 +21,9 @@ const { quote, author, title, link } = Astro.props;
 <div class="quote-container text-width">
   <hr class="hr-strong" />
   <h2>"{quote}"</h2>
-  <div>
-    <p><b>{author}</b></p>
-    <p>{title}</p>
+  <div class='clients__author'>
+    <p>{author}</p>
+    <p class='text-secondary'>{title}</p>
   </div>
   <hr class="hr-strong" />
 
