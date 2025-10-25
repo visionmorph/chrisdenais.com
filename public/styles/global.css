@@ -198,6 +198,20 @@ blockquote {
 	align-items: flex-start;
 }
 
+.hero__row {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+@media only screen and (max-width: 768px) {
+	.hero__row {
+		flex-direction: column;
+	}
+}
+
 .link__row {
 	display: flex;
 	width: 100%;
@@ -577,9 +591,13 @@ button.filled[disabled] {
 }
 
 .lead__tile {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-direction: row;
 	gap: 2rem;
+}
+
+.lead__tile a {
+	white-space: nowrap;
 }
 
 .lead__caption {
