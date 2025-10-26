@@ -149,22 +149,6 @@ blockquote {
   gap: 3rem;
 }
 
-.h2.link {
-	color: #fff;
-}
-
-.h2.link:hover {
-	color: #FF2200;
-}
-
-.p2.link {
-	color: #c1c7cd;
-}
-
-.p2.link:hover {
-	color: #fff;
-}
-
 .link {
 	color: #FF2200;
 	display: inline-flex;     /* align text and icon horizontally */
@@ -172,6 +156,12 @@ blockquote {
 	overflow: visible;
 	gap: 0.5em;              /* space between text and icon */
 	width: fit-content;
+}
+
+.link-h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
 }
 
 .link:hover {
