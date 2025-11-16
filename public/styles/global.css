@@ -154,7 +154,7 @@ blockquote {
 	display: inline-flex;     /* align text and icon horizontally */
 	align-items: flex-start;
 	overflow: visible;
-	gap: 0.5em;              /* space between text and icon */
+	gap: 0.5rem;              /* space between text and icon */
 	width: fit-content;
 }
 
@@ -175,8 +175,13 @@ blockquote {
 .link:hover {
 	color: #FF2200;
 	text-decoration: underline;
-	text-decoration-thickness: 0.0625em;
-	text-underline-offset: 0.15625em;
+	text-decoration-thickness: 0.0625rem;
+	text-underline-offset: 0.1875rem;
+}
+
+.link-h2:hover {
+	text-decoration-thickness: 0.125rem;
+	text-underline-offset: 0.1875rem;
 }
 
 .link:active,
@@ -556,15 +561,21 @@ button.filled[disabled] {
 	grid-template-columns: 1fr 1fr;
 	border: 1px solid #343a3f;
 	align-items: start;
-	transition: all 0.25s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .next__grid:hover {
 	border: 1px solid #697077;
 }
 
+.next__grid h2 {
+	text-decoration-color: #FF2200;
+}
+
 .next__grid:hover h2 {
 	color: #FF2200;
+	text-decoration: underline;
+	transition: all 0.2s ease-in-out;
 }
 
 .next__grid:hover .next__caption {
