@@ -576,6 +576,7 @@ button.filled[disabled] {
 .next__grid:hover h2 {
 	color: #FF2200;
 	text-decoration: underline;
+	text-underline-offset: 0.25rem;
 	transition: all 0.2s ease-in-out;
 }
 
