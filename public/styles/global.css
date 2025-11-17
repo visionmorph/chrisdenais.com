@@ -652,6 +652,12 @@ button.filled[disabled] {
 	}
 }
 
+.lead__caption {
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
 .lead__tile {
 	display: flex;
 	flex-direction: row;
@@ -662,14 +668,10 @@ button.filled[disabled] {
 	white-space: nowrap;
 }
 
-.lead__caption {
-	gap: 1rem;
-	display: flex;
-	flex-direction: column;
-}
-
-.lead__caption a {
-	align-self: flex-start;
+@media screen and (max-width: 1024px) {
+	.lead__tile {
+		flex-direction: column;
+	}
 }
 /* -------------- Clients ---------------- */
 
@@ -1256,19 +1258,6 @@ textarea:-webkit-autofill:focus {
 		display: grid;
 		grid-template-columns: 1fr;
 	}
-
-	.lead__tile {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-
-	.lead__caption {
-		gap: 2rem;
-		display: flex;
-		flex-direction: column;
-		padding-right: 2rem;
-		padding-bottom: 2rem;
-	}	
 	
 	blockquote {
 		position: relative;
