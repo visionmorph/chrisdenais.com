@@ -164,8 +164,25 @@ blockquote {
     line-height: 2.5rem;
 }
 
+.link-h2:hover {
+	text-decoration-thickness: 0.1875rem;
+	text-underline-offset: 0.25rem;
+}
+
+.link-h2-inverse {
+	color: #FFF;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
 @media screen and (max-width: 1024px) {
 	.link-h2 {
+		font-size: 1.75rem;
+		line-height: 2.25rem;
+		letter-spacing: 0px;
+	}
+	.link-h2-inverse {
 		font-size: 1.75rem;
 		line-height: 2.25rem;
 		letter-spacing: 0px;
@@ -182,6 +199,12 @@ blockquote {
 .link-h2:hover {
 	text-decoration-thickness: 0.125rem;
 	text-underline-offset: 0.1875rem;
+}
+
+.link-h2-inverse:hover {
+	color: #FFF;
+	text-decoration-thickness: 0.1875rem;
+	text-underline-offset: 0.25rem;
 }
 
 .link:active,
