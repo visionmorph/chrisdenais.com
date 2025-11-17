@@ -569,7 +569,8 @@ button.filled[disabled] {
 }
 
 .next__grid h2 {
-	text-decoration-color: #FF2200;
+	text-decoration: underline;
+	text-decoration-color: transparent;
 }
 
 .next__grid:hover h2 {
@@ -604,6 +605,25 @@ button.filled[disabled] {
 	aspect-ratio: 4 / 3;
 }
 
+.next__caption {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 2rem;
+	border-radius: 0;
+	background-color: #121619;
+	aspect-ratio: 4 / 3;
+	box-sizing: border-box;
+	transition: all 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+	.next__caption {
+		padding: 1rem;
+	}
+}
+
 .lead__tile {
 	display: flex;
 	flex-direction: row;
@@ -622,25 +642,6 @@ button.filled[disabled] {
 
 .lead__caption a {
 	align-self: flex-start;
-}
-
-.next__caption {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-end;
-	padding: 2rem;
-	border-radius: 0;
-	background-color: #121619;
-	aspect-ratio: 4 / 3;
-	box-sizing: border-box;
-	transition: all 0.25s ease-in-out;
-}
-
-@media screen and (max-width: 768px) {
-	.next__caption {
-		padding: 1rem;
-	}
 }
 /* -------------- Clients ---------------- */
 
