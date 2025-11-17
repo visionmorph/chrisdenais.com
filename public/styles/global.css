@@ -159,6 +159,7 @@ blockquote {
 }
 
 .link-h2 {
+	color: #FF2200;
     font-size: 2rem;
     font-weight: 500;
     line-height: 2.5rem;
@@ -197,12 +198,15 @@ blockquote {
 }
 
 .link-h2:hover {
-	text-decoration-thickness: 0.125rem;
-	text-underline-offset: 0.1875rem;
+	color: #FF2200;
+	text-decoration: underline;
+	text-decoration-thickness: 0.1875rem;
+	text-underline-offset: 0.25rem;
 }
 
 .link-h2-inverse:hover {
 	color: #FFF;
+	text-decoration: underline;
 	text-decoration-thickness: 0.1875rem;
 	text-underline-offset: 0.25rem;
 }
