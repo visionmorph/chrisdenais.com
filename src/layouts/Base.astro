@@ -1,5 +1,5 @@
 ---
-
+import Link from './Link.astro'
 ---
 
 <html lang='en'>
@@ -34,8 +34,18 @@
 	<section class='sticky'>
 		<div class='container nav'>
 			<nav>
-				<a class='h2 link' style='color: #fff;' href='/'>Home</a>
-				<a class='h2 link' style='color: #fff;' href='/about'>About</a>
+				<Link 
+					href='/' 
+					text='Home' 
+					size='h2'
+					color='inverse'}
+				/>
+				<Link 
+					href='/about' 
+					text='About' 
+					size='h2'
+					color='inverse'}
+				/>
 			</nav>
 		</div>
 	</section>
