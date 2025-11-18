@@ -1,5 +1,5 @@
 ---
-
+import Link from '../components/Link.astro'
 ---
 
 <html lang='en'>
@@ -35,6 +35,11 @@
 		<div class='container nav'>
 			<nav>
 				<a class='h2 link' style='color: #fff;' href='/'>Home</a>
+				<Link 
+					href='/case-studies/dod' 
+					text='Learn more ->' 
+					size='h2'}
+				/>
 				<a class='h2 link' style='color: #fff;' href='/about'>About</a>
 			</nav>
 		</div>
