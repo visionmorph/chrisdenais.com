@@ -150,6 +150,8 @@ blockquote {
   gap: 3rem;
 }
 
+/* -------------- Hyperlink ---------------- */
+
 .link {
 	color: #FF2200;
 	display: inline-flex;     /* align text and icon horizontally */
@@ -159,36 +161,19 @@ blockquote {
 	width: fit-content;
 }
 
-.link-h2 {
-	color: #FF2200;
+.link-h2,
+.link-h2-inverse {
     font-size: 2rem;
     font-weight: 500;
     line-height: 2.5rem;
 }
 
-.link-h2:hover {
-	text-decoration-thickness: 0.1875rem;
-	text-underline-offset: 0.25rem;
+.link-h2 {
+	color: #FF2200;
 }
 
 .link-h2-inverse {
 	color: #FFF;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 2.5rem;
-}
-
-@media screen and (max-width: 1024px) {
-	.link-h2 {
-		font-size: 1.75rem;
-		line-height: 2.25rem;
-		letter-spacing: 0px;
-	}
-	.link-h2-inverse {
-		font-size: 1.75rem;
-		line-height: 2.25rem;
-		letter-spacing: 0px;
-	}
 }
 
 .link:hover {
@@ -198,28 +183,38 @@ blockquote {
 	text-underline-offset: 0.1875rem;
 }
 
-.link-h2:hover {
-	color: #FF2200;
+.link-h2:hover,
+.link-h2-inverse:hover {
 	text-decoration: underline;
 	text-decoration-thickness: 0.1875rem;
 	text-underline-offset: 0.25rem;
+}
+
+.link-h2:hover {
+	color: #FF2200;
 }
 
 .link-h2-inverse:hover {
 	color: #FFF;
-	text-decoration: underline;
-	text-decoration-thickness: 0.1875rem;
-	text-underline-offset: 0.25rem;
 }
 
 .link:active,
-.link:focus {
-	outline-offset: -2px;
+.link:focus,
+.link-h2:active,
+.link-h2:focus,
+.link-h2-inverse:active,
+.link-h2-inverse:focus {
 	outline: 2px solid #fff;
+	outline-offset: -2px;
 }
 
-.link:focus-visible {
-	color: #fff;
+@media screen and (max-width: 1024px) {
+	.link-h2,
+	.link-h2-inverse {
+		font-size: 1.75rem;
+		line-height: 2.25rem;
+		letter-spacing: 0px;
+	}
 }
 
 .link__group {
