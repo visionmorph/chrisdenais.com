@@ -22,12 +22,8 @@ import Link from '../components/Link.astro';
     <title>Chris Denais — Product Designer</title>
 
     <!-- Google tag (gtag.js) -->
-    <script client:load>
-      const script = document.createElement('script');
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GNFKJNNPQX';
-      script.async = true;
-      document.head.appendChild(script);
-
+    <script is:inline src="https://www.googletagmanager.com/gtag/js?id=G-GNFKJNNPQX" async></script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
