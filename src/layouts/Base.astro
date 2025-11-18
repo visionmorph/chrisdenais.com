@@ -1,65 +1,69 @@
 ---
-import Link from '../Link.astro'
+import Link from '../components/Link.astro';
 ---
 
-<html lang='en'>
-	<head>
-		<meta charset='utf-8' />
-		<link rel='icon' href='/images/favicon.svg' />
-		<link rel='preconnect' href='https://fonts.googleapis.com'>
-		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap&subset=latin" rel="stylesheet">
-		<link rel='stylesheet' type="text/css" href='/styles/global.css' />
-		<meta name='viewport' content='width=device-width' />
-		<meta name='generator' content={Astro.generator} />
-		<meta
-			name='description'
-			content='Hey I&#39;m Chris — a designer with 8+ years of experience crafting user experiences for small and large SaaS companies.'
-		/>
-		<title>Chris Denais — Product Designer</title>
-		<!-- Google tag (gtag.js) -->
-		<script client:load>
-			const script = document.createElement('script');
-			script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GNFKJNNPQX';
-			script.async = true;
-			document.head.appendChild(script);
-			
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-GNFKJNNPQX', { anonymize_ip: true });
-		</script>
-	</head>
-	<body>
-	<section class='sticky'>
-		<div class='container nav'>
-			<nav>
-				<Link 
-					href='/' 
-					text='Home' 
-					size='h2'
-					color='inverse'
-				/>
-				<Link 
-					href='/about' 
-					text='About' 
-					size='h2'
-					color='inverse'
-				/>
-			</nav>
-		</div>
-	</section>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap&subset=latin"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles/global.css" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Hey I&#39;m Chris — a designer with 8+ years of experience crafting user experiences for small and large SaaS companies."
+    />
+    <title>Chris Denais — Product Designer</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script client:load>
+      const script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GNFKJNNPQX';
+      script.async = true;
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-GNFKJNNPQX', { anonymize_ip: true });
+    </script>
+  </head>
+
+  <body>
+    <!-- Top navigation -->
+    <section class="sticky">
+      <div class="container nav">
+        <nav>
+          <Link href="/" text="Home" size="h2" color="inverse" />
+          <Link href="/about" text="About" size="h2" color="inverse" />
+        </nav>
+      </div>
+    </section>
+
+    <!-- Page content slot -->
     <main>
-		<slot />
+      <slot />
     </main>
-	<section>
-		<div class='container'>
-			<footer>
-				<h2>Made in America © 2025</h2>
-				<a class='h2 link' style='color: #fff;' href='/contact'>Contact</a>
-			</footer>
-		</div>
-	</section>
+
+    <!-- Footer -->
+    <section>
+      <div class="container">
+        <footer>
+          <h2>Made in America © 2025</h2>
+          <a class="h2 link" style="color: #fff;" href="/contact">Contact</a>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Scroll hide/show script -->
     <script is:inline>
       let lastScrollY = window.scrollY;
       const nav = document.querySelector('.sticky');
@@ -72,6 +76,6 @@ import Link from '../Link.astro'
         }
         lastScrollY = window.scrollY;
       });
-	</script>
-	</body>
+    </script>
+  </body>
 </html>
