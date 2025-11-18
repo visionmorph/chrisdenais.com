@@ -1,34 +1,35 @@
 ---
 interface Props {
-	href: string;
-	text: string;
-	icon?: string;
-	target?: string;
-	rel?: string;
-	size?: "default" | "h2";
-	color?: "default" | "inverse";
-color
+  href: string;
+  text: string;
+  icon?: string;
+  target?: string;
+  rel?: string;
+  size?: 'default' | 'h2';
+  color?: 'default' | 'inverse';
 }
 
 const {
-	href,
-	text,
-	icon,
-	target = "_self",
-	rel = "noopener noreferrer",
-	size = "default",
-	color = "default",
+  href,
+  text,
+  icon,
+  target = '_self',
+  rel = 'noopener noreferrer',
+  size = 'default',
+  color = 'default',
 } = Astro.props;
 
-let sizeClass = "link";
+let sizeClass = 'link';
 
-if (color === "inverse") {
-	sizeClass = "link-h2-inverse";
-} else {
-	if (size === "h2") sizeClass = "link-h2";
+if (size === 'h2') {
+  sizeClass = 'link-h2';
+}
+
+if (color === 'inverse') {
+  sizeClass = size === 'h2' ? 'link-h2-inverse' : 'link-inverse';
 }
 ---
 <a href={href} target={target} rel={rel} class={sizeClass}>
-	{text}
-	{icon && <span class="link-icon" set:html={icon} />}
+  {text}
+  {icon && <span class='link-icon' set:html={icon} />}
 </a>
