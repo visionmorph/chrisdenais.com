@@ -6,6 +6,8 @@ interface Props {
 	target?: string;
 	rel?: string;
 	size?: "default" | "h2";
+	color?: "default" | "inverse";
+color
 }
 
 const {
@@ -15,12 +17,18 @@ const {
 	target = "_self",
 	rel = "noopener noreferrer",
 	size = "default",
+	color = "default",
 } = Astro.props;
 
-const sizeClass = size === "h2" ? "link-h2" : "link-default";
----
+let sizeClass = "link";
 
-<a href={href} target={target} rel={rel} class={`link ${sizeClass}`}>
-	<span class="link-text">{text}</span>
+if (color === "inverse") {
+	sizeClass = "link-h2-inverse";
+} else {
+	if (size === "h2") sizeClass = "link-h2";
+}
+---
+<a href={href} target={target} rel={rel} class={sizeClass}>
+	{text}
 	{icon && <span class="link-icon" set:html={icon} />}
 </a>
