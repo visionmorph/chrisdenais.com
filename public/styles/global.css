@@ -1281,6 +1281,7 @@ textarea:-webkit-autofill:focus {
 
     footer {
         flex-direction: column;
+		gap: 1rem;
     }
 
     /* -------------- Layouts ---------------- */
