@@ -4,6 +4,6 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   // TODO: remove this
 	site: 'https://chrisdenais.com',
-	base: '/'
+	base: '/'.
 	output: 'static'
 })
