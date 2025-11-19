@@ -238,16 +238,6 @@ blockquote {
 	}
 }
 
-.link__row {
-	display: flex;
-	width: 100%;
-	flex-direction: row;
-	gap: 1rem;
-	align-items: flex-start;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-}
-
 .link-icon {
 	display: inline-flex;
 	width: 1.25rem;
@@ -267,12 +257,8 @@ blockquote {
 }
 
 .link__group .link {
-  width: 100%;
-}
-
-.link__group .link-text {
-	flex: 1;
 	width: 100%;
+	justify-content: space-between;
 }
 
 /* -------------- Horizontal rule ---------------- */
@@ -296,8 +282,6 @@ blockquote {
 nav {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	height: 4rem;
 	width: 100%;
 	overflow: visible;
 	mix-blend-mode: exclusion;
@@ -350,6 +334,7 @@ section {
 .container.nav {
 	margin-top: 0rem;
 	margin-bottom: 0rem;
+	height: 4rem;
 }
 
 .container.footer {
