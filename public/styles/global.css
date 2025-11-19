@@ -135,6 +135,13 @@ ul {
 	gap: 1rem;
 }
 
+.text-width-lg {
+	max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
 blockquote {
 	position: relative;
 	font-family: Inter;
