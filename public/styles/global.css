@@ -293,9 +293,8 @@ footer {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	gap: 1rem;
 	align-self: stretch;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	justify-content: space-between;
 }
 /* -------------- Layout ---------------- */
