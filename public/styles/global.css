@@ -356,16 +356,17 @@ section {
 .content-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 4rem;
+	gap: 2rem;
+}
+
+.content-column {
+	display: flex;
+	flex-direction: column;
 }
 
 @media (max-width: 768px) {
 	.content-grid {
 		grid-template-columns: 1fr;
-	}
-
-	.content-grid .content-copy {
-		order: -1;
 	}
 }
 
@@ -404,13 +405,14 @@ button,
 	text-decoration: none;
 	text-align: left;
 	font-size: 1.25rem;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.75rem;
 	font-family: Inter;
 
 	cursor: pointer;
 	user-select: none;
 	box-sizing: border-box;
+	transition: all 0.2s ease-in-out;
 }
 
 button.icon-only {
@@ -976,7 +978,7 @@ form {
 	font-size: 1rem;
 	line-height: 1.25rem;
 	font-family: 'Inter';
-	font-weight: 300;
+	font-weight: 400;
 }
 
 /* -------------- Input ---------------- */
@@ -1010,13 +1012,13 @@ textarea:-webkit-autofill:focus {
 	outline-offset: -2px;
 	outline-color: transparent;
 	border: 1px solid #878D96;
-	background: #121619;
+	background: #000;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	height: 3rem;
 	font-size: 1.25rem;
 	line-height: 1.75rem;
-	font-weight: 300;
+	font-weight: 400;
 	caret-color: white;
 
 	position: relative;
@@ -1024,10 +1026,7 @@ textarea:-webkit-autofill:focus {
 
 	font-family: Inter;
 
-	transition: outline 150ms linear;
-	transition-property: outline-color;
-	transition-duration: 150ms;
-	transition-timing-function: linear;
+	transition: all 0.2s ease-in-out;
 }
 
 .form__input:is(.textarea) {
@@ -1065,7 +1064,7 @@ textarea:-webkit-autofill:focus {
 	font-size: 1rem;
 	line-height: 1.25rem;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	position: relative;
 	transition: margin-top 0.3s;
 }
