@@ -1,4 +1,4 @@
-export default function fadeInSections() {
+function fadeInSections() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -12,3 +12,5 @@ export default function fadeInSections() {
     observer.observe(section);
   });
 }
+
+document.addEventListener("DOMContentLoaded", fadeInSections);
