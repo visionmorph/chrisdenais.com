@@ -2,7 +2,13 @@ function fadeInSections() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+
+        // Apply the visible class to the inner fade-content
+        const content = entry.target.querySelector(".fade-content");
+        if (content) {
+          content.classList.add("visible");
+        }
+
         observer.unobserve(entry.target);
       }
     });
