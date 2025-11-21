@@ -3,11 +3,7 @@ function fadeInSections() {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
 
-      // Fade in *all* fade-content inside this section
-      entry.target.querySelectorAll(".fade-content").forEach((el) => {
-        el.classList.add("visible");
-      });
-
+      entry.target.classList.add("visible");
       obs.unobserve(entry.target);
     });
   }, {
@@ -15,9 +11,11 @@ function fadeInSections() {
     rootMargin: "0px 0px 0px 0px"
   });
 
-  document.querySelectorAll(".fade-in-section").forEach((section) => {
-    observer.observe(section);
+  // Observe every fade-content directly
+  document.querySelectorAll(".fade-content").forEach((el) => {
+    observer.observe(el);
   });
 }
 
 document.addEventListener("DOMContentLoaded", fadeInSections);
+do
