@@ -12,7 +12,10 @@ function fadeInSections() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, {
+    threshold: 0,
+    rootMargin: "-96px 0px 0px 0px" // ← trigger 96px *after* entering viewport
+  });
 
   document.querySelectorAll(".fade-in-section").forEach((section) => {
     observer.observe(section);
