@@ -14,7 +14,7 @@ function fadeInSections() {
     });
   }, {
     threshold: 0.25,
-    rootMargin: "0px 0px 0px 0px
+    rootMargin: "0px 0px 0px 0px"
   });
 
   document.querySelectorAll(".fade-in-section").forEach((section) => {
