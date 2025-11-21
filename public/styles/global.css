@@ -316,8 +316,8 @@ section {
 
 .fade-in-section {
   opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateY(64px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .fade-in-section.visible {
