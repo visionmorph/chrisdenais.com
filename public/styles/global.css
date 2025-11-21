@@ -314,6 +314,17 @@ section {
 	overflow: hidden;
 }
 
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .sticky {
 	position: sticky;
 	top: 0;
