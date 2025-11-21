@@ -321,8 +321,8 @@ section {
 
 .fade-content {
 	opacity: 0;
-	transform: translateY(64px);
-	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+	transform: translateY(96px);
+	transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
 .fade-content.visible {
