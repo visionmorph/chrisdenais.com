@@ -7,7 +7,7 @@ function fadeIn() {
       obs.unobserve(entry.target);
     });
   }, {
-    threshold: 0.25,
+    threshold: 0.20,
     rootMargin: "0px 0px 0px 0px"
   });
 
