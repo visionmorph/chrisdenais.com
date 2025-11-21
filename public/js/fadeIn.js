@@ -13,8 +13,8 @@ function fadeInSections() {
       }
     });
   }, {
-    threshold: 0,
-    rootMargin: "-320px 0px 0px 0px" // ← trigger 96px *after* entering viewport
+    threshold: 0.25,
+    rootMargin: "0px 0px 0px 0px
   });
 
   document.querySelectorAll(".fade-in-section").forEach((section) => {
