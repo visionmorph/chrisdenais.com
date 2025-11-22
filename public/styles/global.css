@@ -138,7 +138,7 @@ h3,
 	font-family: Inter;
 	font-size: 1.5rem;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 2rem;
 	color: #ffffff;
 	/* 125% */
@@ -346,6 +346,18 @@ nav {
 	mix-blend-mode: exclusion;
 }
 
+.sticky {
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+	mix-blend-mode: exclusion;
+	transition: transform 0.3s ease;
+}
+
+.sticky.hide {
+	transform: translateY(-100%);
+}
+
 /* -------------- Footer ---------------- */
 
 footer {
@@ -380,18 +392,6 @@ section {
 .fade-content.visible {
 	opacity: 1;
 	transform: translateY(0);
-}
-
-.sticky {
-	position: sticky;
-	top: 0;
-	z-index: 9999;
-	mix-blend-mode: exclusion;
-	transition: transform 0.3s ease;
-}
-
-.sticky.hide {
-	transform: translateY(-100%);
 }
 
 .container {
@@ -743,35 +743,29 @@ button.filled[disabled] {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 1rem;
+	max-width: 75%;
 }
 
-.clients__item h2 {
+.clients__item h3 {
   position: relative;
 }
 
-.clients__item h2::before {
+.clients__item h3::before {
   content: '"';
   position: absolute;
   left: -1rem;
 }
 
-.clients__item h2::after {
+.clients__item h3::after {
   content: '"';
   margin-left: -0.5rem;
 }
 
 .clients__author {
 	display: flex;
-	flex-direction: row;
+	flex-direction: columun;
 	align-items: flex-start;
-	gap: 0.5rem;
-}
-
-@media screen and (max-width: 1280px) {
-	.clients__author {
-		flex-direction: column;
-		gap: 0rem;
-	}
+	gap: 0rem;
 }
 
 /* -------------- Testimonials ---------------- */
