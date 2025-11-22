@@ -658,25 +658,15 @@ button.filled[disabled] {
 }
 
 .lead__caption {
-	gap: 1rem;
+	gap: 3rem;
 	display: flex;
 	flex-direction: column;
 }
 
 .lead__tile {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 1rem;
-}
-
-.lead__tile a {
-	white-space: nowrap;
-}
-
-@media screen and (max-width: 1024px) {
-	.lead__tile {
-		flex-direction: column;
-	}
 }
 /* -------------- Clients ---------------- */
 
