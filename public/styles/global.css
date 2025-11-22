@@ -56,7 +56,6 @@ blockquote {
 
 h1,
 .h1 {
-	/* H1-desktop */
 	font-family: Inter;
 	font-size: 5rem;
 	font-style: normal;
@@ -65,6 +64,48 @@ h1,
 	letter-spacing: -1px;
 	color: #ffffff;
 	/* 125% */
+}
+
+@media screen and (max-width: 1280px) {
+	h1,
+	.h1 {
+		font-family: Inter;
+		font-size: 3rem;
+		font-style: normal;
+		line-height: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	h1,
+	.h1 {
+		font-family: Inter;
+		font-size: 2.625rem;
+		font-style: normal;
+		line-height: 3.125rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    h1,
+    .h1 {
+        font-family: Inter;
+        font-size: 2.25rem;
+        font-style: normal;
+        line-height: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 478px) {
+	h1,
+	.h1 {
+		font-family: Inter;
+		font-size: 2rem;
+		font-style: normal;
+		line-height: 2.5rem;
+		letter-spacing: 0px;
+		/* 125% */
+	}
 }
 
 h2,
@@ -78,6 +119,17 @@ h2,
 	letter-spacing: 0px;
 	color: #ffffff;
 	/* 122.222% */
+}
+
+@media screen and (max-width: 1024px) {
+	h2,
+	.h2 {
+		font-family: Inter;
+		font-size: 1.5rem;
+		font-style: normal;
+		line-height: 2rem;
+		letter-spacing: 0px;
+	}
 }
 
 h3,
@@ -120,7 +172,7 @@ ul {
 	font-family: Inter;
 	font-size: 1rem;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.25rem;
 }
 
@@ -1205,15 +1257,6 @@ textarea:-webkit-autofill:focus {
 		overflow: hidden;
 	}
 
-	h1,
-	.h1 {
-		font-family: Inter;
-		font-size: 3rem;
-		font-style: normal;
-		line-height: 3.5rem;
-		/* 125% */
-	}
-
 	.content__flex {
 		flex-direction: column;
 	}
@@ -1230,23 +1273,6 @@ textarea:-webkit-autofill:focus {
 
 @media screen and (max-width: 1024px) {
 	/* -------------- Layout ---------------- */
-	h1,
-	.h1 {
-		font-family: Inter;
-		font-size: 2.625rem;
-		font-style: normal;
-		line-height: 3.125rem;
-	}
-
-	h2,
-	.h2 {
-		font-family: Inter;
-		font-size: 1.5rem;
-		font-style: normal;
-		line-height: 2rem;
-		letter-spacing: 0px;
-	}
-
 	.next__grid {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -1271,14 +1297,6 @@ textarea:-webkit-autofill:focus {
 @media only screen and (max-width: 768px) {
     /* -------------- General ---------------- */
 
-    h1,
-    .h1 {
-        font-family: Inter;
-        font-size: 2.25rem;
-        font-style: normal;
-        line-height: 2.75rem;
-    }
-    
     blockquote {
         position: relative;
         font-family: Inter;
@@ -1327,18 +1345,6 @@ textarea:-webkit-autofill:focus {
     }
 
     @media only screen and (max-width: 478px) {
-        /* -------------- General ---------------- */
-
-        h1,
-        .h1 {
-            font-family: Inter;
-            font-size: 2rem;
-            font-style: normal;
-            line-height: 2.5rem;
-            letter-spacing: 0px;
-            /* 125% */
-        }
-
         .testimonial__text.hanging::before {
             content: '“';
             position: absolute;
