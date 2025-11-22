@@ -224,7 +224,7 @@ blockquote {
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 	.link-h2,
 	.link-h2-inverse {
 	    font-size: 1rem;
