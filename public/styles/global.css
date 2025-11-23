@@ -734,7 +734,6 @@ button.filled[disabled] {
 @media screen and (max-width: 768px) {
 	.clients {
 		grid-template-columns: 1fr;
-		padding-left: 1rem;
 	}
 }
 
@@ -744,6 +743,12 @@ button.filled[disabled] {
 	align-items: flex-start;
 	gap: 1rem;
 	max-width: 75%;
+}
+
+@media screen and (max-width: 1024px) {
+	.clients__item {
+		max-width: 100%;
+	}
 }
 
 .clients__item h3 {
