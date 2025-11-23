@@ -734,6 +734,7 @@ button.filled[disabled] {
 @media screen and (max-width: 768px) {
 	.clients {
 		grid-template-columns: 1fr;
+		padding-left: 1rem;
 	}
 }
 
