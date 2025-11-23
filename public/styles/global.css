@@ -112,13 +112,23 @@ h2,
 .h2 {
 	/* H2-desktop */
 	font-family: Inter;
-	font-size: 2.5rem;
+	font-size: 2.625rem;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 3rem;
+	line-height: 3.125rem;
 	letter-spacing: 0px;
 	color: #ffffff;
-	/* 122.222% */
+}
+
+@media screen and (max-width: 1280px) {
+	h2,
+	.h2 {
+		font-family: Inter;
+		font-size: 2rem;
+		font-style: normal;
+		line-height: 2.5rem;
+		letter-spacing: 0px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -142,6 +152,17 @@ h3,
 	line-height: 2rem;
 	color: #ffffff;
 	/* 125% */
+}
+
+@media screen and (max-width: 1024px) {
+	h3,
+	.h3 {
+		font-family: Inter;
+		font-size: 1.25rem;
+		font-style: normal;
+		line-height: 1.5rem;
+		letter-spacing: 0px;
+	}
 }
 
 p,
@@ -220,11 +241,18 @@ blockquote {
 	width: fit-content;
 }
 
+.link:hover {
+	color: #FF2200;
+	text-decoration: underline;
+	text-decoration-thickness: 0.0625rem;
+	text-underline-offset: 0.1875rem;
+}
+
 .link-h2,
 .link-h2-inverse {
-    font-size: 1.5rem;
+    font-size: 2.625rem;
     font-weight: 600;
-    line-height: 2rem;
+    line-height: 3.125rem;
 }
 
 .link-h2 {
@@ -233,13 +261,6 @@ blockquote {
 
 .link-h2-inverse {
 	color: #FFF;
-}
-
-.link:hover {
-	color: #FF2200;
-	text-decoration: underline;
-	text-decoration-thickness: 0.0625rem;
-	text-underline-offset: 0.1875rem;
 }
 
 .link-h2:hover,
@@ -254,6 +275,36 @@ blockquote {
 }
 
 .link-h2-inverse:hover {
+	color: #FFF;
+}
+
+.link-h3,
+.link-h3-inverse {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.link-h3 {
+	color: #FF2200;
+}
+
+.link-h3-inverse {
+	color: #FFF;
+}
+
+.link-h3:hover,
+.link-h3-inverse:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 0.15rem;
+	text-underline-offset: 0.175rem;
+}
+
+.link-h3:hover {
+	color: #FF2200;
+}
+
+.link-h3-inverse:hover {
 	color: #FFF;
 }
 
