@@ -5,7 +5,7 @@ interface Props {
   icon?: string;
   target?: string;
   rel?: string;
-  size?: 'default' | 'h2';
+  size?: 'default' | 'h2' | 'h3';
   color?: 'default' | 'inverse';
 }
 
@@ -21,13 +21,18 @@ const {
 
 let sizeClass = 'link';
 
-if (size === 'h2') {
+if (size === 'h3') {
+  sizeClass = 'link-h3';
+} else if (size === 'h2') {
   sizeClass = 'link-h2';
 }
 
 if (color === 'inverse') {
-  sizeClass = size === 'h2' ? 'link-h2-inverse' : 'link-inverse';
+  if (size === 'h2') sizeClass = 'link-h2-inverse';
+  else if (size === 'h3') sizeClass = 'link-h3-inverse';
+  else sizeClass = 'link-inverse';
 }
+
 ---
 <a href={href} target={target} rel={rel} class={sizeClass}>
   {text}
