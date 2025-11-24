@@ -344,6 +344,8 @@ blockquote {
 .link-h2:focus,
 .link-h2-inverse:active,
 .link-h2-inverse:focus,
+.link-h3:active,
+.link-h3-inverse:focus,
 .link-h3-inverse:active,
 .link-h3-inverse:focus {
 	outline: 2px solid #fff;
