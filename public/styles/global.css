@@ -459,10 +459,16 @@ section {
 	overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .fade-in-section {
+    overflow: visible;
+  }
+}
+
 .fade-content {
 	opacity: 0;
 	transform: translateY(4rem);
-	transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .fade-content.visible {
