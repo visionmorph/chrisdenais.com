@@ -313,18 +313,11 @@ blockquote {
 .link-h2:active,
 .link-h2:focus,
 .link-h2-inverse:active,
-.link-h2-inverse:focus {
+.link-h2-inverse:focus,
+.link-h3-inverse:active,
+.link-h3-inverse:focus {
 	outline: 2px solid #fff;
 	outline-offset: -2px;
-}
-
-@media screen and (max-width: 1024px) {
-	.link-h2,
-	.link-h2-inverse {
-	    font-size: 1.25rem;
-	    font-weight: 600;
-	    line-height: 1.5rem;
-	}
 }
 
 .link__group {
