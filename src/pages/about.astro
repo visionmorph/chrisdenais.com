@@ -3,8 +3,8 @@ import Base from '../layouts/Base.astro'
 import Link from '../components/Link.astro'
 ---
 <Base>
-	<section>
-		<div class='container'>
+	<section class='fade-in-section'>
+		<div class='container fade-content'>
 			<div class='hero__row'>
 				<h1>
 					Chris is a designer, researcher, and builder who turns insights about how 
@@ -14,19 +14,19 @@ import Link from '../components/Link.astro'
 			</div>
 		</div>
 	</section>
-    <section>
+    <section class='fade-in-section'>
         <div class='container content-grid'>
             <div class='text-width-lg'>
-                <h2>
+                <h2 class='fade-content'>
                     I’ve spent the past 10 years designing digital products and learning how 
 					people use them.
                 </h2>
-                <h2>
+                <h2 class='fade-content'>
 			  		I help SaaS companies bring new products to market and transform legacy tools 
 					into modern user experiences. This often includes faster user workflows, stronger 
 					engagement, and products that people actually enjoy using.
                 </h2>
-                <h2>
+                <h2 class='fade-content'>
                     My process centers on uncovering the root causes behind user challenges. 
 					I apply a research-driven approach to design solutions that are timeless 
 					and intuitive.
@@ -40,6 +40,7 @@ import Link from '../components/Link.astro'
 					color='inverse'
 					target='_blank'
 					rel='noopener noreferrer'
+					class='fade-content'
 				/>
 				<Link 
 					href='/images/denais-product-designer-resume-2025.pdf'
@@ -48,12 +49,14 @@ import Link from '../components/Link.astro'
 					color='inverse'
 					target='_blank'
 					rel='noopener noreferrer'
+					class='fade-content'
 				/>
 				<Link 
 					href='/contact' 
 					text='-> Email' 
 					size='h2'
 					color='inverse'
+					class='fade-content'
 				/>
 			</div>
         </div>
