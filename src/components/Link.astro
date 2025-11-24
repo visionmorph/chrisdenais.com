@@ -7,6 +7,7 @@ interface Props {
   rel?: string;
   size?: 'default' | 'h2' | 'h3';
   color?: 'default' | 'inverse';
+  class?: string;
 }
 
 const {
@@ -17,15 +18,13 @@ const {
   rel = 'noopener noreferrer',
   size = 'default',
   color = 'default',
+  class: passedClass = "",
 } = Astro.props;
 
 let sizeClass = 'link';
 
-if (size === 'h3') {
-  sizeClass = 'link-h3';
-} else if (size === 'h2') {
-  sizeClass = 'link-h2';
-}
+if (size === 'h3') sizeClass = 'link-h3';
+else if (size === 'h2') sizeClass = 'link-h2';
 
 if (color === 'inverse') {
   if (size === 'h2') sizeClass = 'link-h2-inverse';
@@ -33,8 +32,9 @@ if (color === 'inverse') {
   else sizeClass = 'link-inverse';
 }
 
+const finalClass = `${sizeClass} ${passedClass}`.trim();
 ---
-<a href={href} target={target} rel={rel} class={sizeClass}>
+<a href={href} target={target} rel={rel} class={finalClass}>
   {text}
   {icon && <span class='link-icon' set:html={icon} />}
 </a>
