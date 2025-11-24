@@ -303,7 +303,7 @@ blockquote {
 .link-h3,
 .link-h3-inverse {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 2rem;
 }
 
@@ -313,6 +313,14 @@ blockquote {
 
 .link-h3-inverse {
 	color: #FFF;
+}
+
+@media only screen and (max-width: 1024px) {
+	.link-h3,
+	.link-h3-inverse {
+		font-size: 1.25rem;
+	    line-height: 1.5rem;
+	}
 }
 
 .link-h3:hover,
@@ -357,7 +365,7 @@ blockquote {
 	align-items: flex-start;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 	.hero__row {
 		flex-direction: column;
 	}
