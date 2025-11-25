@@ -355,7 +355,7 @@ blockquote {
 	.link-h3-inverse:hover {
 		text-decoration: underline;
 		text-decoration-thickness: 0.125rem;
-		text-underline-offset: 0.1875rem;
+		text-underline-offset: 0.15rem;
 	}
 }
 
@@ -366,7 +366,7 @@ blockquote {
 .link-h2-inverse:active,
 .link-h2-inverse:focus,
 .link-h3:active,
-.link-h3-inverse:focus,
+.link-h3:focus,
 .link-h3-inverse:active,
 .link-h3-inverse:focus {
 	outline: 2px solid #fff;
