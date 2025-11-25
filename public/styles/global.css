@@ -332,8 +332,8 @@ blockquote {
 .link-h3:hover,
 .link-h3-inverse:hover {
 	text-decoration: underline;
-	text-decoration-thickness: 0.1875rem;
-	text-underline-offset: 0.25rem;
+	text-decoration-thickness: 0.15rem;
+	text-underline-offset: 0.175rem;
 }
 
 .link-h3:hover {
