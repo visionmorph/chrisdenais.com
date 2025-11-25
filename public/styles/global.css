@@ -734,19 +734,19 @@ button.filled[disabled] {
 	border: 1px solid #697077;
 }
 
-.next__grid h2 {
+.next__grid h3 {
 	text-decoration: underline;
 	text-decoration-color: transparent;
 }
 
-.next__grid:hover h2 {
+.next__grid:hover h3 {
 	color: #FF2200;
 	text-decoration: underline;
 	text-underline-offset: 0.25rem;
 	transition: all 0.2s ease-in-out;
 }
 
-.next__grid h2:last-of-type {
+.next__grid h3:last-of-type {
     text-decoration: none;
 	color: #ff2200;
 }
@@ -772,6 +772,13 @@ button.filled[disabled] {
 	aspect-ratio: 4 / 3;
 }
 
+@media screen and (max-width: 768px) {
+	.next__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+
 .next__caption {
 	display: flex;
 	flex-direction: column;
@@ -785,7 +792,7 @@ button.filled[disabled] {
 	transition: all 0.25s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 	.next__caption {
 		padding: 1rem;
 	}
@@ -1355,11 +1362,6 @@ textarea:-webkit-autofill:focus {
 
 @media screen and (max-width: 1024px) {
 	/* -------------- Layout ---------------- */
-	.next__grid {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-	
 	blockquote {
 		position: relative;
 		font-family: Inter;
