@@ -31,28 +31,41 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>The challenge</h2>
-			<p>
-				The U.S. Department of Defense faced a critical issue: how to accurately assess mission readiness of pilots.
-			</p>
-			<ul>
-				<li>
-					<b>Current approach:</b> Post-flight debriefs that heavily rely on instructor feedback
-				</li>
-				<li>
-					<b>Missed opportunity:</b> Each aircraft generates millions of data points during flight, but this data wasn’t 
-					being fully leveraged to evaluate and track performance.
-				</li>
-			</ul>
-			<p>
-				To address this the 333rd Fighter Squadron at Seymour Johnson Air Force Base partnered with Crowdbotics. 
-				I joined a cross-functional team of developers, data scientists, and project managers to redesign the Data 
-				Driven Readiness (DDR) software. Our mission was to enhance how pilots analyze maneuvers and seamlessly integrate 
-				flight data into their daily workflow.
-			</p>
+			<h3>The challenge</h3>
+			<div>
+				<p>
+					This project supported the U.S. Air Force operating under the Department of Defense, 
+					where pilot performance and mission readiness have long been evaluated through 
+					instructor-led post-flight reviews.
+				</p>
+				<p>
+					The Air Force has a proud multigenerational tradition of aviation excellence, yet many
+					of its training systems were built for a previous era relying on traditional debrief 
+					methods, aging hardware, and legacy software not originally designed for artificial 
+					intelligence or long-term performance tracking.
+				</p>
+				<p>
+					So despite the U.S. Air Force’s ability to projecting strength, the methods used to assess 
+					pilot performance wasn’t evolving at the same pace as what modern technologies could provide.
+				</p>
+				<p>
+					Every flight generates millions of data points capturing maneuvers, reactions, and situational 
+					decisions in real time. However, this data gets erased after the end of the debrief leaving any 
+					remaining insights scattered in personal notes. This made it difficult for instructors and pilots 
+					to understand pilot performance, tracking progress over time, or use the insights to improve safety 
+					and skills.
+				</p>
+				<p>
+					With pilots balancing intense schedules and meeting high standards, squadrons needed a way to turn 
+					complex data into an enhanced learning experience that supports teamwork, integrates within their 
+					current workflow, and helps pilots continuously improve their performance.
+				</p>
+			</div>
+			<div></div>
 		</div>
 		<Quote
-			quote={`Typically at the end of the debrief the student keeps some notes, but we erase our tapes. We erase our shot sheets and all the data gets flushed.`}
+			quote={`Typically at the end of the debrief the student keeps some notes, but we
+					erase our tapes. We erase our shot sheets and all the data gets flushed.`}
 			author="Major Mark Poppler"
 			title="Chief of Innovation, 4th Training Squadron"
 			link={{
@@ -65,9 +78,10 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Research kick-off</h2>
+			<h3>Research kick-off</h3>
 			<p>
-				To understand the problem we conducted usability tests of the current DDR software with five pilots. Pain points we uncovered:
+				To understand the problem we conducted usability tests of the 
+				current DDR software with five pilots. Pain points we uncovered:
 			</p>
 			<ul>
 				<li>
@@ -91,7 +105,7 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Key insights</h2>
+			<h3>Key insights</h3>
 			<p>
 				Pilots valued DDR’s potential but needed usability improvements before they could fully rely on it. 
 				Our research revealed four design priorities:
@@ -112,7 +126,8 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 			</ol>
 		</div>
 		<Quote
-			quote={`It allows them to get an objective view of what is happening and how they flew and be able to make incremental, sometimes significant changes to how they're flying to be safer, more effective or more lethal.`}
+			quote={`It allows them to get an objective view of what is happening and how they flew and be able to make 
+					incremental, sometimes significant changes to how they're flying to be safer, more effective or more lethal.`}
 			author="Adam Ha"
 			title="Lead F-15E Flight Test Engineer"
 			link={{
@@ -125,7 +140,7 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Mapping mouse and keyboard controls</h2>
+			<h3>Mapping mouse and keyboard controls</h3>
 			<p>
 				The DDR viewport simulates the aircraft and maneuvers in the browser. Through our user testing it was revealed that:
 			</p>
@@ -167,7 +182,7 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Reducing cognitive load</h2>
+			<h3>Reducing cognitive load</h3>
 			<p>
 				Promoting consistency reduced cognitive load and improved predictability across the platform. 
 				We reorganized DDR’s core layout into clear, repeatable sections:
@@ -194,7 +209,7 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Clarity to maneuver grades</h2>
+			<h3>Clarity to maneuver grades</h3>
 			<p>
 				Instead of vague sliding scales, we introduced parameter-level pass/fail grades. 
 				This helped pilots pinpoint areas for improvement without ambiguity.
@@ -207,7 +222,7 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Collaborative notes</h2>
+			<h3>Collaborative notes</h3>
 			<p>Pilots can now tag teammates, trigger email notifications with mentions, and timestamp notes to reference exact moments 
 			in the timeline. These features increase the collaboration between pilots and instructors.</p>
 		</div>
@@ -218,7 +233,7 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Real-time performance visualization</h2>
+			<h3>Real-time performance visualization</h3>
 			<p>We layered user-generated and AI-driven notes directly onto the timeline reel. Pilots could now:</p>
 			<ul>
 				<li>
@@ -239,7 +254,7 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Impact</h2>
+			<h3>Impact</h3>
 			<p>
 				We transformed DDR from being difficult to use into a collaborative tool that pilots trust to evaluate and improve their 
 				performance, while still fitting into their demanding workflows. The improvements that made the biggest impact for pilots were:
@@ -260,14 +275,15 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 			</ul>
 		</div>
 		<Quote
-			quote={`Hiring Chris brought us instant relaxation. Before working with Chris I didn’t realize how much it would take to do the research sitting down with pilots to better solve their problems.`}
+			quote={`Hiring Chris brought us instant relaxation. Before working with Chris I didn’t realize how much it would
+					take to do the research sitting down with pilots to better solve their problems.`}
 			author="Julian Capps"
 			title="Head of Defense, Crowdbotics"
 		/>
 	</Content>
 	<Content>
 		<div class='text-width'>
-			<h2>Final thoughts</h2>
+			<h3>Final thoughts</h3>
 			<p>This project was as much about adapting design methods to constraints as it was about building a better tool:</p>
 			<ul>
 				<li>
@@ -287,53 +303,6 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 			</ul>
 		</div>
 	</Content>
-	<LinkGroup
-	    title='Press coverage'
-	    links={[
-			{
-		        href: 'https://shield.ai/shield-ai-acquires-crowdbotics-data-driven-readiness-software-tools/',
-		        label: 'Shield AI acquires Crowdbotics’ Data Driven Readiness software tools',
-		        icon: linkIcon,
-		        target: '_blank',
-		        rel: 'noopener noreferrer'
-		    },
-			{
-		        href: 'https://www.aiaccelerator.af.mil/News/News-Article-View/Article/3270293/first-commercial-company-leverages-daf-mit-maneuver-id-challenge-to-advance-ai/',
-		        label: 'First Commercial Company Leverages DAF-MIT Maneuver ID Challenge to Advance AI',
-		        icon: linkIcon,
-		        target: '_blank',
-		        rel: 'noopener noreferrer'
-		    },
-			{
-		        href: 'https://www.ktnv.com/news/exclusive-nellis-air-force-base-testing-artificial-intelligence-in-combat-training',
-		        label: 'Exclusive: Nellis Air Force Base tests new artificial intelligence program for combat training',
-		        icon: linkIcon,
-		        target: '_blank',
-		        rel: 'noopener noreferrer'
-		    },
-			{
-		        href: 'https://caplinnews.fiu.edu/air-force-ai-flight-data-crodbotics/',
-		        label: 'Air Force introduces AI to training program',
-		        icon: linkIcon,
-		        target: '_blank',
-		        rel: 'noopener noreferrer'
-		    },
-			{
-		        href: 'https://www.popsci.com/technology/air-force-artificial-intelligence-pilot-training/',
-		        label: 'How AI could help new Air Force pilots avoid costly mistakes',
-		        icon: linkIcon,
-		        target: '_blank',
-		        rel: 'noopener noreferrer'
-		    },
-			{
-		        href: 'https://adlnet.gov/news/2022/04/11/F15-xAPI-Training/',
-		        label: 'Air Force Project Enhances Live F-15E Flight Training with xAPI',
-		        icon: linkIcon,
-		        target: '_blank',
-		        rel: 'noopener noreferrer'
-		    }
-		]}
-	/>
 	<NextCaseStudy
 		href='/case-studies/atmos'
 		label='Pioneering the Web3 portal experience for Exo pilots on Planet Atmos. '
