@@ -175,7 +175,7 @@ li {
 	color: #ffffff;
 	font-size: 1.25rem;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.75rem;
 	/* 125% */
 }
@@ -510,14 +510,25 @@ section {
 
 .content-item {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 16px;
-	width: 100%;
+	grid-template-columns: 3fr 1fr
+	gap: 2rem;
+}
+
+.content-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 2fr
+	gap: 2rem;
+}
+
+.content-text {
+	display: flex;
+	flex-direction: column
+	gap: 2rem;
 }
 
 @media (max-width: 1024px) {
   .content-item {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 1fr;
   }
 }
 
