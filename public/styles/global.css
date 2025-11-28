@@ -528,7 +528,11 @@ section {
 
 @media (max-width: 1024px) {
 	.content-item {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 3fr 1fr;
+	}
+
+	.content-wrapper {
+		grid-template-columns: 1fr;
 	}
 }
 
