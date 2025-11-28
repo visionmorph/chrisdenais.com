@@ -508,6 +508,25 @@ section {
 	gap: 2rem;
 }
 
+.content-item {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .content-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .content-item {
+    grid-template-columns: 1fr;
+  }
+}
+
 .container.nav {
 	margin-top: 0rem;
 	margin-bottom: 0rem;
