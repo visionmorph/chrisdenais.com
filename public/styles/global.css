@@ -522,20 +522,20 @@ section {
 
 .content-text {
 	display: flex;
-	flex-direction: column
+	flex-direction: column;
 	gap: 2rem;
 }
 
 @media (max-width: 1024px) {
-  .content-item {
-    grid-template-columns: 3fr 1fr;
-  }
+	.content-item {
+		grid-template-columns: 3fr 1fr;
+	}
 }
 
 @media (max-width: 768px) {
-  .content-item {
-    grid-template-columns: 1fr;
-  }
+	.content-item {
+		grid-template-columns: 1fr;
+	}
 }
 
 .container.nav {
