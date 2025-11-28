@@ -225,9 +225,19 @@ blockquote {
 }
 
 .quote-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.quote-container h2 {
+	width: 75%;
+}
+
+@media screen and (max-width: 1024px) {
+	.quote-container h2 {
+		width: 100%;
+	}
 }
 
 /* -------------- Hyperlink ---------------- */
@@ -508,6 +518,13 @@ section {
 	gap: 2rem;
 }
 
+.content-item-row {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 4rem;
+}
+
 .content-item {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
@@ -523,7 +540,8 @@ section {
 .content-text {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
 }
 
 @media (max-width: 1024px) {
