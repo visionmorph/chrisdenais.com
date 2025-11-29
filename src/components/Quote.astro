@@ -1,39 +1,12 @@
 ---
-import Link from './Link.astro';
-
-interface LinkProps {
-  href: string;
-  text: string;
-  icon?: string;
-  target?: string;
-  rel?: string;
-}
-
-interface BlockquoteProps {
-  quote: string;
-  author: string;
-  title: string;
-  link?: LinkProps;
-}
-
-const { quote, author, title, link } = Astro.props;
+const { quote, author, title } = Astro.props;
 ---
-<div class="quote-container">
-  <hr class="hr-strong" />
-  <h2>"{quote}"</h2>
-  <div class='clients__author'>
-    <p class='b'>{author}</p>
-    <p>{title}</p>
-  </div>
-  <hr class="hr-strong" />
 
-  {link && (
-    <Link 
-      href={link.href}
-      text={link.text}
-      icon={link.icon}
-      target={link.target}
-      rel={link.rel}
-    />
-  )}
+<div class='quote-container'>
+    <h2>"{quote}"</h2>
+    <div class='clients__author'>
+        <p class='b'>{author}</p>
+        <p>{title}</p>
+    </div>
+    <hr class='hr-subtle' />
 </div>
