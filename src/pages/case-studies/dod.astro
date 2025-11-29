@@ -1,17 +1,9 @@
 ---
-import Content from '../../components/Content.astro'
-import ContentSummary from '../../components/ContentSummary.astro'
-import NextCaseStudy from '../../components/NextCaseStudy.astro'
-import Title from '../../components/Title.astro'
 import Base from '../../layouts/Base.astro'
+import Content from '../../components/Content.astro'
+import Title from '../../components/Title.astro'
 import Quote from '../../components/Quote.astro'
-import fs from 'fs'
-import path from 'path'
-
-// Read the SVG icon
-const iconPath = path.join(process.cwd(), 'public/images/link.svg')
-let linkIcon = fs.readFileSync(iconPath, 'utf-8')
-linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
+import NextCaseStudy from '../../components/NextCaseStudy.astro'
 ---
 
 <Base>
