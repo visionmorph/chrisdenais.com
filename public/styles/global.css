@@ -523,6 +523,8 @@ section {
 	flex-direction: column;
 	gap: 2rem;
 	margin-bottom: 4rem;
+	max-width: 1600px;
+	width: 100%;
 }
 
 .content-item {
