@@ -540,8 +540,13 @@ section {
 .content-text {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 1.5rem;
 	margin-bottom: 2rem;
+}
+
+.content-text p {
+	max-width: 720px;
 }
 
 @media (max-width: 1024px) {
