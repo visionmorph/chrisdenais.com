@@ -1472,6 +1472,8 @@ textarea:-webkit-autofill:focus {
 
     .quote-container {
         gap: 2rem;
+		max-width: 1600px;
+		width: 100%;
     }
 
     footer {
