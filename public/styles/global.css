@@ -228,6 +228,8 @@ blockquote {
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
+	max-width: 1600px;
+	width: 100%;
 }
 
 .quote-container h2 {
@@ -564,6 +566,11 @@ section {
 @media (max-width: 768px) {
 	.content-item {
 		grid-template-columns: 1fr;
+	}
+
+	.content-text p {
+		align-items: left;
+		max-width: 768px;
 	}
 }
 
@@ -1472,8 +1479,6 @@ textarea:-webkit-autofill:focus {
 
     .quote-container {
         gap: 2rem;
-		max-width: 1600px;
-		width: 100%;
     }
 
     footer {
