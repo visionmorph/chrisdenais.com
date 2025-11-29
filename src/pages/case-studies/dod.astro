@@ -1,7 +1,6 @@
 ---
 import Content from '../../components/Content.astro'
 import ContentSummary from '../../components/ContentSummary.astro'
-import LinkGroup from '../../components/LinkGroup.astro'
 import NextCaseStudy from '../../components/NextCaseStudy.astro'
 import Title from '../../components/Title.astro'
 import Base from '../../layouts/Base.astro'
@@ -69,20 +68,15 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 			</div>
 		</div>
 	</section>
-	<Content>
+	<section>
 		<Quote
-			quote={`Typically at the end of the debrief the student keeps some notes, but we
-					erase our tapes. We erase our shot sheets and all the data gets flushed.`}
-			author="Major Mark Poppler"
-			title="Chief of Innovation, 4th Training Squadron"
-			link={{
-			href: "https://www.popsci.com/technology/air-force-artificial-intelligence-pilot-training/",
-			text: "Learn more about how Seymour Johnson AFB uses Data Driven Readiness",
-			icon: linkIcon,
-			target: "_blank"
-			}}
+			quote={`While we spend hours analyzing and debriefing each training mission to 
+					maximize learning, our instructors are very time-limited and can only 
+					record some of the subjective data to summarize a student's performance.`}
+			author='Major Mark Poppler'
+			title='Chief of Innovation, 4th Training Squadron'
 		/>
-	</Content>
+	</section>
 	<Content>
 		<div class='text-width'>
 			<h3>Research kick-off</h3>
@@ -135,14 +129,8 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 		<Quote
 			quote={`It allows them to get an objective view of what is happening and how they flew and be able to make 
 					incremental, sometimes significant changes to how they're flying to be safer, more effective or more lethal.`}
-			author="Adam Ha"
-			title="Lead F-15E Flight Test Engineer"
-			link={{
-			href: "https://www.ktnv.com/news/exclusive-nellis-air-force-base-testing-artificial-intelligence-in-combat-training",
-			text: "Explore how Nellis Air Force Base is testing Data Driven Readiness",
-			icon: linkIcon,
-			target: "_blank"
-			}}
+			author='Adam Ha'
+			title='Lead F-15E Flight Test Engineer'
 		/>
 	</Content>
 	<Content>
@@ -284,8 +272,8 @@ linkIcon = linkIcon.replace(/fill="white"/g, 'fill="currentColor"')
 		<Quote
 			quote={`Hiring Chris brought us instant relaxation. Before working with Chris I didn’t realize how much it would
 					take to do the research sitting down with pilots to better solve their problems.`}
-			author="Julian Capps"
-			title="Head of Defense, Crowdbotics"
+			author='Julian Capps'
+			title='Head of Defense, Crowdbotics'
 		/>
 	</Content>
 	<Content>
