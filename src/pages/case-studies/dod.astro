@@ -23,37 +23,35 @@ import NextCaseStudy from '../../components/NextCaseStudy.astro'
 			<hr class='hr-subtle'>
 			<div class='content-item'>
 				<div class='content-wrapper'>
-					<h3>The challenge</h3>
-					<div>
-						<div class='content-text'>
-							<p>
-								This project supported the U.S. Air Force operating under the Department of Defense, 
-								where pilot performance and mission readiness have long been evaluated through 
-								instructor-led post-flight reviews.
-							</p>
-							<p>
-								The Air Force has a proud multigenerational tradition of aviation excellence, yet many
-								of its training systems were built for a previous era relying on traditional debrief 
-								methods, aging hardware, and legacy software not originally designed for artificial 
-								intelligence or long-term performance tracking.
-							</p>
-							<p>
-								So despite the U.S. Air Force’s ability to projecting strength, the methods used to assess 
-								pilot performance wasn’t evolving at the same pace as what modern technologies could provide.
-							</p>
-							<p>
-								Every flight generates millions of data points capturing maneuvers, reactions, and situational 
-								decisions in real time. However, this data gets erased after the end of the debrief leaving any 
-								remaining insights scattered in personal notes. This made it difficult for instructors and pilots 
-								to understand pilot performance, tracking progress over time, or use the insights to improve safety 
-								and skills.
-							</p>
-							<p>
-								With pilots balancing intense schedules and meeting high standards, squadrons needed a way to turn 
-								complex data into an enhanced learning experience that supports teamwork, integrates within their 
-								current workflow, and helps pilots continuously improve their performance.
-							</p>
-						</div>
+					<h3>Augmenting flight debriefs</h3>
+					<div class='content-text'>
+						<p>
+							This project supported the U.S. Air Force operating under the Department of Defense, 
+							where pilot performance and mission readiness have long been evaluated through 
+							instructor-led post-flight reviews.
+						</p>
+						<p>
+							The Air Force has a proud multigenerational tradition of aviation excellence, yet many
+							of its training systems were built for a previous era relying on traditional debrief 
+							methods, aging hardware, and legacy software not originally designed for artificial 
+							intelligence or long-term performance tracking.
+						</p>
+						<p>
+							So despite the U.S. Air Force’s ability to projecting strength, the methods used to assess 
+							pilot performance wasn’t evolving at the same pace as what modern technologies could provide.
+						</p>
+						<p>
+							Every flight generates millions of data points capturing maneuvers, reactions, and situational 
+							decisions in real time. However, this data gets erased after the end of the debrief leaving any 
+							remaining insights scattered in personal notes. This made it difficult for instructors and pilots 
+							to understand pilot performance, tracking progress over time, or use the insights to improve safety 
+							and skills.
+						</p>
+						<p>
+							With pilots balancing intense schedules and meeting high standards, squadrons needed a way to turn 
+							complex data into an enhanced learning experience that supports teamwork, integrates within their 
+							current workflow, and helps pilots continuously improve their performance.
+						</p>
 					</div>
 				</div>
 				<div></div>
@@ -69,176 +67,138 @@ import NextCaseStudy from '../../components/NextCaseStudy.astro'
 			title='Chief of Innovation, 4th Training Squadron'
 		/>
 	</section>
-	<Content>
-		<div class='text-width'>
-			<h3>Research kick-off</h3>
-			<p>
-				To understand the problem we conducted usability tests of the 
-				current DDR software with five pilots. Pain points we uncovered:
-			</p>
-			<ul>
-				<li>
-					<b>Unclear grades</b> -> Ambiguous scoring made it hard for pilots to know how well they performed
-				</li>
-				<li>
-					<b>Awkward controls</b> -> Limited descriptions made it difficult to view maneuvers from the right angles
-				</li>
-				<li>
-					<b>Inaccurate timestamps</b> -> Maneuvers on the timeline didn’t match actual flight events, requiring tedious scrubbing
-				</li>
-				<li>
-					<b>Isolated notes</b> -> Missing collaboration features made notes only useful as personal reminders
-				</li>
-			</ul>
+	<section>
+		<div class='content-item-row'>
+			<hr class='hr-subtle'>
+			<div class='content-item'>
+				<div class='content-wrapper'>
+					<h3>Bridging the gap between people and technology</h3>
+					<div class='content-text'>
+						<p>
+							While Data Driven Readiness unlocked insights into flight data, the platform was 
+							difficult to navigate and the insights produced were untrustworthy. Pilots struggled 
+							to understand how they were performing, while instructors lacked the ability to provide 
+							feedback, limiting collaboration between team members.
+						</p>
+						<p>
+							Pilots weren’t fully aware of when or where AI was being used to analyze maneuvers, 
+							leaving them uncertain on the validity of insights generated and questioning how much 
+							they can trust AI-generated feedback.
+						</p>
+						<p>
+							This lack of transparency limited product adoption and reduced the confidence in recommendations 
+							made by Data Driven Readiness, even though pilots acknowledged the potential AI has to surface 
+							opportunities for improvement.
+						</p>
+					</div>
+				</div>
+				<div></div>
+			</div>
 		</div>
-		<img
-			src='/content/case-studies/dod/original-ddr.png'
-			class='view-project-image content'
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h3>Key insights</h3>
-			<p>
-				Pilots valued DDR’s potential but needed usability improvements before they could fully rely on it. 
-				Our research revealed four design priorities:
-			</p>
-			<ol>
-				<li>
-					<b>Transparent grading system:</b> Define a clear criteria with detailed explanations and visual indicators
-				</li>
-				<li>
-					<b>Intuitive camera controls:</b> Simplify the interactions and guide users
-				</li>
-				<li>
-					<b>Accurate timestamps:</b> Automatic alignment with actual maneuvers
-				</li>
-				<li>
-					<b>Collaborative notes:</b> Ability to tag team members, add context, and foster discussion
-				</li>
-			</ol>
+	</section>
+	<section>
+		<div class='content-item-row'>
+			<hr class='hr-subtle'>
+			<div class='content-item'>
+				<div class='content-wrapper'>
+					<h3>Building trust with AI</h3>
+					<div class='content-text'>
+						<p>
+							From this point we shifted the product priorities around trust and usability. A critical part of 
+							the work was adding visibility to AI within the user interface design for building trust and 
+							confidence. We redesigned the experience so that moments affected by AI have a clear indicator 
+							with explainability making it easier for pilots to cross-check using their own judgment.
+						</p>
+						<ul>
+							<li>
+								<b>Indicators for AI-generated content:</b> Transparency with AI is key and the AI label is an 
+								accessible, interactive element that's present at every interface level.
+							</li>
+							<li>
+								<b>Having a consistent visual reference:</b> -Users need a universal and easy identifiable 
+								visual reference when they want to understand more about how AI is being used.
+							</li>
+							<li>
+								<b>Guiding users with explainability:</b> Users need a way to understand how to access 
+								details about how an AI was built. By providing a way to explainability with the AI label, 
+								users have a recognizable location to learn more.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div></div>
+			</div>
 		</div>
+	</section>
+	<section>
 		<Quote
-			quote={`It allows them to get an objective view of what is happening and how they flew and be able to make 
-					incremental, sometimes significant changes to how they're flying to be safer, more effective or more lethal.`}
-			author='Adam Ha'
-			title='Lead F-15E Flight Test Engineer'
+			quote={`One thing that AI is really good at is taking a repetitive process and performing 
+					it at fractions of the time that it would take a human.`}
+			author='First Lieutenant Darren Lopez-Leon'
+			title='Operations Research Analyst, Nellis Air Force Base'
 		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h3>Mapping mouse and keyboard controls</h3>
-			<p>
-				The DDR viewport simulates the aircraft and maneuvers in the browser. Through our user testing it was revealed that:
-			</p>
-			<ul>
-				<li>
-					Default mouse controls were restrictive and disorienting
-				</li>
-				<li>
-					No keyboard shortcuts were available
-				</li>
-			</ul>
-			<p>
-				I reassigned the mapping of keyboard and mouse controls to:
-			</p>
-			<ul>
-				<li>
-					Simplify the controls for better accessibility
-				</li>
-				<li>
-					Added keyboard shortcuts to quickly navigate the timeline
-				</li>
-			</ul>
+	</section>
+	<section>
+		<div class='content-item-row'>
+			<hr class='hr-subtle'>
+			<div class='content-item'>
+				<div class='content-wrapper'>
+					<h3>Supercharging how pilots learn</h3>
+					<div class='content-text'>
+						<p>
+							I led short, focused research sessions with pilots and instructors to understand how they review 
+							flights, what slows down learning, and where confidence breaks.
+						</p>
+						<p>
+							Two distinct user types emerged: instructors who think in patterns and coaching, and trainees 
+							who want direct and unfiltered understanding of their own performance. Aligning both of these 
+							perspectives became central to the direction of the redesign.
+						</p>
+						<p>
+							We approached this redesign with one goal: make pilot performance insights feel clear, fair, 
+							and easy to act on without adding more work for people already operating at full speed.
+						</p>
+						<p>
+							We simplified performance scores into a simple pass or fail format that removed interpretation. 
+							Flight data became visualized directly on the timeline giving pilots access to evaluate data 
+							points for parameters over time.
+						</p>
+					</div>
+				</div>
+				<div></div>
+			</div>
 		</div>
-		<video
-			src='/content/case-studies/dod/viewport-animation.mp4'
-			src='/content/case-studies/dod/viewport-animation.webm'
-			class='view-project-video content'
-			autoplay
-			loop
-			muted
-			playsinline
-			width='1600px'
-			height='1200px'>
-		</video>
-		<img
-			src='/content/case-studies/dod/keyboard-controls.png'
-			class='view-project-image content'
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h3>Reducing cognitive load</h3>
-			<p>
-				Promoting consistency reduced cognitive load and improved predictability across the platform. 
-				We reorganized DDR’s core layout into clear, repeatable sections:
-			</p>
-			<ol>
-				<li>
-					<b>Header</b>: Global navigation and system actions
-				</li>
-				<li>
-					<b>Side panel</b>: Supporting details
-				</li>
-				<li>
-					<b>Viewport</b>: Maneuver visualization
-				</li>
-				<li>
-					<b>Timeline</b>: Performance metrics
-				</li>
-			</ol>
-		</div>
-		<img
-			src='/content/case-studies/dod/ui-template.png'
-			class='view-project-image content'
-		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h3>Clarity to maneuver grades</h3>
-			<p>
-				Instead of vague sliding scales, we introduced parameter-level pass/fail grades. 
-				This helped pilots pinpoint areas for improvement without ambiguity.
-			</p>
-		</div>
+	</section>
+	<section>
 		<img
 			src='/content/case-studies/dod/maneuvers.png'
 			class='view-project-image content'
 		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h3>Collaborative notes</h3>
-			<p>Pilots can now tag teammates, trigger email notifications with mentions, and timestamp notes to reference exact moments 
-			in the timeline. These features increase the collaboration between pilots and instructors.</p>
+	</section>
+	<section>
+		<div class='content-item-row'>
+			<hr class='hr-subtle'>
+			<div class='content-item'>
+				<div class='content-wrapper'>
+					<h3>Empowering instructors in the classroom</h3>
+					<div class='content-text'>
+						<p>
+							Instead of feedback being scattered across personal notebooks we created a shared space for 
+							notes where pilots and instructors could tag teammates, add context, and continue discussions 
+							beyond the debrief, turning every flight into team learning experiences and not for self-reflection.
+						</p>
+					</div>
+				</div>
+				<div></div>
+			</div>
 		</div>
+	</section>
+	<section>
 		<img
-			src='/content/case-studies/dod/notes.png'
+			src='/content/case-studies/dod/pilotprofile.png'
 			class='view-project-image content'
 		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h3>Real-time performance visualization</h3>
-			<p>We layered user-generated and AI-driven notes directly onto the timeline reel. Pilots could now:</p>
-			<ul>
-				<li>
-					View note indicators directly on the timeline
-				</li>
-				<li>
-					Access to layered real-time aircraft performance data
-				</li>
-				<li>
-					Cross-check AI evaluations using human judgment
-				</li>
-			</ul>
-		</div>
-		<img
-			src='/content/case-studies/dod/timeline.png'
-			class='view-project-image content'
-		/>
-	</Content>
+	</section>
 	<Content>
 		<div class='text-width'>
 			<h3>Impact</h3>
