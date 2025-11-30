@@ -553,6 +553,10 @@ section {
 	max-width: 40rem;
 }
 
+.content-text ul {
+	max-width: 40rem;
+}
+
 @media (max-width: 1024px) {
 	.content-item {
 		grid-template-columns: 3fr 1fr;
