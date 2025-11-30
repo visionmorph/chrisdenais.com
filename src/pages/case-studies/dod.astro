@@ -173,6 +173,7 @@ import NextCaseStudy from '../../components/NextCaseStudy.astro'
 		<img
 			src='/content/case-studies/dod/maneuvers.png'
 			class='view-project-image content'
+			style='margin-bottom: 2rem;'
 		/>
 	</section>
 	<section>
@@ -197,10 +198,7 @@ import NextCaseStudy from '../../components/NextCaseStudy.astro'
 		<img
 			src='/content/case-studies/dod/pilotprofile.png'
 			class='view-project-image content'
-			style='
-				margin-top: 2rem;
-				margin-bottom: 2rem;
-			'
+			style='margin-bottom: 2rem;'
 		/>
 	</section>
 	<section>
@@ -277,14 +275,12 @@ import NextCaseStudy from '../../components/NextCaseStudy.astro'
 			</div>
 		</div>
 	</section>
-	<Content>
-		<NextCaseStudy
-			href='/case-studies/atmos'
-			label='Pioneering the Web3 portal experience for Exo pilots on Planet Atmos. '
-			description='Redesigned the portal to simplify the onboarding process and to easier access blockchain items.'
-			thumbnail={{
-				src: 'https://media.contra.com/video/upload/fl_progressive/q_auto:best,w_800/twkqyeauwgccv77hxdwj.mp4',
-			}}
-		/>
-	</Content>
+	<NextCaseStudy
+		href='/case-studies/atmos'
+		label='Pioneering the Web3 portal experience for Exo pilots on Planet Atmos. '
+		description='Redesigned the portal to simplify the onboarding process and to easier access blockchain items.'
+		thumbnail={{
+			src: 'https://media.contra.com/video/upload/fl_progressive/q_auto:best,w_800/twkqyeauwgccv77hxdwj.mp4',
+		}}
+	/>
 </Base>
