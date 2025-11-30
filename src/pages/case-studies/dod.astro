@@ -111,15 +111,15 @@ import NextCaseStudy from '../../components/NextCaseStudy.astro'
 						</p>
 						<ul>
 							<li>
-								<b>Indicators for AI-generated content:</b> Transparency with AI is key and the AI label is an 
+								<span class='b'>Indicators for AI-generated content:</span> Transparency with AI is key and the AI label is an 
 								accessible, interactive element that's present at every interface level.
 							</li>
 							<li>
-								<b>Having a consistent visual reference:</b> -Users need a universal and easy identifiable 
+								<span class='b'>Having a consistent visual reference:</span> -Users need a universal and easy identifiable 
 								visual reference when they want to understand more about how AI is being used.
 							</li>
 							<li>
-								<b>Guiding users with explainability:</b> Users need a way to understand how to access 
+								<span class='b'>Guiding users with explainability:</span> Users need a way to understand how to access 
 								details about how an AI was built. By providing a way to explainability with the AI label, 
 								users have a recognizable location to learn more.
 							</li>
@@ -197,65 +197,94 @@ import NextCaseStudy from '../../components/NextCaseStudy.astro'
 		<img
 			src='/content/case-studies/dod/pilotprofile.png'
 			class='view-project-image content'
+			style='
+				margin-top: 2rem;
+				margin-bottom: 2rem;
+			'
 		/>
 	</section>
-	<Content>
-		<div class='text-width'>
-			<h3>Impact</h3>
-			<p>
-				We transformed DDR from being difficult to use into a collaborative tool that pilots trust to evaluate and improve their 
-				performance, while still fitting into their demanding workflows. The improvements that made the biggest impact for pilots were:
-			</p>
-			<ul>
-				<li>
-					Quickly identify performance gaps through transparent grading
-				</li>
-				<li>
-					Navigate flight simulations more efficiently with intuitive controls
-				</li>
-				<li>
-					Collaborate with instructors with interactive notes
-				</li>
-				<li>
-					Cross-evaluations with human analysis from the enhanced visualizations
-				</li>
-			</ul>
+	<section>
+		<div class='content-item-row'>
+			<hr class='hr-subtle'>
+			<div class='content-item'>
+				<div class='content-wrapper'>
+					<h3>Making an impact</h3>
+					<div class='content-text'>
+						<p>
+							We transformed DDR from being difficult to use into a collaborative tool that pilots trust to evaluate and improve their 
+							performance, while still fitting into their demanding workflows. The improvements that made the biggest impact for pilots were:
+						</p>
+						<ul>
+							<li>
+								Quickly identify performance gaps through transparent grading
+							</li>
+							<li>
+								Navigate flight simulations more efficiently with intuitive controls
+							</li>
+							<li>
+								Collaborate with instructors with interactive notes
+							</li>
+							<li>
+								Cross-evaluations with human analysis from the enhanced visualizations
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div></div>
+			</div>
 		</div>
+	</section>
+	<section>
 		<Quote
 			quote={`Hiring Chris brought us instant relaxation. Before working with Chris I didn’t realize how much it would
 					take to do the research sitting down with pilots to better solve their problems.`}
 			author='Julian Capps'
 			title='Head of Defense, Crowdbotics'
 		/>
-	</Content>
-	<Content>
-		<div class='text-width'>
-			<h3>Final thoughts</h3>
-			<p>This project was as much about adapting design methods to constraints as it was about building a better tool:</p>
-			<ul>
-				<li>
-					<b>Adapt to user constraints</b> -> Pilots limited availability required leaner, flexible research methods
-				</li>
-				<li>
-					<b>Embrace the learning curve</b> -> The aviation industry is highly technical. Building domain knowledge gave me 
-					confidence to drive design decisions
-				</li>
-				<li>
-					<b>Organize research better</b> -> A dedicated repository would have made user research insights easier to share with stakeholders
-				</li>
-				<li>
-					<b>Bridge design and development</b> -> By learning GitHub workflows and contributing to CSS tokens, I accelerated implementation and improved 
-					team collaboration
-				</li>
-			</ul>
+	</section>
+	<section>
+		<div class='content-item-row'>
+			<hr class='hr-subtle'>
+			<div class='content-item'>
+				<div class='content-wrapper'>
+					<h3>Final thoughts</h3>
+					<div class='content-text'>
+						<p>
+							This project was as much about adapting design methods to constraints as it was about 
+							building a better tool:
+						</p>
+						<ul>
+							<li>
+								<b>Adapt to user constraints</b> -> Pilots limited availability required leaner, 
+								flexible research methods
+							</li>
+							<li>
+								<b>Embrace the learning curve</b> -> The aviation industry is highly technical. 
+								Building domain knowledge gave me confidence to drive design decisions
+							</li>
+							<li>
+								<b>Organize research better</b> -> A dedicated repository would have made user 
+								research insights easier to share with stakeholders
+							</li>
+							<li>
+								<b>Bridge design and development</b> -> By learning GitHub workflows and contributing 
+								to CSS tokens, I accelerated implementation and improved team collaboration
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div></div>
+			</div>
 		</div>
+	</section>
+	<Content>
+		<NextCaseStudy
+			href='/case-studies/atmos'
+			label='Pioneering the Web3 portal experience for Exo pilots on Planet Atmos. '
+			description='Redesigned the portal to simplify the onboarding process and to easier access blockchain items.'
+			thumbnail={{
+				src: 'https://media.contra.com/video/upload/fl_progressive/q_auto:best,w_800/twkqyeauwgccv77hxdwj.mp4',
+			}}
+		/>
 	</Content>
-	<NextCaseStudy
-		href='/case-studies/atmos'
-		label='Pioneering the Web3 portal experience for Exo pilots on Planet Atmos. '
-		description='Redesigned the portal to simplify the onboarding process and to easier access blockchain items.'
-		thumbnail={{
-			src: 'https://media.contra.com/video/upload/fl_progressive/q_auto:best,w_800/twkqyeauwgccv77hxdwj.mp4',
-		}}
-	/>
 </Base>
