@@ -550,7 +550,7 @@ section {
 }
 
 .content-text p {
-	max-width: 720px;
+	max-width: 40rem;
 }
 
 @media (max-width: 1024px) {
@@ -561,16 +561,15 @@ section {
 	.content-wrapper {
 		grid-template-columns: 1fr;
 	}
+	
+	.content-text {
+		align-items: flex-start;
+	}
 }
 
 @media (max-width: 768px) {
 	.content-item {
 		grid-template-columns: 1fr;
-	}
-
-	.content-text p {
-		align-items: left;
-		max-width: 768px;
 	}
 }
 
