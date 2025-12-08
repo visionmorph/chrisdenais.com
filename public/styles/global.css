@@ -559,7 +559,7 @@ section {
 }
 
 .content-text ul {
-	max-width: 40rem;
+	max-width: 39rem;
 }
 
 @media (max-width: 1024px) {
