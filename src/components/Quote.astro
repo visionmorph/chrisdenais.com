@@ -1,12 +1,12 @@
 ---
-const { quote, author, title } = Astro.props;
+const { quote, author, title, company } = Astro.props;
 ---
 
 <div class='quote-container'>
     <h2>"{quote}"</h2>
     <div class='clients__author'>
-        <p class='b'>{author}</p>
+        <p><span class='b'>{author}</span></p>
         <p>{title}</p>
+        <p>{company}</p>
     </div>
-    <hr class='hr-subtle' />
 </div>
