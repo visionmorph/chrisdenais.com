@@ -170,22 +170,25 @@ p,
 ol,
 ul,
 li {
-	/* P1 */
 	font-family: Inter;
 	color: #ffffff;
 	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.75rem;
-	/* 125% */
 }
 
 ol,
 ul {
 	display: flex;
 	flex-direction: column;
-	margin-left: 1.5rem;
+	margin-left: 1rem;
 	padding-left: 0;
+	list-style: none;
+}
+
+ul li::marker {
+  content: "- ";
 }
 
 .p2 {
@@ -227,7 +230,9 @@ blockquote {
 .quote-container {
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
+	gap: 2rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 	max-width: 1600px;
 	width: 100%;
 }
