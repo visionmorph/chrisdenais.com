@@ -8,7 +8,7 @@ const {
 } = Astro.props
 
 // Determine if we should render a video
-const isVideo = video || (src && src.endsWith('.mp4'))
+const isVideo = video || (src && (src.endsWith('.mp4') || src.endsWith('.webm')))
 const videoSrc = video || (isVideo ? src : null)
 const imgSrc = !isVideo ? src : null
 ---
@@ -29,6 +29,7 @@ const imgSrc = !isVideo ? src : null
                   playsinline 
                   class="full"
               >
+                  <source src={videoSrc} type="video/webm" />
                   <source src={videoSrc} type="video/mp4" />
                   Your browser does not support the video tag.
               </video>
