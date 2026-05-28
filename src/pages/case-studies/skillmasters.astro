@@ -24,17 +24,21 @@ import Quote from '../../components/Quote.astro'
 				playsinline
 				width='1600px'
 				height='1200px'
-				src='/content/case-studies/skillmasters/skillmastersvideo.mp4'
-				alt='Three mobile screens, the first screen is showing a dashboard, the second screen shows the landing page that reads Bridging the talent gap For youth sports, the third screen shows a young athelete practicing soccer'
-			></video>
+				alt='Three mobile screens, the first screen is showing a dashboard, 
+					the second screen shows the landing page that reads Bridging the talent gap For youth sports, 
+					the third screen shows a young athelete practicing soccer'
+			>
+				<source src='/content/case-studies/skillmasters/skillmasters-video.webm' />
+				<source src='/content/case-studies/skillmasters/skillmastersvideo.mp4' type='video/mp4' />
+			</video>
 		</div>
 	</Content>
 	<Content>
 		<div class='text-width'>
 			<h2>The challenge</h2>
 			<p>
-                Skillmasters gives young athletes access to college coaches for personalized feedback. The mobile app was further optimized for onboarding new 
-                signups and recording training workouts.
+                Skillmasters gives young athletes access to college coaches for personalized feedback. 
+				The mobile app was further optimized for onboarding new signups and recording training workouts.
 			</p>
        </div>
 	</Content>
@@ -61,7 +65,8 @@ import Quote from '../../components/Quote.astro'
 	<Content>
 		<h2>Testimonial</h2>
 		<Quote
-			quote={`Chris did an amazing job on our mobile application redesign and I would highly recommend him to others looking for mobile redesigns`}
+			quote={`Chris did an amazing job on our mobile application redesign and I 
+					would highly recommend him to others looking for mobile redesigns`}
 			author="Jacob Henderson"
 			title="CEO, Skillmasters Inc."
 		/>
@@ -69,7 +74,8 @@ import Quote from '../../components/Quote.astro'
 	<NextCaseStudy
 		href='/case-studies/dod'
 		label='Shaping the maneuver analysis experience for the U.S. Department of Defense. '
-		description='Reimagining how pilots review flights with AI, giving instructors real-time insight into mission readiness.'
+		description='Reimagining how pilots review flights with AI, 
+					giving instructors real-time insight into mission readiness.'
 		thumbnail={{
 			src: '/content/case-studies/dod/ddr.png',
 		}}
