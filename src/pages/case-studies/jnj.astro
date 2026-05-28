@@ -23,9 +23,11 @@ import Quote from '../../components/Quote.astro'
 				playsinline
 				width='1600px'
 				height='1200px'
-				src='/content/case-studies/jnj/responsive.mp4'
 				alt='Responsive user interface design components that are transforming in size'
-			></video>
+			>
+				<source src='/content/case-studies/jnj/jnj-video.webm' type='video/webm' />
+				<source src='/content/case-studies/jnj/responsive.mp4' type='video/mp4' />
+			</video>
 		</div>
 	</Content>
 	<Content>
@@ -148,7 +150,7 @@ import Quote from '../../components/Quote.astro'
 		label='Giving young athletes access to professional coaches with SkillMasters. '
 		description='Streamlined the onboarding and workout recordings for receiving personalized feedback.'
 		thumbnail={{
-			src: '/content/case-studies/skillmasters/skillmastersvideo.mp4',
+			src: '/content/case-studies/skillmasters/skillmasters-video.webm',
 		}}
 	/>
 </Base>
